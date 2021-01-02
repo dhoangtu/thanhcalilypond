@@ -1,5 +1,5 @@
 \version "2.18.2"
-\include "deutsch.ly"
+\include "english.ly"
 
 \header
 {
@@ -40,14 +40,14 @@ ficta = { \once \set suggestAccidentals = ##t }
 
 cantus =  \relative c'' {
   d1. d2
-  e1 cis
+  e1 cs
   r2 d1 g2~
   g4 f e2 d1
 %5
   d1 d |
   r2 d1 d2~
-  d4 c8 h a2 e'1~
-  e1 fis
+  d4 c8 b a2 e'1~
+  e1 fs
   g1. e2
 %10
   e1 r |
@@ -57,7 +57,7 @@ cantus =  \relative c'' {
   r2 g1 f2~
 %15
   f2 e1 d2~ |
-  d2 c2. h4 h a8 g
+  d2 c2. b4 b a8 g
   a2. a4 g1
   R\breve
   R\breve
@@ -66,7 +66,7 @@ cantus =  \relative c'' {
   g'2. f8 e d2 d
   f2. e8 d c2 c
   c2. c4 d2 g~
-  g2 fis4 e fis2 fis
+  g2 fs4 e fs2 fs
 %25
   g1 r2 g~ |
   g2 g g1
@@ -74,22 +74,22 @@ cantus =  \relative c'' {
   f2 e d1~
   d\breve
 %30
-  cis1 r |
+  cs1 r |
   R\breve
   R\breve
   r1 r2 a
-  d2. c4 h a g2~
+  d2. c4 b a g2~
 %35
-  g4 a h c d e f2 |
+  g4 a b c d e f2 |
   e1 r2 d
   f2. e8 d c2. d4
   e4 f e1 d4 c
-  h4 c h2 a1
+  b4 c b2 a1
 %40
   r1 r2 f' |
   d1 c
   c1 r2 d
-  d2 d cis1
+  d2 d cs1
   e2 a, e'1
 %45
   a,1 d~ |
@@ -99,25 +99,25 @@ cantus =  \relative c'' {
   d1 d2 d~
 %50
   d4 d d2 d\breve^\fermata |
-  h\breve
-  h\breve |
+  b\breve
+  b\breve |
 }
 
 altus =  \relative c' {
   r1 g'~
   g2 g a1
-  fis1 g2. f4
+  fs1 g2. f4
   e2 a1 g2~
 %5
-  g4 \ficta fis8 e \ficta fis!2 g1~ |
-  g1 fis
-  fis1 a~
+  g4 \ficta fs8 e \ficta fs!2 g1~ |
+  g1 fs
+  fs1 a~
   a1 a
-  h2. a4 h2 c
+  b2. a4 b2 c
 %10
   c1 a~ |
-  a2 a gis1
-  a2 fis1 fis2
+  a2 a gs1
+  a2 fs1 fs2
   g\breve
   g1 b
 %15
@@ -133,7 +133,7 @@ altus =  \relative c' {
   g1 g2. g4
   a2 a a2. a4
 %25
-  h\breve |
+  b\breve |
   c1. c2
   a1 b
   a2 g g1
@@ -142,8 +142,8 @@ altus =  \relative c' {
   e1 f~ |
   f2 g1 f2~
   f4 e8 d e2 d g
-  g1. fis2
-  fis1 r
+  g1. fs2
+  fs1 r
 %35
   R\breve |
   a1 b~
@@ -157,13 +157,13 @@ altus =  \relative c' {
   a2 d, e a
   a\breve
 %45
-        fis1 g~
+        fs1 g~
   g2 g g g |
   g1 g~
-  g1 fis~
-  fis2 fis fis fis
+  g1 fs~
+  fs2 fs fs fs
 %50
-        g1 fis\breve^\fermata
+        g1 fs\breve^\fermata
   g\breve |
   g\breve |
 }
@@ -172,7 +172,7 @@ altus =  \relative c' {
 tenor = \relative c' {
   g'1. g,2
   c1 a
-  d1 h
+  d1 b
   c1 d~
 %5
   d1 g,~ |
@@ -191,10 +191,10 @@ tenor = \relative c' {
   R\breve
   r1 r2 g~
   g2 g f e
-  a,2. h4 c d e2~
+  a,2. b4 c d e2~
 %20
   e2 e d1 |
-  h2 g'2. f8 e d2~
+  b2 g'2. f8 e d2~
   d4 d f2. e8 d c2~
   c2 e d1~
   d2 d d1~
@@ -207,7 +207,7 @@ tenor = \relative c' {
 %30
   r1 d |
   d1 c~
-  c1 h
+  c1 b
   e2. e4 a,1~
   a1 r
 %35
@@ -248,7 +248,7 @@ bassus = \relative c {
 %10
   c1 f~ |
   f2 a e1
-  cis2 d1 d2
+  cs2 d1 d2
   g\breve
   c,1 r
 %15
@@ -256,7 +256,7 @@ bassus = \relative c {
   R\breve
   r1 g'
   e1 a2. g4
-  f2 d a'2. h4
+  f2 d a'2. b4
 %20
   c2 c, g'1 |
   g1 g2. f8 e
