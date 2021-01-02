@@ -10,6 +10,7 @@
 % 1. Cài đặt chung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \version "2.18.2"
+\include "english.ly"
 
 \header {
   title = "Alleluia"
@@ -54,7 +55,7 @@ musicOne = \relative c' {
   d4(c4) b4 |
   a2 a4 |
   a2 b4 |
-  a4(gis4) a4 |
+  a4(gs4) a4 |
   b2 b4 |
   e,2 b'4 |
   c4 b2 |
@@ -62,7 +63,7 @@ musicOne = \relative c' {
 
   a4 |
   a2 b4 |
-  a4(gis4) a4 |
+  a4(gs4) a4 |
   b2 b4 |
   e,2 b'4 |
   c2 b4 |
@@ -76,12 +77,12 @@ musicTwo = \relative c' {
   f4(e4) d4 |
   c2 e4 |
   e2 a4 |
-  gis2 a4 |
-  b4(a4) gis4 |
+  gs2 a4 |
+  b4(a4) gs4 |
   a2 e4 |
   d4(e4) f4 |
   e2 e4 |
-  e2 dis4 |
+  e2 ds4 |
   e2 e4 |
   e4 e4.(d8) |
                    c2
@@ -89,9 +90,9 @@ musicTwo = \relative c' {
   e4 |
   f2 f4 |
   e2 e4 |
-  e2 dis4 |
-  e2 gis4 |
-  a2 gis4 |
+  e2 ds4 |
+  e2 gs4 |
+  a2 gs4 |
                   e2 \bar "|."
 }
 
@@ -99,7 +100,7 @@ musicThree = \relative c {
                     \partial 4 a'4
   c2 b4 |
   c2 a4 |
-  a2 gis4 |
+  a2 gs4 |
   a2 c4 |
   c2 b4 |
   c4(b4) a4 |
@@ -107,16 +108,16 @@ musicThree = \relative c {
   c2 c4 |
   d4(c4) d4 |
   c4(b4) a4 |
-  gis2 fis4 |
-  gis2 gis4 |
-  a2 gis4 |
+  gs2 fs4 |
+  gs2 gs4 |
+  a2 gs4 |
                     a2
 
   c4 |
   c2 d4 |
   c4(b4) a4 |
-  fis4(gis4) a4 |
-  gis2 e'4 |
+  fs4(gs4) a4 |
+  gs2 e'4 |
   e4 e4.(d8) |
                     c2
 }
@@ -139,7 +140,7 @@ musicFour = \relative c {
                     a,2 _\fermata
 
   a'4 |
-  fis4(e4) d4 |
+  fs4(e4) d4 |
   e4(d4) c4 |
   b2 b4 |
   e2 e4 |

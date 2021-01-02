@@ -10,6 +10,7 @@
 % 1. Cài đặt chung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \version "2.18.2"
+\include "english.ly"
 
 \header {
   title = "Từ Lòng Đất"
@@ -45,56 +46,56 @@ printItalic = \with {
 % 2. Nhạc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicOne =   \relative c' {
-  d4 fis4 a4 d,4 |
+  d4 fs4 a4 d,4 |
   g4 b4 b4 a4 \breathe |
-  fis8(g8 a8 d,8 g4) fis8(g8) |
-  fis4(e4) d2 \breathe \break |
+  fs8(g8 a8 d,8 g4) fs8(g8) |
+  fs4(e4) d2 \breathe \break |
   g4 a4 b4 a4 |
-  g4 fis4 fis4 e4 \breathe |
-  fis8(g8 a8 d,8 g4) fis8(g8) |
-  fis4( e4) d2 \breathe \break |
-  cis'4 d4 e4 a,4 |
-  d4(e4) fis2 \breathe |
-  cis8(d8 e8 a,8 d4) cis8(d8) |
-  cis4(b4) a2 \breathe \break |
-  a8(b8) cis8(a8) d4 fis,4 |
+  g4 fs4 fs4 e4 \breathe |
+  fs8(g8 a8 d,8 g4) fs8(g8) |
+  fs4( e4) d2 \breathe \break |
+  cs'4 d4 e4 a,4 |
+  d4(e4) fs2 \breathe |
+  cs8(d8 e8 a,8 d4) cs8(d8) |
+  cs4(b4) a2 \breathe \break |
+  a8(b8) cs8(a8) d4 fs,4 |
   g4 b4 b4 a4 \breathe |
-  d8(cis8 d8 a8 b8 cis8) d8(e8) |
-  d4(cis4) d2 \breathe \bar "|."
+  d8(cs8 d8 a8 b8 cs8) d8(e8) |
+  d4(cs4) d2 \breathe \bar "|."
 }
 
 musicTwo =    \relative c' {
   d4 d4 e4 d4 |
-  d4 g4 g4 fis4 \breathe |
-  d2(d8 cis8) d4 |
-  d4(cis4) d2 \breathe \break |
+  d4 g4 g4 fs4 \breathe |
+  d2(d8 cs8) d4 |
+  d4(cs4) d2 \breathe \break |
   d4 d4 d4 d4 |
-  d8(cis8) d4 d4 cis4 |
-  d2(d8 cis8) d4 |
-  d4(cis4) d2 \breathe \break |
-  cis'4. gis8 a4 a4 |
-  a4(g4) fis2 \breathe |
-  a2(a8 gis8) a4 |
-  a4(gis4) a2 \breathe \break % 12
-  cis,8(d8) e8(cis8) d4 d4 |
-  d4 g4 g4 fis4 \breathe |
-  fis8(g8 a8 fis8 g4) a8(g8) |
-  fis4(e4) fis2 \breathe \bar "|."
+  d8(cs8) d4 d4 cs4 |
+  d2(d8 cs8) d4 |
+  d4(cs4) d2 \breathe \break |
+  cs'4. gs8 a4 a4 |
+  a4(g4) fs2 \breathe |
+  a2(a8 gs8) a4 |
+  a4(gs4) a2 \breathe \break % 12
+  cs,8(d8) e8(cs8) d4 d4 |
+  d4 g4 g4 fs4 \breathe |
+  fs8(g8 a8 fs8 g4) a8(g8) |
+  fs4(e4) fs2 \breathe \bar "|."
 }
 
 musicThree =  \relative c {
-  fis4 a4 g4 fis4 |
+  fs4 a4 g4 fs4 |
   g4 d'4 d4 d4 \breathe |
   a2( b8 a8) a8(g8) |
-  a4.(g8) fis2  \breathe \break |
-  g4 fis4 g4 a4 |
+  a4.(g8) fs2  \breathe \break |
+  g4 fs4 g4 a4 |
   b8(g8) a4 a4 a4 \breathe |
   a2( b8 g8) a8(g8) |
-  a4.(g8) fis2 \breathe \break |
-  e'4 d4 cis4 cis4 |
-  d4.(cis8) d2 \breathe |
+  a4.(g8) fs2 \breathe \break |
+  e'4 d4 cs4 cs4 |
+  d4.(cs8) d2 \breathe |
   e2. e8(d8) |
-  e4.(d8) cis2 % \breathe \break |
+  e4.(d8) cs2 % \breathe \break |
   a4 a4 a4 a4 |
   g4 d'4 d4 d4 \breathe |
   a4.(d8 d8 e8) d8(b8) |
@@ -102,21 +103,21 @@ musicThree =  \relative c {
 }
 
 musicFour =    \relative c {
-  d4 d4 cis4 d4 |
+  d4 d4 cs4 d4 |
   b4 g4 d'4 d4 \breathe |
-  d8(e8 fis4 e4) d8(b8) |
+  d8(e8 fs4 e4) d8(b8) |
   a2 d2 \breathe \break |
-  b4 d4 g4 fis4 |
+  b4 d4 g4 fs4 |
   e4 d4 a4 a4 \breathe |
-  d8(e8 fis4 e4) d8(b8) |
+  d8(e8 fs4 e4) d8(b8) |
   a2 d2 \breathe \break |
-  a4 b4 cis4 a'8(g8) |
-  fis4(e4) d2 \breathe |
-  a'8(b8 cis4 b4) a8(fis8) |
+  a4 b4 cs4 a'8(g8) |
+  fs4(e4) d2 \breathe |
+  a'8(b8 cs4 b4) a8(fs8) |
   e2 a,2 \breathe \break |
-  a'4. g8 fis4 d8(cis8) |
+  a'4. g8 fs4 d8(cs8) |
   b4 g4 d'4 d4 \breathe |
-  d8(e8 fis8 d8 g8 e8) fis8(g8) |
+  d8(e8 fs8 d8 g8 e8) fs8(g8) |
   a4(a,4) d2 \breathe \break \bar "|."
 }
 

@@ -11,6 +11,7 @@
 % 1. Cài đặt chung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \version "2.18.2"
+\include "english.ly"
 
 \header {
   title = "Nữ Vương Thiên Đàng"

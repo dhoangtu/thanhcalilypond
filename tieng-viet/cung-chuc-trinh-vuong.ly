@@ -12,6 +12,7 @@
 % 1. Cài đặt chung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \version "2.18.2"
+\include "english.ly"
 
 \header {
   title = "Cung chúc Trinh Vương"
@@ -91,7 +92,7 @@ bassChorus = \relative c' {
   f2 |
   f4 f8 e8 |
   d4 e8 f8 |
-  e4 a8(bes8) |
+  e4 a8(bf8) |
   f2 |
   d4 f8 e8 |
   f4 e8 d8 |

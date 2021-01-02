@@ -13,6 +13,7 @@
 % 1. Cài đặt chung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \version "2.18.2"
+\include "english.ly"
 
 \header {
   title = "Dâng Mẹ"
@@ -62,7 +63,7 @@ verseMusic = \relative c' {
                     \partial 4 e8 e16(d16)
   b4 e8 e8 d8(e8) e8 g8 |
   e2 r4 g8 a8 |
-  b4 g8 fis8 e8(g8) d'8 b8 |
+  b4 g8 fs8 e8(g8) d'8 b8 |
   b2 r4 b8 a8 |
   g4 a8 a8 b8(d8) e8 d8 |
   e2 r4 d8 b8 |

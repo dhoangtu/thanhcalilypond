@@ -12,6 +12,7 @@
 % 1. Cài đặt chung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \version "2.18.2"
+\include "english.ly"
 
 \header {
   title = "Tiếng Gọi Fatima"
@@ -67,7 +68,7 @@ sopChorus = \relative c' {
   d8 b8 b8 c8 |
   c2( |
   c4) c8 b8 |
-  a8 gis8 a8 f8 |
+  a8 gs8 a8 f8 |
   e4 \breathe e8 d8 |
   b'8 b16(c16) b16(a16) g8 |
   a2( |
@@ -77,10 +78,10 @@ sopChorus = \relative c' {
 bassChorus = \relative c' {
 	\override NoteHead.font-size = #-2
   \set Score.currentBarNumber = #12
-                    \partial 4 a'8 gis8
+                    \partial 4 a'8 gs8
   a8 a8 b8 c8 |
   c4 \breathe c8 b8 |
-  b8 gis8 gis8 a8 |
+  b8 gs8 gs8 a8 |
   a2( |
   a4) a8 g8 |
   f8 e8 e8 d8 |

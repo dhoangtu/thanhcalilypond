@@ -12,6 +12,7 @@
 % 1. Cài đặt chung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \version "2.18.2"
+\include "english.ly"
 
 \header {
   title = "Nữ Vương hòa bình"
@@ -64,22 +65,22 @@ sopChorus = \relative c' {
   c2( |
   c4) a4^\p |
   g4.^\<(a8) |
-  bes8\!(a8) g8.^\> f16 |
+  bf8\!(a8) g8.^\> f16 |
   f2( |
   f4\!) c'4^\f |
   c2( |
   c4) \breathe c4 |
   c2( |
   c4) \breathe <a f>8.-> <f d>16-> |
-  <d' bes>4^\ff <d bes>8. <d bes>16 |
-  <d bes>4 <c a>4 |
+  <d' bf>4^\ff <d bf>8. <d bf>16 |
+  <d bf>4 <c a>4 |
   <c a>2( |
   <c a>4) \breathe c4^\f |
   c2( |
   c4) \breathe c4 |
   c2( |
   c4) \breathe <a f>8.-> <f d>16-> |
-  <d' bes>4.^\f <c a>8 |
+  <d' bf>4.^\f <c a>8 |
   <c a>2 |
   <c g>2 |
   f,2\fermata \bar "|." \break
@@ -89,7 +90,7 @@ basseChorus = \relative c' {
   a2^\mf |
   f4 c'8(d8) |
   c2 \breathe |
-  a4.^\f(bes8) |
+  a4.^\f(bf8) |
   a4 f4 |
   f2 \breathe |
   c4.(f8) |
@@ -99,30 +100,30 @@ basseChorus = \relative c' {
   c4^\p c8 c8 |
   a4 c4 |
   f2 |
-  a4^\mp a8 bes16(a16) |
+  a4^\mp a8 bf16(a16) |
   f4 a4 |
-  bes4 f4-> |
-  bes4.^\f bes8 |
+  bf4 f4-> |
+  bf4.^\f bf8 |
   a4 f4 |
-  a4 <bes g>8^\> <a f>8 |
+  a4 <bf g>8^\> <a f>8 |
   <g e>4 f4^\p\! |
   c2^\< |
   d8\!(f8) <e c>8.^\> <c a f>16 |
   <c a f>2( |
   <c a f>4)\! r4 |
-  r4 <a' f>8^\mf <bes g>16 <a f>16 |
+  r4 <a' f>8^\mf <bf g>16 <a f>16 |
   <g c>4 r4 |
   r4 <g c,>8 <f a,>16 <g c,>16 |
   <a f>4 r4 |
-  <f bes,>2 |
-  <f bes,>4 <f bes,>8. <f bes,>16 |
+  <f bf,>2 |
+  <f bf,>4 <f bf,>8. <f bf,>16 |
   <f c f,>2( |
   <f c f,>4) r4 |
-  r4 <a f>8 <bes g>16 <a f>16 |
+  r4 <a f>8 <bf g>16 <a f>16 |
   <g c,>4 r4 |
   r4 <g c,>8 <f a,>16 <g c,>16 |
   <a f>4 r4 |
-  r4 <f bes,>8^\f <f c>8 |
+  r4 <f bf,>8^\f <f c>8 |
   <f c>2 |
   <f c>2 |
   <a f c f,>2\fermata \bar "|." \break

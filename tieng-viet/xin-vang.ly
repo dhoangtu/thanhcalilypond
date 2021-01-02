@@ -13,6 +13,7 @@
 % 1. Cài đặt chung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \version "2.18.2"
+\include "english.ly"
 
 \header {
   title = "Xin Vâng"
@@ -89,7 +90,7 @@ nhacDiepKhucBasso = \relative c' {
   b4. g16 a16
   b8 b8 c8 b8
   a4 r8 a8
-  a8 a8 a8 fis16 fis16
+  a8 a8 a8 fs16 fs16
   g4 b4
   b4. g16 a16
   b8 b8 c8 b8

@@ -12,6 +12,7 @@
 % 1. Cài đặt chung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \version "2.18.2"
+\include "english.ly"
 
 \header {
   title = "Lạy Mẹ xin yên ủi"
@@ -59,8 +60,8 @@ sopChorus = \relative c' {
 bassChorus = \relative c' {
 	\override NoteHead.font-size = #-2
   d4 d8 b4 d8 |
-  g4 g8 fis8(g8) fis8 |
-  fis4.(fis4) r8 |
+  g4 g8 fs8(g8) fs8 |
+  fs4.(fs4) r8 |
   b,4 b8 c4 c8 |
   d4 d8 c8(d8) c8 |
   b4.(b4) r8 |

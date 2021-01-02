@@ -12,6 +12,7 @@
 % 1. Cài đặt chung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \version "2.18.2"
+\include "english.ly"
 
 \header {
   title = "Tràng Hoa Mân Côi"
@@ -43,22 +44,22 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopChorus = \relative c' {
                     \partial 4 c'8 c8
-  c4 a8(bes8) |
+  c4 a8(bf8) |
   c4 a8 g8 |
-  f8. f16 bes8 bes8 %3
-  bes4 bes8 a8 |
+  f8. f16 bf8 bf8 %3
+  bf4 bf8 a8 |
   g8. g16 c8 c8 |
-  c4 \breathe c8 bes8 |
+  c4 \breathe c8 bf8 |
   a8. g16 \acciaccatura c8 d8 c8 |
   a2( |
   a4) c8 c8 |
-  c4 a8(bes8) |
+  c4 a8(bf8) |
   c4 a8 g8 |
-  f8. f16 bes8 bes8 |
-  bes4 bes8 bes16 a16 |
+  f8. f16 bf8 bf8 |
+  bf4 bf8 bf16 a16 |
   g8. g16 c8 c16 c16 |
-  c4 c8 bes8 |
-  a8. g16 bes8 a16(g16) |
+  c4 c8 bf8 |
+  a8. g16 bf8 a16(g16) |
   f2( |
                     f4) \bar "|."
 }
@@ -72,7 +73,7 @@ bassChorus = \relative c' {
   g4 g8 f8 |
   e8. e16 a8 a8 |
   a4 a8 g8 |
-  f8. e16 \acciaccatura a8 bes8 a8 |
+  f8. e16 \acciaccatura a8 bf8 a8 |
   f2( |
   f4) a8 a8 |
   a4 f8(g8) |
@@ -97,7 +98,7 @@ verseMusic = \relative c' {
   a8. g16 g8 f8 |
   a4 c,8 c8 |
   g'8. g16 g8 g8 |
-  g4 g8 bes8 |
+  g4 g8 bf8 |
   a8. g16 g8 f8 |
   f2( |
                     f4) \bar "||"
