@@ -57,76 +57,76 @@ printItalic = \with {
 % 2. Soprano verse music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
-%{ 1 %} f4 g g f |
-%{ 2 %} bes a g f |
-%{ 3 %} g a bes c \break \bar "|"
-%{ 4 %} d c c2 \bar "||"
-%{ 5 %} bes4 a g f |
-%{ 6 %} g a f d \break \bar "|"
-%{ 7 %} f g c f, |
-%{ 8 %} f e f2 \bar "||" 
-%{ 9 %} f4 g g f \break \bar "|"
-%{ 10%} bes c d2 |
-%{ 11%} ees4 d c bes |
-%{ 12%} c2 c |
-%{ 13%} bes1 \bar "|."
+f4 g g f |
+bes a g f |
+g a bes c \break \bar "|"
+d c c2 \bar "||"
+bes4 a g f |
+g a f d \break \bar "|"
+f g c f, |
+f e f2 \bar "||" 
+f4 g g f \break \bar "|"
+bes c d2 |
+ees4 d c bes |
+c2 c |
+bes1 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 3. Alto verse music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
-%{ 1 %} d4 ees ees c |
-%{ 2 %} f f d d |
-%{ 3 %} d f f e |
-%{ 4 %} f e f2 |
-%{ 5 %} f4 f d d |
-%{ 6 %} d d d a |
-%{ 7 %} d e f d |
-%{ 8 %} c c c2 |
-%{ 9 %} d4 ees ees d |
-%{ 10%} d f f (g) |
-%{ 11%} g g ees d |
-%{ 12%} g2 f4 (ees) |
-%{ 13%} d1
+d4 ees ees c |
+f f d d |
+d f f e |
+f e f2 |
+f4 f d d |
+d d d a |
+d e f d |
+c c c2 |
+d4 ees ees d |
+d f f (g) |
+g g ees d |
+g2 f4 (ees) |
+d1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 4. Tenor verse music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
-%{ 1 %} bes4 bes bes a |
-%{ 2 %} bes c bes a |
-%{ 3 %} bes c bes g |
-%{ 4 %} bes g a2 |
-%{ 5 %} bes4 c bes a |
-%{ 6 %} bes a a f |
-%{ 7 %} a c c bes |
-%{ 8 %} g g a2 |
-%{ 9 %} bes4 bes bes bes |
-%{ 10%} bes a a (bes) |
-%{ 11%} c bes g bes |
-%{ 12%} bes2 a |
-%{ 13%} bes1
+bes4 bes bes a |
+bes c bes a |
+bes c bes g |
+bes g a2 |
+bes4 c bes a |
+bes a a f |
+a c c bes |
+g g a2 |
+bes4 bes bes bes |
+bes a a (bes) |
+c bes g bes |
+bes2 a |
+bes1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 5. Basso verse music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
-%{ 1 %} bes4 ees ees f |
-%{ 2 %} d f g d |
-%{ 3 %} g f d c |
-%{ 4 %} bes c f2 |
-%{ 5 %} d4 f g d |
-%{ 6 %} g f d d |
-%{ 7 %} d c a bes |
-%{ 8 %} c c f2 |
-%{ 9 %} bes,4 ees ees bes |
-%{ 10%} g' f d (g) |
-%{ 11%} c, g' c, g' |
-%{ 12%} ees2 f |
-%{ 13%} f1
+bes4 ees ees f |
+d f g d |
+g f d c |
+bes c f2 |
+d4 f g d |
+g f d d |
+d c a bes |
+c c f2 |
+bes,4 ees ees bes |
+g' f d (g) |
+c, g' c, g' |
+ees2 f |
+f1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

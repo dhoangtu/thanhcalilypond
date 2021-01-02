@@ -36,14 +36,14 @@ printItalic = \with {
 
 % Verse music
 musicVerseSoprano = \relative c' {
-  %{	01	%} fis4 d a' d, |
-  %{	02	%} e8 (fis) g4 g fis |
-  %{	03	%} b a cis d |
-  %{	04	%} g, fis fis (e) |
-  %{	05	%} g8 (fis) e (d) a'4 cis |
-  %{	06	%} b8 (cis) d4 d cis |
-  %{	07	%} d b g fis |
-  %{	08	%} g8 (fis) e4 d2 \bar "|."
+  fis4 d a' d, |
+  e8 (fis) g4 g fis |
+  b a cis d |
+  g, fis fis (e) |
+  g8 (fis) e (d) a'4 cis |
+  b8 (cis) d4 d cis |
+  d b g fis |
+  g8 (fis) e4 d2 \bar "|."
 }
 
 % Verse lyrics

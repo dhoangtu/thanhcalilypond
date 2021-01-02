@@ -39,17 +39,17 @@ printBold = {
 
 % Verse music
 musicVerseSoprano = \relative c' {
-  %{	01	%} r4 c f a |
-  %{	02	%} g4. c,8 d4 e |
-  %{	03	%} f d c2 (c4) c c' bes |
-  %{	04	%} a4. g8 f4 a |
-  %{	05	%} g d c2 ( |
-  %{	06	%} c4) g' a c |
-  %{	07	%} c f, g4. bes8 |
-  %{	08	%} a4 g a2 ( |
-  %{	09	%} a4) \bar "" \break
-  %{	10	%} bes8 (a bes a) g4 |
-  %{	11	%} a (bes) c2 \bar "|."
+  r4 c f a |
+  g4. c,8 d4 e |
+  f d c2 (c4) c c' bes |
+  a4. g8 f4 a |
+  g d c2 ( |
+  c4) g' a c |
+  c f, g4. bes8 |
+  a4 g a2 ( |
+  a4) \bar "" \break
+  bes8 (a bes a) g4 |
+  a (bes) c2 \bar "|."
 }
 
 % Verse lyrics

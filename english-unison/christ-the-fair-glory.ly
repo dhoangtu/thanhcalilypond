@@ -35,21 +35,21 @@ printItalic = \with {
 
 % Verse music
 musicVerseSoprano = \relative c' {
-  %{	01	%} c'2 g4 a |
-  %{	02	%} g4. (f8) e2 |
-  %{	03	%} a4. b8 g4 c |
-  %{	04	%} c (b) c2 |
-  %{	05	%} c2 d4 d |
-  %{	06	%} e (c) a2 |
-  %{	07	%} d4. a8 b4 c |
-  %{	08	%} b (a) g2 |
-  %{	09	%} e2 f4 g |
-  %{	10	%} f e d2 |
-  %{	11	%} a'4. b8 c4 a |
-  %{	12	%} d (c) b2 |
-  %{	13	%} g4. (f8) e4 f |
-  %{	14	%} e2 (d) |
-  %{	15	%} c1 \bar "|."
+  c'2 g4 a |
+  g4. (f8) e2 |
+  a4. b8 g4 c |
+  c (b) c2 |
+  c2 d4 d |
+  e (c) a2 |
+  d4. a8 b4 c |
+  b (a) g2 |
+  e2 f4 g |
+  f e d2 |
+  a'4. b8 c4 a |
+  d (c) b2 |
+  g4. (f8) e4 f |
+  e2 (d) |
+  c1 \bar "|."
 }
 
 % Verse lyrics

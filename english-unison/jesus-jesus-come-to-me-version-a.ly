@@ -38,26 +38,26 @@ printItalic = \with {
 
 % Soprano verse music
 musicVerseSoprano = \relative c' {
-  %{ 01 %} fis4 \p \< fis e fis \! |
-  %{ 02 %} a4.-^ \> g8 g2 \! |
-  %{ 03 %} g4 \< g fis g \! |
-  %{ 04 %} b4.-^ \> a8 a2 \! |
-  %{ 05 %} d4 \< d a b \! |
-  %{ 06 %} b4.-^ \> a8 a2 \! |
-  %{ 07 %} b4 b a \> fis |
-  %{ 08 %} e4.-^ d8 d2 \! \bar "|."
+  fis4 \p \< fis e fis \! |
+  a4.-^ \> g8 g2 \! |
+  g4 \< g fis g \! |
+  b4.-^ \> a8 a2 \! |
+  d4 \< d a b \! |
+  b4.-^ \> a8 a2 \! |
+  b4 b a \> fis |
+  e4.-^ d8 d2 \! \bar "|."
 }
 
 % Basso verse music
 musicVerseBasso = \relative c' {
-  %{ 01 %} d4 d cis d |
-  %{ 02 %} fis4. e8 e2 |
-  %{ 03 %} cis4 cis d e |
-  %{ 04 %} g4. fis8 fis2 |
-  %{ 05 %} fis4 fis fis eis |
-  %{ 06 %} eis4. fis8 fis2 |
-  %{ 07 %} d4 d fis d |
-  %{ 08 %} cis4. d8 d2 \bar "|."
+  d4 d cis d |
+  fis4. e8 e2 |
+  cis4 cis d e |
+  g4. fis8 fis2 |
+  fis4 fis fis eis |
+  eis4. fis8 fis2 |
+  d4 d fis d |
+  cis4. d8 d2 \bar "|."
 }
 
 % Verse lyrics

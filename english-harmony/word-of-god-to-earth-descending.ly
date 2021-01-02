@@ -31,50 +31,50 @@ printItalic = \with {
 
 % Soprano verse music
 musicVerseSoprano = \relative c' {
-  %{ 01 %} g'4 g bes g |
-  %{ 02 %} g4. f8 f4 g |
-  %{ 03 %} aes aes c aes |
-  %{ 04 %} g f g2 |
-  %{ 05 %} bes4 bes c c |
-  %{ 06 %} d c8 (bes) ees4 bes |
-  %{ 07 %} aes g8 (f) bes4 ees, |
-  %{ 08 %} g4. f8 ees2 \bar "|."
+  g'4 g bes g |
+  g4. f8 f4 g |
+  aes aes c aes |
+  g f g2 |
+  bes4 bes c c |
+  d c8 (bes) ees4 bes |
+  aes g8 (f) bes4 ees, |
+  g4. f8 ees2 \bar "|."
 }
 
 % Alto verse music
 musicVerseAlto = \relative c' {
-  %{ 01 %} ees4 ees ees ees |
-  %{ 02 %} ees4. d8 d4 ees |
-  %{ 03 %} f f f f |
-  %{ 04 %} ees d ees2 |
-  %{ 05 %} g4 ees ees f |
-  %{ 06 %} f d ees ees |
-  %{ 07 %} ees d ees ees |
-  %{ 08 %} ees d bes2 \bar "|."
+  ees4 ees ees ees |
+  ees4. d8 d4 ees |
+  f f f f |
+  ees d ees2 |
+  g4 ees ees f |
+  f d ees ees |
+  ees d ees ees |
+  ees d bes2 \bar "|."
 }
 
 % Tenor verse music
 musicVerseTenor = \relative c' {
-  %{ 01 %} bes4 bes bes bes |
-  %{ 02 %} c4. c8 bes4 bes |
-  %{ 03 %} c c c c |
-  %{ 04 %} bes bes bes2 |
-  %{ 05 %} bes4 bes bes a! |
-  %{ 06 %} bes f' bes, bes |
-  %{ 07 %} c bes bes c |
-  %{ 08 %} bes aes g2 \bar "|."
+  bes4 bes bes bes |
+  c4. c8 bes4 bes |
+  c c c c |
+  bes bes bes2 |
+  bes4 bes bes a! |
+  bes f' bes, bes |
+  c bes bes c |
+  bes aes g2 \bar "|."
 }
 
 % Basso verse music
 musicVerseBasso = \relative c {
-  %{ 01 %} ees4 ees g ees |
-  %{ 02 %} aes4. aes8 aes4 g |
-  %{ 03 %} f f aes f |
-  %{ 04 %} bes bes, ees2 |
-  %{ 05 %} ees4 g f f |
-  %{ 06 %} bes aes! g g |
-  %{ 07 %} f aes g aes |
-  %{ 08 %} bes bes, ees2 \bar "|."
+  ees4 ees g ees |
+  aes4. aes8 aes4 g |
+  f f aes f |
+  bes bes, ees2 |
+  ees4 g f f |
+  bes aes! g g |
+  f aes g aes |
+  bes bes, ees2 \bar "|."
 }
 
 % Verse lyrics

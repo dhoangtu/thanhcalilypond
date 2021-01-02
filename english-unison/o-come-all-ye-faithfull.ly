@@ -41,32 +41,32 @@ printItalic = \with {
 % Verse music
 musicVerseSoprano = \relative c' {
   \partial 4 g'4 |
-  %{ 01 %} g2 d4 \(g\) |
-  %{ 02 %} a2 \(d,\) |
-  %{ 03 %} b'4 \(a\) b \(c\) |
-  %{ 04 %} b2 \(a4\) g |
-  %{ 05 %} g2 fis4 e |
-  %{ 06 %} fis \(g\) a b |
-  %{ 07 %} fis2 (e4.) d8 |
-  %{ 08 %} d2. r4 |
-  %{ 09 %} d'2 c4 \(b\) |
-  %{ 10 %} c2 \(b\) |
-  %{ 11 %} a4 \(b\) g \(a\)
-  %{ 12 %} fis4. (e8) d4 \bar "||"
+  g2 d4 \(g\) |
+  a2 \(d,\) |
+  b'4 \(a\) b \(c\) |
+  b2 \(a4\) g |
+  g2 fis4 e |
+  fis \(g\) a b |
+  fis2 (e4.) d8 |
+  d2. r4 |
+  d'2 c4 \(b\) |
+  c2 \(b\) |
+  a4 \(b\) g \(a\)
+  fis4. (e8) d4 \bar "||"
 }
 
 % Chorus music
 musicChorusSoprano = \relative c' {
   \set Score.currentBarNumber = #13
   \partial 4 g'4 |
-  %{ 13 %} g fis g a |
-  %{ 14 %} g2 d4 b' |
-  %{ 15 %} b a b c |
-  %{ 16 %} b2 a4 b |
-  %{ 17 %} c b a g |
-  %{ 18 %} fis2 g4 (c) |
-  %{ 19 %} b2 (a4.) g8 |
-  %{ 20 %} g2. \bar "|."
+  g fis g a |
+  g2 d4 b' |
+  b a b c |
+  b2 a4 b |
+  c b a g |
+  fis2 g4 (c) |
+  b2 (a4.) g8 |
+  g2. \bar "|."
 }
 
 % Verse lyrics

@@ -36,29 +36,29 @@ printItalic = \with {
 % Soparno Verse music
 musicVerseSoprano = \relative c' {
   \partial 4 e4 |
-  %{ 01 %} g b b b |
-  %{ 02 %} a (c b) a |
-  %{ 03 %} g2. a4 |
-  %{ 04 %} b g e g |
-  %{ 05 %} a (fis e) d |
-  %{ 06 %} e2. a4 |
-  %{ 07 %} a e e fis |
-  %{ 08 %} g2 (fis4) e |
-  %{ 09 %} d2. g4 |
-  %{ 10 %} a b b b |
-  %{ 11 %} a (c b) a | g2. \bar "||"
+  g b b b |
+  a (c b) a |
+  g2. a4 |
+  b g e g |
+  a (fis e) d |
+  e2. a4 |
+  a e e fis |
+  g2 (fis4) e |
+  d2. g4 |
+  a b b b |
+  a (c b) a | g2. \bar "||"
 }
 
 % Soprano chorus music
 musicChorusSoprano = \relative c' {
   \set Score.currentBarNumber = #12
   \partial 4 d'4 |
-  %{ 12 %} d2. b4 |
-  %{ 13 %} b2. b4 |
-  %{ 14 %} a (c b) a |
-  %{ 15 %} g2. a4 |
-  %{ 16 %} b g e g |
-  %{ 17 %} a (fis e) d | g2. \bar "|."
+  d2. b4 |
+  b2. b4 |
+  a (c b) a |
+  g2. a4 |
+  b g e g |
+  a (fis e) d | g2. \bar "|."
 }
 
 % Verse lyrics

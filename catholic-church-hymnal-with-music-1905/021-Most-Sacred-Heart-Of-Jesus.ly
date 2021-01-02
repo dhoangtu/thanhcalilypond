@@ -57,27 +57,27 @@ printItalic = \with {
 % 2. Soprano verse music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' { 
-  %{  1%} cis'4 b a e |
-  %{  2%} fis a e2 \break \bar "|"
-  %{  3%} a4 cis b gis |
-  %{  4%} gis fis e2 \bar "||"
-  %{  5%} a4 cis fis, d' \break \bar "|"
-  %{  6%} cis b8 (a) gis2 |
-  %{  7%} a4 gis8 (fis) e4 a |
-  %{  8%} fis gis a2 \bar "|."
+  cis'4 b a e |
+  fis a e2 \break \bar "|"
+  a4 cis b gis |
+  gis fis e2 \bar "||"
+  a4 cis fis, d' \break \bar "|"
+  cis b8 (a) gis2 |
+  a4 gis8 (fis) e4 a |
+  fis gis a2 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 3. Alto verse music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
-  %{  1%} e4 e e cis |
-  %{  2%} d a8 b cis2 |
-  %{  3%} cis4 fis gis8 fis e4 |
-  %{  4%} e dis e2 |
-  %{  5%} e4 e fis fis8 gis |
-  %{  6%} a gis fis4 e2 |
-  %{  7%} cis4 bis cis e |
+  e4 e e cis |
+  d a8 b cis2 |
+  cis4 fis gis8 fis e4 |
+  e dis e2 |
+  e4 e fis fis8 gis |
+  a gis fis4 e2 |
+  cis4 bis cis e |
   %{  8%}fis8 e d4 cis2 
 }
 
@@ -85,28 +85,28 @@ musicVerseAlto = \relative c' {
 % 4. Tenor verse music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
-  %{  1%} a4 gis a a |
-  %{  2%} a d cis2 |
-  %{  3%} a4 a gis8 a b cis |
-  %{  4%} b4. a8 gis2 |
-  %{  5%} a4 a a d |
-  %{  6%} e d8 cis b2 |
-  %{  7%} a4 a a8 b cis4 |
-  %{  8%} d8 cis b4 a2 
+  a4 gis a a |
+  a d cis2 |
+  a4 a gis8 a b cis |
+  b4. a8 gis2 |
+  a4 a a d |
+  e d8 cis b2 |
+  a4 a a8 b cis4 |
+  d8 cis b4 a2 
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 5. Basso verse music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
-  %{  1%} a4 e'8 d cis4 a |
-  %{  2%} d fis8 gis a2 |
-  %{  3%} fis4 dis e8 fis gis a |
-  %{  4%} b4 b,4 e2 |
-  %{  5%} cis4 a d b |
-  %{  6%} cis d e2 |
-  %{  7%} fis4 dis e e |
-  %{  8%} e e a,2
+  a4 e'8 d cis4 a |
+  d fis8 gis a2 |
+  fis4 dis e8 fis gis a |
+  b4 b,4 e2 |
+  cis4 a d b |
+  cis d e2 |
+  fis4 dis e e |
+  e e a,2
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

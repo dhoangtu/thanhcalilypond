@@ -58,14 +58,14 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' { 
   \partial 4 fis4 |
-%{  1%} b b a fis |
-%{  2%} g a fis a \break \bar "|"
-%{  3%} d cis b a |
-%{  4%} b cis a \fermata \bar "||" d |
-%{  5%} b cis a fis \break \bar "|"
-%{  6%} g a fis fis |
-%{  7%} b b a fis |
-%{  8%} e fis d \fermata \bar "|."
+b b a fis |
+g a fis a \break \bar "|"
+d cis b a |
+b cis a \fermata \bar "||" d |
+b cis a fis \break \bar "|"
+g a fis fis |
+b b a fis |
+e fis d \fermata \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,14 +73,14 @@ musicVerseSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
   \partial 4 d4 |
-%{  1%} d cis d d |
-%{  2%} d cis d fis |
-%{  3%} fis fis fis a |
-%{  4%} a gis a a |
-%{  5%} g g fis d |
-%{  6%} e e d d |
-%{  7%} d e a, d |
-%{  8%} d cis d
+d cis d d |
+d cis d fis |
+fis fis fis a |
+a gis a a |
+g g fis d |
+e e d d |
+d e a, d |
+d cis d
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -88,14 +88,14 @@ musicVerseAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
   \partial 4 a4 |
-%{  1%} g g a a |
-%{  2%} b a a a |
-%{  3%} b ais b cis |
-%{  4%} fis e8 d cis4 d |
-%{  5%} d cis cis d |
-%{  6%} b a a b |
-%{  7%} b cis d a |
-%{  8%} b a8 g fis4
+g g a a |
+b a a a |
+b ais b cis |
+fis e8 d cis4 d |
+d cis cis d |
+b a a b |
+b cis d a |
+b a8 g fis4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,14 +103,14 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
   \partial 4 d4 |
-%{  1%} g e fis fis |
-%{  2%} e a, d d |
-%{  3%} b cis d fis |
-%{  4%} d e a \fermata fis |
-%{  5%} g e fis b |
-%{  6%} e, cis d b8 a |
-%{  7%} g4 g' fis d |
-%{  8%} g, a d \fermata 
+g e fis fis |
+e a, d d |
+b cis d fis |
+d e a \fermata fis |
+g e fis b |
+e, cis d b8 a |
+g4 g' fis d |
+g, a d \fermata 
 
 }
 

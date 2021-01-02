@@ -40,30 +40,30 @@ printBold = {
 
 % Verse music
 musicVerseSoprano = \relative c'' {
-  %{	01	%} b4 a g |
-  %{	02	%} g fis (g) |
-  %{	03	%} a (e) fis |
-  %{	04	%} g2. |
-  %{	05	%} g4 fis e |
-  %{	06	%} d2 g4 |
-  %{	07	%} g (fis) g |
-  %{	08	%} a2. |
-  %{	09	%} b4 a g |
-  %{	10	%} g (fis) g |
-  %{	11	%} a (e) fis |
-  %{	12	%} g2. |
-  %{	13	%} g4 fis e |
-  %{	14	%} d2 b'4 |
-  %{	15	%} a (b) a |
-  %{	16	%} g2. \bar "||" \break
-  %{	17	%} c4 c c |
-  %{	18	%} b2 b4 |
-  %{	19	%} a2 a4 |
-  %{	20	%} b2. |
-  %{	21	%} b4 a g |
-  %{	22	%} e2 g4 |
-  %{	23	%} a2 a4 |
-  %{	24	%} g2. \bar "|."
+  b4 a g |
+  g fis (g) |
+  a (e) fis |
+  g2. |
+  g4 fis e |
+  d2 g4 |
+  g (fis) g |
+  a2. |
+  b4 a g |
+  g (fis) g |
+  a (e) fis |
+  g2. |
+  g4 fis e |
+  d2 b'4 |
+  a (b) a |
+  g2. \bar "||" \break
+  c4 c c |
+  b2 b4 |
+  a2 a4 |
+  b2. |
+  b4 a g |
+  e2 g4 |
+  a2 a4 |
+  g2. \bar "|."
 }
 
 % Verse lyrics

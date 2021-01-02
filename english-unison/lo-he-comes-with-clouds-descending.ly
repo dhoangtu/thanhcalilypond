@@ -34,19 +34,19 @@ printItalic = \with {
 
 % Verse music
 musicVerseSoprano = \relative c'' {
-  %{	01	%} g4 b8 (d) g, (fis) e (d) |
-  %{	02	%} e8. (fis16 g8) fis16 (e) d8. (c16) b4 |
-  %{	03	%} d4. d8 g4 a |
-  %{	04	%} b8 (d) c (b) b4 (a) |
-  %{	05	%} g b8 (d) g, (fis) e (d) |
-  %{	06	%} e8. (fis16 g8) fis16 (e) d8. (c16) b4 |
-  %{	07	%} d4. d8 g4 a |
-  %{	08	%} b8 (d) c (b) b4 (a) |
-  %{	09	%} a8. (b16 a8) b c4 b |
-  %{	10	%} g8. (a16 g8) c b (a) g4 |
-  %{	11	%} b8. (c16 b8) d c (b) a4 |
-  %{	12	%} g a8 (b) d4 c |
-  %{	13	%} b a g2 \bar "|."
+  g4 b8 (d) g, (fis) e (d) |
+  e8. (fis16 g8) fis16 (e) d8. (c16) b4 |
+  d4. d8 g4 a |
+  b8 (d) c (b) b4 (a) |
+  g b8 (d) g, (fis) e (d) |
+  e8. (fis16 g8) fis16 (e) d8. (c16) b4 |
+  d4. d8 g4 a |
+  b8 (d) c (b) b4 (a) |
+  a8. (b16 a8) b c4 b |
+  g8. (a16 g8) c b (a) g4 |
+  b8. (c16 b8) d c (b) a4 |
+  g a8 (b) d4 c |
+  b a g2 \bar "|."
 }
 
 % Verse lyrics

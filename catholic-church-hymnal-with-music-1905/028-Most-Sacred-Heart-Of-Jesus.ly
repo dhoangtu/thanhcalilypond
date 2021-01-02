@@ -58,14 +58,14 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
 \partial 4 ees4 |
-%{ 1 %} f g aes c |
-%{ 2 %} bes f g bes \break
-%{ 3 %} ees, aes f f |
-%{ 4 %} g2. \bar "||" g4 |
-%{ 5 %} c d ees c \break
-%{ 6 %} g d' c g |
-%{ 7 %} f ees f f |
-%{ 8 %} ees2. \bar "|."
+f g aes c |
+bes f g bes \break
+ees, aes f f |
+g2. \bar "||" g4 |
+c d ees c \break
+g d' c g |
+f ees f f |
+ees2. \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,14 +73,14 @@ musicVerseSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
 \partial 4 bes4 |
-%{ 1 %} d ees ees aes |
-%{ 2 %} f d ees bes |
-%{ 3 %} c c c c |
-%{ 4 %} d2. d4 |
-%{ 5 %} c g' g g |
-%{ 6 %} d g ees ees |
-%{ 7 %} c c c d |
-%{ 8 %} ees2.
+d ees ees aes |
+f d ees bes |
+c c c c |
+d2. d4 |
+c g' g g |
+d g ees ees |
+c c c d |
+ees2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -88,14 +88,14 @@ musicVerseAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
 \partial 4 g4 |
-%{ 1 %} bes bes c ees |
-%{ 2 %} d bes bes f |
-%{ 3 %} g aes aes c |
-%{ 4 %} b2. b4 |
-%{ 5 %} g b c c |
-%{ 6 %} c b c bes |
-%{ 7 %} aes g aes f |
-%{ 8 %} g2.
+bes bes c ees |
+d bes bes f |
+g aes aes c |
+b2. b4 |
+g b c c |
+c b c bes |
+aes g aes f |
+g2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,14 +103,14 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
 \partial 4 ees4 |
-%{ 1 %} bes ees aes aes, |
-%{ 2 %} bes bes ees d |
-%{ 3 %} c f aes aes |
-%{ 4 %} g2. g4 |
-%{ 5 %} ees d c ees |
-%{ 6 %} g g aes ees |
-%{ 7 %} f c aes bes |
-%{ 8 %} ees2.
+bes ees aes aes, |
+bes bes ees d |
+c f aes aes |
+g2. g4 |
+ees d c ees |
+g g aes ees |
+f c aes bes |
+ees2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

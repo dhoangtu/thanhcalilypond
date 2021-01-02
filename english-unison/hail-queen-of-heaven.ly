@@ -37,29 +37,29 @@ printItalic = \with {
 % Verse music
 musicVerseSoprano = \relative c'' {
                     \partial 4 bes4 |
-  %{	01	%} bes (g) bes |
-  %{	02	%} bes2 ees4 |
-  %{	03	%} ees (d) c |
-  %{	04	%} bes2. |
-  %{	05	%} bes4 aes g |
-  %{	06	%} f (g) aes |
-  %{	07	%} g (bes) g |
-  %{	08	%} f2 bes4 |
-  %{	09	%} bes (g) bes |
-  %{	10	%} bes2 ees4 |
-  %{	11	%} ees (d) c |
-  %{	12	%} bes2. |
-  %{	13	%} bes4 aes g |
-  %{	14	%} f (g) aes |
-  %{	15	%} g2 f4 |
-  %{	16	%} ees2. |
-  %{	17	%} f4. g8 aes4 |
-  %{	18	%} g2. |
-  %{	19	%} bes4 g c |
-  %{	20	%} bes2. |
-  %{	21	%} c4 ees c |
-  %{	22	%} bes4. (aes8) g4 |
-  %{	23	%} aes2 f4 |
+  bes (g) bes |
+  bes2 ees4 |
+  ees (d) c |
+  bes2. |
+  bes4 aes g |
+  f (g) aes |
+  g (bes) g |
+  f2 bes4 |
+  bes (g) bes |
+  bes2 ees4 |
+  ees (d) c |
+  bes2. |
+  bes4 aes g |
+  f (g) aes |
+  g2 f4 |
+  ees2. |
+  f4. g8 aes4 |
+  g2. |
+  bes4 g c |
+  bes2. |
+  c4 ees c |
+  bes4. (aes8) g4 |
+  aes2 f4 |
                     ees2 \bar "|."
 }
 

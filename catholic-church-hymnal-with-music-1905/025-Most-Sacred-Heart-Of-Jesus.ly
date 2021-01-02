@@ -58,16 +58,16 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
 \partial 4 fis4 |
-%{  1 %} b2. a4 |
-%{  2 %} a2 r4 a4 |
-%{  3 %} d cis b fis \break \bar "||"
-%{  4 %} b2 (a4) \bar "||" g |
-%{  5 %} fis e a a |
-%{  6 %} g fis b b ^\< \break \bar "||"
-%{  7 %} cis a d e \! |
-%{  8 %} d a b e, ^\> |
-%{  9 %} g2 fis4 (e) |
-%{ 10 %} d2. \! \bar "|."
+b2. a4 |
+a2 r4 a4 |
+d cis b fis \break \bar "||"
+b2 (a4) \bar "||" g |
+fis e a a |
+g fis b b ^\< \break \bar "||"
+cis a d e \! |
+d a b e, ^\> |
+g2 fis4 (e) |
+d2. \! \bar "|."
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -75,16 +75,16 @@ musicVerseSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
 \partial 4 d4 |
-%{  1 %} d (cis d) e |
-%{  2 %} d2 r4 a'4 |
-%{  3 %} g g fis fis |
-%{  4 %} e2. d4 |
-%{  5 %} cis cis d fis |
-%{  6 %} e dis e e |
-%{  7 %} e cis d g |
-%{  8 %} fis d d d |
-%{  9 %} cis2 cis |
-%{ 10 %} d2.
+d (cis d) e |
+d2 r4 a'4 |
+g g fis fis |
+e2. d4 |
+cis cis d fis |
+e dis e e |
+e cis d g |
+fis d d d |
+cis2 cis |
+d2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,16 +92,16 @@ musicVerseAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
 \partial 4 a4 |
-%{  1 %} g (a b) cis |
-%{  2 %} d2 r4 a4 |
-%{  3 %} ais ais b d |
-%{  4 %} d2 (cis4) b |
-%{  5 %} a a a c |
-%{  6 %} b c b g |
-%{  7 %} a a a a |
-%{  8 %} a fis fis b |
-%{  9 %} b2 a4 (g) |
-%{ 10 %} fis2.
+g (a b) cis |
+d2 r4 a4 |
+ais ais b d |
+d2 (cis4) b |
+a a a c |
+b c b g |
+a a a a |
+a fis fis b |
+b2 a4 (g) |
+fis2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -109,16 +109,16 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
 \partial 4 d4 |
-%{  1 %} g2. g4 |
-%{  2 %} fis2 r4 fis |
-%{  3 %} e e d b |
-%{  4 %} g2. g4 |
-%{  5 %} a g' fis dis |
-%{  6 %} e a g e ^\< |
-%{  7 %} a g fis cis \! |
-%{  8 %} d d b g ^\> |
-%{  9 %} a2 a |
-%{ 10 %} d2. \!
+g2. g4 |
+fis2 r4 fis |
+e e d b |
+g2. g4 |
+a g' fis dis |
+e a g e ^\< |
+a g fis cis \! |
+d d b g ^\> |
+a2 a |
+d2. \!
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

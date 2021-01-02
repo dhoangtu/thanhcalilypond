@@ -41,27 +41,27 @@ printItalic = \with {
 
 % Verse music
 musicVerseSoprano = \relative c' {
-  %{	01	%} fis2 g4 a |
-  %{	02	%} b2. b4 |
-  %{	03	%} a2. fis4 |
-  %{	04	%} g a b d |
-  %{	05	%} cis4. b8 a4 gis |
-  %{	06	%} a2. a4 |
-  %{	07	%} e'4. d8 cis4 b |
-  %{	08	%} a2 b |
-  %{	09	%} a r \bar "||"
+  fis2 g4 a |
+  b2. b4 |
+  a2. fis4 |
+  g a b d |
+  cis4. b8 a4 gis |
+  a2. a4 |
+  e'4. d8 cis4 b |
+  a2 b |
+  a r \bar "||"
 }
 
 % Chorus music
 musicChorusSoprano = \relative c'' {
   \set Score.currentBarNumber = #10
-  %{	10	%} d4 a fis g |
-  %{	11	%} a2. r4 |
-  %{	12	%} d a fis g |
-  %{	13	%} a1 |
-  %{	14	%} fis2 g4 a |
-  %{	15	%} b1 |
-  %{	16	%} a1 \bar "|."
+  d4 a fis g |
+  a2. r4 |
+  d a fis g |
+  a1 |
+  fis2 g4 a |
+  b1 |
+  a1 \bar "|."
 }
 
 % Verse lyrics

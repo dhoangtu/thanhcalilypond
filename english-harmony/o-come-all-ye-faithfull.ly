@@ -38,122 +38,122 @@ printItalic = \with {
 % Soprano verse music
 musicVerseSoprano = \relative c' {
   \partial 4 g'4 |
-  %{ 01 %} g2 d4 \(g\) |
-  %{ 02 %} a2 \(d,\) |
-  %{ 03 %} b'4 \(a\) b \(c\) |
-  %{ 04 %} b2 \(a4\) g |
-  %{ 05 %} g2 fis4 e |
-  %{ 06 %} fis \(g\) a b |
-  %{ 07 %} fis2 (e4.) d8 |
-  %{ 08 %} d2. r4 |
-  %{ 09 %} d'2 c4 \(b\) |
-  %{ 10 %} c2 \(b\) |
-  %{ 11 %} a4 \(b\) g \(a\)
-  %{ 12 %} fis4. (e8) d4 \bar "||"
+  g2 d4 \(g\) |
+  a2 \(d,\) |
+  b'4 \(a\) b \(c\) |
+  b2 \(a4\) g |
+  g2 fis4 e |
+  fis \(g\) a b |
+  fis2 (e4.) d8 |
+  d2. r4 |
+  d'2 c4 \(b\) |
+  c2 \(b\) |
+  a4 \(b\) g \(a\)
+  fis4. (e8) d4 \bar "||"
 }
 
 % Alto verse music
 musicVerseAlto = \relative c' {
   \partial 4 d4 |
-  %{ 01 %} d2 d4 \(d\) |
-  %{ 02 %} e2 \(d\) |
-  %{ 03 %} d4 \(d\) d \(e\) |
-  %{ 04 %} d2 \(d4\) b |
-  %{ 05 %} b (cis) d cis |
-  %{ 06 %} d \(d\) d d |
-  %{ 07 %} d2 (cis4.) d8 |
-  %{ 08 %} d2. r4 |
-  %{ 09 %} d2 e8 \(fis g4\) |
-  %{ 10 %} \slurDashed g \( (fis) g2 \)|
-  %{ 11 %} d4 \(d\) e \(e\) |
-  %{ 12 %} d2 d4 \bar "||"
+  d2 d4 \(d\) |
+  e2 \(d\) |
+  d4 \(d\) d \(e\) |
+  d2 \(d4\) b |
+  b (cis) d cis |
+  d \(d\) d d |
+  d2 (cis4.) d8 |
+  d2. r4 |
+  d2 e8 \(fis g4\) |
+  \slurDashed g \( (fis) g2 \)|
+  d4 \(d\) e \(e\) |
+  d2 d4 \bar "||"
 }
 
 % Tenor verse music
 musicVerseTenor = \relative c' {
   \partial 4 b4 |
-  %{ 01 %} b2 b4 \(b\) |
-  %{ 02 %} c2 \(a\) |
-  %{ 03 %} g4 \(a\) g \(g\) |
-  %{ 04 %} g2 \(fis4\) g |
-  %{ 05 %} g2 a4 a |
-  %{ 06 %} a \(g\) fis d |
-  %{ 07 %} a'2 (g4.) fis8 |
-  %{ 08 %} fis2. r4 |
-  %{ 09 %} b2 c4 \(d\) |
-  %{ 10 %} c2 \(d\) |
-  %{ 11 %} d4 \(g,\) b \(c\) |
-  %{ 12 %} a4. (g8) fis4 \bar "||"
+  b2 b4 \(b\) |
+  c2 \(a\) |
+  g4 \(a\) g \(g\) |
+  g2 \(fis4\) g |
+  g2 a4 a |
+  a \(g\) fis d |
+  a'2 (g4.) fis8 |
+  fis2. r4 |
+  b2 c4 \(d\) |
+  c2 \(d\) |
+  d4 \(g,\) b \(c\) |
+  a4. (g8) fis4 \bar "||"
 }
 
 % Basso verse music
 musicVerseBasso = \relative c' {
   \partial 4 g4 |
-  %{ 01 %} g2 g4 \(g\) |
-  %{ 02 %} g2 \(fis\) |
-  %{ 03 %} g4 \(fis\) g \(c,\) |
-  %{ 04 %} d2 \(d4\) e |
-  %{ 05 %} e2 d4 a |
-  %{ 06 %} d \(b\) fis g |
-  %{ 07 %} a2 (a4.) a8 |
-  %{ 08 %} d2. r4 |
-  %{ 09 %} b'2 a4 \(g\) |
-  %{ 10 %} a2 \(g\) |
-  %{ 11 %} fis4 \(g\) e \(c\) |
-  %{ 12 %} d2 d4 \bar "||"
+  g2 g4 \(g\) |
+  g2 \(fis\) |
+  g4 \(fis\) g \(c,\) |
+  d2 \(d4\) e |
+  e2 d4 a |
+  d \(b\) fis g |
+  a2 (a4.) a8 |
+  d2. r4 |
+  b'2 a4 \(g\) |
+  a2 \(g\) |
+  fis4 \(g\) e \(c\) |
+  d2 d4 \bar "||"
 }
 
 % Soprano chorus music
 musicChorusSoprano = \relative c' {
   \set Score.currentBarNumber = #13
   \partial 4 g'4 |
-  %{ 13 %} g fis g a |
-  %{ 14 %} g2 d4 b' |
-  %{ 15 %} b a b c |
-  %{ 16 %} b2 a4 b |
-  %{ 17 %} c b a g |
-  %{ 18 %} fis2 g4 (c) |
-  %{ 19 %} b2 (a4.) g8 |
-  %{ 20 %} g2. \bar "|."
+  g fis g a |
+  g2 d4 b' |
+  b a b c |
+  b2 a4 b |
+  c b a g |
+  fis2 g4 (c) |
+  b2 (a4.) g8 |
+  g2. \bar "|."
 }
 
 % Alto chorus music
 musicChorusAlto = \relative c' {
   \partial 4 d4 |
-  %{ 13 %} d1 ( |
-  %{ 14 %} d2. ) d4 |
-  %{ 15 %} d d d d |
-  %{ 16 %} d2 d4 g |
-  %{ 17 %} fis g d d8 cis |
-  %{ 18 %} d2 d4 (e) |
-  %{ 19 %} d2 (d4.) b8 |
-  %{ 20 %} b2. \bar "|."
+  d1 ( |
+  d2. ) d4 |
+  d d d d |
+  d2 d4 g |
+  fis g d d8 cis |
+  d2 d4 (e) |
+  d2 (d4.) b8 |
+  b2. \bar "|."
 }
 
 % Tenor chorus music
 musicChorusTenor = \relative c' {
   \partial 4 b4 |
-  %{ 13 %} b a b c |
-  %{ 14 %} b2. g4 |
-  %{ 15 %} g fis g a |
-  %{ 16 %} g2 fis4 d' |
-  %{ 17 %} d d a a |
-  %{ 18 %} a2 g |
-  %{ 19 %} g (fis4.) g8 |
-  %{ 20 %} g2. \bar "|."
+  b a b c |
+  b2. g4 |
+  g fis g a |
+  g2 fis4 d' |
+  d d a a |
+  a2 g |
+  g (fis4.) g8 |
+  g2. \bar "|."
 }
 
 % Basso chorus music
 musicChorusBasso = \relative c' {
   \partial 4 r4 |
-  %{ 13 %} r1 |
-  %{ 14 %} r1 |
-  %{ 15 %} r1 |
-  %{ 16 %} r2 r4 g |
-  %{ 17 %} a g fis e |
-  %{ 18 %} d (c) b (c) |
-  %{ 19 %} d2 (d4.) g,8 |
-  %{ 20 %} g2. \bar "|."
+  r1 |
+  r1 |
+  r1 |
+  r2 r4 g |
+  a g fis e |
+  d (c) b (c) |
+  d2 (d4.) g,8 |
+  g2. \bar "|."
 }
 
 % 10. Verse lyrics

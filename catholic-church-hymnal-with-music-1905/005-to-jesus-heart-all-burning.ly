@@ -59,14 +59,14 @@ printItalic = \with {
 musicVerseSoprano = \relative c'' {
   \tempo "Slowly"
   \partial 2 g4 ^\p (d) |
-  %{	1 %} e2 ^\< a c4 fis, \! |
-  %{	2 %} g2 b b4 (d) |
-  %{	3 %} c b a2 ^\> g \! |
-  %{	4 %} a1 ^\> a4 \! ( fis) |
-  %{	5 %} e2 ^\< d e4 fis \! |
-  %{	6 %} b (a) ^\> g2 g4 \! (b) |
-  %{	7 %} fis2. ^\< b4 dis cis \! |
-  %{	8 %} b1 \bar "||"
+  e2 ^\< a c4 fis, \! |
+  g2 b b4 (d) |
+  c b a2 ^\> g \! |
+  a1 ^\> a4 \! ( fis) |
+  e2 ^\< d e4 fis \! |
+  b (a) ^\> g2 g4 \! (b) |
+  fis2. ^\< b4 dis cis \! |
+  b1 \bar "||"
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -74,14 +74,14 @@ musicVerseSoprano = \relative c'' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
   \partial 2 d2 |
-  %{	1 %} d c e4 d |
-  %{	2 %} d2 d d |
-  %{	3 %} g4 f! e2 cis |
-  %{	4 %} e (d) d |
-  %{	5 %} c! c c4 e |
-  %{	6 %} dis2 e e |
-  %{	7 %} dis2. dis4 e e |
-  %{	8 %} e2 (dis)
+  d c e4 d |
+  d2 d d |
+  g4 f! e2 cis |
+  e (d) d |
+  c! c c4 e |
+  dis2 e e |
+  dis2. dis4 e e |
+  e2 (dis)
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,14 +89,14 @@ musicVerseAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
   \partial 2 b4 ^\p (g) |
-  %{	1 %} g2 e a4 a |
-  %{	2 %} g2 g f! |
-  %{	3 %} e4 g g2 a |
-  %{	4 %} g (fis) fis4 (a) |
-  %{	5 %} g2 fis g4 a |
-  %{	6 %} fis2 g b4 (g) |
-  %{	7 %} b2. b4 gis ais |
-  %{	8 %} fis1
+  g2 e a4 a |
+  g2 g f! |
+  e4 g g2 a |
+  g (fis) fis4 (a) |
+  g2 fis g4 a |
+  fis2 g b4 (g) |
+  b2. b4 gis ais |
+  fis1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -104,14 +104,14 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
   \partial 2 g4 (b) |
-  %{	1 %} c (b) a2 a4 c |
-  %{	2 %} b2 g g |
-  %{	3 %} e'4 d c2 e |
-  %{	4 %} d1 c2 |
-  %{	5 %} a a c4 c |
-  %{	6 %} b2 e e |
-  %{	7 %} fis2. fis4 fis fis |
-  %{	8 %} b,1
+  c (b) a2 a4 c |
+  b2 g g |
+  e'4 d c2 e |
+  d1 c2 |
+  a a c4 c |
+  b2 e e |
+  fis2. fis4 fis fis |
+  b,1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -120,14 +120,14 @@ musicVerseBasso = \relative c {
 musicChorusSoprano = \relative c'' {
   \set Score.currentBarNumber = #9
   \partial 2 b2 ^\f |
-  %{	9  %} b4 ^\< b cis2 dis \! |
-  %{	10 %} e -^ (b) g |
-  %{	11 %} g4 ^\< g a2 b \! |
-  %{	12 %} c1 -^ ^\> e,2 -^ \! ^\f |
-  %{	13 %} b'4 -^ b -^ b2 -^ a -^ |
-  %{	14 %} a -^ g -^ g4 (d) |
-  %{	15 %} e c 'a2 a |
-  %{	16 %} g1 \bar "|."
+  b4 ^\< b cis2 dis \! |
+  e -^ (b) g |
+  g4 ^\< g a2 b \! |
+  c1 -^ ^\> e,2 -^ \! ^\f |
+  b'4 -^ b -^ b2 -^ a -^ |
+  a -^ g -^ g4 (d) |
+  e c 'a2 a |
+  g1 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -136,14 +136,14 @@ musicChorusSoprano = \relative c'' {
 musicChorusAlto = \relative c' {
   \set Score.currentBarNumber = #9
   \partial 2 d2 |
-  %{	9  %} dis4 dis e2 fis |
-  %{	10 %} g (e) e |
-  %{	11 %} d4 d c2 f! |
-  %{	12 %} f! (e) e |
-  %{	13 %} dis4 dis e2 fis |
-  %{	14 %} fis e d |
-  %{	15 %} c4 e c2 c |
-  %{	16 %} b1
+  dis4 dis e2 fis |
+  g (e) e |
+  d4 d c2 f! |
+  f! (e) e |
+  dis4 dis e2 fis |
+  fis e d |
+  c4 e c2 c |
+  b1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,14 +152,14 @@ musicChorusAlto = \relative c' {
 musicChorusTenor = \relative c' {
   \set Score.currentBarNumber = #9
   \partial 2 a2 ^\f |
-  %{	9  %} b4 b b2 b |
-  %{	10 %} b1 b2 |
-  %{	11 %} b4 b g2 g |
-  %{	12 %} a (g) a ^\f |
-  %{	13 %} fis4 fis g2 b |
-  %{	14 %} c b g |
-  %{	15 %} g4 g g2 fis |
-  %{	16 %} g1
+  b4 b b2 b |
+  b1 b2 |
+  b4 b g2 g |
+  a (g) a ^\f |
+  fis4 fis g2 b |
+  c b g |
+  g4 g g2 fis |
+  g1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -168,14 +168,14 @@ musicChorusTenor = \relative c' {
 musicChorusBasso = \relative c {
   \set Score.currentBarNumber = #9
   \partial 2 fis2 |
-  %{	9  %} a4 a g2 fis |
-  %{	10 %} e (g) e |
-  %{	11 %} f!4 f e2 d |
-  %{	12 %} c1 c2 |
-  %{	13 %} b4 b cis2 dis |
-  %{	14 %} e e b |
-  %{	15 %} c4 a e'2 d |
-  %{	16 %} g,1
+  a4 a g2 fis |
+  e (g) e |
+  f!4 f e2 d |
+  c1 c2 |
+  b4 b cis2 dis |
+  e e b |
+  c4 a e'2 d |
+  g,1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

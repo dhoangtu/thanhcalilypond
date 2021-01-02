@@ -58,18 +58,18 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
 \partial 4 d4 |
-%{  1 %} g c b g |
-%{  2 %} a4. a8 g4 a \break |
-%{  3 %} b d d b |
-%{  4 %} b (a8) a fis4 g |
-%{  5 %} a d, fis4. e8 |
-%{  6 %} d2. \break \bar "||" d4 |
-%{  7 %} d d fis a |
-%{  8 %} g g a c |
-%{  9 %} b b c d \break |
-%{  10%} e4. e8 d4 \fermata d |
-%{  11%} c e, fis fis |
-%{  12%} g2. \bar "|."
+g c b g |
+a4. a8 g4 a \break |
+b d d b |
+b (a8) a fis4 g |
+a d, fis4. e8 |
+d2. \break \bar "||" d4 |
+d d fis a |
+g g a c |
+b b c d \break |
+e4. e8 d4 \fermata d |
+c e, fis fis |
+g2. \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -77,18 +77,18 @@ musicVerseSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
 \partial 4 d4 |
-%{  1 %} e c d b |
-%{  2 %} e (d8) c b4 d |
-%{  3 %} d a' g g |
-%{  4 %} g (fis8) e d4 d |
-%{  5 %} d d d cis |
-%{  6 %} d2. d4 |
-%{  7 %} d c d c |
-%{  8 %} b d e d |
-%{  9 %} d g g g |
-%{  10%} g4. a8 gis4 d |
-%{  11%} e e fis fis |
-%{  12%} g2.
+e c d b |
+e (d8) c b4 d |
+d a' g g |
+g (fis8) e d4 d |
+d d d cis |
+d2. d4 |
+d c d c |
+b d e d |
+d g g g |
+g4. a8 gis4 d |
+e e fis fis |
+g2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -96,18 +96,18 @@ musicVerseAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
 \partial 4 b4 |
-%{  1 %} b a g g |
-%{  2 %} g fis g d'8 c |
-%{  3 %} b4 a b d |
-%{  4 %} cis4. cis8 d4 b |
-%{  5 %} a b a g |
-%{  6 %} fis2. g4 |
-%{  7 %} g a a fis |
-%{  8 %} g g g fis |
-%{  9 %} g d' c b |
-%{  10%} c4. c8 b4 gis |
-%{  11%} a c c b8 a |
-%{  12%} g2.
+b a g g |
+g fis g d'8 c |
+b4 a b d |
+cis4. cis8 d4 b |
+a b a g |
+fis2. g4 |
+g a a fis |
+g g g fis |
+g d' c b |
+c4. c8 b4 gis |
+a c c b8 a |
+g2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,18 +115,18 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
 \partial 4 g'4 |
-%{  1 %} e a, b e |
-%{  2 %} c d e fis |
-%{  3 %} g fis e e |
-%{  4 %} a,4. a8 b4 g |
-%{  5 %} fis g a a |
-%{  6 %} d2. b4 |
-%{  7 %} c a d dis |
-%{  8 %} e b c d |
-%{  9 %} g f e d |
-%{  10%} c4. a8 e'4 \fermata e |
-%{  11%} a, a d d |
-%{  12%} g,2.
+e a, b e |
+c d e fis |
+g fis e e |
+a,4. a8 b4 g |
+fis g a a |
+d2. b4 |
+c a d dis |
+e b c d |
+g f e d |
+c4. a8 e'4 \fermata e |
+a, a d d |
+g,2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

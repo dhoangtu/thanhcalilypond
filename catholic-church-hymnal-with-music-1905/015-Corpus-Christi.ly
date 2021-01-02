@@ -58,19 +58,19 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
 \partial 4 f8 f |
-  %{  1 %} g4 f g bes |
-  %{	2 %} bes2. bes8 a \break \bar "|"
-  %{	3 %} g4 g ees' c |
-  %{	4 %} a2. bes8 bes |
-  %{	5 %} c4 f, g g |
-  %{	6 %} f2. \break \bar "||" f8 f |
-  %{	7 %} a4 f e f |
-  %{	8 %} d2. d8 e |
-  %{	9 %} f4 d' c g \break \bar "|"
-  %{ 10%} a2. a8 a |
-  %{ 11%} bes2 c |
-  %{ 12%} d2. c4 |
-  %{ 13%} bes2. \bar "|."
+  g4 f g bes |
+  bes2. bes8 a \break \bar "|"
+  g4 g ees' c |
+  a2. bes8 bes |
+  c4 f, g g |
+  f2. \break \bar "||" f8 f |
+  a4 f e f |
+  d2. d8 e |
+  f4 d' c g \break \bar "|"
+  a2. a8 a |
+  bes2 c |
+  d2. c4 |
+  bes2. \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -78,19 +78,19 @@ musicVerseSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
 \partial 4 d8 d |
-  %{	1 %} ees4 f ees ees |
-  %{	2 %} ees2 (d4) d8 c |
-  %{	3 %} bes4 f' ees g |
-  %{	4 %} f2. f8 f |
-  %{	5 %} f4 f f e |
-  %{	6 %} f2. \break \bar "||" d8 d |
-  %{	7 %} e4 d d cis |
-  %{	8 %} d2. d8 d |
-  %{	9 %} d4 d f e |
-  %{ 10%} f2. ees8 ees |
-  %{ 11%} d2 ees |
-  %{ 12%} d4 (f g) a |
-  %{ 13%} bes2.
+  ees4 f ees ees |
+  ees2 (d4) d8 c |
+  bes4 f' ees g |
+  f2. f8 f |
+  f4 f f e |
+  f2. \break \bar "||" d8 d |
+  e4 d d cis |
+  d2. d8 d |
+  d4 d f e |
+  f2. ees8 ees |
+  d2 ees |
+  d4 (f g) a |
+  bes2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,19 +98,19 @@ musicVerseAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
 \partial 4 bes8 bes |
-  %{	1 %} bes4 bes bes g |
-  %{	2 %} f2. fis8 fis |
-  %{	3 %} g4 b c c |
-  %{	4 %} c2. bes8 bes |
-  %{	5 %} a4 a d c8 bes |
-  %{	6 %} a2. \break \bar "||" a8 a |
-  %{	7 %} a4 a bes a8 g |
-  %{	8 %} f2. f8 g |
-  %{	9 %} a4 bes a c |
-  %{ 10%} c2. c8 c |
-  %{ 11%} bes2 bes |
-  %{ 12%} bes4 (d ees) ees |
-  %{ 13%} d2.
+  bes4 bes bes g |
+  f2. fis8 fis |
+  g4 b c c |
+  c2. bes8 bes |
+  a4 a d c8 bes |
+  a2. \break \bar "||" a8 a |
+  a4 a bes a8 g |
+  f2. f8 g |
+  a4 bes a c |
+  c2. c8 c |
+  bes2 bes |
+  bes4 (d ees) ees |
+  d2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -118,19 +118,19 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
 \partial 4 bes8 bes |
-  %{	1 %} ees4 d ees ees |
-  %{	2 %} bes2. d8 d |
-  %{	3 %} ees4 d c ees |
-  %{	4 %} f2. d8 d |
-  %{	5 %} c4 d bes c |
-  %{	6 %} f2. \break \bar "||" d8 d |
-  %{	7 %} cis4 d g, a |
-  %{	8 %} d2. d8 d |
-  %{	9 %} d4 bes c c |
-  %{ 10%} f2. fis8 fis |
-  %{ 11%} g2 ges |
-  %{ 12%} f2. f4 |
-  %{ 13%} bes,2.
+  ees4 d ees ees |
+  bes2. d8 d |
+  ees4 d c ees |
+  f2. d8 d |
+  c4 d bes c |
+  f2. \break \bar "||" d8 d |
+  cis4 d g, a |
+  d2. d8 d |
+  d4 bes c c |
+  f2. fis8 fis |
+  g2 ges |
+  f2. f4 |
+  bes,2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

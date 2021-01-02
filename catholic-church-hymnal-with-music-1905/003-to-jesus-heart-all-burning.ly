@@ -62,14 +62,14 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
   \partial 4 fis8 (g) |
-  %{	1 %} a4 a gis b |
-  %{	2 %} a4. (d8) fis,4 fis |
-  %{	3 %} e fis g8 (b) a (g) |
-  %{	4 %} fis2 r4 \break \bar "|" fis8 (g) |
-  %{	5 %} a4 a gis b |
-  %{	6 %} a4. (d8) fis,4 fis |
-  %{	7 %} e a8 (cis) d4 b |
-  %{	8 %} a2 r4 \bar "||"
+  a4 a gis b |
+  a4. (d8) fis,4 fis |
+  e fis g8 (b) a (g) |
+  fis2 r4 \break \bar "|" fis8 (g) |
+  a4 a gis b |
+  a4. (d8) fis,4 fis |
+  e a8 (cis) d4 b |
+  a2 r4 \bar "||"
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -77,14 +77,14 @@ musicVerseSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
   \partial 4 d8 (e) |
-  %{	1 %} fis4 fis f! f |
-  %{	2 %} fis!2 d4 d |
-  %{	3 %} cis d e8 (g) fis (e) |
-  %{	4 %} d2 r4 d8 (e) |
-  %{	5 %} fis4 fis f! f |
-  %{	6 %} fis!2 d4 d |
-  %{	7 %} cis e8 (a) gis4 e |
-  %{	8 %} e2 r4
+  fis4 fis f! f |
+  fis!2 d4 d |
+  cis d e8 (g) fis (e) |
+  d2 r4 d8 (e) |
+  fis4 fis f! f |
+  fis!2 d4 d |
+  cis e8 (a) gis4 e |
+  e2 r4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,14 +92,14 @@ musicVerseAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
   \partial 4 a4 |
-  %{	1 %} a a b gis |
-  %{	2 %} a2 a4 a |
-  %{	3 %} a a a a |
-  %{	4 %} a2 r4 a4 |
-  %{	5 %} a a b gis |
-  %{	6 %} a2 a4 a |
-  %{	7 %} a cis b d |
-  %{	8 %} cis2 r4
+  a a b gis |
+  a2 a4 a |
+  a a a a |
+  a2 r4 a4 |
+  a a b gis |
+  a2 a4 a |
+  a cis b d |
+  cis2 r4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -107,14 +107,14 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
   \partial 4 fis8 (e) |
-  %{	1 %} d4 d d d |
-  %{	2 %} d2 d4 fis, |
-  %{	3 %} a a a cis |
-  %{	4 %} d2 r4 fis8 (e) |
-  %{	5 %} d4 d d d |
-  %{	6 %} d2 d4 b |
-  %{	7 %} e e e e |
-  %{	8 %} a2 r4
+  d4 d d d |
+  d2 d4 fis, |
+  a a a cis |
+  d2 r4 fis8 (e) |
+  d4 d d d |
+  d2 d4 b |
+  e e e e |
+  a2 r4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -123,14 +123,14 @@ musicVerseBasso = \relative c {
 musicChorusSoprano = \relative c'' {
   \set Score.currentBarNumber = #9
   \partial 4 a4 |
-  %{	9  %} cis4. cis8 cis4 cis |
-  %{	10 %} d2 (a4) a |
-  %{	11 %} e'4. d8 cis (b) a (g) |
-  %{	12 %} fis2 r4 \break \bar "|" fis8 (g) |
-  %{	13 %} a4 a a d |
-  %{	14 %} d2 b4 b |
-  %{	15 %} a a g4. g8 |
-  %{	16 %} fis2 r4 \bar "|."
+  cis4. cis8 cis4 cis |
+  d2 (a4) a |
+  e'4. d8 cis (b) a (g) |
+  fis2 r4 \break \bar "|" fis8 (g) |
+  a4 a a d |
+  d2 b4 b |
+  a a g4. g8 |
+  fis2 r4 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -139,14 +139,14 @@ musicChorusSoprano = \relative c'' {
 musicChorusAlto = \relative c'' {
   \set Score.currentBarNumber = #9
   \partial 4 a4 |
-  %{	9  %} e4. eis8 fis4 g! |
-  %{	10 %} fis2 (fis4) fis |
-  %{	11 %} g4. fis8 g4 e |
-  %{	12 %} d2 r4 d8 (e) |
-  %{	13 %} fis4 cis d fis |
-  %{	14 %} g2 g4 d |
-  %{	15 %} d fis e4. e8 |
-  %{	16 %} d2 r4
+  e4. eis8 fis4 g! |
+  fis2 (fis4) fis |
+  g4. fis8 g4 e |
+  d2 r4 d8 (e) |
+  fis4 cis d fis |
+  g2 g4 d |
+  d fis e4. e8 |
+  d2 r4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -155,14 +155,14 @@ musicChorusAlto = \relative c'' {
 musicChorusTenor = \relative c' {
   \set Score.currentBarNumber = #9
   \partial 4 a4 |
-  %{	9  %} a4. b8 a4 a |
-  %{	10 %} a2 (a4) a |
-  %{	11 %} a4. a8 a4 a |
-  %{	12 %} a2 r4 a |
-  %{	13 %} a a a a |
-  %{	14 %} b2 d4 g, |
-  %{	15 %} fis a a4. a8 |
-  %{	16 %} a2 r4
+  a4. b8 a4 a |
+  a2 (a4) a |
+  a4. a8 a4 a |
+  a2 r4 a |
+  a a a a |
+  b2 d4 g, |
+  fis a a4. a8 |
+  a2 r4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -171,14 +171,14 @@ musicChorusTenor = \relative c' {
 musicChorusBasso = \relative c' {
   \set Score.currentBarNumber = #9
   \partial 4 a4 |
-  %{	9  %} a4. gis8 fis4 e |
-  %{	10 %} d2 (d4) d |
-  %{	11 %} cis4. d8 e4 cis |
-  %{	12 %} d2 r4 fis8 (e) |
-  %{	13 %} d4 e fis d |
-  %{	14 %} g,2 g4 g |
-  %{	15 %} a a a4. cis8 |
-  %{	16 %} d2 r4
+  a4. gis8 fis4 e |
+  d2 (d4) d |
+  cis4. d8 e4 cis |
+  d2 r4 fis8 (e) |
+  d4 e fis d |
+  g,2 g4 g |
+  a a a4. cis8 |
+  d2 r4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

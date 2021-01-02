@@ -39,23 +39,23 @@ printItalic = \with {
 
 % Verse music
 musicVerseSoprano = \relative c' {
-  %{	01	%} f4 d bes' f |
-  %{	02	%} d'4. c8 bes4 f |
-  %{	03	%} g g f bes |
-  %{	04	%} f ees d2 |
-  %{	05	%} f4 d bes' f |
-  %{	06	%} d'4. c8 bes4 a |
-  %{	07	%} bes a g a8 bes |
-  %{	08	%} a4 g f2 |
+  f4 d bes' f |
+  d'4. c8 bes4 f |
+  g g f bes |
+  f ees d2 |
+  f4 d bes' f |
+  d'4. c8 bes4 a |
+  bes a g a8 bes |
+  a4 g f2 |
 }
 
 % Chorus music
 musicChorusSoprano = \relative c' {
   \set Score.currentBarNumber = #9
-  %{	09	%} c'4. c8 a4 f |
-  %{	10	%} d'4. c8 bes4 g |
-  %{	11	%} ees' d c bes |
-  %{	12	%} bes a bes2 \bar "|."
+  c'4. c8 a4 f |
+  d'4. c8 bes4 g |
+  ees' d c bes |
+  bes a bes2 \bar "|."
 }
 
 % Verse lyrics

@@ -43,13 +43,13 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 verseMusic = \relative c' {
                     \partial 2 a'8 a8 a8 a8
-  %{ 01 %} e4. e8 a8 a8 a8 a8 |
-  %{ 02 %} a2 \breathe c8 c8 b8 c8 |
-  %{ 03 %} a4. a8 c8 c8 c8 e8 |
-  %{ 04 %} e2 \breathe c8 e8 c8 a8 |
-  %{ 05 %} a4. a8 g8 g8 \acciaccatura g8 a8 e8 |
-  %{ 06 %} e2 \breathe c'8 b8 a8 e'8 |
-  %{ 07 %} d4. c8 a8 g8 g8 a8 |
+  e4. e8 a8 a8 a8 a8 |
+  a2 \breathe c8 c8 b8 c8 |
+  a4. a8 c8 c8 c8 e8 |
+  e2 \breathe c8 e8 c8 a8 |
+  a4. a8 g8 g8 \acciaccatura g8 a8 e8 |
+  e2 \breathe c'8 b8 a8 e'8 |
+  d4. c8 a8 g8 g8 a8 |
                     a2 \bar "||"
 }
 
@@ -59,13 +59,13 @@ verseMusic = \relative c' {
 sopChorus = \relative c' {
   \set Score.currentBarNumber = #8
                     \partial 2 c'8.^\f e16 e8 e8
-  %{ 08 %} e4.(d8) c8. d16 c8 b8 |
-  %{ 09 %} a2 g8^\p g8 \acciaccatura g8 a8 e8 |
-  %{ 10 %} e4. c'8 a8 a8 c8 e8 |
-  %{ 11 %} e2 c8.^\f e16 e8 e8 |
-  %{ 12 %} e4. d8 c8 d8 c8 b8 |
-  %{ 13 %} a2 g8 a8 e8 g8 |
-  %{ 14 %} a4. c8 b4 c8(b8) |
+  e4.(d8) c8. d16 c8 b8 |
+  a2 g8^\p g8 \acciaccatura g8 a8 e8 |
+  e4. c'8 a8 a8 c8 e8 |
+  e2 c8.^\f e16 e8 e8 |
+  e4. d8 c8 d8 c8 b8 |
+  a2 g8 a8 e8 g8 |
+  a4. c8 b4 c8(b8) |
                     a2 \bar "|."
 }
 

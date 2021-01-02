@@ -62,56 +62,56 @@ printItalic = \with {
 % 2. Soprano chorus music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicChorusSoprano = \relative c' {
-  %{ 1 %} bes'4 bes bes4. bes8 |
-  %{ 2 %} c8. c16 c8 bes aes4 g |
-  %{ 3 %} g g bes aes8 g8 |
-  %{ 4 %} f4 f f4. f8 |
-  %{ 5 %} g4 g bes4. bes8 |
-  %{ 6 %} ees4 d d c |
-  %{ 7 %} c4. bes8 bes4 aes |
-  %{ 8 %} g4. f8 f4 (ees8) 
+  bes'4 bes bes4. bes8 |
+  c8. c16 c8 bes aes4 g |
+  g g bes aes8 g8 |
+  f4 f f4. f8 |
+  g4 g bes4. bes8 |
+  ees4 d d c |
+  c4. bes8 bes4 aes |
+  g4. f8 f4 (ees8) 
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 3. Alto chorus music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicChorusAlto = \relative c' {
-  %{ 1 %} bes'4 bes bes4. bes8 |
-  %{ 2 %} d8. d16 d8 e d4 ees |
-  %{ 3 %} ees d des c8 e |
-  %{ 4 %} f4 f f4. d8 |
-  %{ 5 %} ees4 ees f4. f8 |
-  %{ 6 %} ees4 f f e |
-  %{ 7 %} ees4. e8 f4 f |
-  %{ 8 %} ees4. d8 d4 (ees8)
+  bes'4 bes bes4. bes8 |
+  d8. d16 d8 e d4 ees |
+  ees d des c8 e |
+  f4 f f4. d8 |
+  ees4 ees f4. f8 |
+  ees4 f f e |
+  ees4. e8 f4 f |
+  ees4. d8 d4 (ees8)
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 4. Tenor chorus music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicChorusTenor = \relative c' {
-  %{ 1 %} bes4 bes bes4. bes8 |
-  %{ 2 %} bes8. bes16 bes8 bes bes4 bes |
-  %{ 3 %} bes bes g aes8 bes |
-  %{ 4 %} c4 c bes4. bes8 |
-  %{ 5 %} bes4 bes bes4. bes8 |
-  %{ 6 %} c4 b b c |
-  %{ 7 %} c4. c8 c4 c |
-  %{ 8 %} bes4. aes8 aes4 (g8)
+  bes4 bes bes4. bes8 |
+  bes8. bes16 bes8 bes bes4 bes |
+  bes bes g aes8 bes |
+  c4 c bes4. bes8 |
+  bes4 bes bes4. bes8 |
+  c4 b b c |
+  c4. c8 c4 c |
+  bes4. aes8 aes4 (g8)
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 5. Basso chorus music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicChorusBasso = \relative c {
-  %{ 1 %} bes4 bes bes4. bes8 |
-  %{ 2 %} aes8. aes16 aes8 g f4 ees |
-  %{ 3 %} ees ees e f8 g |
-  %{ 4 %} aes4 aes bes4. bes8 |
-  %{ 5 %} ees4 ees d4. d8 |
-  %{ 6 %} c4 g g aes |
-  %{ 7 %} aes4. g8 d4 aes |
-  %{ 8 %} bes4. bes8 bes4 (ees8)
+  bes4 bes bes4. bes8 |
+  aes8. aes16 aes8 g f4 ees |
+  ees ees e f8 g |
+  aes4 aes bes4. bes8 |
+  ees4 ees d4. d8 |
+  c4 g g aes |
+  aes4. g8 d4 aes |
+  bes4. bes8 bes4 (ees8)
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -119,15 +119,15 @@ musicChorusBasso = \relative c {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c'' {
   \set Score.currentBarNumber = #9
-  %{	8  %} 
-  %{	9  %} 
-  %{	10 %}
-  %{	11 %}
-  %{	12 %}
-  %{	13 %}
-  %{	14 %}
-  %{	15 %}
-  %{	16 %} 
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -135,15 +135,15 @@ musicVerseSoprano = \relative c'' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c'' {
   \set Score.currentBarNumber = #9
-  %{	8	%} 
-  %{	9	%} 
-  %{	10 %}
-  %{	11 %}
-  %{	12 %}
-  %{	13 %}
-  %{	14 %}
-  %{	15 %}
-  %{	16 %} 
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -151,15 +151,15 @@ musicVerseAlto = \relative c'' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
   \set Score.currentBarNumber = #9
-  %{	8	%} 
-  %{	9	%} 
-  %{	10 %}
-  %{	11 %}
-  %{	12 %}
-  %{	13 %}
-  %{	14 %}
-  %{	15 %}
-  %{	16 %}
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -167,15 +167,15 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c' {
   \set Score.currentBarNumber = #9
-  %{	8	%} 
-  %{	9	%} 
-  %{	10 %}
-  %{	11 %}
-  %{	12 %}
-  %{	13 %}
-  %{	14 %}
-  %{	15 %}
-  %{	16 %}
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

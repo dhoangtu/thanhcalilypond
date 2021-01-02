@@ -61,14 +61,14 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
   \partial 4 f4 |
-  %{	1 %} bes a8 (g) f4 bes |
-  %{	2 %} d, (ees) f bes |
-  %{	3 %} g8 (a) bes4 c c |
-  %{	4 %} d2. f,4 |
-  %{	5 %} bes a8 (g) f4 bes |
-  %{	6 %} d, (ees) f bes |
-  %{	7 %} g8 (a) bes4 bes a |
-  %{	8 %} bes2. \bar "||"
+  bes a8 (g) f4 bes |
+  d, (ees) f bes |
+  g8 (a) bes4 c c |
+  d2. f,4 |
+  bes a8 (g) f4 bes |
+  d, (ees) f bes |
+  g8 (a) bes4 bes a |
+  bes2. \bar "||"
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,14 +76,14 @@ musicVerseSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
   \partial 4 f4 |
-  %{	1 %} bes a8 (g) f4 f |
-  %{	2 %} d (c8 bes) c4 f |
-  %{	3 %} ees f g f |
-  %{	4 %} f2. f4 |
-  %{	5 %} bes a8 (g) f4 f |
-  %{	6 %} d (c8 bes) c4 f |
-  %{	7 %} ees d8 (ees) f4 f |
-  %{	8 %} f2.
+  bes a8 (g) f4 f |
+  d (c8 bes) c4 f |
+  ees f g f |
+  f2. f4 |
+  bes a8 (g) f4 f |
+  d (c8 bes) c4 f |
+  ees d8 (ees) f4 f |
+  f2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -91,14 +91,14 @@ musicVerseAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c {
   \partial 4 f4 |
-  %{	1 %} bes a8 (g) f4 bes |
-  %{	2 %} bes2 a4 bes |
-  %{	3 %} bes bes bes a |
-  %{	4 %} bes2. f4 |
-  %{	5 %} bes4 a8 (g) f4 bes |
-  %{	6 %} bes2 a4 bes |
-  %{	7 %} bes bes c c |
-  %{	8 %} d2.
+  bes a8 (g) f4 bes |
+  bes2 a4 bes |
+  bes bes bes a |
+  bes2. f4 |
+  bes4 a8 (g) f4 bes |
+  bes2 a4 bes |
+  bes bes c c |
+  d2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -106,14 +106,14 @@ musicVerseTenor = \relative c {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
   \partial 4 f4 |
-  %{	1 %} bes a8 (g) f4 d |
-  %{	2 %} g2 f4 d |
-  %{	3 %} ees d ees f |
-  %{	4 %} bes,2. f'4 |
-  %{	5 %} bes a8 (g) f4 d |
-  %{	6 %} g2 f4 d |
-  %{	7 %} ees g f f |
-  %{	8 %} bes,2.
+  bes a8 (g) f4 d |
+  g2 f4 d |
+  ees d ees f |
+  bes,2. f'4 |
+  bes a8 (g) f4 d |
+  g2 f4 d |
+  ees g f f |
+  bes,2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,14 +122,14 @@ musicVerseBasso = \relative c {
 musicChorusSoprano = \relative c'' {
   \set Score.currentBarNumber = #9
   \partial 4 bes8 ^\f (c) |
-  %{	9  %} d4 c d ees |
-  %{	10 %} c4 (bes8 d c4) bes8 (c) |
-  %{	11 %} d4 c d ees |
-  %{	12 %} c2. f,4 |
-  %{	13 %} bes a8 (g) f4 bes |
-  %{	14 %} d, (ees) f bes |
-  %{	15 %} g8 (a) bes4 bes a |
-  %{	16 %} bes2. \bar "|."
+  d4 c d ees |
+  c4 (bes8 d c4) bes8 (c) |
+  d4 c d ees |
+  c2. f,4 |
+  bes a8 (g) f4 bes |
+  d, (ees) f bes |
+  g8 (a) bes4 bes a |
+  bes2. \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -138,14 +138,14 @@ musicChorusSoprano = \relative c'' {
 musicChorusAlto = \relative c' {
   \set Score.currentBarNumber = #9
   \partial 4 d8 (ees) |
-  %{	9  %} f4 f f g |
-  %{	10 %} f2 (f4) d8 (ees) |
-  %{	11 %} f4 f f g |
-  %{	12 %} f2. f4 |
-  %{	13 %} bes a8 (g) f4 f |
-  %{	14 %} d (c8 bes c4) f |
-  %{	15 %} ees d8 (ees) f4 f |
-  %{	16 %} f2.
+  f4 f f g |
+  f2 (f4) d8 (ees) |
+  f4 f f g |
+  f2. f4 |
+  bes a8 (g) f4 f |
+  d (c8 bes c4) f |
+  ees d8 (ees) f4 f |
+  f2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -154,14 +154,14 @@ musicChorusAlto = \relative c' {
 musicChorusTenor = \relative c' {
   \set Score.currentBarNumber = #9
   \partial 4 bes4 |
-  %{	9  %} bes c bes bes |
-  %{	10 %} a (g8 bes a4) bes |
-  %{	11 %} bes c bes bes |
-  %{	12 %} a2. f4 |
-  %{	13 %} bes a8 (g) f4 bes |
-  %{	14 %} bes2 a4 bes |
-  %{	15 %} bes bes c c |
-  %{	16 %} d2.
+  bes c bes bes |
+  a (g8 bes a4) bes |
+  bes c bes bes |
+  a2. f4 |
+  bes a8 (g) f4 bes |
+  bes2 a4 bes |
+  bes bes c c |
+  d2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -170,14 +170,14 @@ musicChorusTenor = \relative c' {
 musicChorusBasso = \relative c' {
   \set Score.currentBarNumber = #9
   \partial 4 bes4 |
-  %{	9  %} bes a bes ees, |
-  %{	10 %} f2 (f4) bes |
-  %{	11 %} bes a bes ees, |
-  %{	12 %} f2. f4 |
-  %{	13 %} bes a8 (g) f4 d |
-  %{	14 %} g2 f4 d |
-  %{	15 %} ees g f f |
-  %{	16 %} bes,2.
+  bes a bes ees, |
+  f2 (f4) bes |
+  bes a bes ees, |
+  f2. f4 |
+  bes a8 (g) f4 d |
+  g2 f4 d |
+  ees g f f |
+  bes,2.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

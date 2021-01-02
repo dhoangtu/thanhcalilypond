@@ -42,65 +42,65 @@ global = {
 % 2. Nhạc phiên khúc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 verseMusic = \relative c' {
-  %{ 01 %} a'4 c8 a8 |
-  %{ 02 %} a4. g8 |
-  %{ 03 %} f8(e8) g8 f8 |
-  %{ 04 %} d4. d8 |
-  %{ 05 %} a'8 g8 a8 c8 |
-  %{ 06 %} d4 c8 f8 |
-  %{ 07 %} d4 c8(d16 c16) |
-  %{ 08 %} a2 \breathe |
-  %{ 09 %} d,4 f8 d8 |
-  %{ 10 %} d4. c8 |
-  %{ 11 %} d8(f8) c'8 a8 |
-  %{ 12 %} a4 a8(c8) |
-  %{ 13 %} d8 c8 a8 f8 |
-  %{ 14 %} a4 g8 a8 |
-  %{ 15 %} f4 e4 |
-  %{ 16 %} d2 \bar "|" % 16
+  a'4 c8 a8 |
+  a4. g8 |
+  f8(e8) g8 f8 |
+  d4. d8 |
+  a'8 g8 a8 c8 |
+  d4 c8 f8 |
+  d4 c8(d16 c16) |
+  a2 \breathe |
+  d,4 f8 d8 |
+  d4. c8 |
+  d8(f8) c'8 a8 |
+  a4 a8(c8) |
+  d8 c8 a8 f8 |
+  a4 g8 a8 |
+  f4 e4 |
+  d2 \bar "|" % 16
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 3. Nhạc điệp khúc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopChorus = \relative c' {
-  %{	17	%} d4 f8 g8 |
-  %{	18	%} a4 g8 f8 |
-  %{	19	%} g8 f8 a8 c8 |
-  %{	20	%} d2 |
-  %{	21	%} d4 a8 g8 |
-  %{	22	%} f4 g8 a8 |
-  %{	23	%} g4 c8(d8) |
-  %{	24	%} a2 |
-  %{	25	%} d,4 f8 g8 |
-  %{	26	%} a4 g8 f8 |
-  %{	27	%} g8 f8 a8 c8 |
-  %{	28	%} d2 |
-  %{	29	%} d4 a8 g8 |
-  %{	30	%} f4 g8 a8 |
-  %{	31	%} f4 e 8 f8 |
-  %{	32	%} d2 \bar "|." |
+  d4 f8 g8 |
+  a4 g8 f8 |
+  g8 f8 a8 c8 |
+  d2 |
+  d4 a8 g8 |
+  f4 g8 a8 |
+  g4 c8(d8) |
+  a2 |
+  d,4 f8 g8 |
+  a4 g8 f8 |
+  g8 f8 a8 c8 |
+  d2 |
+  d4 a8 g8 |
+  f4 g8 a8 |
+  f4 e 8 f8 |
+  d2 \bar "|." |
 }
 
 bassChorus = \relative c' {
 	\override NoteHead.font-size = #-2
   \bar "" \set Score.currentBarNumber = #17
-  %{	17	%} d4 f8 e8 |
-  %{	18	%} f4 e8 d8 |
-  %{	19	%} e8 d8 f8 e8 |
-  %{	20	%} f2 |
-  %{	21	%} f4 f8 e8 |
-  %{	22	%} d4 e8 f8 |
-  %{	23	%} e4 a8(bes8) |
-  %{	24	%} f2 |
-  %{	25	%} d4 f8 e8 |
-  %{	26	%} f4 e8 d8 |
-  %{	27	%} e8 d8 f8 e8 |
-  %{	28	%} f2 |
-  %{	29	%} f4 f8 e8 |
-  %{	30	%} d4 e8 f8 |
-  %{	31	%} d4 cis8 cis8 |
-  %{	32	%} d2 \bar "|." |
+  d4 f8 e8 |
+  f4 e8 d8 |
+  e8 d8 f8 e8 |
+  f2 |
+  f4 f8 e8 |
+  d4 e8 f8 |
+  e4 a8(bes8) |
+  f2 |
+  d4 f8 e8 |
+  f4 e8 d8 |
+  e8 d8 f8 e8 |
+  f2 |
+  f4 f8 e8 |
+  d4 e8 f8 |
+  d4 cis8 cis8 |
+  d2 \bar "|." |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

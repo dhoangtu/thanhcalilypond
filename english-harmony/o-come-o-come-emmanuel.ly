@@ -34,110 +34,110 @@ printItalic = \with {
 % Soprano verse music
 musicVerseSoprano = \relative c' {
   \partial 4 e4 |
-  %{ 01 %} g b b b |
-  %{ 02 %} a (c b) a |
-  %{ 03 %} g2. a4 |
-  %{ 04 %} b g e g |
-  %{ 05 %} a (fis e) d |
-  %{ 06 %} e2. a4 |
-  %{ 07 %} a e e fis |
-  %{ 08 %} g2 (fis4) e |
-  %{ 09 %} d2. g4 |
-  %{ 10 %} a b b b |
-  %{ 11 %} a (c b) a | g2. \bar "||"
+  g b b b |
+  a (c b) a |
+  g2. a4 |
+  b g e g |
+  a (fis e) d |
+  e2. a4 |
+  a e e fis |
+  g2 (fis4) e |
+  d2. g4 |
+  a b b b |
+  a (c b) a | g2. \bar "||"
 }
 
 % Alto verse music
 musicVerseAlto = \relative c' {
   \partial 4 b4 |
-  %{ 01 %} e b d g |
-  %{ 02 %} g2. fis4 |
-  %{ 03 %} g2. d4 |
-  %{ 04 %} d d c b |
-  %{ 05 %} c2 (b4) b |
-  %{ 06 %} b2. e8 d |
-  %{ 07 %} c4 c e dis |
-  %{ 08 %} e2 (d4) cis |
-  %{ 09 %} d2. b4 |
-  %{ 10 %} d d d g |
-  %{ 11 %} g2. fis4 | g2. \bar "||"
+  e b d g |
+  g2. fis4 |
+  g2. d4 |
+  d d c b |
+  c2 (b4) b |
+  b2. e8 d |
+  c4 c e dis |
+  e2 (d4) cis |
+  d2. b4 |
+  d d d g |
+  g2. fis4 | g2. \bar "||"
 }
 
 % Tenor verse music
 musicVerseTenor = \relative c' {
   \partial 4 g4 |
-  %{ 01 %} b fis g d' |
-  %{ 02 %} e2 (d4) c |
-  %{ 03 %} b2. fis4 |
-  %{ 04 %} g g g g |
-  %{ 05 %} e (a g) fis |
-  %{ 06 %} g2. a4 |
-  %{ 07 %} a a b a |
-  %{ 08 %} b (a a) g |
-  %{ 09 %} fis2. g4 |
-  %{ 10 %} fis fis g d' |
-  %{ 11 %} e2 (d4) c | b2. \bar "||"
+  b fis g d' |
+  e2 (d4) c |
+  b2. fis4 |
+  g g g g |
+  e (a g) fis |
+  g2. a4 |
+  a a b a |
+  b (a a) g |
+  fis2. g4 |
+  fis fis g d' |
+  e2 (d4) c | b2. \bar "||"
 }
 
 % Basso verse music
 musicVerseBasso = \relative c {
   \partial 4 e4 |
-  %{ 01 %} e d b g |
-  %{ 02 %} c (a b) d |
-  %{ 03 %} e2. d4 |
-  %{ 04 %} g, b c e |
-  %{ 05 %} a,2 (b4) b |
-  %{ 06 %} e2. c8 b |
-  %{ 07 %} a4 a' g fis |
-  %{ 08 %} e (cis d) a |
-  %{ 09 %} d2. e4 |
-  %{ 10 %} d b g b |
-  %{ 11 %} c (a b) d | g,2. \bar "||"
+  e d b g |
+  c (a b) d |
+  e2. d4 |
+  g, b c e |
+  a,2 (b4) b |
+  e2. c8 b |
+  a4 a' g fis |
+  e (cis d) a |
+  d2. e4 |
+  d b g b |
+  c (a b) d | g,2. \bar "||"
 }
 
 % Soprano chorus music
 musicChorusSoprano = \relative c' {
   \set Score.currentBarNumber = #12
   \partial 4 d'4 |
-  %{ 12 %} d2. b4 |
-  %{ 13 %} b2. b4 |
-  %{ 14 %} a (c b) a |
-  %{ 15 %} g2. a4 |
-  %{ 16 %} b g e g |
-  %{ 17 %} a (fis e) d | g2. \bar "|."
+  d2. b4 |
+  b2. b4 |
+  a (c b) a |
+  g2. a4 |
+  b g e g |
+  a (fis e) d | g2. \bar "|."
 }
 
 % Alto chorus music
 musicChorusAlto = \relative c' {
   \partial 4 g'4 |
-  %{ 12 %} fis2. g4 |
-  %{ 13 %} fis2. g4 |
-  %{ 14 %} g2. fis4 |
-  %{ 15 %} g2. fis4 |
-  %{ 16 %} g d e e |
-  %{ 17 %} e (c b) b | b2. \bar "|."
+  fis2. g4 |
+  fis2. g4 |
+  g2. fis4 |
+  g2. fis4 |
+  g d e e |
+  e (c b) b | b2. \bar "|."
 }
 
 % Tenor chorus music
 musicChorusTenor = \relative c' {
   \partial 4 b4 |
-  %{ 12 %} a2. e'4 |
-  %{ 13 %} d2. d4 |
-  %{ 14 %} e2 (d4) c |
-  %{ 15 %} b2. d4 |
-  %{ 16 %} d d c b |
-  %{ 17 %} a2 (g4) fis | g2. \bar "|."
+  a2. e'4 |
+  d2. d4 |
+  e2 (d4) c |
+  b2. d4 |
+  d d c b |
+  a2 (g4) fis | g2. \bar "|."
 }
 
 % Basso chorus music
 musicChorusBasso = \relative c' {
   \partial 4 g4 |
-  %{ 12 %} d2. e4 |
-  %{ 13 %} b2. g4 |
-  %{ 14 %} c (a b) d |
-  %{ 15 %} e2. d4 |
-  %{ 16 %} g b, c e |
-  %{ 17 %} c (a b) b | e2. \bar "|."
+  d2. e4 |
+  b2. g4 |
+  c (a b) d |
+  e2. d4 |
+  g b, c e |
+  c (a b) b | e2. \bar "|."
 }
 
 % 10. Verse lyrics

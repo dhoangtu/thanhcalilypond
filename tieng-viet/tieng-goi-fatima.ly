@@ -43,17 +43,17 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 verseMusic = \relative c' {
                     \partial 4 e8 e16(d16)
-  %{	01	%} c8(e8) a8 a8 |
-  %{	02	%} a4 c8 c16(b16) |
-  %{	03	%} a8(c8) d8 d8 |
-  %{	04	%} d2( |
-  %{	05	%} d8) d8 e16(f16) e16(d16) |
-  %{	06	%} c8 \breathe a8 b16(c16) b16(a16) |
-  %{	07	%} c4. c8 |
-  %{	08	%} d,8( e8) a8 c8 |
-  %{	09	%} b4. b16(a16) |
-  %{	10	%} g8 a8 \acciaccatura f8 e8 g16(a16) |
-  %{	11	%} a2( |
+  c8(e8) a8 a8 |
+  a4 c8 c16(b16) |
+  a8(c8) d8 d8 |
+  d2( |
+  d8) d8 e16(f16) e16(d16) |
+  c8 \breathe a8 b16(c16) b16(a16) |
+  c4. c8 |
+  d,8( e8) a8 c8 |
+  b4. b16(a16) |
+  g8 a8 \acciaccatura f8 e8 g16(a16) |
+  a2( |
                     a4) \break \bar "||"
 }
 
@@ -62,15 +62,15 @@ verseMusic = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopChorus = \relative c' {
                     \partial 4 c'8 e8
-  %{	12	%} c8 d8 d8 e8 |
-  %{	13	%} e4 \breathe e8 d8 |
-  %{	14	%} d8 b8 b8 c8 |
-  %{	15	%} c2( |
-  %{	16	%} c4) c8 b8 |
-  %{	17	%} a8 gis8 a8 f8 |
-  %{	18	%} e4 \breathe e8 d8 |
-  %{	19	%} b'8 b16(c16) b16(a16) g8 |
-  %{	20	%} a2( |
+  c8 d8 d8 e8 |
+  e4 \breathe e8 d8 |
+  d8 b8 b8 c8 |
+  c2( |
+  c4) c8 b8 |
+  a8 gis8 a8 f8 |
+  e4 \breathe e8 d8 |
+  b'8 b16(c16) b16(a16) g8 |
+  a2( |
                     a4) \break \bar "|."
 }
 
@@ -78,15 +78,15 @@ bassChorus = \relative c' {
 	\override NoteHead.font-size = #-2
   \set Score.currentBarNumber = #12
                     \partial 4 a'8 gis8
-  %{	12	%} a8 a8 b8 c8 |
-  %{	13	%} c4 \breathe c8 b8 |
-  %{	14	%} b8 gis8 gis8 a8 |
-  %{	15	%} a2( |
-  %{	16	%} a4) a8 g8 |
-  %{	17	%} f8 e8 e8 d8 |
-  %{	18	%} c4 \breathe c8 b8 |
-  %{	19	%} d8 d8 e8 e16(d16) |
-  %{	20	%} c2( |
+  a8 a8 b8 c8 |
+  c4 \breathe c8 b8 |
+  b8 gis8 gis8 a8 |
+  a2( |
+  a4) a8 g8 |
+  f8 e8 e8 d8 |
+  c4 \breathe c8 b8 |
+  d8 d8 e8 e16(d16) |
+  c2( |
                     c4) \break \bar "|."
 }
 

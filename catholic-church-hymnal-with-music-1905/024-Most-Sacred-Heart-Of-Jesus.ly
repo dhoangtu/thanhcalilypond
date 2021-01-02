@@ -58,16 +58,16 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
 \partial 4 g'4 |
-%{  1 %} g g a d, |
-%{  2 %} b'2. b4 \break \bar "|"
-%{  3 %} b b c b |
-%{  4 %} a2. \bar "||" d4 |
-%{  5 %} d c8 (b) c4 c \break \bar "|"
-%{  6 %} c b8 (a) g (a) b (c) |
-%{  7 %} d4-> b-> a4.-> g8 |
-%{  8 %} g2. r4 \bar "||"
-%{  9 %} g1 |
-%{ 10 %} g1 \bar "|."
+g g a d, |
+b'2. b4 \break \bar "|"
+b b c b |
+a2. \bar "||" d4 |
+d c8 (b) c4 c \break \bar "|"
+c b8 (a) g (a) b (c) |
+d4-> b-> a4.-> g8 |
+g2. r4 \bar "||"
+g1 |
+g1 \bar "|."
 
   }
 
@@ -76,16 +76,16 @@ musicVerseSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
 \partial 4 d4 |
-%{  1 %} e d e d |
-%{  2 %} d2. dis4 |
-%{  3 %} e f e e |
-%{  4 %} fis2. fis4 |
-%{  5 %} g gis a g |
-%{  6 %} fis fis g8 (fis) g4 |
-%{  7 %} g g fis4. g8 |
-%{  8 %} g2. r4 |
-%{  9 %} e1 |
-%{ 10 %} d1
+e d e d |
+d2. dis4 |
+e f e e |
+fis2. fis4 |
+g gis a g |
+fis fis g8 (fis) g4 |
+g g fis4. g8 |
+g2. r4 |
+e1 |
+d1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,16 +93,16 @@ musicVerseAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
 \partial 4 b4 |
-%{  1 %} b g g fis |
-%{  2 %} g2. fis4 |
-%{  3 %} g g g g |
-%{  4 %} fis2. b4 |
-%{  5 %} b e e ees |
-%{  6 %} d d d8 (c) b (a) |
-%{  7 %} b4 d c4. b8 |
-%{  8 %} b2. r4 |
-%{  9 %} c1 |
-%{ 10 %} b1
+b g g fis |
+g2. fis4 |
+g g g g |
+fis2. b4 |
+b e e ees |
+d d d8 (c) b (a) |
+b4 d c4. b8 |
+b2. r4 |
+c1 |
+b1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -110,16 +110,16 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
 \partial 4 g'4 |
-%{  1 %} e b c d |
-%{  2 %} g,2. b4 |
-%{  3 %} e d c cis |
-%{  4 %} d2. b4 |
-%{  5 %} e e a a |
-%{  6 %} d, d'8 (c) b (a) g (e) |
-%{  7 %} d4-> d-> d4.-> e8 |
-%{  8 %} g2. r4 |
-%{  9 %} c,1 |
-%{ 10 %} g'1
+e b c d |
+g,2. b4 |
+e d c cis |
+d2. b4 |
+e e a a |
+d, d'8 (c) b (a) g (e) |
+d4-> d-> d4.-> e8 |
+g2. r4 |
+c,1 |
+g'1
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

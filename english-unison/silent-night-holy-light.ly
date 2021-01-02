@@ -36,16 +36,16 @@ printItalic = \with {
 
 % Verse music
 musicVerseSoprano = \relative c'' {
-  %{	01	%} g8. (a16) g8 e4. |
-  %{	02	%} g8. (a16) g8 e4. |
-  %{	03	%} d'4 d8 b4. |
-  %{	04	%} c4 c8 g4. |
+  g8. (a16) g8 e4. |
+  g8. (a16) g8 e4. |
+  d'4 d8 b4. |
+  c4 c8 g4. |
   \autoBeamOff
-  %{	05	%} a4 a8 c8. (b16) a8 |
+  a4 a8 c8. (b16) a8 |
   \autoBeamOn
-  %{	06	%} g8. a16 g8 e4. |
-  %{	07	%} a4 a8 c8. b16 a8 |
-  %{	08	%} g8. a16 g8 e4. |
+  g8. a16 g8 e4. |
+  a4 a8 c8. b16 a8 |
+  g8. a16 g8 e4. |
   d'4 d8 f8. d16 b8 |
   c4. (e4.) |
   c8 (g) e g8. f16 d8 |

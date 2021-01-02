@@ -57,16 +57,16 @@ printItalic = \with {
 % 2. Soprano verse music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
-  %{  1 %} g'4 a b g |
-  %{	2 %} a4 g e g \break \bar "|"  
-  %{	3 %} a4 b c a |
-  %{	4 %} b4 g a2 |
-  %{	5 %} b4 c d b \break \bar "|" 
-  %{	6 %} c b g b |
-  %{	7 %} a b g e |
-  %{	8 %} g fis g2 |
-  %{	9 %} g1 |
-  %{ 10%} g1 \bar "|."
+  g'4 a b g |
+  a4 g e g \break \bar "|"  
+  a4 b c a |
+  b4 g a2 |
+  b4 c d b \break \bar "|" 
+  c b g b |
+  a b g e |
+  g fis g2 |
+  g1 |
+  g1 \bar "|."
   
 }
 
@@ -74,16 +74,16 @@ musicVerseSoprano = \relative c' {
 % 3. Alto verse music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
-  %{	1 %} d4 fis g d | 
-  %{	2 %} e e c d \break \bar "|"
-  %{	3 %} fis g g fis |
-  %{	4 %} g d e2 |
-  %{	5 %} g4 a a g \break \bar "|" 
-  %{	6 %} g fis e fis |
-  %{	7 %} e fis e b |
-  %{	8 %} c d d2 |
-  %{	9 %} e1 |
-  %{ 10%} d1
+  d4 fis g d | 
+  e e c d \break \bar "|"
+  fis g g fis |
+  g d e2 |
+  g4 a a g \break \bar "|" 
+  g fis e fis |
+  e fis e b |
+  c d d2 |
+  e1 |
+  d1
  
 }
 
@@ -91,16 +91,16 @@ musicVerseAlto = \relative c' {
 % 4. Tenor verse music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
-  %{	1 %} b4 d d d |
-  %{	2 %} c b c b \break \bar "|"
-  %{	3 %} d d e d |
-  %{	4 %} d d c2 |
-  %{	5 %} e4 e d d \break \bar "|"
-  %{	6 %} e d b d |
-  %{	7 %} c d b b |
-  %{	8 %} g a b2 |
-  %{	9 %} c1 |
-  %{ 10%} b1
+  b4 d d d |
+  c b c b \break \bar "|"
+  d d e d |
+  d d c2 |
+  e4 e d d \break \bar "|"
+  e d b d |
+  c d b b |
+  g a b2 |
+  c1 |
+  b1
 
 }
 
@@ -108,16 +108,16 @@ musicVerseTenor = \relative c' {
 % 5. Basso verse music
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
-  %{	1 %} g'4 d g b |
-  %{	2 %} a e a g \break \bar "|"
-  %{	3 %} d g c, d |
-  %{	4 %} g b a2 |   
-  %{	5 %} e4 a fis g \break \bar "|"
-  %{	6 %} c, d e b |
-  %{	7 %} c b e g | 
-  %{	8 %}  e d g2 |
-  %{	9 %} c,1 |
-  %{ 10%} g'1
+  g'4 d g b |
+  a e a g \break \bar "|"
+  d g c, d |
+  g b a2 |   
+  e4 a fis g \break \bar "|"
+  c, d e b |
+  c b e g | 
+   e d g2 |
+  c,1 |
+  g'1
  
 }
 

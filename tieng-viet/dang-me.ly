@@ -44,13 +44,13 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopChorus = \relative c' {
                     \partial 2 e8 e8 b'8 b8
-  %{ 01 %} b4 b8 d8 d8(e16 d16) b8 a8 |
-  %{ 02 %} b2 g8 a8 a8 b8 |
-  %{ 03 %} b4 g8 a16(g16) e4 g8 g16(a16) |
-  %{ 04 %} b2 e,8 e8 b'8 b8 |
-  %{ 05 %} b4 b8 d8 d8(e16 d16) b8 a8 |
-  %{ 06 %} b2 g8 b8 g8 b8 |
-  %{ 07 %} a4 e8 e8 g4 d8 d8 |
+  b4 b8 d8 d8(e16 d16) b8 a8 |
+  b2 g8 a8 a8 b8 |
+  b4 g8 a16(g16) e4 g8 g16(a16) |
+  b2 e,8 e8 b'8 b8 |
+  b4 b8 d8 d8(e16 d16) b8 a8 |
+  b2 g8 b8 g8 b8 |
+  a4 e8 e8 g4 d8 d8 |
                     e2 r4 \bar "|."
 }
 
@@ -60,13 +60,13 @@ sopChorus = \relative c' {
 verseMusic = \relative c' {
   \set Score.currentBarNumber = #8
                     \partial 4 e8 e16(d16)
-  %{ 08 %} b4 e8 e8 d8(e8) e8 g8 |
-  %{ 09 %} e2 r4 g8 a8 |
-  %{ 10 %} b4 g8 fis8 e8(g8) d'8 b8 |
-  %{ 11 %} b2 r4 b8 a8 |
-  %{ 12 %} g4 a8 a8 b8(d8) e8 d8 |
-  %{ 13 %} e2 r4 d8 b8 |
-  %{ 14 %} a4 g8 a8 a8(b8) g8 d8 |
+  b4 e8 e8 d8(e8) e8 g8 |
+  e2 r4 g8 a8 |
+  b4 g8 fis8 e8(g8) d'8 b8 |
+  b2 r4 b8 a8 |
+  g4 a8 a8 b8(d8) e8 d8 |
+  e2 r4 d8 b8 |
+  a4 g8 a8 a8(b8) g8 d8 |
                   e2 \bar "||"
 }
 

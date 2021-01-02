@@ -59,14 +59,14 @@ musicSoprano = \relative c' {
 
 % Soprano lyrics
 lyricsSoprano = \lyrics {
-  %{ 14 %} He trus -- ted in God that He would de -- li -- ver Him; let Him de -- li -- ver Him, if He de -- light in Him,
-  %{ 20 %} let Him de -- li -- ver Him, if He de -- light in Him,
-  %{ 26 %} let Him de -- li -- ver Him. He trus -- ted in God that He would de -- li -- ver Him, let Him de -- li -- ver Him,
-  %{ 32 %} if He de -- light in Him, let Him de -- li -- ver Him, if He de -- light in Him, if He de -- light in Him,
-  %{ 39 %} let Him de -- li -- ver Him, if he de -- light in Him, let Him de -- li -- ver Him,
-  %{ 45 %} let Him de -- li -- ver Him, let Him de -- li -- ver Him, let Him de -- li -- ver Him.
-  %{ 50 %} He trus -- ted in God that He would de -- li -- ver Him, let him de -- li -- ver Him, if He de -- light in Him,
-  %{ 56 %} if He de -- light in Him, if He de -- light -- in Him, let Him de -- li -- ver Him, if He de -- light in Him.
+  He trus -- ted in God that He would de -- li -- ver Him; let Him de -- li -- ver Him, if He de -- light in Him,
+  let Him de -- li -- ver Him, if He de -- light in Him,
+  let Him de -- li -- ver Him. He trus -- ted in God that He would de -- li -- ver Him, let Him de -- li -- ver Him,
+  if He de -- light in Him, let Him de -- li -- ver Him, if He de -- light in Him, if He de -- light in Him,
+  let Him de -- li -- ver Him, if he de -- light in Him, let Him de -- li -- ver Him,
+  let Him de -- li -- ver Him, let Him de -- li -- ver Him, let Him de -- li -- ver Him.
+  He trus -- ted in God that He would de -- li -- ver Him, let him de -- li -- ver Him, if He de -- light in Him,
+  if He de -- light in Him, if He de -- light -- in Him, let Him de -- li -- ver Him, if He de -- light in Him.
 }
 
 % Alto music
@@ -94,16 +94,16 @@ musicAlto = \relative c'' {
 
 % Alto lyrics
 lyricsAlto = \lyrics {
-  %{ 10 %} He trus -- ted in God that He would de -- li -- ver Him; let Him de -- li -- ver Him, if He de -- light in Him,
-  %{ 15 %} if he de -- light -- in Him, let Him de -- li -- ver Him, if He de -- light in Him.
-  %{ 23 %} He trus -- ted in God that He would de -- li -- ver Him; let Him de -- li -- ver him, if He de -- light in Him,
-  %{ 27 %} if He de -- light -- in Him, let Him de -- li -- ver Him, if He de -- light in Him, if he de -- light in Him,
-  %{ 33 %} let Him de -- li -- ver Him, let Him de -- li -- ver Him, if he de -- light in Him,
-  %{ 39 %} let Him de -- li -- ver Him, if He de -- light in Him.
-  %{ 41 %} He trus -- ted in God, let Him de -- li -- ver Him, if He de -- light -- in Him, let Him de -- li -- ver Him,
-  %{ 48 %} if He de -- light in Him. He trus -- ted in God, let Him de -- li -- ver Him, let Him de -- li -- ver Him,
-  %{ 53 %} if He de -- light in Him, let Him de -- li -- ver Him, if He de -- light -- in Him,
-  %{ 59 %} let Him de -- li -- ver Him, if He de -- light in Him.
+  He trus -- ted in God that He would de -- li -- ver Him; let Him de -- li -- ver Him, if He de -- light in Him,
+  if he de -- light -- in Him, let Him de -- li -- ver Him, if He de -- light in Him.
+  He trus -- ted in God that He would de -- li -- ver Him; let Him de -- li -- ver him, if He de -- light in Him,
+  if He de -- light -- in Him, let Him de -- li -- ver Him, if He de -- light in Him, if he de -- light in Him,
+  let Him de -- li -- ver Him, let Him de -- li -- ver Him, if he de -- light in Him,
+  let Him de -- li -- ver Him, if He de -- light in Him.
+  He trus -- ted in God, let Him de -- li -- ver Him, if He de -- light -- in Him, let Him de -- li -- ver Him,
+  if He de -- light in Him. He trus -- ted in God, let Him de -- li -- ver Him, let Him de -- li -- ver Him,
+  if He de -- light in Him, let Him de -- li -- ver Him, if He de -- light -- in Him,
+  let Him de -- li -- ver Him, if He de -- light in Him.
 }
 
 
@@ -129,19 +129,19 @@ musicTenor = \relative c' {
 
 % Tenor lyrics
 lyricsTenor = \lyrics {
-  %{ 05 %} He trus -- ted in God that He -- would -- de -- li -- ver him; let Him de -- li -- ver Him, if He de -- light in Him,
-  %{ 10 %} if He de -- light in Him, let Him de -- li -- ver Him, if He de -- light in Him, if He de -- light in Him,
-  %{ 14 %} if He de -- light -- in Him,
-  %{ 19 %} let Him de -- li -- ver Him, if He de -- light -- in Him, if He de -- light -- in Him,
-  %{ 24 %} let Him de -- li -- ver Him if He de -- light in Him, if He de -- light in Him.
-  %{ 27 %} He trus -- ted in God, he trus -- ted in God, let Him de -- li -- ver Him, if He de -- light in Him,
-  %{ 32 %} if He de -- light in Him, let Him de -- li -- ver Him.
-  %{ 35 %} He trus -- ted in God that He would de -- li -- ver Him; let Him de -- li -- ver Him, if He de -- light in Him,
-  %{ 40 %} let Him de -- li -- ver Him.
-  %{ 41 %} He trus -- ted in God, let Him de -- li -- ver Him, if he de -- light -- in Him,
-  %{ 46 %} let Him de -- li -- ver Him, if He de -- light -- in him, if He de -- light -- if He de -- light in Him,
-  %{ 55 %} let Him de -- li -- ver Him, if He de -- light in Him,
-  %{ 57 %} if He de -- light -- in Him, let Him, let Him de -- li -- ver Him, if He de -- light in Him.
+  He trus -- ted in God that He -- would -- de -- li -- ver him; let Him de -- li -- ver Him, if He de -- light in Him,
+  if He de -- light in Him, let Him de -- li -- ver Him, if He de -- light in Him, if He de -- light in Him,
+  if He de -- light -- in Him,
+  let Him de -- li -- ver Him, if He de -- light -- in Him, if He de -- light -- in Him,
+  let Him de -- li -- ver Him if He de -- light in Him, if He de -- light in Him.
+  He trus -- ted in God, he trus -- ted in God, let Him de -- li -- ver Him, if He de -- light in Him,
+  if He de -- light in Him, let Him de -- li -- ver Him.
+  He trus -- ted in God that He would de -- li -- ver Him; let Him de -- li -- ver Him, if He de -- light in Him,
+  let Him de -- li -- ver Him.
+  He trus -- ted in God, let Him de -- li -- ver Him, if he de -- light -- in Him,
+  let Him de -- li -- ver Him, if He de -- light -- in him, if He de -- light -- if He de -- light in Him,
+  let Him de -- li -- ver Him, if He de -- light in Him,
+  if He de -- light -- in Him, let Him, let Him de -- li -- ver Him, if He de -- light in Him.
 }
 
 
@@ -165,19 +165,19 @@ musicBass = \relative c {
 
 % Basso lyrics
 lyricsBass = \lyrics {
-  %{ 01 %} He trus -- ted in God that He would de -- li -- ver Him; let Him de -- li -- ver him, if He de -- light in Him,
-  %{ 06 %} if He de -- light in him, let him de -- li -- ver Him, if He de -- light in him, if He de -- light in Him,
-  %{ 10 %} if He de -- light in Him.
-  %{ 14 %} He trus -- ted in God, in God, in God He trus -- ted; let Him de -- li -- ver Him, if He de -- light in Him,
-  %{ 18 %} if He de -- light in Him, let Him de -- li -- ver Him.
-  %{ 22 %} He trus -- ted in God, he trus -- ted in God, let Him de -- li -- ver Him, if he de -- light in Him,
-  %{ 26 %} if he de -- light in Him,
-  %{ 32 %} let him de -- li -- ver Him, let Him de -- li -- ver Him,
-  %{ 38 %} let Him de -- li -- ver Him.
-  %{ 41 %} He trus -- ted in God that He would de -- li -- ver Him; let him de -- li -- ver Him, if He de -- light in Him,
-  %{ 47 %} let Him de -- li -- ver Him, if He de -- light in Him, if He de -- light -- in Him,
-  %{ 52 %} if He de -- light -- in Him, let Him de -- li -- ver Him.
-  %{ 57 %} He trus -- ted in God that He would de -- li -- ver Him; let Him, let Him de -- li -- ver Him, if He de -- light in Him.
+  He trus -- ted in God that He would de -- li -- ver Him; let Him de -- li -- ver him, if He de -- light in Him,
+  if He de -- light in him, let him de -- li -- ver Him, if He de -- light in him, if He de -- light in Him,
+  if He de -- light in Him.
+  He trus -- ted in God, in God, in God He trus -- ted; let Him de -- li -- ver Him, if He de -- light in Him,
+  if He de -- light in Him, let Him de -- li -- ver Him.
+  He trus -- ted in God, he trus -- ted in God, let Him de -- li -- ver Him, if he de -- light in Him,
+  if he de -- light in Him,
+  let him de -- li -- ver Him, let Him de -- li -- ver Him,
+  let Him de -- li -- ver Him.
+  He trus -- ted in God that He would de -- li -- ver Him; let him de -- li -- ver Him, if He de -- light in Him,
+  let Him de -- li -- ver Him, if He de -- light in Him, if He de -- light -- in Him,
+  if He de -- light -- in Him, let Him de -- li -- ver Him.
+  He trus -- ted in God that He would de -- li -- ver Him; let Him, let Him de -- li -- ver Him, if He de -- light in Him.
 }
 
 % 10. Layout

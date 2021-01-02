@@ -58,16 +58,16 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
 \partial 4 gis'4 |
-%{  1 %} gis4. gis8 gis4 fis |
-%{  2 %} e fis gis e \break \bar "|"
-%{  3 %} cis'4. dis8 e4 b |
-%{  4 %} b a gis \bar "||" e |
-%{  5 %} cis'4. cis8 fis,4 gis8 (a) \break \bar "|"
-%{  6 %} b4. b8 e,4 fis8 (gis) |
-%{  7 %} a4 gis fis cis |
-%{  8 %} gis' fis e r4 \bar "||"
-%{  9 %} e1 |
-%{ 10 %} e1 \bar "|."
+gis4. gis8 gis4 fis |
+e fis gis e \break \bar "|"
+cis'4. dis8 e4 b |
+b a gis \bar "||" e |
+cis'4. cis8 fis,4 gis8 (a) \break \bar "|"
+b4. b8 e,4 fis8 (gis) |
+a4 gis fis cis |
+gis' fis e r4 \bar "||"
+e1 |
+e1 \bar "|."
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -75,16 +75,16 @@ musicVerseSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
 \partial 4 e4 |
-%{  1 %} d4. d8 cis4 cis |
-%{  2 %} b dis e e |
-%{  3 %} e4. fis8 e4 gis8 fis |
-%{  4 %} e4 fis e b |
-%{  5 %} e4. e8 dis4 dis |
-%{  6 %} e4. e8 e4 cis |
-%{  7 %} cis cis cis gis |
-%{  8 %} ais b b r4 |
-%{  9 %} cis1 |
-%{ 10 %} b1
+d4. d8 cis4 cis |
+b dis e e |
+e4. fis8 e4 gis8 fis |
+e4 fis e b |
+e4. e8 dis4 dis |
+e4. e8 e4 cis |
+cis cis cis gis |
+ais b b r4 |
+cis1 |
+b1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,16 +92,16 @@ musicVerseAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
 \partial 4 b4 |
-%{  1 %} b4. b8 b4 a |
-%{  2 %} gis a gis b |
-%{  3 %} cis4. b8 b4 e8 dis |
-%{  4 %} cis4 dis e d |
-%{  5 %} cis4. cis8 c4 c |
-%{  6 %} b4. d8 cis4 fis, |
-%{  7 %} fis eis fis e |
-%{  8 %} e dis8 a' gis4 r4 |
-%{  9 %} a1 |
-%{ 10 %} gis1
+b4. b8 b4 a |
+gis a gis b |
+cis4. b8 b4 e8 dis |
+cis4 dis e d |
+cis4. cis8 c4 c |
+b4. d8 cis4 fis, |
+fis eis fis e |
+e dis8 a' gis4 r4 |
+a1 |
+gis1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -109,16 +109,16 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
 \partial 4 e4 |
-%{  1 %} e4. e8 a,4 a |
-%{  2 %} b b e gis |
-%{  3 %} a4. a8 gis4 e |
-%{  4 %} fis b, e gis |
-%{  5 %} a4. a8 a4 a |
-%{  6 %} gis4. gis8 a4 a, |
-%{  7 %} fis gis a cis |
-%{  8 %} fis, b e r4 |
-%{  9 %} a,1 |
-%{ 10 %} e'1
+e4. e8 a,4 a |
+b b e gis |
+a4. a8 gis4 e |
+fis b, e gis |
+a4. a8 a4 a |
+gis4. gis8 a4 a, |
+fis gis a cis |
+fis, b e r4 |
+a,1 |
+e'1
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

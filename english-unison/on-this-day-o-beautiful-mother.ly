@@ -38,22 +38,22 @@ printItalic = \with {
 
 % Chorus music
 musicChorusSoprano = \relative c' {
-  %{	01	%} e4 (d) e |
-  %{	02	%} g2 g4 |
-  %{	03	%} f e f |
-  %{	04	%} a2 g4 |
-  %{	05	%} e (d) e |
-  %{	06	%} g2 g4 |
-  %{	07	%} d e f |
-  %{	08	%} e2. |
-  %{	09	%} e4 d e |
-  %{	10	%} g2 g4 |
-  %{	11	%} f e f |
-  %{	12	%} a2 g4 |
-  %{	13	%} e d e |
-  %{	14	%} g2 g4 |
-  %{	15	%} d (e) d |
-  %{	16	%} c2.
+  e4 (d) e |
+  g2 g4 |
+  f e f |
+  a2 g4 |
+  e (d) e |
+  g2 g4 |
+  d e f |
+  e2. |
+  e4 d e |
+  g2 g4 |
+  f e f |
+  a2 g4 |
+  e d e |
+  g2 g4 |
+  d (e) d |
+  c2.
   \once  \override Score.RehearsalMark.self-alignment-X = #RIGHT
   \once \override Score.RehearsalMark.font-shape = #'italic
   \mark "Fine"
@@ -63,22 +63,22 @@ musicChorusSoprano = \relative c' {
 % Verse music
 musicVerseSoprano = \relative c'' {
   \set Score.currentBarNumber = #17
-  %{	17	%} c2 b4 |
-  %{	18	%} a2 g4 |
-  %{	19	%} a2 g4 |
-  %{	20	%} g2. |
-  %{	21	%} c2 b4 |
-  %{	22	%} a2 g4 |
-  %{	23	%} f2 d4 |
-  %{	24	%} e2. |
-  %{	25	%} g2 fis4 |
-  %{	26	%} a2 g4 |
-  %{	27	%} c (b) a |
-  %{	28	%} a2 (g4) |
-  %{	29	%} g2 fis4 |
-  %{	30	%} a2 g4 |
-  %{	31	%} c2 fis,4 |
-  %{	32	%} g2 (fis8 f!)
+  c2 b4 |
+  a2 g4 |
+  a2 g4 |
+  g2. |
+  c2 b4 |
+  a2 g4 |
+  f2 d4 |
+  e2. |
+  g2 fis4 |
+  a2 g4 |
+  c (b) a |
+  a2 (g4) |
+  g2 fis4 |
+  a2 g4 |
+  c2 fis,4 |
+  g2 (fis8 f!)
   \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
   \once \override Score.RehearsalMark.font-shape = #'italic
   \mark "D.S. al Fine"

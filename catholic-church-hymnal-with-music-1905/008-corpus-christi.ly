@@ -58,24 +58,24 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
  \partial 2 gis'2 |
-  %{	1 %} b2. a4 fis gis |
-  %{	2 %} e1 gis2 |
-  %{	3 %} cis,2. dis4 e fis |
-  %{	4 %} gis2 (fis) \break \bar "|"
+  b2. a4 fis gis |
+  e1 gis2 |
+  cis,2. dis4 e fis |
+  gis2 (fis) \break \bar "|"
                 gis2 |
-  %{	5 %} b2. a4 fis gis |
-  %{	6 %} e1 gis2 |
-  %{	7 %} a2. a4 gis fis |
-  %{	8 %} e1 \break \bar "|"
+  b2. a4 fis gis |
+  e1 gis2 |
+  a2. a4 gis fis |
+  e1 \break \bar "|"
                 e2 |
-  %{	9 %} e'2. e4 dis cis |
-  %{ 10%} b4. a8 gis2. gis4 |
-  %{ 11%} cis2. cis4 b gis \break \bar "|"
-  %{ 12%} fis4 e fis2 gis |
-  %{ 13%} b2. a4 fis gis |
-  %{ 14%} e1 gis2 |
-  %{ 15%} a2. a4 gis fis |
-  %{ 16%} e1 \bar "||"
+  e'2. e4 dis cis |
+  b4. a8 gis2. gis4 |
+  cis2. cis4 b gis \break \bar "|"
+  fis4 e fis2 gis |
+  b2. a4 fis gis |
+  e1 gis2 |
+  a2. a4 gis fis |
+  e1 \bar "||"
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,24 +83,24 @@ musicVerseSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
   \partial 2 e2 |
-  %{	1 %} e2. e4 dis dis |
-  %{	2 %} e1 dis2 |
-  %{	3 %} cis2. b4 b e |
-  %{	4 %} e2 (dis2) \break \bar "|"
+  e2. e4 dis dis |
+  e1 dis2 |
+  cis2. b4 b e |
+  e2 (dis2) \break \bar "|"
                e2 |
-  %{	5 %} fis2. e4 e dis |
-  %{	6 %} e1 e2 |
-  %{	7 %} e2. e4 e dis |
-  %{	8 %} e1 \break \bar "|"
+  fis2. e4 e dis |
+  e1 e2 |
+  e2. e4 e dis |
+  e1 \break \bar "|"
                 e2 |
-  %{	9 %} gis2. gis4 gis a |
-  %{ 10%} e4. dis8 e2. e4 |
-  %{ 11%} fis2. dis4 e e \break \bar "|"
-  %{ 12%} e4 cis dis2 e2 |
-  %{ 13%} fis2. e4 e dis |
-  %{ 14%} e1 e2 |
-  %{ 15%} e2. e4 dis dis |
-  %{ 16%} e1 \bar "||"			
+  gis2. gis4 gis a |
+  e4. dis8 e2. e4 |
+  fis2. dis4 e e \break \bar "|"
+  e4 cis dis2 e2 |
+  fis2. e4 e dis |
+  e1 e2 |
+  e2. e4 dis dis |
+  e1 \bar "||"			
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,24 +108,24 @@ musicVerseAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
   \partial 2 b2 |
-  %{	1 %} gis2. cis4 a b |
-  %{	2 %} gis1 gis2 |
-  %{	3 %} a2. fis4 e cis' |
-  %{	4 %} b1 \break \bar "|"
+  gis2. cis4 a b |
+  gis1 gis2 |
+  a2. fis4 e cis' |
+  b1 \break \bar "|"
                   b2 |
-  %{	5 %} fis2. a4 cis b |
-  %{	6 %} gis1 d'2 |
-  %{	7 %} cis2. c4 b a | 
-  %{	8 %} gis1 \break \bar "|"
+  fis2. a4 cis b |
+  gis1 d'2 |
+  cis2. c4 b a | 
+  gis1 \break \bar "|"
                   gis2 |
-  %{	9 %} cis2. e4 e e |
-  %{ 10%}   b4. b8 b2. e4 |
-  %{ 11%}   dis2. b4 b cis |
-  %{ 12%}   ais4 ais b2 b2|
-  %{ 13%}   fis2. a4 cis b |
-  %{ 14%}   gis1 d'2 |
-  %{ 15%}   cis2. c4 b a |
-  %{ 16%}   gis1 
+  cis2. e4 e e |
+    b4. b8 b2. e4 |
+    dis2. b4 b cis |
+    ais4 ais b2 b2|
+    fis2. a4 cis b |
+    gis1 d'2 |
+    cis2. c4 b a |
+    gis1 
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,24 +133,24 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
   \partial 2 e2 |
-  %{	1 %} e2. a,4 b b |
-  %{	2 %} cis1 b2 |
-  %{	3 %} a2. a4 gis a |
-  %{	4 %} b1 \break \bar "|"
+  e2. a,4 b b |
+  cis1 b2 |
+  a2. a4 gis a |
+  b1 \break \bar "|"
                   e2 |
-  %{	5 %} dis2. cis4 a b |
-  %{	6 %} cis1 e2 |
-  %{	7 %} a2. fis4 b, b |
-  %{	8 %} e1 \break \bar "|"
+  dis2. cis4 a b |
+  cis1 e2 |
+  a2. fis4 b, b |
+  e1 \break \bar "|"
                   e2 |
-  %{	9 %} cis2. cis'4 b a |
-  %{ 10%}   gis4. fis8 e2. e4 |
-  %{ 11%}   a2. a4 gis cis, |
-  %{ 12%}   fis4 fis b,2 e|
-  %{ 13%}   dis2. cis4 a b |
-  %{ 14%}   cis1 e2 |
-  %{ 15%}   a2. fis4 b, b |
-  %{ 16%}   e1
+  cis2. cis'4 b a |
+    gis4. fis8 e2. e4 |
+    a2. a4 gis cis, |
+    fis4 fis b,2 e|
+    dis2. cis4 a b |
+    cis1 e2 |
+    a2. fis4 b, b |
+    e1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

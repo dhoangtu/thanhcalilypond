@@ -42,145 +42,145 @@ minorNote = #(define-music-function
 
 % Soprano verse music
 musicVerseSoprano = \relative c' {
-  %{	01	%} f2 g4
-  %{	02	%} f4. (g8) a4
-  %{	03	%} bes2 a4
-  %{	04	%} g (f) g
-  %{	05	%} c2 bes4
-  %{	06	%} a2 a4
-  %{	07	%} g (f) g
-  %{	08	%} f2.
-  %{	09	%} f2 g4
-  %{	10	%} f4. (g8) a4
-  %{	11	%} bes2 a4
-  %{	12	%} g (f) g
-  %{	13	%} c2 bes4
-  %{	14	%} a2 a4
-  %{	15	%} g (f) g
-  %{	16	%} f2.
-  %{	17	%} c'2 c4
-  %{	18	%} c (bes) a
-  %{	19	%} bes2 bes4
-  %{	20	%} bes (a) g
-  %{	21	%} a2 a4
-  %{	22	%} a (bes) c
-  %{	23	%} c (bes) a
-  %{	24	%} g2.
-  %{	25	%} c4 (a) c
-  %{	26	%} bes (g) bes
-  %{	27	%} a (f) a
-  %{	28	%} g8 (a bes a) g4
-  %{	29	%} c2 c4
-  %{	30	%} d (c) bes
-  %{	31	%} a2 g4
+  f2 g4
+  f4. (g8) a4
+  bes2 a4
+  g (f) g
+  c2 bes4
+  a2 a4
+  g (f) g
+  f2.
+  f2 g4
+  f4. (g8) a4
+  bes2 a4
+  g (f) g
+  c2 bes4
+  a2 a4
+  g (f) g
+  f2.
+  c'2 c4
+  c (bes) a
+  bes2 bes4
+  bes (a) g
+  a2 a4
+  a (bes) c
+  c (bes) a
+  g2.
+  c4 (a) c
+  bes (g) bes
+  a (f) a
+  g8 (a bes a) g4
+  c2 c4
+  d (c) bes
+  a2 g4
                     f2. \bar "|."
 }
 
 % Alto verse music
 musicVerseAlto = \relative c' {
-  %{	01	%} c2 e4
-  %{	02	%} f2 f4
-  %{	03	%} g2 f4
-  %{	04	%} e (d) e
-  %{	05	%} f (c) d8 e
-  %{	06	%} f2 f8 e
-  %{	07	%} d4 (d) e
-  %{	08	%} f2.
-  %{	09	%} c2 e4
-  %{	10	%} f2 f4
-  %{	11	%} g2 f4
-  %{	12	%} e (d) e
-  %{	13	%} f (c) d8 (e)
-  %{	14	%} f2 f8 e
-  %{	15	%} d4 (d) e
-  %{	16	%} f2.
-  %{	17	%} e2 e4
-  %{	18	%} f2 f4
-  %{	19	%} f (e) d
-  %{	20	%} e (f) c
-  %{	21	%} c2 f4
-  %{	22	%} f (g) a
-  %{	23	%} a (g) f
-  %{	24	%} f2 (f4)
-  %{	25	%} f2 a4
-  %{	26	%} g2 g4
-  %{	27	%} f (c) f
-  %{	28	%} g8 (e f4) c
-  %{	29	%} c (f) ees
-  %{	30	%} d (f) f
-  %{	31	%} f2 e4
+  c2 e4
+  f2 f4
+  g2 f4
+  e (d) e
+  f (c) d8 e
+  f2 f8 e
+  d4 (d) e
+  f2.
+  c2 e4
+  f2 f4
+  g2 f4
+  e (d) e
+  f (c) d8 (e)
+  f2 f8 e
+  d4 (d) e
+  f2.
+  e2 e4
+  f2 f4
+  f (e) d
+  e (f) c
+  c2 f4
+  f (g) a
+  a (g) f
+  f2 (f4)
+  f2 a4
+  g2 g4
+  f (c) f
+  g8 (e f4) c
+  c (f) ees
+  d (f) f
+  f2 e4
                     f2. \bar "|."
 }
 
 % Tenor verse music
 musicVerseTenor = \relative c {
-  %{	01	%} <\minorNote f a>2 g4
-  %{	02	%} a4. (bes8) c4
-  %{	03	%} d (c) c
-  %{	04	%} c (a) c
-  %{	05	%} c2 c4
-  %{	06	%} c2 c4
-  %{	07	%} bes (a) c
-  %{	08	%} a2.
-  %{	09	%} <\minorNote f a>2 g4
-  %{	10	%} a4. (bes8) c4
-  %{	11	%} d (c) c
-  %{	12	%} c (a) c
-  %{	13	%} c2 c4
-  %{	14	%} c2 c4
-  %{	15	%} bes (a) c
-  %{	16	%} a2.
-  %{	17	%} c2 c4
-  %{	18	%} f, (g) a
-  %{	19	%} g2 g4
-  %{	20	%} g (c) bes
-  %{	21	%} a2 c4
-  %{	22	%} d2 c4
-  %{	23	%} d2 d4
-  %{	24	%} g,2.
-  %{	25	%} c2 d4
-  %{	26	%} d2 c4
-  %{	27	%} c (a) b!
-  %{	28	%} c (bes) bes
-  %{	29	%} a2 c4
-  %{	30	%} bes (c) d
-  %{	31	%} c2 bes4
+  <\minorNote f a>2 g4
+  a4. (bes8) c4
+  d (c) c
+  c (a) c
+  c2 c4
+  c2 c4
+  bes (a) c
+  a2.
+  <\minorNote f a>2 g4
+  a4. (bes8) c4
+  d (c) c
+  c (a) c
+  c2 c4
+  c2 c4
+  bes (a) c
+  a2.
+  c2 c4
+  f, (g) a
+  g2 g4
+  g (c) bes
+  a2 c4
+  d2 c4
+  d2 d4
+  g,2.
+  c2 d4
+  d2 c4
+  c (a) b!
+  c (bes) bes
+  a2 c4
+  bes (c) d
+  c2 bes4
                     f2. \bar "|." %32
 }
 
 % Basso verse music
 musicVerseBasso = \relative c {
-  %{	01	%} f,4 (a) c
-  %{	02	%} f2 f4
-  %{	03	%} f (e) f
-  %{	04	%} c (d) c
-  %{	05	%} a'2 g4
-  %{	06	%} f2 a,4
-  %{	07	%} bes (d) c
-  %{	08	%} f2.
-  %{	09	%} f,4 (a) c
-  %{	10	%} f2 f4
-  %{	11	%} f (e) f
-  %{	12	%} c (d) c
-  %{	13	%} a'2 g4
-  %{	14	%} f2 a,4
-  %{	15	%} bes (d) c
-  %{	16	%} f2.
-  %{	17	%} a2 a4
-  %{	18	%} d,2 d4
-  %{	19	%} g2 g4
-  %{	20	%} c, (d) e
-  %{	21	%} f2 e4
-  %{	22	%} d2 a4
-  %{	23	%} g2 bes4
-  %{	24	%} c2.
-  %{	25	%} a'2 f4
-  %{	26	%} f (e8 d) e4
-  %{	27	%} f (e) d
-  %{	28	%} e8 (c d4) e
-  %{	29	%} f2 a,4
-  %{	30	%} bes (a) bes
-  %{	31	%} c2 c4
+  f,4 (a) c
+  f2 f4
+  f (e) f
+  c (d) c
+  a'2 g4
+  f2 a,4
+  bes (d) c
+  f2.
+  f,4 (a) c
+  f2 f4
+  f (e) f
+  c (d) c
+  a'2 g4
+  f2 a,4
+  bes (d) c
+  f2.
+  a2 a4
+  d,2 d4
+  g2 g4
+  c, (d) e
+  f2 e4
+  d2 a4
+  g2 bes4
+  c2.
+  a'2 f4
+  f (e8 d) e4
+  f (e) d
+  e8 (c d4) e
+  f2 a,4
+  bes (a) bes
+  c2 c4
                     f,2. \bar "|." %32
 }
 

@@ -52,15 +52,15 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
   \partial 8 c8 |
-  %{	1 %} c'4 ^\< e,8 f4 \! fis8 |
-  %{	2 %} g4 d8 d4 \breathe f8 |
-  %{	3 %} e4 d8 c4 bes'8 ^\> |
-  %{	4 %} a4. (a8) \! r \break \bar "|"
+  c'4 ^\< e,8 f4 \! fis8 |
+  g4 d8 d4 \breathe f8 |
+  e4 d8 c4 bes'8 ^\> |
+  a4. (a8) \! r \break \bar "|"
                 c, ^\mf |
-  %{	5 %} c'4 e,8 ^\< f4 fis8 \! |
-  %{	6 %} g4 d8 d4 \breathe bes'8 |
-  %{	7 %} a4 ^"rall." g8 d4 ^\> e8 |
-  %{	8 %} f4. (f4) \! r8 \bar "||"
+  c'4 e,8 ^\< f4 fis8 \! |
+  g4 d8 d4 \breathe bes'8 |
+  a4 ^"rall." g8 d4 ^\> e8 |
+  f4. (f4) \! r8 \bar "||"
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -68,14 +68,14 @@ musicVerseSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicChorusSoprano = \relative c'' {
   \set Score.currentBarNumber = #9
-  %{	9  %} c4 ^\< c8 c4 c8 \! |
-  %{	10 %} d4. (d4) \breathe c8 |
-  %{	11 %} g4 g8 c4 ^\> bes8 |
-  %{	12 %} a2. \breathe|
-  %{	13 %} c4 ^\f ^\< c8 c4 c8 \! |
-  %{	14 %} d2. \breathe |
-  %{	15 %} e4 ^"rall." d8 bes4 ^\> g8 |
-  %{	16 %} f4. (f4) \! \fermata \bar "|."
+  c4 ^\< c8 c4 c8 \! |
+  d4. (d4) \breathe c8 |
+  g4 g8 c4 ^\> bes8 |
+  a2. \breathe|
+  c4 ^\f ^\< c8 c4 c8 \! |
+  d2. \breathe |
+  e4 ^"rall." d8 bes4 ^\> g8 |
+  f4. (f4) \! \fermata \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,14 +83,14 @@ musicChorusSoprano = \relative c'' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicChorusBasso = \relative c'' {
   \set Score.currentBarNumber = #9
-  %{	9  %} c4 bes8 a4 a8 |
-  %{	10 %} bes4. (bes4) a8 |
-  %{	11 %} g4 f8 e (f) g |
-  %{	12 %} f2. |
-  %{	13 %} c'4 bes8 a4 a8 |
-  %{	14 %} bes2. |
-  %{	15 %} g8 (c) bes g4 e8 |
-  %{	16 %} f4. (f4)
+  c4 bes8 a4 a8 |
+  bes4. (bes4) a8 |
+  g4 f8 e (f) g |
+  f2. |
+  c'4 bes8 a4 a8 |
+  bes2. |
+  g8 (c) bes g4 e8 |
+  f4. (f4)
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

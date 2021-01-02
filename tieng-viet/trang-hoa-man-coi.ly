@@ -43,46 +43,46 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopChorus = \relative c' {
                     \partial 4 c'8 c8
-  %{	01	%} c4 a8(bes8) |
-  %{	02	%} c4 a8 g8 |
-  %{	03	%} f8. f16 bes8 bes8 %3
-  %{	04	%} bes4 bes8 a8 |
-  %{	05	%} g8. g16 c8 c8 |
-  %{	06	%} c4 \breathe c8 bes8 |
-  %{	07	%} a8. g16 \acciaccatura c8 d8 c8 |
-  %{	08	%} a2( |
-  %{	09	%} a4) c8 c8 |
-  %{	10	%} c4 a8(bes8) |
-  %{	11	%} c4 a8 g8 |
-  %{	12	%} f8. f16 bes8 bes8 |
-  %{	13	%} bes4 bes8 bes16 a16 |
-  %{	14	%} g8. g16 c8 c16 c16 |
-  %{	15	%} c4 c8 bes8 |
-  %{	16	%} a8. g16 bes8 a16(g16) |
-  %{	17	%} f2( |
+  c4 a8(bes8) |
+  c4 a8 g8 |
+  f8. f16 bes8 bes8 %3
+  bes4 bes8 a8 |
+  g8. g16 c8 c8 |
+  c4 \breathe c8 bes8 |
+  a8. g16 \acciaccatura c8 d8 c8 |
+  a2( |
+  a4) c8 c8 |
+  c4 a8(bes8) |
+  c4 a8 g8 |
+  f8. f16 bes8 bes8 |
+  bes4 bes8 bes16 a16 |
+  g8. g16 c8 c16 c16 |
+  c4 c8 bes8 |
+  a8. g16 bes8 a16(g16) |
+  f2( |
                     f4) \bar "|."
 }
 
 bassChorus = \relative c' {
 	\override NoteHead.font-size = #-2
                     \partial 4 a'8 a8
-  %{	01	%} a4 f8(g8) |
-  %{	02	%} a4 f8 e8 |
-  %{	03	%} d8. d16 g8 g8 |
-  %{	04	%} g4 g8 f8 |
-  %{	05	%} e8. e16 a8 a8 |
-  %{	06	%} a4 a8 g8 |
-  %{	07	%} f8. e16 \acciaccatura a8 bes8 a8 |
-  %{	08	%} f2( |
-  %{	09	%} f4) a8 a8 |
-  %{	10	%} a4 f8(g8) |
-  %{	11	%} a4 f8 e8 |
-  %{	12	%} d8. d16 g8 g8 |
-  %{	13	%} g4 g8 g16 f16 |
-  %{	14	%} e8. e16 a8 a16 a16 |
-  %{	15	%} a4 a8 g8 |
-  %{	16	%} f8. e16 g8 f16(e16) |
-  %{	17	%} f2( |
+  a4 f8(g8) |
+  a4 f8 e8 |
+  d8. d16 g8 g8 |
+  g4 g8 f8 |
+  e8. e16 a8 a8 |
+  a4 a8 g8 |
+  f8. e16 \acciaccatura a8 bes8 a8 |
+  f2( |
+  f4) a8 a8 |
+  a4 f8(g8) |
+  a4 f8 e8 |
+  d8. d16 g8 g8 |
+  g4 g8 g16 f16 |
+  e8. e16 a8 a16 a16 |
+  a4 a8 g8 |
+  f8. e16 g8 f16(e16) |
+  f2( |
                     f4) \bar "|."
 }
 
@@ -92,14 +92,14 @@ bassChorus = \relative c' {
 verseMusic = \relative c' {
   \set Score.currentBarNumber = #18
                     \partial 4 c8 c8
-  %{	18	%} a'8. a16 a8 a8 |
-  %{	19	%} a4 a8 c8 |
-  %{	20	%} a8. g16 g8 f8 |
-  %{	21	%} a4 c,8 c8 |
-  %{	22	%} g'8. g16 g8 g8 |
-  %{	23	%} g4 g8 bes8 |
-  %{	24	%} a8. g16 g8 f8 |
-  %{	25	%} f2( |
+  a'8. a16 a8 a8 |
+  a4 a8 c8 |
+  a8. g16 g8 f8 |
+  a4 c,8 c8 |
+  g'8. g16 g8 g8 |
+  g4 g8 bes8 |
+  a8. g16 g8 f8 |
+  f2( |
                     f4) \bar "||"
 }
 

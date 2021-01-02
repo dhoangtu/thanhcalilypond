@@ -35,44 +35,44 @@ printItalic = \with {
 
 % Verse music
 musicVerseSoprano = \relative c'' {
-  %{	01	%} a2 d4 (fis,) |
-  %{	02	%} a (gis) g!2 |
-  %{	03	%} g4 (b) a (g) |
-  %{	04	%} g (fis) fis2 |
-  %{	05	%} e2. e4 |
-  %{	06	%} fis fis g g |
-  %{	07	%} g2 (fis4) fis |
-  %{	08	%} e1 |
-  %{	09	%} e2. a4 |
-  %{	10	%} a (gis) gis2 |
-  %{	11	%} e4 (gis2) b4 |
-  %{	12	%} b (a) a a |
-  %{	13	%} d1 ( |
-  %{	14	%} d4 cis) b a |
-  %{	15	%} a2 (gis4) gis |
-  %{	16	%} a1 |
-  %{	17	%} a2. a4 |
-  %{	18	%} a (bes) bes2 |
-  %{	19	%} bes4 (d) c! (bes) |
-  %{	20	%} bes (a) a2 |
-  %{	21	%} g2. g4 |
-  %{	22	%} g4 (bes) a g |
-  %{	23	%} g2 (f!8 e) f4 |
-  %{	24	%} e2 r2 |
-  %{	25	%} fis2. fis4 |
-  %{	26	%} fis (e) d (g) |
-  %{	27	%} g2. g4 |
-  %{	28	%} g (fis) e a |
-  %{	29	%} a1 ( |
-  %{	30	%} a4 g) a b |
-  %{	31	%} fis2 (e4.) fis8 |
-  %{	32	%} g2 g |
-  %{	33	%} d'1 ( |
-  %{	34	%} d2 dis |
-  %{	35	%} e4 b cis d! |
-  %{	36	%} cis b8 a) d4 g, |
-  %{	37	%} fis2 (e4.) e8 |
-  %{	38	%} d1 \bar "|."
+  a2 d4 (fis,) |
+  a (gis) g!2 |
+  g4 (b) a (g) |
+  g (fis) fis2 |
+  e2. e4 |
+  fis fis g g |
+  g2 (fis4) fis |
+  e1 |
+  e2. a4 |
+  a (gis) gis2 |
+  e4 (gis2) b4 |
+  b (a) a a |
+  d1 ( |
+  d4 cis) b a |
+  a2 (gis4) gis |
+  a1 |
+  a2. a4 |
+  a (bes) bes2 |
+  bes4 (d) c! (bes) |
+  bes (a) a2 |
+  g2. g4 |
+  g4 (bes) a g |
+  g2 (f!8 e) f4 |
+  e2 r2 |
+  fis2. fis4 |
+  fis (e) d (g) |
+  g2. g4 |
+  g (fis) e a |
+  a1 ( |
+  a4 g) a b |
+  fis2 (e4.) fis8 |
+  g2 g |
+  d'1 ( |
+  d2 dis |
+  e4 b cis d! |
+  cis b8 a) d4 g, |
+  fis2 (e4.) e8 |
+  d1 \bar "|."
 }
 
 % Verse lyrics

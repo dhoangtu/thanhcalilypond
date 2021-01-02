@@ -61,14 +61,14 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicChorusSoprano = \relative c' {
   \partial 8 fis8 |
-  %{ 1 %} fis4 fis8 fis (e) fis |
-  %{ 2 %} a4. g4 g8 |
-  %{ 3 %} fis4 fis8 fis (g) fis |
-  %{ 4 %} e4. (e8) r fis |
-  %{ 5 %} fis4 fis8 fis (e) fis |
-  %{ 6 %} a4. g4 g8 |
-  %{ 7 %} fis4 fis8 e (fis) e |
-  %{ 8 %} d4. (d4) \bar "|."
+  fis4 fis8 fis (e) fis |
+  a4. g4 g8 |
+  fis4 fis8 fis (g) fis |
+  e4. (e8) r fis |
+  fis4 fis8 fis (e) fis |
+  a4. g4 g8 |
+  fis4 fis8 e (fis) e |
+  d4. (d4) \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,14 +76,14 @@ musicChorusSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicChorusAlto = \relative c' {
   \partial 8 d8 |
-  %{ 1 %} d4 d8 d cis d |
-  %{ 2 %} fis4. e4 e8 |
-  %{ 3 %} d4 d8 d e d |
-  %{ 4 %} cis4. (cis8) r d |
-  %{ 5 %} d4 d8 d cis d |
-  %{ 6 %} d4. e4 e8 |
-  %{ 7 %} d4 d8 cis4 cis8 |
-  %{ 8 %} d4. d4 \bar "|."
+  d4 d8 d cis d |
+  fis4. e4 e8 |
+  d4 d8 d e d |
+  cis4. (cis8) r d |
+  d4 d8 d cis d |
+  d4. e4 e8 |
+  d4 d8 cis4 cis8 |
+  d4. d4 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -91,14 +91,14 @@ musicChorusAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicChorusTenor = \relative c' {
   \partial 8 a8 |
-  %{ 1 %} a4 a8 a4 a8 |
-  %{ 2 %} a4. a4 a8 |
-  %{ 3 %} a4 a8 a4 a8 |
-  %{ 4 %} a4. (a8) r a |
-  %{ 5 %} a4 a8 a4 a8 |
-  %{ 6 %} a4. b4 b8 |
-  %{ 7 %} a4 a8 g a g |
-  %{ 8 %} fis4. (fis4) \bar "|."
+  a4 a8 a4 a8 |
+  a4. a4 a8 |
+  a4 a8 a4 a8 |
+  a4. (a8) r a |
+  a4 a8 a4 a8 |
+  a4. b4 b8 |
+  a4 a8 g a g |
+  fis4. (fis4) \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -106,14 +106,14 @@ musicChorusTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicChorusBasso = \relative c {
   \partial 8 d8 |
-  %{ 1 %} d4 d8 d4 d8 |
-  %{ 2 %} d4. a4 cis8 |
-  %{ 3 %} d4 d8 d cis d |
-  %{ 4 %} a4. (a8) r d |
-  %{ 5 %} d4 d8 d4 d8 |
-  %{ 6 %} fis,4. g4 g8 |
-  %{ 7 %} a4 a8 a4 a8 |
-  %{ 8 %} d4. (d4) \bar "|."
+  d4 d8 d4 d8 |
+  d4. a4 cis8 |
+  d4 d8 d cis d |
+  a4. (a8) r d |
+  d4 d8 d4 d8 |
+  fis,4. g4 g8 |
+  a4 a8 a4 a8 |
+  d4. (d4) \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -121,15 +121,15 @@ musicChorusBasso = \relative c {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c'' {
   \set Score.currentBarNumber = #9
-  %{	8  %} \partial 8 a8 |
-  %{	9  %} a4 a8 a (b) cis |
-  %{	10 %} d4. e4 d8 |
-  %{	11 %} cis4 cis8 (b) cis b |
-  %{	12 %} a4. (a4) a8 |
-  %{	13 %} a4 a8 a (b) cis |
-  %{	14 %} d4. e4 d8 |
-  %{	15 %} cis4 cis8 b (cis) b |
-  %{	16 %} a4. (a4) \bar "||"
+  \partial 8 a8 |
+  a4 a8 a (b) cis |
+  d4. e4 d8 |
+  cis4 cis8 (b) cis b |
+  a4. (a4) a8 |
+  a4 a8 a (b) cis |
+  d4. e4 d8 |
+  cis4 cis8 b (cis) b |
+  a4. (a4) \bar "||"
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -137,15 +137,15 @@ musicVerseSoprano = \relative c'' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c'' {
   \set Score.currentBarNumber = #9
-  %{	8	%} \partial 8 a8 |
-  %{	9	%} a4 a8 a b a |
-  %{	10 %} a4. a4 a8 |
-  %{	11 %} a4 a8 gis4 gis8 |
-  %{	12 %} e4. (e4) e8 |
-  %{	13 %} e4 e8 e fis a |
-  %{	14 %} a4. a4 a8 |
-  %{	15 %} a4 a8 gis4 gis8 |
-  %{	16 %} e4. (e4) \bar "||"
+  \partial 8 a8 |
+  a4 a8 a b a |
+  a4. a4 a8 |
+  a4 a8 gis4 gis8 |
+  e4. (e4) e8 |
+  e4 e8 e fis a |
+  a4. a4 a8 |
+  a4 a8 gis4 gis8 |
+  e4. (e4) \bar "||"
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -153,15 +153,15 @@ musicVerseAlto = \relative c'' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
   \set Score.currentBarNumber = #9
-  %{	8	%} \partial 8 a8 |
-  %{	9	%} a4 a8 cis d e |
-  %{	10 %} d4. cis4 d8 |
-  %{	11 %} e4 e8 d e d |
-  %{	12 %} cis4. (cis4) cis8 |
-  %{	13 %} cis4 cis8 cis d e |
-  %{	14 %} d4. cis4 d8 |
-  %{	15 %} e4 e8 d e d |
-  %{	16 %} e4. (e4) \bar "||"
+  \partial 8 a8 |
+  a4 a8 cis d e |
+  d4. cis4 d8 |
+  e4 e8 d e d |
+  cis4. (cis4) cis8 |
+  cis4 cis8 cis d e |
+  d4. cis4 d8 |
+  e4 e8 d e d |
+  e4. (e4) \bar "||"
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -169,15 +169,15 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c' {
   \set Score.currentBarNumber = #9
-  %{	8	%} \partial 8 a8 |
-  %{	9	%} a4 a8 g4 g8 |
-  %{	10 %} fis4. g4 fis8 |
-  %{	11 %} e4 e8 e4 e8 |
-  %{	12 %} a4. (a4) a8 |
-  %{	13 %} a4 a8 a4 g8 |
-  %{	14 %} fis4. g4 fis8 |
-  %{	15 %} e4 e8 e4 e8 |
-  %{	16 %} a4. (a4) \bar "||"
+  \partial 8 a8 |
+  a4 a8 g4 g8 |
+  fis4. g4 fis8 |
+  e4 e8 e4 e8 |
+  a4. (a4) a8 |
+  a4 a8 a4 g8 |
+  fis4. g4 fis8 |
+  e4 e8 e4 e8 |
+  a4. (a4) \bar "||"
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

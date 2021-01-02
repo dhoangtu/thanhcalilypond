@@ -42,28 +42,28 @@ printItalic = \with {
 % Verse music
 musicVerseSoprano = \relative c' {
                     \partial 8 f8 |
-  %{	01	%} bes a bes d bes d, |
-  %{	02	%} c ees f a g g |
-  %{	03	%} g f c g' f c |
-  %{	04	%} g' f ees d4 f8 |
-  %{	05	%} bes a bes d bes d, |
-  %{	06	%} c ees f a g8. g16 |
-  %{	07	%} f8 e! f g fis g |
-  %{	08	%} a d8. c16 bes4 \bar "||"
+  bes a bes d bes d, |
+  c ees f a g g |
+  g f c g' f c |
+  g' f ees d4 f8 |
+  bes a bes d bes d, |
+  c ees f a g8. g16 |
+  f8 e! f g fis g |
+  a d8. c16 bes4 \bar "||"
 }
 
 % Chorus music
 musicChorusSoprano = \relative c' {
   \set Score.currentBarNumber = #9
                     \partial 8 f8 |
-  %{	09	%} f e! f g f f |
-  %{	10	%} f bes8. c16 d4. |
-  %{	11	%} d8 c a ees4 c'8 |
-  %{	12	%} c bes d, f4 f8 |
-  %{	13	%} f g a bes c d |
-  %{	14	%} ees d8. cis16 d4. |
-  %{	15	%} bes4 bes16 bes16 d8 bes4 |
-  %{	16	%} f4 d'8. c16 bes4 \bar "|."
+  f e! f g f f |
+  f bes8. c16 d4. |
+  d8 c a ees4 c'8 |
+  c bes d, f4 f8 |
+  f g a bes c d |
+  ees d8. cis16 d4. |
+  bes4 bes16 bes16 d8 bes4 |
+  f4 d'8. c16 bes4 \bar "|."
 }
 
 % Verse lyrics

@@ -62,57 +62,57 @@ printItalic = \with {
 musicSoprano = \relative c' {
   \time 4/4
   \partial 4 f4 ^\mp |
-  %{	1  %} bes c des2 ( |
-  %{	2  %} des4) c bes aes |
-  %{	3  %} f2. \breathe aes4 |
+  bes c des2 ( |
+  des4) c bes aes |
+  f2. \breathe aes4 |
   \time 6/4
-  %{	4  %} bes aes f2 ees2 |
+  bes aes f2 ees2 |
   \time 4/4
-  %{	5  %} f2. \breathe f4 |
-  %{	6  %} bes c des2 ( |
-  %{	7  %} des4) f ees c |
-  %{	8  %} aes2. c4 |
+  f2. \breathe f4 |
+  bes c des2 ( |
+  des4) f ees c |
+  aes2. c4 |
   \time 6/4
-  %{	9  %} bes aes f2 ees |
+  bes aes f2 ees |
   \time 4/4
-  %{	10 %} f2. r4 |
-  %{	11 %} r f ^\f  ^\cresc bes c |
-  %{	12 %} des ees des c |
-  %{	13 %} aes2. \! \breathe aes4 |
+  f2. r4 |
+  r f ^\f  ^\cresc bes c |
+  des ees des c |
+  aes2. \! \breathe aes4 |
   \time 6/4
-  %{	14 %} bes aes des2 c |
+  bes aes des2 c |
   \time 4/4
-  %{	15 %} bes2. \breathe f4 |
-  %{	16 %} bes c des2 ( |
-  %{	17 %} des4) f ees c |
-  %{	18 %} aes2. \breathe c4 |
+  bes2. \breathe f4 |
+  bes c des2 ( |
+  des4) f ees c |
+  aes2. \breathe c4 |
   \time 6/4
-  %{	19 %} bes aes f2 ees |
-  %{	20 %} f2. \breathe f'4^\f ^\markup { \italic "(accel. slightly)" } f f |
-  %{	21 %} f (ees8 des) c4 c c c |
-  %{	22 %} c des8 (ees) des4 \breathe des des des |
-  %{	23 %} des (c8 bes a4) a bes c |
-  %{	24 %} c (des8 ees f4 ^\ff) \breathe bes aes! ges |
-  %{	25 %} f -> ees2 -> bes'4 aes f |
-  %{	26 %} ees2. \breathe ges4 f ees |
-  %{	27 %} \override TextSpanner.bound-details.left.text = "rit."
+  bes aes f2 ees |
+  f2. \breathe f'4^\f ^\markup { \italic "(accel. slightly)" } f f |
+  f (ees8 des) c4 c c c |
+  c des8 (ees) des4 \breathe des des des |
+  des (c8 bes a4) a bes c |
+  c (des8 ees f4 ^\ff) \breathe bes aes! ges |
+  f -> ees2 -> bes'4 aes f |
+  ees2. \breathe ges4 f ees |
+  \override TextSpanner.bound-details.left.text = "rit."
                   des2 ^\startTextSpan (c) bes |
   \time 4/4
-  %{	28 %} a!2. \stopTextSpan f4 ^\p |
-  %{	29 %} bes c des2 ( |
-  %{	30 %} des4) c bes aes |
-  %{	31 %} f2. \breathe aes4 |
+  a!2. \stopTextSpan f4 ^\p |
+  bes c des2 ( |
+  des4) c bes aes |
+  f2. \breathe aes4 |
   \time 6/4
-  %{	32 %} bes aes f2 ees |
+  bes aes f2 ees |
   \time 4/4
-  %{	33 %} f2. \breathe f4 |
-  %{	34 %} bes c des2 ( |
-  %{	35 %} des4) f ees c |
-  %{	36 %} aes2. \breathe c4 |
+  f2. \breathe f4 |
+  bes c des2 ( |
+  des4) f ees c |
+  aes2. \breathe c4 |
   \time 6/4
-  %{	37 %} bes ^"rit." aes f2 ees |
+  bes ^"rit." aes f2 ees |
   \time 4/4
-  %{	38 %} f2. ^\pp \fermata r4 \bar "|."
+  f2. ^\pp \fermata r4 \bar "|."
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -121,57 +121,57 @@ musicSoprano = \relative c' {
 musicAlto = \relative c' {
   \time 4/4
   \partial 4 f4 |
-  %{	1  %} bes c des2 ( |
-  %{	2  %} des4) c bes aes |
-  %{	3  %} f (ees des) \breathe c |
+  bes c des2 ( |
+  des4) c bes aes |
+  f (ees des) \breathe c |
   \time 6/4
-  %{	4  %} des c des2 ees |
+  des c des2 ees |
   \time 4/4
-  %{	5  %} f2. \breathe f4 |
-  %{	6  %} e! f f (aes! |
-  %{	7  %} ges) bes aes ges |
-  %{	8  %} f2. aes4 |
+  f2. \breathe f4 |
+  e! f f (aes! |
+  ges) bes aes ges |
+  f2. aes4 |
   \time 6/4
-  %{	9  %} f ees des (c) bes (c) |
+  f ees des (c) bes (c) |
   \time 4/4
-  %{	10 %} des2. r4 |
-  %{	11 %} r f ^\cresc bes f |
-  %{	12 %} bes aes ges f |
-  %{	13 %} ees (des c) \! \breathe f |
+  des2. r4 |
+  r f ^\cresc bes f |
+  bes aes ges f |
+  ees (des c) \! \breathe f |
   \time 6/4
-  %{	14 %} ges f ges (f) ees (aes) |
+  ges f ges (f) ees (aes) |
   \time 4/4
-  %{	15 %} f2. \breathe f4 |
-  %{	16 %} e! f f (aes! |
-  %{	17 %} ges) bes aes ges |
-  %{	18 %} f2. \breathe aes4 |
+  f2. \breathe f4 |
+  e! f f (aes! |
+  ges) bes aes ges |
+  f2. \breathe aes4 |
   \time 6/4
-  %{	19 %} f ees des (c) bes (c) |
-  %{	20 %} d!2. \breathe bes'4 ^\f ^\markup { \italic "(accel. slightly)" } bes bes |
-  %{	21 %} bes2 bes4 bes aes ges |
-  %{	22 %} aes aes bes \breathe bes bes bes |
-  %{	23 %} bes (ges f) f f f |
-  %{	24 %} f2 (bes4 ^\ff) \breathe des c bes |
-  %{	25 %} aes -> ges -> (aes) des c bes |
-  %{	26 %} aes (ges aes) \breathe bes aes ges |
-  %{	27 %} \override TextSpanner.bound-details.left.text = "rit."
+  f ees des (c) bes (c) |
+  d!2. \breathe bes'4 ^\f ^\markup { \italic "(accel. slightly)" } bes bes |
+  bes2 bes4 bes aes ges |
+  aes aes bes \breathe bes bes bes |
+  bes (ges f) f f f |
+  f2 (bes4 ^\ff) \breathe des c bes |
+  aes -> ges -> (aes) des c bes |
+  aes (ges aes) \breathe bes aes ges |
+  \override TextSpanner.bound-details.left.text = "rit."
                   f ^\startTextSpan (ges2 f) e!4 |
   \time 4/4
-  %{	28 %} f2. \stopTextSpan f4 ^\p |
-  %{	29 %} bes c des2 ( |
-  %{	30 %} des4) c bes aes |
-  %{	31 %} f (ees des) \breathe c |
+  f2. \stopTextSpan f4 ^\p |
+  bes c des2 ( |
+  des4) c bes aes |
+  f (ees des) \breathe c |
   \time 6/4
-  %{	32 %} des c des2 ees |
+  des c des2 ees |
   \time 4/4
-  %{	33 %} f2. \breathe f4 |
-  %{	34 %} e! f f (aes! |
-  %{	35 %} ges) bes aes ges |
-  %{	36 %} f2. \breathe aes4 |
+  f2. \breathe f4 |
+  e! f f (aes! |
+  ges) bes aes ges |
+  f2. \breathe aes4 |
   \time 6/4
-  %{	37 %} f ^"rit." ees des (c) bes (c) |
+  f ^"rit." ees des (c) bes (c) |
   \time 4/4
-  %{	38 %} aes2. ^\pp \fermata r4
+  aes2. ^\pp \fermata r4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -180,57 +180,57 @@ musicAlto = \relative c' {
 musicTenor = \relative c {
   \time 4/4
   \partial 4 r4 |
-  %{	1  %} r f bes c |
-  %{	2  %} des ees f ees |
-  %{	3  %} des (c bes) \breathe aes |
+  r f bes c |
+  des ees f ees |
+  des (c bes) \breathe aes |
   \time 6/4
-  %{	4  %} ges aes bes2 c |
+  ges aes bes2 c |
   \time 4/4
-  %{	5  %} des4 (c bes) \breathe c |
-  %{	6  %} bes a! bes (c |
-  %{	7  %} bes) des c ees |
-  %{	8  %} ees (des c) ees |
+  des4 (c bes) \breathe c |
+  bes a! bes (c |
+  bes) des c ees |
+  ees (des c) ees |
   \time 6/4
-  %{	9  %} des c aes2 ges4 (aes) |
+  des c aes2 ges4 (aes) |
   \time 4/4
-  %{	10 %} aes2. \breathe f4 ^\f |
-  %{	11 %} bes ^\cresc c des2 ( |
-  %{	12 %} des4) c bes aes |
-  %{	13 %} f2. \! \breathe c'4 |
+  aes2. \breathe f4 ^\f |
+  bes ^\cresc c des2 ( |
+  des4) c bes aes |
+  f2. \! \breathe c'4 |
   \time 6/4
-  %{	14 %} des c bes2 aes4 (ees') |
+  des c bes2 aes4 (ees') |
   \time 4/4
-  %{	15 %} ees (des c) \breathe des |
-  %{	16 %} bes a! bes (c |
-  %{	17 %} bes) des c ees |
-  %{	18 %} ees (des c) \breathe ees |
+  ees (des c) \breathe des |
+  bes a! bes (c |
+  bes) des c ees |
+  ees (des c) \breathe ees |
   \time 6/4
-  %{	19 %} des c aes2 ges4 (aes) |
-  %{	20 %} bes2. \breathe d!4 ^\f ^\markup { \italic "(accel. slightly)" } ees f |
-  %{	21 %} ges2 ges4 ges f ees |
-  %{	22 %} f f f \breathe f ges aes |
-  %{	23 %} ges (ees8 des c4) c des ees |
-  %{	24 %} ees (c des ^\ff) \breathe ges ees des |
-  %{	25 %} c -> des -> (c) ges' ees des |
-  %{	26 %} c (des c) \breathe des c bes |
-  %{	27 %} \override TextSpanner.bound-details.left.text = "rit."
+  des c aes2 ges4 (aes) |
+  bes2. \breathe d!4 ^\f ^\markup { \italic "(accel. slightly)" } ees f |
+  ges2 ges4 ges f ees |
+  f f f \breathe f ges aes |
+  ges (ees8 des c4) c des ees |
+  ees (c des ^\ff) \breathe ges ees des |
+  c -> des -> (c) ges' ees des |
+  c (des c) \breathe des c bes |
+  \override TextSpanner.bound-details.left.text = "rit."
                   des2 \startTextSpan (c) bes |
   \time 4/4
-  %{	28 %} c2. \stopTextSpan r4 |
-  %{	29 %} r f, ^\p bes c |
-  %{	30 %} des ees f ees |
-  %{	31 %} des (c bes) \breathe aes |
+  c2. \stopTextSpan r4 |
+  r f, ^\p bes c |
+  des ees f ees |
+  des (c bes) \breathe aes |
   \time 6/4
-  %{	32 %} ges aes bes2 c |
+  ges aes bes2 c |
   \time 4/4
-  %{	33 %} des4 (c bes) \breathe c |
-  %{	34 %} bes a! bes (c |
-  %{	35 %} bes) des c ees |
-  %{	36 %} ees (des c) \breathe ees |
+  des4 (c bes) \breathe c |
+  bes a! bes (c |
+  bes) des c ees |
+  ees (des c) \breathe ees |
   \time 6/4
-  %{	37 %} des ^"rit." c aes2 (aes4) ges |
+  des ^"rit." c aes2 (aes4) ges |
   \time 4/4
-  %{	38 %} f2. ^\pp \fermata r4
+  f2. ^\pp \fermata r4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -239,57 +239,57 @@ musicTenor = \relative c {
 musicBasso = \relative c {
   \time 4/4
   \partial 4 r4 |
-  %{	1  %} r2. f4 |
-  %{	2  %} bes c des c |
-  %{	3  %} bes (aes ges) \breathe f |
+  r2. f4 |
+  bes c des c |
+  bes (aes ges) \breathe f |
   \time 6/4
-  %{	4  %} ees f ges2 aes |
+  ees f ges2 aes |
   \time 4/4
-  %{	5  %} bes4 (f des) \breathe f |
-  %{	6  %} ges f bes,2 ( |
-  %{	7  %} ees4) ees aes aes |
-  %{	8  %} des,2 (f4) f |
+  bes4 (f des) \breathe f |
+  ges f bes,2 ( |
+  ees4) ees aes aes |
+  des,2 (f4) f |
   \time 6/4
-  %{	9  %} bes, c des2 ees4 (aes,)
+  bes, c des2 ees4 (aes,)
   \time 4/4
-  %{	10 %} des2. \breathe f4 |
-  %{	11 %} bes ^\cresc c des2 ( |
-  %{	12 %} des4) c bes aes |
-  %{	13 %} f2. \! \breathe f4 |
+  des2. \breathe f4 |
+  bes ^\cresc c des2 ( |
+  des4) c bes aes |
+  f2. \! \breathe f4 |
   \time 6/4
-  %{	14 %} ees f ges2 aes2 |
+  ees f ges2 aes2 |
   \time 4/4
-  %{	15 %} bes2. \breathe bes4 |
-  %{	16 %} ges f bes,2 ( |
-  %{	17 %} ees4) ees aes aes |
-  %{	18 %} des,2 (f4) \breathe f |
+  bes2. \breathe bes4 |
+  ges f bes,2 ( |
+  ees4) ees aes aes |
+  des,2 (f4) \breathe f |
   \time 6/4
-  %{	19 %} bes, c des2 ees |
-  %{	20 %} f2. \breathe bes4 ^\f ^\markup { \italic "(accel. slightly)" } c d! |
-  %{	21 %} ees (ees,) aes aes aes aes |
-  %{	22 %} des c bes \breathe bes8 (aes) ges4 f |
-  %{	23 %} ees2 (f4) f ges a! |
-  %{	24 %} bes2 (bes4) ^\ff \breathe ees, f ges |
-  %{	25 %} aes -> bes -> (aes) ees f ges |
-  %{	26 %} aes (bes aes) \breathe ees f ges |
-  %{	27 %} \override TextSpanner.bound-details.left.text = "rit."
+  bes, c des2 ees |
+  f2. \breathe bes4 ^\f ^\markup { \italic "(accel. slightly)" } c d! |
+  ees (ees,) aes aes aes aes |
+  des c bes \breathe bes8 (aes) ges4 f |
+  ees2 (f4) f ges a! |
+  bes2 (bes4) ^\ff \breathe ees, f ges |
+  aes -> bes -> (aes) ees f ges |
+  aes (bes aes) \breathe ees f ges |
+  \override TextSpanner.bound-details.left.text = "rit."
                   bes2 ^\startTextSpan (aes) ges |
   \time 4/4
-  %{	28 %} f2. \stopTextSpan r4 |
-  %{	29 %} r2. f4 ^\p |
-  %{	30 %} bes c des c |
-  %{	31 %} bes (aes bes) \breathe f |
+  f2. \stopTextSpan r4 |
+  r2. f4 ^\p |
+  bes c des c |
+  bes (aes bes) \breathe f |
   \time 6/4
-  %{	32 %} ees f ges2 aes |
+  ees f ges2 aes |
   \time 4/4
-  %{	33 %} bes4 (f des) \breathe f |
-  %{	34 %} ges f bes,2 ( |
-  %{	35 %} ees4) ees aes aes |
-  %{	36 %} des,2 (f4) \breathe f |
+  bes4 (f des) \breathe f |
+  ges f bes,2 ( |
+  ees4) ees aes aes |
+  des,2 (f4) \breathe f |
   \time 6/4
-  %{	37 %} bes, ^"rit." c des2 ees4 (aes,) |
+  bes, ^"rit." c des2 ees4 (aes,) |
   \time 4/4
-  %{	38 %} des,2. ^\pp \fermata r4
+  des,2. ^\pp \fermata r4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

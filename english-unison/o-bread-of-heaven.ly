@@ -38,32 +38,32 @@ printItalic = \with {
 % Soprano verse music
 musicVerseSoprano = \relative c' {
   \mark "Chorus"
-  %{ 01 %} g'4 \p a b |
-  %{ 02 %} c2-> e,4 |
-  %{ 03 %} e (a) g |
-  %{ 04 %} f2 \> (e4) \! \breathe |
-  %{ 05 %} g a b |
-  %{ 06 %} c2-> c4 |
-  %{ 07 %} d2-> b4 |
-  %{ 08 %} c2-> r4 \bar "||"
-  %{ 09 %} \mark "Solo"
+  g'4 \p a b |
+  c2-> e,4 |
+  e (a) g |
+  f2 \> (e4) \! \breathe |
+  g a b |
+  c2-> c4 |
+  d2-> b4 |
+  c2-> r4 \bar "||"
+  \mark "Solo"
                   e \f d c |
-  %{ 10 %} c \> (b) \! a |
-  %{ 11 %} g (c) d |
-  %{ 12 %} c2 \> (b4) \! \breathe |
-  %{ 13 %} e d c |
-  %{ 14 %} c \> (b) \! a |
-  %{ 15 %} d2 fis,4 |
-  %{ 16 %} g2 r4 \bar "||"
-  %{ 17 %} \mark "Chorus"
+  c \> (b) \! a |
+  g (c) d |
+  c2 \> (b4) \! \breathe |
+  e d c |
+  c \> (b) \! a |
+  d2 fis,4 |
+  g2 r4 \bar "||"
+  \mark "Chorus"
                   g a b |
-  %{ 18 %} c2 e,4 |
-  %{ 19 %} e (a) g |
-  %{ 20 %} f2 \> (e4) \! \breathe |
-  %{ 21 %} g \mf a b |
-  %{ 22 %} c2-> c4 |
-  %{ 23 %} d2-> \mark "rall." b4 |
-  %{ 24 %} c2 r4 \bar "|."
+  c2 e,4 |
+  e (a) g |
+  f2 \> (e4) \! \breathe |
+  g \mf a b |
+  c2-> c4 |
+  d2-> \mark "rall." b4 |
+  c2 r4 \bar "|."
 }
 
 % Verse lyrics

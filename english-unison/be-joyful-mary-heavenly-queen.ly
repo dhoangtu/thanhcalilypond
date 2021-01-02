@@ -37,15 +37,15 @@ printItalic = \with {
 % Verse music
 musicVerseSoprano = \relative c' {
                     \partial 4 f4 |
-  %{	01	%} f c' a f |
-  %{	02	%} g g a c |
-  %{	03	%} bes a g2 |
-  %{	04	%} f2. bes4 |
-  %{	05	%} bes bes a g |
-  %{	06	%} a b! c2 |
-  %{	07	%} bes4 a g2 |
-  %{	08	%} f r4 c' |
-  %{	09	%} d c bes a |
+  f c' a f |
+  g g a c |
+  bes a g2 |
+  f2. bes4 |
+  bes bes a g |
+  a b! c2 |
+  bes4 a g2 |
+  f r4 c' |
+  d c bes a |
                     g2 f4 \bar "|."
 }
 

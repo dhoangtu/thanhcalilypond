@@ -46,13 +46,13 @@ minorNote = #(define-music-function
 % Verse music
 musicVerseSoprano = \relative c' {
                   \partial 4 ees4 |
-  %{	01	%} g4 aes bes ees, |
-  %{	02	%} f g aes g |
-  %{	03	%} f ees ees d |
-  %{	04	%} ees2. bes'4 |
-  %{	05	%} ees d c bes |
-  %{	06	%} bes a! bes \breathe g |
-  %{	07	%} f ees ees d |
+  g4 aes bes ees, |
+  f g aes g |
+  f ees ees d |
+  ees2. bes'4 |
+  ees d c bes |
+  bes a! bes \breathe g |
+  f ees ees d |
                     ees2. \bar "|."
 }
 

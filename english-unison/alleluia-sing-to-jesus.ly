@@ -44,38 +44,38 @@ minorNote = #(define-music-function
 
 % Verse music
 musicVerseSoprano = \relative c' {
-  %{	01	%} f2 g4 |
-  %{	02	%} f4. (g8) a4 |
-  %{	03	%} bes2 a4 |
-  %{	04	%} g (f) g |
-  %{	05	%} c2 bes4 |
-  %{	06	%} a2 a4 |
-  %{	07	%} g (f) g |
-  %{	08	%} f2. |
-  %{	09	%} f2 g4 |
-  %{	10	%} f4. (g8) a4 |
-  %{	11	%} bes2 a4 |
-  %{	12	%} g (f) g |
-  %{	13	%} c2 bes4 |
-  %{	14	%} a2 a4 |
-  %{	15	%} g (f) g |
-  %{	16	%} f2. |
-  %{	17	%} c'2 c4 |
-  %{	18	%} c (bes) a |
-  %{	19	%} bes2 bes4 |
-  %{	20	%} bes (a) g |
-  %{	21	%} a2 a4 |
-  %{	22	%} a (bes) c |
-  %{	23	%} c (bes) a |
-  %{	24	%} g2. |
-  %{	25	%} c4 (a) c |
-  %{	26	%} bes (g) bes |
-  %{	27	%} a (f) a |
-  %{	28	%} g8 (a bes a) g4 |
-  %{	29	%} c2 c4 |
-  %{	30	%} d (c) bes |
-  %{	31	%} a2 g4 |
-  %{	32	%} f2. \bar "|."
+  f2 g4 |
+  f4. (g8) a4 |
+  bes2 a4 |
+  g (f) g |
+  c2 bes4 |
+  a2 a4 |
+  g (f) g |
+  f2. |
+  f2 g4 |
+  f4. (g8) a4 |
+  bes2 a4 |
+  g (f) g |
+  c2 bes4 |
+  a2 a4 |
+  g (f) g |
+  f2. |
+  c'2 c4 |
+  c (bes) a |
+  bes2 bes4 |
+  bes (a) g |
+  a2 a4 |
+  a (bes) c |
+  c (bes) a |
+  g2. |
+  c4 (a) c |
+  bes (g) bes |
+  a (f) a |
+  g8 (a bes a) g4 |
+  c2 c4 |
+  d (c) bes |
+  a2 g4 |
+  f2. \bar "|."
 }
 
 % Verse lyrics

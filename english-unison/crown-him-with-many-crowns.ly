@@ -37,22 +37,22 @@ printItalic = \with {
 % Verse music
 musicVerseSoprano = \transpose d ees {
 \relative c' {
-  %{ 01 %} d4 d8 d fis4 fis |
-  %{ 02 %} b2. b4 |
-  %{ 03 %} a d, g fis |
-  %{ 04 %} e2. e4 |
-  %{ 05 %} fis a b a |
-  %{ 06 %} gis fis8 (e) a4 d |
-  %{ 07 %} cis d b b |
-  %{ 08 %} a2. a4 |
-  %{ 09 %} a fis e d |
-  %{ 10 %} b'2. b4 |
-  %{ 11 %} b gis fis e |
-  %{ 12 %} cis'2. cis4 |
-  %{ 13 %} d4. cis8 b4 a |
-  %{ 14 %} g e fis a |
-  %{ 15 %} g fis e e |
-  %{ 16 %} d1 \bar "|."
+  d4 d8 d fis4 fis |
+  b2. b4 |
+  a d, g fis |
+  e2. e4 |
+  fis a b a |
+  gis fis8 (e) a4 d |
+  cis d b b |
+  a2. a4 |
+  a fis e d |
+  b'2. b4 |
+  b gis fis e |
+  cis'2. cis4 |
+  d4. cis8 b4 a |
+  g e fis a |
+  g fis e e |
+  d1 \bar "|."
 }
 }
 

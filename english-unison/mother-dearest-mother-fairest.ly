@@ -41,13 +41,13 @@ printItalic = \with {
 % Verse music
 musicVerseSoprano = \relative c'' {
                     \partial 4 g8 e |
-  %{	01	%} c'4. c8 b a |
-  %{	02	%} a g4 r8 e8 c |
-  %{	03	%} g'4. g8 f g |
-  %{	04	%} e4. r8 g e |
-  %{	05	%} c'4. c8 b a |
-  %{	06	%} a g4 r8 e c |
-  %{	07	%} g'4. g8 f d |
+  c'4. c8 b a |
+  a g4 r8 e8 c |
+  g'4. g8 f g |
+  e4. r8 g e |
+  c'4. c8 b a |
+  a g4 r8 e c |
+  g'4. g8 f d |
                     c4 r \bar "|"
 }
 
@@ -55,13 +55,13 @@ musicVerseSoprano = \relative c'' {
 musicChorusSoprano = \relative c' {
   \set Score.currentBarNumber = #8
                     \partial 4 d8 e |
-  %{	08	%} d4. e8 f g |
-  %{	09	%} e4 r d8 e |
-  %{	10	%} d4. e8 f g |
-  %{	11	%} e4 r g8 e |
-  %{	12	%} c'4. c8 b a |
-  %{	13	%} a g4 r8 e c |
-  %{	14	%} g'4. g8 f d |
+  d4. e8 f g |
+  e4 r d8 e |
+  d4. e8 f g |
+  e4 r g8 e |
+  c'4. c8 b a |
+  a g4 r8 e c |
+  g'4. g8 f d |
                     c2 \bar "|."
 }
 

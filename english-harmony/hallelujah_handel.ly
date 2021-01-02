@@ -77,37 +77,37 @@ musicSoprano = \relative c {
 
 % Soprano lyrics
 lyricsSoprano = \lyrics {
-	%{ 04 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 06 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 09 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 10 %} Hal -- le -- lu -- jah.
-	%{ 12 %} For the Lord God om -- ni -- po -- tent reign -- eth,
-	%{ 14 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 16 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 20 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
-	%{ 22 %} For the Lord God om -- ni -- po -- tent reign -- eth,
-	%{ 24 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 26 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 28 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,	Hal -- le -- lu -- jah,
-	%{ 29 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah.
+	For the Lord God om -- ni -- po -- tent reign -- eth,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
+	For the Lord God om -- ni -- po -- tent reign -- eth,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,	Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
 	          Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
-	%{ 33 %} The king -- dom of this world is be -- come
-	%{ 37 %} the king -- dom of our Lord and of his Christ, and of his Christ.
-	%{ 48 %} And He shall reign for ev -- er and ev -- er.
-	%{ 51 %} King of kings, __ and Lord of lords. __
-	%{ 57 %} King of kings, __ and Lord of lords. __
-	%{ 63 %} King of kings, __ and Lord of lords, __ and Lord of lords.
-	%{ 69 %} And He shall reign,
-	%{ 71 %} and He shall reign for ev -- er and ev -- er, for ev -- er and ev -- er.
-	%{ 77 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
-	%{ 78 %} And He shall reign for ev -- er, for ev -- er and ev -- er.
-	%{ 81 %} King of kings, and Lord of lords.
-	%{ 83 %} King of kings, and Lord of lords.
-	%{ 85 %} And He shall reign for ev -- er and ev -- er.
-	%{ 88 %} King of kings, and Lord of lords.
-	%{ 90 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	The king -- dom of this world is be -- come
+	the king -- dom of our Lord and of his Christ, and of his Christ.
+	And He shall reign for ev -- er and ev -- er.
+	King of kings, __ and Lord of lords. __
+	King of kings, __ and Lord of lords. __
+	King of kings, __ and Lord of lords, __ and Lord of lords.
+	And He shall reign,
+	and He shall reign for ev -- er and ev -- er, for ev -- er and ev -- er.
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
+	And He shall reign for ev -- er, for ev -- er and ev -- er.
+	King of kings, and Lord of lords.
+	King of kings, and Lord of lords.
+	And He shall reign for ev -- er and ev -- er.
+	King of kings, and Lord of lords.
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
             Hal -- le -- lu -- jah,
-  %{ 92 %} Hal -- le -- lu -- jah.
+  Hal -- le -- lu -- jah.
 }
 
 % Alto music
@@ -138,38 +138,38 @@ musicAlto = \relative c'' {
 
 % Alto lyrics
 lyricsAlto = \lyrics {
-  %{ 04 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-  %{ 06 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-  %{ 09 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+  Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+  Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+  Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
             Hal -- le -- lu -- jah,
-  %{ 12 %} For the Lord God om -- ni -- po -- tent reign -- eth,
-  %{ 14 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+  For the Lord God om -- ni -- po -- tent reign -- eth,
+  Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
             Hal -- le -- lu -- jah.
-  %{ 17 %} For the Lord God om -- ni -- po -- tent reign -- eth,
-  %{ 19 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-  %{ 21 %} Hal -- le -- lu -- jah,
-  %{ 23 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+  For the Lord God om -- ni -- po -- tent reign -- eth,
+  Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+  Hal -- le -- lu -- jah,
+  Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
             Hal -- le -- lu -- jah,
-  %{ 25 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+  Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
             Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
-  %{ 29 %} For the Lord God om -- ni -- po -- tent reign -- eth,
-  %{ 31 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
-  %{ 33 %} The king -- dom of this world is be -- come the king -- dom of our Lord and of his Christ, and of his Christ.
-  %{ 46 %} And He shall reign for ev -- er and ev -- er, for ev -- er and ev -- er, for ev -- er and ev -- er.
-  %{ 51 %} King of kings, and Lord of lords,
-  %{ 58 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-  %{ 61 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-  %{ 64 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-  %{ 67 %} King of kings, and Lord of lords.
-  %{ 70 %} And He shall reign, and He shall reign for ev -- er and ev -- er.
-  %{ 74 %} King of kings, for ev -- er and ev -- er, and Lord of lords.
-  %{ 77 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-  %{ 78 %} And He shall reign for ev -- er and ev -- er.
-  %{ 81 %} King of kings, and Lord of lords, King of kings, and Lord of lords,
-  %{ 85 %} And He shall reign for ev -- er and ev -- er, for ev -- er and ev -- er, for ev -- er and ev -- er.
-  %{ 90 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+  For the Lord God om -- ni -- po -- tent reign -- eth,
+  Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
+  The king -- dom of this world is be -- come the king -- dom of our Lord and of his Christ, and of his Christ.
+  And He shall reign for ev -- er and ev -- er, for ev -- er and ev -- er, for ev -- er and ev -- er.
+  King of kings, and Lord of lords,
+  for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+  for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+  for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+  King of kings, and Lord of lords.
+  And He shall reign, and He shall reign for ev -- er and ev -- er.
+  King of kings, for ev -- er and ev -- er, and Lord of lords.
+  Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+  And He shall reign for ev -- er and ev -- er.
+  King of kings, and Lord of lords, King of kings, and Lord of lords,
+  And He shall reign for ev -- er and ev -- er, for ev -- er and ev -- er, for ev -- er and ev -- er.
+  Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
             Hal -- le -- lu -- jah,
-  %{ 92 %} Hal -- le -- lu -- jah.
+  Hal -- le -- lu -- jah.
 }
 
 
@@ -201,42 +201,42 @@ musicTenor = \relative c {
 
 % Tenor lyrics
 lyricsTenor = \lyrics {
-	%{ 04 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 06 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,	Hal -- le -- lu -- jah,
-	%{ 09 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,	Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
 	          Hal -- le -- lu -- jah,
-	%{ 12 %} For the Lord God om -- ni -- po -- tent reign -- eth,
-	%{ 14 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	For the Lord God om -- ni -- po -- tent reign -- eth,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
 	          Hal -- le -- lu -- jah.
-	%{ 17 %} For the Lord God om -- ni -- po -- tent reign -- eth,
-	%{ 19 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 21 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 23 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
-	%{ 25 %} For the Lord God om -- ni -- po -- tent reign -- eth,
-	%{ 27 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
-	%{ 29 %} For the Lord God om -- ni -- po -- tent reign -- eth,
-	%{ 31 %} Hal -- le -- lu -- jah.
-	%{ 33 %} The king -- dom of this world is be -- come
-	%{ 37 %} the king -- dom of our Lord and of his Christ, and of his Christ.
-	%{ 43 %} And He shall reign for ev -- er and ev -- er.
-	%{ 46 %} And He shall reign for ev -- er and ev -- er.
-	%{ 49 %} And He shall reign for ev -- er and ev -- er.
-	%{ 52 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 55 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 58 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 61 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 64 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 67 %} King of kings, and Lord of lords.
-	%{ 70 %} And He shall reign, and He __ shall reign,
-	%{ 72 %} and He shall reign for ev -- er and ev -- er.
-	%{ 74 %} King of kings, __ and Lord of lords. __
-	%{ 78 %} And He shall reign for ev -- er, for ev -- er and ev -- er.
-	%{ 81 %} King of __ kings, and Lord of __ lords.
-	%{ 83 %} King of kings, and Lord of __ lords.
-	%{ 85 %} And He shall reign for ev -- er and ev -- er, for ev -- er and ev -- er, for ev -- er and ev -- er.
-	%{ 90 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	For the Lord God om -- ni -- po -- tent reign -- eth,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
+	For the Lord God om -- ni -- po -- tent reign -- eth,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
+	For the Lord God om -- ni -- po -- tent reign -- eth,
+	Hal -- le -- lu -- jah.
+	The king -- dom of this world is be -- come
+	the king -- dom of our Lord and of his Christ, and of his Christ.
+	And He shall reign for ev -- er and ev -- er.
+	And He shall reign for ev -- er and ev -- er.
+	And He shall reign for ev -- er and ev -- er.
+	for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	King of kings, and Lord of lords.
+	And He shall reign, and He __ shall reign,
+	and He shall reign for ev -- er and ev -- er.
+	King of kings, __ and Lord of lords. __
+	And He shall reign for ev -- er, for ev -- er and ev -- er.
+	King of __ kings, and Lord of __ lords.
+	King of kings, and Lord of __ lords.
+	And He shall reign for ev -- er and ev -- er, for ev -- er and ev -- er, for ev -- er and ev -- er.
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
             Hal -- le -- lu -- jah,
-  %{ 92 %} Hal -- le -- lu -- jah.
+  Hal -- le -- lu -- jah.
 }
 
 
@@ -269,44 +269,44 @@ musicBass = \relative c {
 
 % Basso lyrics
 lyricsBass = \lyrics {
-	%{ 04 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 06 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 09 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
 	          Hal -- le -- lu -- jah,
-	%{ 12 %} For the Lord God om -- ni -- po -- tent reign -- eth,
-	%{ 14 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	For the Lord God om -- ni -- po -- tent reign -- eth,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
 	          Hal -- le -- lu -- jah.
-	%{ 17 %} For the Lord God om -- ni -- po -- tent reign -- eth,
-	%{ 19 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 22 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
-	%{ 25 %} For the Lord God om -- ni -- po -- tent reign -- eth,
-	%{ 27 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	For the Lord God om -- ni -- po -- tent reign -- eth,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
+	For the Lord God om -- ni -- po -- tent reign -- eth,
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
 	          Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
 	          Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
-	%{ 33 %} The king -- dom of this world is be -- come
-	%{ 37 %} the king -- dom of our Lord and of his Christ, and of his Christ.
-	%{ 41 %} And He shall reign for ev -- er and ev -- er, for ev -- er and ev -- er.
-	%{ 45 %} And He shall reign, and He shall reign for ev -- er, for ev -- er, for ev -- er,
-	%{ 48 %} for ev -- er and ev -- er,
+	The king -- dom of this world is be -- come
+	the king -- dom of our Lord and of his Christ, and of his Christ.
+	And He shall reign for ev -- er and ev -- er, for ev -- er and ev -- er.
+	And He shall reign, and He shall reign for ev -- er, for ev -- er, for ev -- er,
+	for ev -- er and ev -- er,
 	          for ev -- er, for ev -- er and ev -- er.
-	%{ 52 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 55 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 58 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 61 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 64 %} for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
-	%{ 67 %} King of kings, and Lord of lords.
-	%{ 69 %} And He shall reign for ev -- er and ev -- er.
-	%{ 72 %} And He shall reign for ev -- er and ev -- er.
-	%{ 74 %} King of Kings, for ev -- er and ev -- er, and Lord of lords.
-	%{ 77 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
-	%{ 78 %} And He shall reign for ev -- er, for ev -- er and ev -- er.
-	%{ 81 %} King of kings, and Lord of lords.
-	%{ 83 %} King of kings, and Lord of lords.
-	%{ 85 %} And He shall reign for ev -- er, for ev -- er and ev -- er,
-	%{ 88 %} for ev -- er and ev -- er, for ev -- er and ev -- er.
-	%{ 90 %} Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	for ev -- er and ev -- er. Hal -- le -- lu -- jah, Hal -- le -- lu -- jah.
+	King of kings, and Lord of lords.
+	And He shall reign for ev -- er and ev -- er.
+	And He shall reign for ev -- er and ev -- er.
+	King of Kings, for ev -- er and ev -- er, and Lord of lords.
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
+	And He shall reign for ev -- er, for ev -- er and ev -- er.
+	King of kings, and Lord of lords.
+	King of kings, and Lord of lords.
+	And He shall reign for ev -- er, for ev -- er and ev -- er,
+	for ev -- er and ev -- er, for ev -- er and ev -- er.
+	Hal -- le -- lu -- jah, Hal -- le -- lu -- jah, Hal -- le -- lu -- jah,
 	          Hal -- le -- lu -- jah,
-  %{ 92 %} Hal -- le -- lu -- jah.
+  Hal -- le -- lu -- jah.
 }
 
 % 10. Layout

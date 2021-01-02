@@ -58,16 +58,16 @@ printItalic = \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseSoprano = \relative c' {
 \partial 4 gis'4 |
-  %{  1 %} b cis gis fis |
-  %{	2 %} e2. e'4 |
-  %{	3 %} dis cis b a |
-  %{	4 %} gis2 (fis4) \break \bar "||" fis4 |
-  %{	5 %} e a gis e |
-  %{	6 %} e cis' b a |
-  %{	7 %} gis fis e fis |
-  %{	8 %} e2. r4 \bar "||" 
-  %{	9 %} a1 |
-  %{10 %} gis1 \bar "|."
+  b cis gis fis |
+  e2. e'4 |
+  dis cis b a |
+  gis2 (fis4) \break \bar "||" fis4 |
+  e a gis e |
+  e cis' b a |
+  gis fis e fis |
+  e2. r4 \bar "||" 
+  a1 |
+  gis1 \bar "|."
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -75,16 +75,16 @@ musicVerseSoprano = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseAlto = \relative c' {
 \partial 4 e4 |
-  %{	1 %} e e dis dis |
-  %{	2 %} dis2 (cis4) e |
-  %{	3 %} fis e e e |
-  %{	4 %} e2 (dis4) dis |
-  %{	5 %} cis e d d |
-  %{	6 %} cis e d fis |
-  %{	7 %} cis cis cis dis |
-  %{	8 %} e2. r4 \bar "||"
-  %{	9 %} e1 |
-  %{ 10%} e1
+  e e dis dis |
+  dis2 (cis4) e |
+  fis e e e |
+  e2 (dis4) dis |
+  cis e d d |
+  cis e d fis |
+  cis cis cis dis |
+  e2. r4 \bar "||"
+  e1 |
+  e1
   
 }
 
@@ -93,16 +93,16 @@ musicVerseAlto = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseTenor = \relative c' {
 \partial 4 e4 |
-  %{	1 %} dis cis b a |
-  %{	2 %} gis2. cis4 |
-  %{	3 %} bis cis gis a |
-  %{	4 %} b2. a4 |
-  %{	5 %} gis a b gis |
-  %{	6 %} a e eis fis |
-  %{	7 %} b a fis a |
-  %{	8 %} gis2. r4 |
-  %{	9 %} cis1 |
-  %{ 10%} b1
+  dis cis b a |
+  gis2. cis4 |
+  bis cis gis a |
+  b2. a4 |
+  gis a b gis |
+  a e eis fis |
+  b a fis a |
+  gis2. r4 |
+  cis1 |
+  b1
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -110,16 +110,16 @@ musicVerseTenor = \relative c' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 musicVerseBasso = \relative c {
 \partial 4 e4 |
-  %{	1 %} gis, a b bis |
-  %{	2 %} cis2. cis4 |
-  %{	3 %} gis a b cis |
-  %{	4 %} b2. b4 |
-  %{	5 %} cis cis b b |
-  %{	6 %} a a gis fis |
-  %{	7 %} gis a b b |
-  %{	8 %} e2. r4 |
-  %{	9 %} a,1 |
-  %{ 10%} e'1
+  gis, a b bis |
+  cis2. cis4 |
+  gis a b cis |
+  b2. b4 |
+  cis cis b b |
+  a a gis fis |
+  gis a b b |
+  e2. r4 |
+  a,1 |
+  e'1
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

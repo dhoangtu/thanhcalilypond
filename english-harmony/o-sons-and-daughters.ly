@@ -33,108 +33,108 @@ printItalic = \with {
 % Soprano verse music
 musicVerseSoprano = \relative c' {
                     \partial 4 a'4
-  %{	01	%} c2 d4 |
-  %{	02	%} e2 c4 |
-  %{	03	%} d4(c4) b4 |
-  %{	04	%} a2 a4 |
-  %{	05	%} c2 d4 |
-  %{	06	%} e2 c4 |
-  %{	07	%} d4(c4) b4 |
-  %{	08	%} a2 a4 |
-  %{	09	%} a2 b4 |
-  %{	10	%} a4(gis4) a4 |
-  %{	11	%} b2 b4 |
-  %{	12	%} e,2 b'4 |
-  %{	13	%} c4 b2 |
+  c2 d4 |
+  e2 c4 |
+  d4(c4) b4 |
+  a2 a4 |
+  c2 d4 |
+  e2 c4 |
+  d4(c4) b4 |
+  a2 a4 |
+  a2 b4 |
+  a4(gis4) a4 |
+  b2 b4 |
+  e,2 b'4 |
+  c4 b2 |
                     a2 \fermata
 
-  %{	14	%} a4 |
-  %{	15	%} a2 b4 |
-  %{	16	%} a4(gis4) a4 |
-  %{	17	%} b2 b4 |
-  %{	18	%} e,2 b'4 |
-  %{	19	%} c2 b4 |
+  a4 |
+  a2 b4 |
+  a4(gis4) a4 |
+  b2 b4 |
+  e,2 b'4 |
+  c2 b4 |
                     a2 \fermata \bar "|."
 }
 
 % Alto verse music
 musicVerseAlto = \relative c' {
                     \partial 4 a'4
-  %{	01	%} e2 g4 |
-  %{	02	%} g2 a4 |
-  %{	03	%} f4(e4) d4 |
-  %{	04	%} c2 e4 |
-  %{	05	%} e2 a4 |
-  %{	06	%} gis2 a4 |
-  %{	07	%} b4(a4) gis4 |
-  %{	08	%} a2 e4 |
-  %{	09	%} d4(e4) f4 |
-  %{	10	%} e2 e4 |
-  %{	11	%} e2 dis4 |
-  %{	12	%} e2 e4 |
-  %{	13	%} e4 e4.(d8) |
+  e2 g4 |
+  g2 a4 |
+  f4(e4) d4 |
+  c2 e4 |
+  e2 a4 |
+  gis2 a4 |
+  b4(a4) gis4 |
+  a2 e4 |
+  d4(e4) f4 |
+  e2 e4 |
+  e2 dis4 |
+  e2 e4 |
+  e4 e4.(d8) |
                     c2
 
-  %{	14	%} e4 |
-  %{	15	%} f2 f4 |
-  %{	16	%} e2 e4 |
-  %{	17	%} e2 dis4 |
-  %{	18	%} e2 gis4 |
-  %{	19	%} a2 gis4 |
+  e4 |
+  f2 f4 |
+  e2 e4 |
+  e2 dis4 |
+  e2 gis4 |
+  a2 gis4 |
                     e2 \bar "|."
 }
 
 % Tenor verse music
 musicVerseTenor = \relative c {
                     \partial 4 a'4
-  %{	01	%} c2 b4 |
-  %{	02	%} c2 a4 |
-  %{	03	%} a2 gis4 |
-  %{	04	%} a2 c4 |
-  %{	05	%} c2 b4 |
-  %{	06	%} c4(b4) a4 |
-  %{	07	%} f'4(e4) d4 |
-  %{	08	%} c2 c4 |
-  %{	09	%} d4(c4) d4 |
-  %{	10	%} c4(b4) a4 |
-  %{	11	%} gis2 fis4 |
-  %{	12	%} gis2 gis4 |
-  %{	13	%} a2 gis4 |
+  c2 b4 |
+  c2 a4 |
+  a2 gis4 |
+  a2 c4 |
+  c2 b4 |
+  c4(b4) a4 |
+  f'4(e4) d4 |
+  c2 c4 |
+  d4(c4) d4 |
+  c4(b4) a4 |
+  gis2 fis4 |
+  gis2 gis4 |
+  a2 gis4 |
                     a2 \fermata
 
-  %{	14	%} c4 |
-  %{	15	%} c2 d4 |
-  %{	16	%} c4(b4) a4 |
-  %{	17	%} fis4(gis4) a4 |
-  %{	18	%} gis2 e'4 |
-  %{	19	%} e4 e4.(d8) |
+  c4 |
+  c2 d4 |
+  c4(b4) a4 |
+  fis4(gis4) a4 |
+  gis2 e'4 |
+  e4 e4.(d8) |
                     c2 \fermata
 }
 
 % Basso verse music
 musicVerseBasso = \relative c {
                     \partial 4 a'4
-  %{	01	%} a2 g4 |
-  %{	02	%} c,2 f4 |
-  %{	03	%} d4(e4) e4 |
-  %{	04	%} a,2 a'4 |
-  %{	05	%} a4(g4) f4 |
-  %{	06	%} e2 f4 |
-  %{	07	%} d4(e4) e4 |
-  %{	08	%} g,2 a'8(g8) |
-  %{	09	%} f4(e4) d4 |
-  %{	10	%} e4.(d8) c4 |
-  %{	11	%} b2 b4 |
-  %{	12	%} e2 e8(d8) |
-  %{	13	%} c8(d8) e2 |
+  a2 g4 |
+  c,2 f4 |
+  d4(e4) e4 |
+  a,2 a'4 |
+  a4(g4) f4 |
+  e2 f4 |
+  d4(e4) e4 |
+  g,2 a'8(g8) |
+  f4(e4) d4 |
+  e4.(d8) c4 |
+  b2 b4 |
+  e2 e8(d8) |
+  c8(d8) e2 |
                     a,2
 
-  %{	14	%} a'4 |
-  %{	15	%} fis4(e4) d4 |
-  %{	16	%} e4(d4) c4 |
-  %{	17	%} b2 b4 |
-  %{	18	%} e2 e4 |
-  %{	19	%} a,8(c8) e2 |
+  a'4 |
+  fis4(e4) d4 |
+  e4(d4) c4 |
+  b2 b4 |
+  e2 e4 |
+  a,8(c8) e2 |
                     a,2
 }
 

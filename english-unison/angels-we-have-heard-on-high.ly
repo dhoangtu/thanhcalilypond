@@ -35,32 +35,32 @@ printItalic = \with {
 
 % Verse music
 musicVerseSoprano = \relative c'' {
-  %{	01	%} a4 a bes c |
-  %{	02	%} c4. bes8 a2 |
-  %{	03	%} a4 g a c |
-  %{	04	%} a4. g8 f2 |
-  %{	05	%} a4 a a c |
-  %{	06	%} c4. bes8 a2 |
-  %{	07	%} a4 g a c |
-  %{	08	%} a4. g8 f2 \bar "||"
+  a4 a bes c |
+  c4. bes8 a2 |
+  a4 g a c |
+  a4. g8 f2 |
+  a4 a a c |
+  c4. bes8 a2 |
+  a4 g a c |
+  a4. g8 f2 \bar "||"
 }
 
 % Chorus music
 musicChorusSoprano = \relative c'' {
   \set Score.currentBarNumber = #9
-  %{	09	%} c2 \melisma d8 c bes a |
-  %{	10	%} bes2 c8 bes a g |
-  %{	11	%} a2 bes8 a g f |
-  %{	12	%} g4. \melismaEnd c8 c2 |
-  %{	13	%} f,4 g a bes |
-  %{	14	%} a2 g4 r |
-  %{	15	%} c2 \melisma d8 c bes a |
-  %{	16	%} bes2 c8 bes a g |
-  %{	17	%} a2 bes8 a g f |
-  %{	18	%} g4. \melismaEnd c,8 c2 |
-  %{	19	%} f4 g a bes |
-  %{	20	%} a2 g |
-  %{	21	%} f2. r4 \bar "|."
+  c2 \melisma d8 c bes a |
+  bes2 c8 bes a g |
+  a2 bes8 a g f |
+  g4. \melismaEnd c8 c2 |
+  f,4 g a bes |
+  a2 g4 r |
+  c2 \melisma d8 c bes a |
+  bes2 c8 bes a g |
+  a2 bes8 a g f |
+  g4. \melismaEnd c,8 c2 |
+  f4 g a bes |
+  a2 g |
+  f2. r4 \bar "|."
 }
 
 % Verse lyrics

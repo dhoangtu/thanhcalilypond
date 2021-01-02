@@ -39,35 +39,35 @@ printItalic = \with {
 
 % Verse music
 musicVerseSoprano = \relative c'' {
-  %{	01	%} d4 bes8 c (bes) g |
-  %{	02	%} f4 d8 f4 bes8 |
-  %{	03	%} c4 c8 c bes c |
-  %{	04	%} d4. (d4) f,8 |
-  %{	05	%} d'4 bes8 c (bes) g |
-  %{	06	%} f4 d8 f4 bes8 |
-  %{	07	%} c4 c8 c (d) c |
-  %{	08	%} bes4. (bes4) d8 |
-  %{	09	%} c4 c8 c (d) e! |
-  %{	10	%} f4 c8 c4 c8 |
-  %{	11	%} c4 bes8 bes4 a8 |
-  %{	12	%} a4. (g4) g8 |
-  %{	13	%} a4 a8 bes (a) bes |
-  %{	14	%} c4 c8 d4 \fermata c16 (bes) |
-  %{	15	%} f4 f8 g4 g8 |
-  %{	16	%} f4. (f4) r8 \bar "||"
+  d4 bes8 c (bes) g |
+  f4 d8 f4 bes8 |
+  c4 c8 c bes c |
+  d4. (d4) f,8 |
+  d'4 bes8 c (bes) g |
+  f4 d8 f4 bes8 |
+  c4 c8 c (d) c |
+  bes4. (bes4) d8 |
+  c4 c8 c (d) e! |
+  f4 c8 c4 c8 |
+  c4 bes8 bes4 a8 |
+  a4. (g4) g8 |
+  a4 a8 bes (a) bes |
+  c4 c8 d4 \fermata c16 (bes) |
+  f4 f8 g4 g8 |
+  f4. (f4) r8 \bar "||"
 }
 
 % Chorus music
 musicChorusSoprano = \relative c'' {
   \set Score.currentBarNumber = #17
-  %{	17	%} d4 bes8 c (bes) g |
-  %{	18	%} f4 d8 f4 bes8 |
-  %{	19	%} c4 c8 c (bes) c |
-  %{	20	%} d4. (d4) r8 |
-  %{	21	%} d4 bes8 c bes g |
-  %{	22	%} f4 d8 f4 bes8 |
-  %{	23	%} c4 c8 c (d) c |
-  %{	24	%} bes4. (bes4) r8 \bar "|."
+  d4 bes8 c (bes) g |
+  f4 d8 f4 bes8 |
+  c4 c8 c (bes) c |
+  d4. (d4) r8 |
+  d4 bes8 c bes g |
+  f4 d8 f4 bes8 |
+  c4 c8 c (d) c |
+  bes4. (bes4) r8 \bar "|."
 }
 
 % Verse lyrics

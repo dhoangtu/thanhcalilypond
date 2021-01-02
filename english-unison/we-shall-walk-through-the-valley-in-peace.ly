@@ -38,28 +38,28 @@ printItalic = \with {
 % Verse music
 musicVerseSoprano = \relative c' {
                     \partial 4. ees4 g8 |
-  %{	01	%} aes4. aes4 aes8 |
-  %{	02	%} aes4 (ees8) g4 aes8 |
-  %{	03	%} bes2. ( |
-  %{	04	%} bes4.) r8 ees des |
-  %{	05	%} c4. c4 c8 |
-  %{	06	%} c4 (bes8) aes4 c8 |
-  %{	07	%} bes2. ( |
-  %{	08	%} bes4.) r8 \bar "" \break
+  aes4. aes4 aes8 |
+  aes4 (ees8) g4 aes8 |
+  bes2. ( |
+  bes4.) r8 ees des |
+  c4. c4 c8 |
+  c4 (bes8) aes4 c8 |
+  bes2. ( |
+  bes4.) r8 \bar "" \break
 }
 
 % Chorus music
 musicChorusSoprano = \relative c'' {
   \set Score.currentBarNumber = #9
                     \partial 4 ees8 (des) |
-  %{	09	%} c4. c4 c8 |
-  %{	10	%} c4 bes8 aes4 c8 |
-  %{	11	%} bes8 (aes bes c bes c) |
-  %{	12	%} des4. r8 \bar "" \break
+  c4. c4 c8 |
+  c4 bes8 aes4 c8 |
+  bes8 (aes bes c bes c) |
+  des4. r8 \bar "" \break
                     c bes |
-  %{	13	%} aes4. aes4 aes8 |
-  %{	14	%} g4 aes8 bes4. |
-  %{	15	%} aes2. \bar "|."
+  aes4. aes4 aes8 |
+  g4 aes8 bes4. |
+  aes2. \bar "|."
 }
 
 % Verse lyrics

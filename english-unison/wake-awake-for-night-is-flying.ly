@@ -35,32 +35,32 @@ printItalic = \with {
 
 % Verse music
 musicVerseSoprano = \relative c' {
-  %{	01	%} c4 e g4. g8 |
-  %{	02	%} g4 g a2 |
-  %{	03	%} g r4 g |
-  %{	04	%} c b c8 (d) e4 |
-  %{	05	%} d c b (a) |
-  %{	06	%} g2 r4 g |
-  %{	07	%} c g a e |
-  %{	08	%} f8 (e) d4 c2 |
-  %{	09	%} c4 e g4. g8 |
-  %{	10	%} g4 g a2 |
-  %{	11	%} g r4 g |
-  %{	12	%} c g c8 d e4 |
-  %{	13	%} d c b a |
-  %{	14	%} g2 r4 g |
-  %{	15	%} c g a e |
-  %{	16	%} f8 (e) d4 c2 |
-  %{	17	%} r4 g' g4. f8 |
-  %{	18	%} e4 d c2 |
-  %{	19	%} r4 g' g4. f8 |
-  %{	20	%} e4 d c2 |
-  %{	21	%} d4 e f2 |
-  %{	22	%} e r4 g |
-  %{	23	%} a b c c8 (d) |
-  %{	24	%} e4 d c g |
-  %{	25	%} c g a e |
-  %{	26	%} f8 (e) d4 c2 \bar "|."
+  c4 e g4. g8 |
+  g4 g a2 |
+  g r4 g |
+  c b c8 (d) e4 |
+  d c b (a) |
+  g2 r4 g |
+  c g a e |
+  f8 (e) d4 c2 |
+  c4 e g4. g8 |
+  g4 g a2 |
+  g r4 g |
+  c g c8 d e4 |
+  d c b a |
+  g2 r4 g |
+  c g a e |
+  f8 (e) d4 c2 |
+  r4 g' g4. f8 |
+  e4 d c2 |
+  r4 g' g4. f8 |
+  e4 d c2 |
+  d4 e f2 |
+  e r4 g |
+  a b c c8 (d) |
+  e4 d c g |
+  c g a e |
+  f8 (e) d4 c2 \bar "|."
 }
 
 % Verse lyrics
