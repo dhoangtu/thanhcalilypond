@@ -128,12 +128,40 @@ nhacDiepKhucBasso = \relative c {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 nhacPhienKhucSoprano = \relative c'' {
   r4 e8 e |
-  
+  e8. c16 c8 c |
+  d4 d8 d |
+  d8. b16 b8 b |
+  c4 \breathe c8 b |
+  a4 g |
+  f g |
+  e2 ( |
+  e4) c8 c |
+  e8. e16 d8 d |
+  f4 \breathe e8 e |
+  g8. g16 f8 f |
+  a4 \breathe a8 b |
+  c4 d |
+  e c |
+  d2 \mark "D.C." \bar "|."
 }
 
 nhacPhienKhucBasso = \relative c'' {
   r4 g8 g |
-  
+  g8. e16 e8 e |
+  f4 f8 f |
+  f8. d16 d8 d |
+  e4 g8 g |
+  f4 e |
+  d e |
+  c2 ( |
+  c4 ) g8 g |
+  c8. c16 b8 b |
+  d4 c8 c |
+  e8. e16 d8 d |
+  f4 f8 g |
+  e4 f |
+  g a |
+  b2
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
