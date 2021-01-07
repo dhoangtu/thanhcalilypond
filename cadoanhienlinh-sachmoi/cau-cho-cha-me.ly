@@ -133,7 +133,7 @@ verseFour = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 choruslyricA = \lyricmode {
   \set stanza = #"ĐK A."
-  Xin cho cha mẹ con thẵm mãi tình son của Chúa Trời.
+  Xin cho cha mẹ con thắm mãi tình son của Chúa Trời.
   Cho con giữa gia đình luôn sống theo tình người con ngoan.
 }
 
