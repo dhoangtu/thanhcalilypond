@@ -65,8 +65,8 @@ musicChorusAlto = \relative c'' {
   a r8 d |
   d d c c |
   d d d d |
-  d4. (ds8 |
-  e4) r8 b |
+  d4. ds8 |
+  e4 r8 b |
   d4. d8 |
   c4. c8 |
   cs4 cs |
@@ -135,7 +135,7 @@ verseMusic = \relative c'' {
 % Chorus lyrics
 lyricChorus = \lyricmode {
   Bánh đây tinh trắng. Rượu này thắm nồng
-  Đoàn con chung kết tấm lòng thành kính tiến dâng
+  Đoàn con chung kết tấm lòng thành kính tiến dâng (tiến dâng)
   Nguyện Chúa thương nhận và gửi Thánh Thần
   Dùng ân thiêng thánh hóa thành nguồn sống thế trần.
 }
@@ -173,7 +173,7 @@ lyricVerseThree = \lyricmode {
           \voiceTwo \globalSettings \stemDown \slurDown \musicChorusAlto
         }
       >>
-      \new Lyrics \lyricsto soprano \lyricChorus
+      \new Lyrics \lyricsto alto \lyricChorus
       \new Staff <<
         \clef "bass"
         \new Voice = "tenor" {
