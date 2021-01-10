@@ -55,21 +55,59 @@ sopChorus = \relative c' {
   d2 |
   a'8 a a a |
   c (d) d d |
-  f f e e |
-  
+  <f d> <f d> <e cs> <e cs> |
+  d2 |
+  d8 c bf g |
+  a4 a |
+  g8 f e d |
+  a'2 |
+  a8 g a bf |
+  a4. a8 |
+  <f' a,> (<e bf>) <d a> <c g> |
+  <d f,>2 \bar "|."
 }
 
-bassChorus = \relative c'' {
-  \override NoteHead.font-size = #-2
-  \bar "" \set Score.currentBarNumber = #17
-  
+bassChorus = \relative c' {
+  %\override NoteHead.font-size = #-2
+  d8 d d d |
+  f4 f8 e |
+  f g f e |
+  d2 |
+  f8 f f f |
+  a4 a8 g |
+  a a g g |
+  f2 |
+  a8 g f e |
+  f4 f |
+  e8 d c d |
+  cs2 |
+  d8 e f g |
+  f4. f8 |
+  f4 f8 e |
+  d2
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 3. Nhạc phiên khúc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 verseMusic = \relative c'' {
-  
+  \bar "" \set Score.currentBarNumber = #17
+  d8 c d c |
+  a4 a |
+  a8 g bf bf |
+  a2 |
+  a8 g a bf |
+  a4. a8 |
+  g4 a8 g |
+  f2 |
+  d'8 c d c |
+  a4 a |
+  a8 g bf bf |
+  a2 |
+  d,8 e f g |
+  g4. a8 |
+  f (e) f e |
+  d2 \bar "|."
 }
 
 
@@ -78,8 +116,8 @@ verseMusic = \relative c'' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 choruslyric = \lyricmode {
   \set stanza = #"ĐK."
-  Ôi Giêsu lân tuất boa giờ con thấy Vua muôn đời.
-  Ôi Giêsu lân tuất con mong ước Thanh Nhan Chúa Trời!
+  Ôi Giê -- su lân tuất bao giờ con thấy Vua muôn đời.
+  Ôi Giê -- su lân tuất con mong ước Thanh Nhan Chúa Trời!
   Chúa ơi con hằng trông mong như nai kia tìm suối!
   Tâm hồn con khát mong gặp Chúa, Vua Tình Yêu.
 }
@@ -117,24 +155,16 @@ verseTwo= \lyricmode {
         \voiceTwo \global \stemDown \bassChorus
       }
     >>
-    \new Lyrics \lyricsto basses \choruslyric
+    \new Lyrics \lyricsto sopranos \choruslyric
   >>
   \layout {
     \context {
       \Lyrics
       \override VerticalAxisGroup.staff-affinity = ##f
-      \override VerticalAxisGroup.staff-staff-spacing =
-        #'((basic-distance . 0)
-	   (minimum-distance . 1)
-	   (padding . 1))
     }
     \context {
       \Staff
       \remove "Time_signature_engraver"
-      \override VerticalAxisGroup.staff-staff-spacing =
-        #'((basic-distance . 0)
-	   (minimum-distance . 1)
-	   (padding . 1))
     }
   }
 }
@@ -142,6 +172,7 @@ verseTwo= \lyricmode {
 \score {
   \new ChoirStaff <<
     \new Staff = verses <<
+      \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
         \global \stemNeutral \verseMusic
       }
@@ -149,22 +180,5 @@ verseTwo= \lyricmode {
     \new Lyrics \lyricsto verse \verseOne
     \new Lyrics \printItalic \lyricsto verse \verseTwo
   >>
-  \layout {
-    \context {
-      \Lyrics
-      \override VerticalAxisGroup.staff-affinity = ##f
-      \override VerticalAxisGroup.staff-staff-spacing =
-        #'((basic-distance . 0)
-     (minimum-distance . 1)
-     (padding . 1))
-    }
-    \context {
-      \Staff
-      \override VerticalAxisGroup.staff-staff-spacing =
-        #'((basic-distance . 0)
-     (minimum-distance . 1)
-     (padding . 1))
-    }
-  }
 }
 
