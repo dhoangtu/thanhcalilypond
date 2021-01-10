@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.20.0"
 \include "english.ly"
 
 \header {
@@ -31,9 +31,7 @@ verseSettings = {
 			       (/ 20 20)))
 }
 
-printItalic = \with {
-  \override LyricText.font-shape = #'italic
-}
+printItalic = { \override LyricText.font-shape = #'italic }
 
 % Soprano chorus music
 musicChorusSoprano = \relative c'' {
@@ -164,7 +162,11 @@ lyricVerseThree = \lyricmode {
 
 \score {
     \new ChoirStaff <<
-      \new Staff <<
+      \new Staff \with {
+        \consists "Merge_rests_engraver"
+      }
+      <<
+        
         \clef "treble"
         \new Voice = "soprano" {
           \voiceOne \globalSettings \stemUp \slurUp \musicChorusSoprano
@@ -174,8 +176,12 @@ lyricVerseThree = \lyricmode {
         }
       >>
       \new Lyrics \lyricsto alto \lyricChorus
-      \new Staff <<
+      \new Staff \with {
+        \consists "Merge_rests_engraver"
+      }
+      <<
         \clef "bass"
+        
         \new Voice = "tenor" {
           \voiceOne \globalSettings \stemUp \slurUp \musicChorusTenor
         }
@@ -195,7 +201,7 @@ lyricVerseThree = \lyricmode {
       }
     >>
     \new Lyrics \lyricsto verse \lyricVerseOne
-    \new Lyrics \printItalic \lyricsto verse \lyricVerseTwo
+    \new Lyrics \with \printItalic \lyricsto verse \lyricVerseTwo 
     \new Lyrics \lyricsto verse \lyricVerseThree
   >>
 }
