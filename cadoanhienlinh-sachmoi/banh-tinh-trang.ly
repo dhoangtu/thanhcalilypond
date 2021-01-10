@@ -37,7 +37,8 @@ printItalic = \with {
 
 % Soprano chorus music
 musicChorusSoprano = \relative c'' {
-  r4 r8 d |
+  \partial 8 d8 |
+  \set Score.repeatCommands = #'(start-repeat)
   b (a) b (c) |
   d4 r8 e, |
   e (g) a (g) |
@@ -57,7 +58,7 @@ musicChorusSoprano = \relative c'' {
 
 % Alto chorus music
 musicChorusAlto = \relative c'' {
-  r4 r8 a |
+  \partial 8 a8 |
   g4. g8 |
   fs4 r8 b, |
   c4 b |
@@ -77,7 +78,7 @@ musicChorusAlto = \relative c'' {
 
 % Tenor chorus music
 musicChorusTenor = \relative c' {
-  r4 r8 d |
+  \partial 8 d8 |
   d4. c8 |
   a4 r8 g |
   g4 g |
@@ -97,7 +98,7 @@ musicChorusTenor = \relative c' {
 
 % Basso chorus music
 musicChorusBasso = \relative c {
-  r4 r8 fs |
+  \partial 8 fs8 |
   g4. e8 |
   d4 r8 d |
   c4 cs |
@@ -117,6 +118,7 @@ musicChorusBasso = \relative c {
 
 % Verse music
 verseMusic = \relative c'' {
+  \bar "" \set Score.currentBarNumber = #16
   r8 g b16 (c) b8 |
   a4. a8 |
   fs fs g16 (a) g8 |
@@ -124,7 +126,9 @@ verseMusic = \relative c'' {
   r8 b d fs |
   a4. a16 a |
   g8 g c b |
-  d2 r8 
+  d2 ( |
+  d4) r8 <d a d fs>
+  \set Score.repeatCommands = #'(end-repeat)
 }
 
 
@@ -141,6 +145,7 @@ lyricVerseOne = \lyricmode {
   \set stanza = #"1."
   Của lễ hôm nay không còn là máu chiên bò
   Mà là rượu bánh sẽ trở thành Thịt Máu Con Chúa.
+  Bánh
 }
 
 lyricVerseTwo = \lyricmode {
@@ -155,7 +160,7 @@ lyricVerseThree = \lyricmode {
   Thịt dâng lên Chúa với lễ vật đặt trên bàn thánh.
 }
 
-% 12. Layou
+% Layout
 
 \score {
     \new ChoirStaff <<
@@ -183,7 +188,8 @@ lyricVerseThree = \lyricmode {
 
 \score {
   \new ChoirStaff <<
-    \new Staff = verses <<
+  \new Staff = verses <<
+    \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
         \globalSettings \stemNeutral \verseMusic
       }

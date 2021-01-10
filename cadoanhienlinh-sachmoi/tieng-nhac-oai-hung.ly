@@ -253,6 +253,7 @@ lyricVerseTwo = \lyricmode {
 \score {
   \new ChoirStaff <<
     \new Staff = verses <<
+      \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
         \globalSettings \stemNeutral \musicVerse
       }

@@ -38,6 +38,7 @@ global= {
 	 		       "Liberation Serif"
 			       "Liberation Serif"
 			       (/ 20 20)))
+  page-count = 1
 }
 
 printItalic = \with {

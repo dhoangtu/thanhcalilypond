@@ -229,6 +229,7 @@ loiPhienKhucHai = \lyricmode {
 \score {
   \new ChoirStaff <<
     \new Staff = chorus <<
+      \override Staff.TimeSignature.transparent = ##t
       \new Voice = "sopranos" {
         \voiceOne \global \stemUp \nhacPhienKhucSoprano
       }

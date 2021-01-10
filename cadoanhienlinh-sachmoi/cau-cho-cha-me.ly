@@ -180,6 +180,7 @@ choruslyricB = \lyricmode {
 \score {
   \new ChoirStaff <<
     \new Staff = chorus <<
+      \override Staff.TimeSignature.transparent = ##t
       \new Voice = "sopranos" {
         \voiceOne \global \stemUp \sopChorus
       }
@@ -190,22 +191,4 @@ choruslyricB = \lyricmode {
     \new Lyrics \lyricsto basses \choruslyricA
      \new Lyrics \printItalic \lyricsto basses \choruslyricB
   >>
-  \layout {
-    \context {
-      \Lyrics
-      \override VerticalAxisGroup.staff-affinity = ##f
-      \override VerticalAxisGroup.staff-staff-spacing =
-        #'((basic-distance . 0)
-	   (minimum-distance . 1)
-	   (padding . 1))
-    }
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \override VerticalAxisGroup.staff-staff-spacing =
-        #'((basic-distance . 0)
-	   (minimum-distance . 1)
-	   (padding . 1))
-    }
-  }
 }

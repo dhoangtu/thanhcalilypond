@@ -34,12 +34,12 @@ global = {
   right-margin = 20\mm
   indent = #0
   print-page-number = #f
-  %page-count = 1
   #(define fonts
 	 (make-pango-font-tree "Liberation Serif"
 	 		       "Liberation Serif"
 			       "Liberation Serif"
 			       (/ 20 20)))
+  page-count = 1
 }
 
 printItalic = \with {
@@ -255,6 +255,7 @@ choruslyricB = \lyricmode {
     \new Lyrics \printItalic \lyricsto verse \verseTwo
     \new Lyrics \lyricsto verse \verseThree
     \new Lyrics \printItalic \lyricsto verse \verseFour
+    
   >>
 }
 
@@ -262,6 +263,7 @@ choruslyricB = \lyricmode {
     \new ChoirStaff <<
       \new Staff <<
         \clef "treble"
+        \override Staff.TimeSignature.transparent = ##t
         \new Voice = "sopranos" { \voiceOne \global \stemUp \slurUp \sopranoChorus }
         \new Voice = "alto" { \voiceTwo \global \stemDown \slurDown \altoChorus }
       >>
@@ -269,8 +271,10 @@ choruslyricB = \lyricmode {
       \new Lyrics \printItalic \lyricsto sopranos \choruslyricB
       \new Staff <<
         \clef "bass"
+        \override Staff.TimeSignature.transparent = ##t
         \new Voice = "tenor" { \voiceThree \global \stemUp \slurUp \tenorChorus }
         \new Voice = "bass" { \voiceThree \global \stemDown \slurDown \bassChorus }
       >>
     >>
+
 }
