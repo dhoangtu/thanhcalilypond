@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.20.0"
 \include "english.ly"
 
 \header {
@@ -11,7 +11,7 @@ globalSettings = {
   \set Score.barNumberVisibility = #all-bar-numbers-visible
   \key af \major
   \time 4/4
-  \override Lyrics.LyricSpace.minimum-distance = #1.0
+  \override Lyrics.LyricSpace.minimum-distance = #1.2
 }
 
 verseSettings = {
@@ -53,6 +53,7 @@ musicChorusSoprano = \relative c'' {
   
   \set Staff.printKeyCancellation = ##f
   \key a \major
+  \override Lyrics.LyricSpace.minimum-distance = #1.2
   
   gs2. r4 |
   r4 a4. e8 a cs |
@@ -211,7 +212,10 @@ lyricChorus = \lyricmode {
 % Layout
 \score {
     \new ChoirStaff <<
-      \new Staff <<
+      \new Staff \with {
+        \consists "Merge_rests_engraver"
+      }
+      <<
         \clef "treble"
         \new Voice = "soprano" {
           \voiceOne \globalSettings \stemUp \slurUp \musicChorusSoprano
@@ -221,7 +225,10 @@ lyricChorus = \lyricmode {
         }
       >>
       \new Lyrics \lyricsto soprano \lyricChorus
-      \new Staff <<
+      \new Staff \with {
+        \consists "Merge_rests_engraver"
+      }
+      <<
         \clef "bass"
         \new Voice = "tenor" {
           \voiceOne \globalSettings \stemUp \slurUp \musicChorusTenor

@@ -11,7 +11,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 1. Cài đặt chung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\version "2.18.2"
+\version "2.20.0"
 \include "english.ly"
 
 \header {
@@ -24,6 +24,7 @@
 global = {
   \key c \major
   \time 2/4
+  \override Lyrics.LyricSpace.minimum-distance = #1.0
 }
 
 \paper {
@@ -42,7 +43,7 @@ global = {
   page-count = 1
 }
 
-printItalic = \with {
+printItalic = {
   \override LyricText.font-shape = #'italic
 }
 
@@ -252,24 +253,30 @@ choruslyricB = \lyricmode {
       }
     >>
     \new Lyrics \lyricsto verse \verseOne
-    \new Lyrics \printItalic \lyricsto verse \verseTwo
+    \new Lyrics \with \printItalic \lyricsto verse \verseTwo
     \new Lyrics \lyricsto verse \verseThree
-    \new Lyrics \printItalic \lyricsto verse \verseFour
+    \new Lyrics \with \printItalic \lyricsto verse \verseFour
     
   >>
 }
 
 \score {
     \new ChoirStaff <<
-      \new Staff <<
+      \new Staff \with {
+        \consists "Merge_rests_engraver"
+      }
+      <<
         \clef "treble"
         \override Staff.TimeSignature.transparent = ##t
         \new Voice = "sopranos" { \voiceOne \global \stemUp \slurUp \sopranoChorus }
         \new Voice = "alto" { \voiceTwo \global \stemDown \slurDown \altoChorus }
       >>
       \new Lyrics \lyricsto sopranos \choruslyricA
-      \new Lyrics \printItalic \lyricsto sopranos \choruslyricB
-      \new Staff <<
+      \new Lyrics \with \printItalic \lyricsto sopranos \choruslyricB
+      \new Staff \with {
+        \consists "Merge_rests_engraver"
+      }
+      <<
         \clef "bass"
         \override Staff.TimeSignature.transparent = ##t
         \new Voice = "tenor" { \voiceThree \global \stemUp \slurUp \tenorChorus }

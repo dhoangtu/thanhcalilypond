@@ -11,7 +11,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 1. Cài đặt chung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\version "2.18.2"
+\version "2.20.0"
 \include "english.ly"
 
 \header {
@@ -40,7 +40,7 @@ global = {
 			       (/ 20 20)))
 }
 
-printItalic = \with {
+printItalic = {
   \override LyricText.font-shape = #'italic
 }
 
@@ -146,6 +146,7 @@ nhacPhienKhucSoprano = \relative c'' {
 }
 
 nhacPhienKhucBasso = \relative c'' {
+  \bar "" \set Score.currentBarNumber = #17
   r4 g8 g |
   g8. e16 e8 e |
   f4 f8 f |
@@ -225,10 +226,12 @@ loiPhienKhucHai = \lyricmode {
     >>
 }
 
-
 \score {
   \new ChoirStaff <<
-    \new Staff = chorus <<
+    \new Staff = chorus \with {
+        \consists "Merge_rests_engraver"
+      }
+      <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "sopranos" {
         \voiceOne \global \stemUp \nhacPhienKhucSoprano
@@ -237,7 +240,7 @@ loiPhienKhucHai = \lyricmode {
         \voiceTwo \global \stemDown \nhacPhienKhucBasso
       }
       \new Lyrics \lyricsto sopranos \loiPhienKhucMot
-      \new Lyrics \printItalic \lyricsto sopranos \loiPhienKhucHai
+      \new Lyrics \with \printItalic \lyricsto sopranos \loiPhienKhucHai
     >>
   >>
 }
