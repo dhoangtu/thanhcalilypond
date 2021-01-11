@@ -47,19 +47,42 @@ printItalic = {
 % 2. Nhạc phiên khúc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 verseMusic = \relative c'' {
-  
+  \partial 4 g8 (a) |
+  g (f) d f |
+  g4 e8 e |
+  d g e (d) |
+  c2 |
+  c8. d16 f8 f |
+  d8. f16 g8 g |
+  f8. g16 a8 a ( |
+  a4) r |
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 3. Nhạc điệp khúc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopChorus = \relative c'' {
+  \bar "" \set Score.currentBarNumber = #9
+  c4 bf8 d |
+  c8. bf16 g8 (bf) |
+  c4 a8. g16 |
+  c8 c a16 (g) f8 |
+  f2 ( |
+  f4) \bar "|."
+}
+
+chorusA = \relative c'' {
+  \override NoteHead.font-size = #-2
+  \bar "" \set Score.currentBarNumber = #9
+}
+
+chorusB = \relative c'' {
+  \override NoteHead.font-size = #-2
   
 }
 
-bassChorus = \relative c'' {
+chorusC = \relative c'' {
   \override NoteHead.font-size = #-2
-  \bar "" \set Score.currentBarNumber = #17
   
 }
 
@@ -93,13 +116,20 @@ verseFour = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 5. Lời điệp khúc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-choruslyricA = \lyricmode {
-  \set stanza = #"ĐK A."
+choruslyric = \lyricmode {
+  \set stanza = #"ĐK."
   Xin Mẹ đoái thương luôn chở che cho đời sống lứa đôi vẹn lời thề.
 }
 
+choruslyricA = \lyricmode {
+  
+}
+
 choruslyricB = \lyricmode {
-  \set stanza = #"ĐK B."
+  
+}
+
+choruslyricC = \lyricmode {
   
 }
 
@@ -144,11 +174,7 @@ choruslyricB = \lyricmode {
       \new Voice = "sopranos" {
         \voiceOne \global \stemUp \sopChorus
       }
-      \new Voice = "basses" {
-        \voiceTwo \global \stemDown \bassChorus
-      }
     >>
-    \new Lyrics \lyricsto basses \choruslyricA
-     \new Lyrics \with \printItalic \lyricsto basses \choruslyricB
+    \new Lyrics \lyricsto sopranos \choruslyric
   >>
 }
