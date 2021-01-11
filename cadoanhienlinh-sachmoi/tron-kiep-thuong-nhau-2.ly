@@ -71,19 +71,41 @@ sopChorus = \relative c'' {
   f4) \bar "|."
 }
 
-chorusA = \relative c'' {
-  \override NoteHead.font-size = #-2
+musicChorusSoprano = \relative c'' {
   \bar "" \set Score.currentBarNumber = #9
+  c4 bf8 d |
+  c8. bf16 g8 (bf) |
+  c4 a8. g16 |
+  c8 c a16 (g) f8 |
+  f2 ( |
+  f4) \bar "|."
 }
 
-chorusB = \relative c'' {
-  \override NoteHead.font-size = #-2
-  
+musicChorusAlto = \relative c' {
+  f4 g8 g|
+  a8. d,16 d4 |
+  c8 r16 g' f8. f16 |
+  e8 e e f |
+  f4 d8 d |
+  c4
 }
 
-chorusC = \relative c'' {
-  \override NoteHead.font-size = #-2
-  
+musicChorusTenor = \relative c' {
+  a4 bf |
+  a8. g16 bf8 (g) |
+  g4 c8. bf16 |
+  bf4 bf |
+  a bf8 bf |
+  a4
+}
+
+musicChorusBasso = \relative c {
+  f4. e8 |
+  f8. f16 f4 |
+  e f8. d16 |
+  c4 c |
+  d bf8 bf |
+  f4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -121,16 +143,22 @@ choruslyric = \lyricmode {
   Xin Mẹ đoái thương luôn chở che cho đời sống lứa đôi vẹn lời thề.
 }
 
-choruslyricA = \lyricmode {
-  
+choruslyricSoprano = \lyricmode {
+  Xin Mẹ đoái thương luôn chở che,
+  cho đời sống lứa đôi vẹn thề (luôn vẹn thề).
 }
 
-choruslyricB = \lyricmode {
-  
+choruslyricAlto = \lyricmode {
+  Xin Mẹ đoái thương luôn chở che,
+  xin cho đời sống lứa đôi vẹn thề (luôn vẹn thề).
 }
 
-choruslyricC = \lyricmode {
-  
+choruslyricTenor = \lyricmode {
+  Xin đoái thương luôn chở che cho đời sống lứa đôi luôn vẹn thề.
+}
+
+choruslyricBasso = \lyricmode {
+  Xin đoái thương luôn chở che cho đời sống lứa đôi luôn vẹn thề.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -148,23 +176,6 @@ choruslyricC = \lyricmode {
     \new Lyrics \lyricsto verse \verseThree
     \new Lyrics \with \printItalic \lyricsto verse \verseFour
   >>
-  \layout {
-    \context {
-      \Lyrics
-      \override VerticalAxisGroup.staff-affinity = ##f
-      \override VerticalAxisGroup.staff-staff-spacing =
-        #'((basic-distance . 0)
-     (minimum-distance . 1)
-     (padding . 1))
-    }
-    \context {
-      \Staff
-      \override VerticalAxisGroup.staff-staff-spacing =
-        #'((basic-distance . 0)
-     (minimum-distance . 1)
-     (padding . 1))
-    }
-  }
 }
 
 \score {
@@ -176,5 +187,26 @@ choruslyricC = \lyricmode {
       }
     >>
     \new Lyrics \lyricsto sopranos \choruslyric
+  >>
+}
+
+\score {
+  \new ChoirStaff <<
+    \new Staff <<
+      \new Voice = "Soprano" { \clef treble \global \musicChorusSoprano }
+      \new Lyrics \lyricsto Soprano \choruslyricSoprano
+    >>
+    \new Staff <<
+      \new Voice = "Alto" { \clef treble \global \musicChorusAlto }
+      \new Lyrics \lyricsto Alto \choruslyricAlto
+    >>
+    \new Staff <<
+      \new Voice = "Tenor" { \clef "violin_8" \global \musicChorusTenor }
+      \new Lyrics \lyricsto Tenor \choruslyricTenor
+    >>
+    \new Staff <<
+      \new Voice = "Bass" { \clef bass \global \musicChorusBasso }
+      \new Lyrics \lyricsto Bass \choruslyricBasso
+    >>
   >>
 }
