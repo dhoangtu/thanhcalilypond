@@ -57,7 +57,7 @@ verseMusic = \relative c' {
   g8 a d4 |
   d8 d4 e8 |
   c c c4 |
-  b8 a4 a8 |
+  b8 a4 \acciaccatura g8 a8 |
   d, e fs a |
   g2 \bar "||"
 }
