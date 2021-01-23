@@ -30,18 +30,63 @@ global = {
 % Nhạc điệp khúc
 sopChorus = \relative c'' {
   a4 c a |
-  
+  g2 a4 |
+  f2 g4 |
+  a2 r4 |
+  r2 r4 |
+  r2 c,4 |
+  a' a a |
+  a2 c4 |
+  f,2 g4 |
+  a2 a4 |
+  bf4. bf8 a4 |
+  g2 r4 |
+  r2 r4 |
+  r2 c4 |
+  a4. bf8 d4 |
+  c2 a4 |
+  f4. g8 bf4 |
+  a2 g4 |
+  f2. \bar "|."
 }
 
 bassChorus = \relative c' {
   f4 e f |
-  
+  c2 f4 |
+  d2 c4 |
+  f2 f4 |
+  d2 g8 (f) |
+  c2 c4 |
+  f f f |
+  f2 e4 |
+  d2 c4 |
+  f2 f4 |
+  g4. g8 f4 |
+  c2 c4 |
+  f2 a8 (g) |
+  c2 a4 |
+  f4. g8 bf4 |
+  a2 f4 |
+  d4. e8 g4 |
+  f4 (c) bf |
+  a2.
 }
 
 % Nhạc phiên khúc
 verseMusic = \relative c'' {
+  \set Score.currentBarNumber = #20
   a4 a8 (c) a (g) |
-  
+  d4. (c8) d8 (f) |
+  g2. |
+  g4. g8 f (g) |
+  c2 d8 (c) |
+  a2. |
+  a4 a a |
+  r8 a8 f4 g |
+  d2. |
+  d4 (f) d8 (c) |
+  a4 c (d8) f |
+  f2. \bar "||"
 }
 
 % Lời điệp khúc
