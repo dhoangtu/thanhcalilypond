@@ -9,7 +9,7 @@
 }
 
 global = {
-  \key d \minor
+  \key f \major
   \time 3/4
 }
 
