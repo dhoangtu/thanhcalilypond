@@ -35,26 +35,39 @@ verseSettings = {
 
 printItalic = { \override LyricText.font-shape = #'italic }
 
+voltaDeKet = \markup { \text \fontsize #3 \italic { "Để kết:" } }
+voltaQuaTK = \markup { \text \fontsize #2 \italic { "Qua TK" } }
+
 % Soprano chorus music
 musicChorusSoprano = \relative c'' {
-  \partial 4 a4 |
-  d, a'8 bf16 (a) |
-  g2 |
-  f8 g a f |
-  e4. d8 |
-  d8 (f) g f16 (g) |
-  a4 \breathe bf |
-  a e'8 f16 (e) |
-  d2 |
-  
-  
-  \breathe
-  a4. a8 |
-  a8 (g) f (e) |
-  d4 \breathe d'8 (e) |
-  f4. e8 |
-  e4 ( f8 e) |
-  d2
+  \repeat volta 2 {
+    \partial 4 a4 |
+    d, a'8 bf16 (a) |
+    g2 |
+    f8 g a f |
+    e4. d8 |
+    d8 (f) g f16 (g) |
+    a4 \breathe bf |
+    a e'8 f16 (e) |
+  }
+  \alternative {
+    {
+      \set Score.repeatCommands = #(list (list 'volta voltaQuaTK))
+      d2 \bar "||"
+    }
+    {
+      \set Score.repeatCommands = #(list (list 'volta voltaDeKet))
+      \breathe
+      d2 |
+      \set Score.repeatCommands = #'((volta #f))
+      a4. a8 |
+      a8 (g) f (e) |
+      d4 \breathe d'8 (e) |
+      f4. e8 |
+      e4 ( f8 e) |
+      d2 \bar "|."
+    }
+  }
 }
 
 % Alto chorus music
@@ -67,15 +80,16 @@ musicChorusAlto = \relative c'' {
   d8 f e d16 (e) |
   f4 f |
   e g8 a16 (g) |
-  f2
+  f2 |
   
-  
+  f2 |
   f4. f8 |
   f (e) d (cs) |
   d4 f |
   bf4. bf8 |
   a4 (g) |
   fs2
+
 }
 
 % Tenor chorus music
@@ -88,9 +102,9 @@ musicChorusTenor = \relative c' {
   f (bf) c c |
   c4 \breathe d |
   d cs8 cs |
-  d2
-  
-  
+  d2 |
+
+  d2 |
   d4. c8 bf4 a8 (g) |
   f4 \breathe d' |
   d4. d8 |
@@ -110,7 +124,7 @@ musicChorusBasso = \relative c' {
   a  a'8 a |
   <a d,>2
   
-  
+  <a d,>2
   f4. f8 |
   g,4 a |
   bf bf'8 (a) |
@@ -135,19 +149,21 @@ verseMusic = \relative c'' {
   d4  \bar "||"
 }
 
-% Coda music
-codaMusic = \relative c'' {
-  
-}
-
-
 % Chorus lyrics
 lyricChorus = \lyricmode {
   \set stanza = #"ĐK."
-  Kính chào Đức Nữ Vương nguồn lân tuất hy vọng ngọt ngào cho cuộc sống.
-  Kính chào Đức Nữ Vương.
-  
-  Ôi khoan nhân dịu hòa Trinh Nữ Ma -- ri -- a.
+  \repeat volta 2
+  {
+    Kính chào Đức Nữ Vương nguồn lân tuất hy vọng ngọt ngào cho cuộc sống.
+    Kính chào Đức Nữ
+  }
+  \alternative
+  {
+    Vương.
+  }
+  {
+    Vương. Ôi khoan nhân dịu hòa Trinh Nữ Ma -- ri -- a.    
+  }
 }
 
 % Verse lyrics
