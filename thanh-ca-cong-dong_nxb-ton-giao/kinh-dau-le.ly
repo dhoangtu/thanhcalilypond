@@ -27,6 +27,8 @@ global = {
 			       (/ 20 20)))
 }
 
+printItalic = { \override LyricText.font-shape = #'italic }
+
 % Nhạc phiên khúc
 verseMusic = \relative c'' {
   \partial 4 g |
@@ -116,7 +118,7 @@ choruslyric = \lyricmode {
       }
     >>
     \new Lyrics \lyricsto verse \verseOne
-    \new Lyrics \lyricsto verse \verseTwo
+    \new Lyrics \with \printItalic \lyricsto verse \verseTwo
   >>
 }
 

@@ -28,6 +28,8 @@ global = {
 			       (/ 20 20)))
 }
 
+printItalic = { \override LyricText.font-shape = #'italic }
+
 % Nhạc điệp khúc
 sopChorus = \relative c'' {
   \partial 4 a4 |
@@ -40,7 +42,7 @@ sopChorus = \relative c'' {
   g2 e8 g |
   c,2 c4 |
   e g g |
-  \fermata f2 \bar "|."
+  f2 \fermata \bar "|."
 }
 
 bassChorus = \relative c' {
@@ -67,7 +69,7 @@ verseMusic = \relative c'' {
   f4 g a |
   e2 e4 |
   d d e |
-  \fermata f2. \bar "||"
+  f2. \fermata \bar "||"
 }
 
 % Lời điệp khúc
@@ -123,7 +125,7 @@ verseThree = \lyricmode {
       }
     >>
     \new Lyrics \lyricsto verse \verseOne
-    \new Lyrics \lyricsto verse \verseTwo
+    \new Lyrics \with \printItalic \lyricsto verse \verseTwo
     \new Lyrics \lyricsto verse \verseThree
   >>
 }
