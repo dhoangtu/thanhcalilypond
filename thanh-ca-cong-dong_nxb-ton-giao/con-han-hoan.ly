@@ -36,7 +36,13 @@ sopChorus = \relative c'' {
   f,4. g8 |
   c, c a' a |
   a2 |
-  
+  c4 c8 c |
+  d4 c |
+  a4. bf8 |
+  c4 a8 (c) |
+  f,4. g8 |
+  c,8 bf' a g |
+  f2 \bar "|."
 }
 
 bassChorus = \relative c'' {
@@ -47,14 +53,28 @@ bassChorus = \relative c'' {
   d4. c8 |
   a a c d |
   f2 |
-  
+  a4 a8 a |
+  bf4 a |
+  f4. g8 |
+  a4 f8 (e) |
+  d4. c8 |
+  a d c bf |
+  a2
 }
 
 % Nhạc phiên khúc
 verseMusic = \relative c' {
-  \set Score.currentBarNumber = #20
+  \set Score.currentBarNumber = #15
   c4 d16 (g d c) |
-  
+  f2 |
+  g8 a g f |
+  c4 g'8 f |
+  d f d c |
+  a'2 |
+  g8 g a g |
+  f4 g8 f |
+  d f d c |
+  f2 \bar "||"
 }
 
 % Lời điệp khúc
