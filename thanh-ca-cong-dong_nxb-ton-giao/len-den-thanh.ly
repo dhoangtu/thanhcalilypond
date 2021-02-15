@@ -47,12 +47,20 @@ sopChorus = \relative c' {
   e4 gs |
   b a8 gs |
   a2 |
+  r4 cs8 cs |
+  cs4. b8 |
   
 }
 
-bassChorus = \relative c' {
+bassChorus = \relative c'' {
   \skip 1.
   \skip 1.
+  \skip 1.
+  \skip 1.
+  \skip 1.
+  \skip 4
+  r4 e8 e |
+  e4. d8 |
   
 }
 
@@ -99,10 +107,10 @@ verseTwo = \lyricmode {
   \new ChoirStaff <<
     \new Staff = chorus <<
       \new Voice = "sopranos" {
-        \voiceOne \global \stemUp \sopChorus
+        \voiceOne \global \stemDown \sopChorus
       }
       \new Voice = "basses" {
-        \voiceTwo \global \stemDown \bassChorus
+        \voiceTwo \global \stemUp \bassChorus
       }
     >>
     \new Lyrics = basses
