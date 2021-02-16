@@ -31,32 +31,32 @@ inNghieng = { \override LyricText.font-shape = #'italic }
 
 % Nhạc điệp khúc
 nhacDiepKhucSop = \relative c' {
-  \partial 4 bf8 (c) |
-  f8. g16 bf,8 bf16 (c) |
+  \partial 4 bf8 _(c) |
+  f8. g16 bf,8 bf16 _(c) |
   f8 r g bf |
   f8 c' bf c |
   d2 ( |
   d4) g,8 (bf) |
-  c8. d16 g,8 g16 (bf) |
+  c8. d16 g,8 g16 _(bf) |
   c8 r c d |
   g, a bf g |
   d2 ( |
-  d4) bf8 (c) |
-  f8. g16 bf,8 bf16 (c) |
+  d4) bf8 _(c) |
+  f8. g16 bf,8 bf16 _(c) |
   f8 r g bf |
   f c' bf c |
   d2 ( |
-  d4) g,8 (bf) |
-  c8. d16 g,8 g16 (bf) |
+  d4) g,8 _(bf) |
+  c8. d16 g,8 g16 _(bf) |
   c8 r c d |
   bf c d c |
   bf2 \bar "|."
 }
 
 nhacDiepKhucBass = \relative c' {
-  \partial 4 bf8 (c) |
-  d8. c16 bf8 bf16 (c) |
-  d8 r d d16 (c) |
+  \partial 4 bf8 ^(c) |
+  d8. c16 bf8 bf16 ^(c) |
+  d8 r d d16 ^(c) |
   bf8 ef d f |
   bf2 ( |
   bf4) g4 |
@@ -64,9 +64,9 @@ nhacDiepKhucBass = \relative c' {
   f8 r f f |
   bf, c d ef |
   d2 ( |
-  d4) bf8 c |
-  d8. c16 bf8 bf16 (c) |
-  d8 r d d16 (c) |
+  d4) bf8 ^(c) |
+  d8. c16 bf8 bf16 ^(c) |
+  d8 r d d16 ^(c) |
   bf8 ef d f |
   bf2 ( |
   bf4) g4 |

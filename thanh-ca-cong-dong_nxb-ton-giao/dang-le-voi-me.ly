@@ -52,14 +52,14 @@ nhacPhienKhuc = \relative c'' {
 % Nhạc điệp khúc
 nhacDiepKhucSop = \relative c'' {
   \set Score.currentBarNumber = #17
-  e4 e8 e16 (d) |
-  \acciaccatura { c16 d } c4. c16 (d) |
-  e8 e e16 (d) c (d) |
+  e4 e8 e16 _(d) |
+  \acciaccatura { c16 d } c4. c16 _(d) |
+  e8 e e16 _(d) c _(d) |
   e4. c8 |
   d d d c |
   g2 |
-  c4 c8 d16 (c) |
-  a4. a16 (c) |
+  c4 c8 d16 _(c) |
+  a4. a16 _(c) |
   g8 a c d |
   d4. c8 |
   b g a b |
@@ -70,8 +70,8 @@ nhacDiepKhucBass = \relative c'' {
   c4 c8 c |
   g4. a8 |
   c c c a |
-  c4 (a8) a |
-  g g g g16 (f) |
+  c4 ^(a8) a |
+  g g g g16 ^(f) |
   e2 |
   a4 a8 g |
   f4. f8 |

@@ -43,7 +43,7 @@ nhacDiepKhucSop = \relative c' {
   g4 a8 (g) |
   d4 b8 (c) |
   d4 d8 d 
-  b'4. (c16 b) |
+  b'4. ^(c16 b) |
   a4 e8 e |
   a4. ( b16 a) |
   g2 ( \bar "|."

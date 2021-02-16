@@ -60,14 +60,9 @@ nhacDiepKhucSop = \relative c'' {
 
 nhacDiepKhucBass = \relative c'' {
   \override NoteHead.font-size = #-2
-  g4 g |
-  d b'8 b |
-  g4 g8 a ( |
-  a2) |
-  a4 a |
-  e c'8 c |
-  a4 a8 b ( |
-  b2) |
+  \skip 1.
+  \skip 1.
+  \skip 1
   b4 b |
   g g8 g |
   e4 g8 c ( |

@@ -44,11 +44,9 @@ nhacDiepKhucSop = \relative c'' {
 }
 
 nhacDiepKhucBass = \relative c'' {
-  \partial 4 g8 g |
-  g8. a16 g8 b, |
-  d4 a'8 a |
-  a8. b16 c8 a |
-  b4 g8 g |
+  \skip 4
+  \skip 1.
+  \skip 2
   c4 b |
   fs8 g e4 |
   d c |

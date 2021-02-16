@@ -30,40 +30,38 @@ inNghieng = { \override LyricText.font-shape = #'italic }
 
 % Nhạc điệp khúc
 nhacDiepKhucSop = \relative c' {
-  c8 (d) e (f) |
-  g4 a8 (g) |
-  d (f) e d |
+  c8 _(d) e _(f) |
+  g4 a8 _(g) |
+  d _(f) e d |
   c4 g'8 g |
   e e g4 |
   a c8 c |
   a a c4 |
   d2 |
-  d8 (c) b (a) |
+  d8 _(c) b _(a) |
   g4 a8 g |
-  e d16 (e) g4 |
+  e d16 _(e) g4 |
   a c8 (b) |
   a (b) c (d) |
   e4 f8 (e) |
-  d4. e16 (e) |
+  d4. e16 _(e) |
   c2 \bar "|."
 }
 
 nhacDiepKhucBass = \relative c' {
-  c8 (d) e (f) |
-  g4 a8 (g) |
-  d (f) e d |
-  c4 b8 b |
+  \skip 1.
+  \skip 4
+  b8 b |
   c c e4 |
   f e8 e |
   f f a4 |
   g2 |
-  d'8 (c) b (a) |
-  g4 a8 g |
-  e d16 (e) g4 |
-  a4 e8 (g) |
+  \skip 1.
+  \skip 4
+  e8 (g) |
   fs (g) a (g) |
   c4 a8 (c) |
-  f, (e f) g |
+  f, ^(e f) g |
   <e c>2
 }
 

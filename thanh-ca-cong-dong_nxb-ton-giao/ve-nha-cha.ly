@@ -45,7 +45,7 @@ nhacDiepKhucSop = \relative c' {
   b8 b b gs |
   e2 |
   cs8 e a gs |
-  a2 ( |
+  a2 _( |
   a4) \bar "|."
 }
 

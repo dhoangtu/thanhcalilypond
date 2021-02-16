@@ -49,7 +49,7 @@ nhacDiepKhucSop = \relative c'' {
 
 nhacDiepKhucBass = \relative c'' {
   \partial 8 a8 |
-  c8 (bf) a a |
+  c8 ^(bf) a a |
   bf4. a8 |
   f g bf bf |
   a4 r8 c,8 |

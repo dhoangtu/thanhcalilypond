@@ -61,9 +61,9 @@ nhacDiepKhucBass = \relative c' {
   e4 g |
   c2 |
   c8 c a c |
-  g8 (e) f4 |
+  g8 ^(e) f4 |
   g8 g g f |
-  e (d) e4 |
+  e ^(d) e4 |
   c8 c d e |
   f4 e8 e |
   d4 g |
