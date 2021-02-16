@@ -27,10 +27,10 @@ global = {
 			       (/ 20 20)))
 }
 
-printItalic = { \override LyricText.font-shape = #'italic }
+inNghieng = { \override LyricText.font-shape = #'italic }
 
 % Nhạc phiên khúc
-verseMusic = \relative c'' {
+nhacPhienKhuc = \relative c'' {
   \partial 4 \tuplet 3/2 { d,8 d d } |
   f4 \tuplet 3/2 { g8 g g } |
   a4 \tuplet 3/2 { g8 a f } |
@@ -47,7 +47,7 @@ verseMusic = \relative c'' {
 }
 
 % Nhạc điệp khúc
-sopChorus = \relative c'' {
+nhacDiepKhucSop = \relative c'' {
   \set Score.currentBarNumber = #13
   \partial 16 a16 |
   \tuplet 3/2 { a8 a a } c8. c16 |
@@ -58,7 +58,7 @@ sopChorus = \relative c'' {
   d2 \bar "|."
 }
 
-bassChorus = \relative c'' {
+nhacDiepKhucBass = \relative c'' {
   \partial 16 a16 |
   \tuplet 3/2 { a8 a a } g8. g16 |
   \tuplet 3/2 { g8 f g } a8. f16 |
@@ -69,7 +69,7 @@ bassChorus = \relative c'' {
 }
 
 % Lời phiên khúc
-verseOne = \lyricmode {
+loiPhienKhucMot = \lyricmode {
   \set stanza = #"1."
   Lời nguyện đầu tiên con dâng lên Chúa khi ánh dương về
   niềm tin tràn trề thành kính cầu xin.
@@ -77,7 +77,7 @@ verseOne = \lyricmode {
   dâng Chúa cõi lòng, Chúa thương đoái nhìn.
 }
 
-verseTwo = \lyricmode {
+loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
   Lời nguyện đầu tiên con dâng lên Chúa
   khi đến nhà thờ bên ánh đèn mờ này Chúa ngự đây.
@@ -85,7 +85,7 @@ verseTwo = \lyricmode {
   khi đến thánh đường sau mỗi đêm dài mến thương vơi đầy.
 }
 
-verseThree = \lyricmode {
+loiPhienKhucBa = \lyricmode {
   \set stanza = #"3."
   Lời nguyện đầu tiên khi con cất bước đi đến học đường
   đi tới nương đồng học khó cày sâu.
@@ -94,25 +94,23 @@ verseThree = \lyricmode {
 }
 
 % Lời điệp khúc
-choruslyric = \lyricmode {
+loiDiepKhuc = \lyricmode {
   \set stanza = #"ĐK:"
   Lời nguyện cầu đầu tiên khi con vừa thức giấc
   xin với hết tâm hồn là cho suốt đời con trọn niềm yêu Chúa.
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 6. Bố trí
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dàn trang
 \score {
   \new ChoirStaff <<
     \new Staff = verses <<
       \new Voice = "verse" {
-        \global \stemNeutral \verseMusic
+        \global \stemNeutral \nhacPhienKhuc
       }
     >>
-    \new Lyrics \lyricsto verse \verseOne
-    \new Lyrics \with \printItalic \lyricsto verse \verseTwo
-    \new Lyrics \lyricsto verse \verseThree
+    \new Lyrics \lyricsto verse \loiPhienKhucMot
+    \new Lyrics \with \inNghieng \lyricsto verse \loiPhienKhucHai
+    \new Lyrics \lyricsto verse \loiPhienKhucBa
   >>
 }
 
@@ -121,14 +119,14 @@ choruslyric = \lyricmode {
     \new Staff = chorus <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "sopranos" {
-        \voiceOne \global \stemUp \sopChorus
+        \voiceOne \global \stemUp \nhacDiepKhucSop
       }
       \new Voice = "basses" {
-        \voiceTwo \global \stemDown \bassChorus
+        \voiceTwo \global \stemDown \nhacDiepKhucBass
       }
     >>
     \new Lyrics = basses
-    \context Lyrics = basses \lyricsto sopranos \choruslyric
+    \context Lyrics = basses \lyricsto sopranos \loiDiepKhuc
   >>
 }
 

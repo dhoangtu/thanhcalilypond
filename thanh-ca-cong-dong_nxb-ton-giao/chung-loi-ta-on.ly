@@ -27,10 +27,10 @@ global = {
 			       (/ 20 20)))
 }
 
-printItalic = { \override LyricText.font-shape = #'italic }
+inNghieng = { \override LyricText.font-shape = #'italic }
 
 % Nhạc điệp khúc
-sopChorus = \relative c'' {
+nhacDiepKhucSop = \relative c'' {
   \partial 4 g8 g |
   g8. a16 g8 b, |
   d4 a'8 a |
@@ -43,7 +43,7 @@ sopChorus = \relative c'' {
   g4) \bar "|."
 }
 
-bassChorus = \relative c'' {
+nhacDiepKhucBass = \relative c'' {
   \partial 4 g8 g |
   g8. a16 g8 b, |
   d4 a'8 a |
@@ -57,7 +57,7 @@ bassChorus = \relative c'' {
 }
 
 % Nhạc phiên khúc
-verseMusic = \relative c' {
+nhacPhienKhuc = \relative c' {
   \set Score.currentBarNumber = #10
   \partial 4 d8 d |
   ef8. d16 c8 ef |
@@ -72,7 +72,7 @@ verseMusic = \relative c' {
 }
 
 % Lời điệp khúc
-choruslyric = \lyricmode {
+loiDiepKhuc = \lyricmode {
   \set stanza = #"ĐK:"
   Trong hân hoan chúng con về đây,
   mang tin yêu mơ ước nồng say,
@@ -81,7 +81,7 @@ choruslyric = \lyricmode {
 }
 
 % Lời phiên khúc
-verseOne = \lyricmode {
+loiPhienKhucMot = \lyricmode {
   \set stanza = #"1."
   Bao năm tháng con hằng ước mơ
   về bên Chúa hát khúc tạ ơn.
@@ -89,7 +89,7 @@ verseOne = \lyricmode {
   trong cõi lòng dâng tràn ý xuân.
 }
 
-verseTwo = \lyricmode {
+loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
   Như nai khát mong nguồn nước trong
   hồn con khát chính Chúa tình thương.
@@ -97,7 +97,7 @@ verseTwo = \lyricmode {
   cho cõi lòng vuông tròn ước mong.
 }
 
-verseThree = \lyricmode {
+loiPhienKhucBa = \lyricmode {
   \set stanza = #"3."
   Xin hiệp nhất muôn người chúng con
   tình yêu Chúa nối kết đoàn con.
@@ -106,21 +106,19 @@ verseThree = \lyricmode {
 }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 6. Bố trí
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dàn trang
 \score {
   \new ChoirStaff <<
     \new Staff = chorus <<
       \new Voice = "sopranos" {
-        \voiceOne \global \stemUp \sopChorus
+        \voiceOne \global \stemUp \nhacDiepKhucSop
       }
       \new Voice = "basses" {
-        \voiceTwo \global \stemDown \bassChorus
+        \voiceTwo \global \stemDown \nhacDiepKhucBass
       }
     >>
     \new Lyrics = basses
-    \context Lyrics = basses \lyricsto sopranos \choruslyric
+    \context Lyrics = basses \lyricsto sopranos \loiDiepKhuc
   >>
 }
 
@@ -129,11 +127,11 @@ verseThree = \lyricmode {
     \new Staff = verses <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
-        \global \stemNeutral \verseMusic
+        \global \stemNeutral \nhacPhienKhuc
       }
     >>
-    \new Lyrics \lyricsto verse \verseOne
-    \new Lyrics \with \printItalic \lyricsto verse \verseTwo
-    \new Lyrics \lyricsto verse \verseThree
+    \new Lyrics \lyricsto verse \loiPhienKhucMot
+    \new Lyrics \with \inNghieng \lyricsto verse \loiPhienKhucHai
+    \new Lyrics \lyricsto verse \loiPhienKhucBa
   >>
 }

@@ -26,10 +26,10 @@ global = {
 			       (/ 20 20)))
 }
 
-printItalic = { \override LyricText.font-shape = #'italic }
+inNghieng = { \override LyricText.font-shape = #'italic }
 
 % Nhạc điệp khúc
-sopChorus = \relative c'' {
+nhacDiepKhucSop = \relative c'' {
   \partial 4 g8 (a) |
   g4. a8 |
   g8. d'16 d8 c |
@@ -50,7 +50,7 @@ sopChorus = \relative c'' {
 }
 
 % Nhạc phiên khúc
-verseMusic = \relative c'' {
+nhacPhienKhuc = \relative c'' {
   \set Score.currentBarNumber = #17
   \partial 4 g8 g |
   g4. c8 |
@@ -64,7 +64,7 @@ verseMusic = \relative c'' {
 }
 
 % Lời điệp khúc
-choruslyric = \lyricmode {
+loiDiepKhuc = \lyricmode {
   \set stanza = #"ĐK:"
   Chúng con đến đây reo vui mừng Chúa.
   Và hân hoan dâng Ngài lời cảm tạ.
@@ -73,30 +73,28 @@ choruslyric = \lyricmode {
 }
 
 % Lời phiên khúc
-verseOne = \lyricmode {
+loiPhienKhucMot = \lyricmode {
   \set stanza = #"1."
   Xin tung hô Chúa là Chúa cả muôn loài.
   Xin tung hô Ngài là Chúa khắp địa cầu.
 }
 
-verseTwo = \lyricmode {
+loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
   Xin dâng lên những ngày tháng trong cuộc đời.
   Xin dâng lên bao nhiêu đắng cay u sầu.
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 6. Bố trí
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dàn trang
 \score {
   \new ChoirStaff <<
     \new Staff = chorus <<
       \new Voice = "sopranos" {
-        \voiceOne \global \stemNeutral \sopChorus
+        \voiceOne \global \stemNeutral \nhacDiepKhucSop
       }
     >>
     \new Lyrics = basses
-    \context Lyrics = basses \lyricsto sopranos \choruslyric
+    \context Lyrics = basses \lyricsto sopranos \loiDiepKhuc
   >>
 }
 
@@ -105,10 +103,10 @@ verseTwo = \lyricmode {
     \new Staff = verses <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
-        \global \stemNeutral \verseMusic
+        \global \stemNeutral \nhacPhienKhuc
       }
     >>
-    \new Lyrics \lyricsto verse \verseOne
-    \new Lyrics \with \printItalic \lyricsto verse \verseTwo
+    \new Lyrics \lyricsto verse \loiPhienKhucMot
+    \new Lyrics \with \inNghieng \lyricsto verse \loiPhienKhucHai
   >>
 }

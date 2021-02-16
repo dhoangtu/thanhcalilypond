@@ -27,10 +27,10 @@ global = {
 			       (/ 20 20)))
 }
 
-printItalic = { \override LyricText.font-shape = #'italic }
+inNghieng = { \override LyricText.font-shape = #'italic }
 
 % Nhạc điệp khúc
-sopChorus = \relative c'' {
+nhacDiepKhucSop = \relative c'' {
   c4 d8 |
   c (bf) g |
   f4. |
@@ -47,7 +47,7 @@ sopChorus = \relative c'' {
   f4. \bar "|."
 }
 
-bassChorus = \relative c'' {
+nhacDiepKhucBass = \relative c'' {
   a4 bf8 |
   a (g) e |
   f4. |
@@ -65,7 +65,7 @@ bassChorus = \relative c'' {
 }
 
 % Nhạc phiên khúc
-verseMusic = \relative c' {
+nhacPhienKhuc = \relative c' {
   \set Score.currentBarNumber = #15
   f8 (e) d |
   c4 f8 |
@@ -86,7 +86,7 @@ verseMusic = \relative c' {
 }
 
 % Lời điệp khúc
-choruslyric = \lyricmode {
+loiDiepKhuc = \lyricmode {
   \set stanza = #"ĐK:"
   Con bước lên bàn thờ,
   cùng dân Chúa đây hợp dâng thánh lễ.
@@ -95,7 +95,7 @@ choruslyric = \lyricmode {
 }
 
 % Lời phiên khúc
-verseOne = \lyricmode {
+loiPhienKhucMot = \lyricmode {
   \set stanza = #"1."
   Muôn tâm hồn liên kết trong tình thân,
   dâng tiến Cha toàn năng lễ vật hy sinh.
@@ -103,7 +103,7 @@ verseOne = \lyricmode {
   mưa xuống muôn hồng ân nhuần thấm tâm hồn.
 }
 
-verseTwo = \lyricmode {
+loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
   Con nguyện cầu xin Chúa thương trần gian,
   cho khắp nơi bình an Giáo hội rộng lan.
@@ -111,21 +111,19 @@ verseTwo = \lyricmode {
   cho khói binh mờ tan, hạnh phúc tuông tràn.
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 6. Bố trí
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dàn trang
 \score {
   \new ChoirStaff <<
     \new Staff = chorus <<
       \new Voice = "sopranos" {
-        \voiceOne \global \stemUp \sopChorus
+        \voiceOne \global \stemUp \nhacDiepKhucSop
       }
       \new Voice = "basses" {
-        \voiceTwo \global \stemDown \bassChorus
+        \voiceTwo \global \stemDown \nhacDiepKhucBass
       }
     >>
     \new Lyrics = basses
-    \context Lyrics = basses \lyricsto sopranos \choruslyric
+    \context Lyrics = basses \lyricsto sopranos \loiDiepKhuc
   >>
 }
 
@@ -134,10 +132,10 @@ verseTwo = \lyricmode {
     \new Staff = verses <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
-        \global \stemNeutral \verseMusic
+        \global \stemNeutral \nhacPhienKhuc
       }
     >>
-    \new Lyrics \lyricsto verse \verseOne
-    \new Lyrics \with \printItalic \lyricsto verse \verseTwo
+    \new Lyrics \lyricsto verse \loiPhienKhucMot
+    \new Lyrics \with \inNghieng \lyricsto verse \loiPhienKhucHai
   >>
 }

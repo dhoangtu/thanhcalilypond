@@ -26,10 +26,10 @@ global = {
 			       (/ 20 20)))
 }
 
-printItalic = { \override LyricText.font-shape = #'italic }
+inNghieng = { \override LyricText.font-shape = #'italic }
 
 % Nhạc điệp khúc
-sopChorus = \relative c' {
+nhacDiepKhucSop = \relative c' {
   e8 cs cs d |
   e2 |
   e8 cs' a b |
@@ -50,7 +50,7 @@ sopChorus = \relative c' {
 }
 
 % Nhạc phiên khúc
-verseMusic = \relative c'' {
+nhacPhienKhuc = \relative c'' {
   \set Score.currentBarNumber = #18
   \partial 4 a8 gs |
   fs4. d8 |
@@ -71,7 +71,7 @@ verseMusic = \relative c'' {
 }
 
 % Lời điệp khúc
-choruslyric = \lyricmode {
+loiDiepKhuc = \lyricmode {
   \set stanza = #"ĐK:"
   Trên đường về nhà Cha, từng lớp người đi tới,
   có muôn hoa thế giới và có bạn bè ta.
@@ -80,7 +80,7 @@ choruslyric = \lyricmode {
 }
 
 % Lời phiên khúc
-verseOne = \lyricmode {
+loiPhienKhucMot = \lyricmode {
   \set stanza = #"1."
   Đất nước ta là đồng xanh lúa vàng,
   là sông sâu là đất mầu nuôi sống.
@@ -88,7 +88,7 @@ verseOne = \lyricmode {
   trong đất trời vang hòa tiếng hát lời ca.
 }
 
-verseTwo = \lyricmode {
+loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
   Năm tay nhau và cùng nhau bước đều,
   đường ta đi dù có nhiều gian khó.
@@ -96,18 +96,16 @@ verseTwo = \lyricmode {
   bên mái nhà Cha hiền đang đứng chờ ta.
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 6. Bố trí
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dàn trang
 \score {
   \new ChoirStaff <<
     \new Staff = chorus <<
       \new Voice = "sopranos" {
-        \voiceOne \global \stemNeutral \sopChorus
+        \voiceOne \global \stemNeutral \nhacDiepKhucSop
       }
     >>
     \new Lyrics = basses
-    \context Lyrics = basses \lyricsto sopranos \choruslyric
+    \context Lyrics = basses \lyricsto sopranos \loiDiepKhuc
   >>
 }
 
@@ -116,10 +114,10 @@ verseTwo = \lyricmode {
     \new Staff = verses <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
-        \global \stemNeutral \verseMusic
+        \global \stemNeutral \nhacPhienKhuc
       }
     >>
-    \new Lyrics \lyricsto verse \verseOne
-    \new Lyrics \with \printItalic \lyricsto verse \verseTwo
+    \new Lyrics \lyricsto verse \loiPhienKhucMot
+    \new Lyrics \with \inNghieng \lyricsto verse \loiPhienKhucHai
   >>
 }

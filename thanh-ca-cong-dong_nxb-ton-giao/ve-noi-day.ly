@@ -27,10 +27,10 @@ global = {
 			       (/ 20 20)))
 }
 
-printItalic = { \override LyricText.font-shape = #'italic }
+inNghieng = { \override LyricText.font-shape = #'italic }
 
 % Nhạc điệp khúc
-sopChorus = \relative c'' {
+nhacDiepKhucSop = \relative c'' {
   c8 g e f |
   g4 e |
   c a' |
@@ -50,7 +50,7 @@ sopChorus = \relative c'' {
   c4) \bar "|."
 }
 
-bassChorus = \relative c' {
+nhacDiepKhucBass = \relative c' {
   \override NoteHead.font-size = #-2
   e8 d c d |
   b4 c |
@@ -72,7 +72,7 @@ bassChorus = \relative c' {
 }
 
 % Nhạc phiên khúc
-verseMusic = \relative c'' {
+nhacPhienKhuc = \relative c'' {
   \set Score.currentBarNumber = #18
   \partial 4 e8 e |
   e8. c16 c8 c |
@@ -93,7 +93,7 @@ verseMusic = \relative c'' {
 }
 
 % Lời điệp khúc
-choruslyric = \lyricmode {
+loiDiepKhuc = \lyricmode {
   \set stanza = #"ĐK:"
   Chúng con về nơi đây dâng ngàn tiếng ca.
   Chúng con về nơi đây để tạ ơn Thiên Chúa.
@@ -102,7 +102,7 @@ choruslyric = \lyricmode {
 }
 
 % Lời phiên khúc
-verseOne = \lyricmode {
+loiPhienKhucMot = \lyricmode {
   \set stanza = #"1."
   Với tiếng hát rạo rực niềm tin
   với ánh mắt đọng lời nguyện xin,
@@ -112,7 +112,7 @@ verseOne = \lyricmode {
   nguyện dâng lên Thiên Chúa tình yêu.
 }
 
-verseTwo = \lyricmode {
+loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
   Hãy đón lấy một trời hồng ân
   hãy giữ lấy cả một mùa xuân,
@@ -122,22 +122,19 @@ verseTwo = \lyricmode {
   nguồn bình an chan chứa đời ta.
 }
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 6. Bố trí
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dàn trang
 \score {
   \new ChoirStaff <<
     \new Staff = chorus <<
       \new Voice = "sopranos" {
-        \voiceOne \global \stemUp \sopChorus
+        \voiceOne \global \stemUp \nhacDiepKhucSop
       }
       \new Voice = "basses" {
-        \voiceTwo \global \stemDown \bassChorus
+        \voiceTwo \global \stemDown \nhacDiepKhucBass
       }
     >>
     \new Lyrics = basses
-    \context Lyrics = basses \lyricsto sopranos \choruslyric
+    \context Lyrics = basses \lyricsto sopranos \loiDiepKhuc
   >>
 }
 
@@ -146,10 +143,10 @@ verseTwo = \lyricmode {
     \new Staff = verses <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
-        \global \stemNeutral \verseMusic
+        \global \stemNeutral \nhacPhienKhuc
       }
     >>
-    \new Lyrics \lyricsto verse \verseOne
-    \new Lyrics \with \printItalic \lyricsto verse \verseTwo
+    \new Lyrics \lyricsto verse \loiPhienKhucMot
+    \new Lyrics \with \inNghieng \lyricsto verse \loiPhienKhucHai
   >>
 }
