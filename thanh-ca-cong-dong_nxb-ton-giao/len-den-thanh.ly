@@ -31,6 +31,7 @@ printItalic = { \override LyricText.font-shape = #'italic }
 
 % Nhạc điệp khúc
 sopChorus = \relative c' {
+  \stemNeutral
   \partial 4 cs8 d |
   e4 e8 ds |
   e4 fs |
@@ -38,21 +39,38 @@ sopChorus = \relative c' {
   b4 b8 cs |
   d4 d8 cs |
   b4 e |
-  cs2 ( |
+  cs2 _( |
   cs4) cs8 d |
   e4 e8 ds |
-  e4 a8. (b16) |
+  e4 a8. _(b16) |
   b4. a8 |
   fs r fs gs |
   e4 gs |
   b a8 gs |
-  a2 |
+  a2 | \break
+  
+  \stemDown
   r4 cs8 cs |
   cs4. b8 |
-  
+  a a b a |
+  fs2 _( |
+  fs8) r b b |
+  b4. a8 |
+  gs gs a fs |
+  e2 |
+  r4 cs'8 cs |
+  cs4. b8 |
+  a a b cs |
+  d2 |
+  fs,8 r fs gs |
+  e4 e8 fs |
+  gs4 b |
+  a2 _( |
+  a4) r \bar "|."
 }
 
 bassChorus = \relative c'' {
+  \override NoteHead.font-size = #-2
   \skip 1.
   \skip 1.
   \skip 1.
@@ -61,13 +79,42 @@ bassChorus = \relative c'' {
   \skip 4
   r4 e8 e |
   e4. d8 |
-  
+  cs cs d cs |
+  a2 ^( |
+  a8) r d d |
+  d4. cs8 |
+  b b e d |
+  cs2 |
+  r4 e8 e |
+  e4. d8 |
+  cs cs d e |
+  fs2 |
+  b,8 r b cs |
+  gs4 gs8 a |
+  b4 d |
+  cs2 ^( |
+  cs4) r
 }
 
 % Nhạc phiên khúc
 verseMusic = \relative c' {
-  \set Score.currentBarNumber = #15
-  
+  \set Score.currentBarNumber = #33
+  fs4 cs |
+  fs8 cs fs a |
+  gs2 ( |
+  gs4) r |
+  es4 cs |
+  es8 cs es gs |
+  fs2 ( |
+  fs4) r |
+  a fs |
+  a8 fs a cs |
+  b2 ( |
+  b4) b8 a |
+  gs r gs fs |
+  es4 gs |
+  fs f! |
+  e8 r \bar "||"
 }
 
 % Lời điệp khúc
@@ -105,9 +152,12 @@ verseTwo = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \score {
   \new ChoirStaff <<
-    \new Staff = chorus <<
+    \new Staff = chorus  \with {
+        \consists "Merge_rests_engraver"
+      }
+      <<
       \new Voice = "sopranos" {
-        \voiceOne \global \stemDown \sopChorus
+        \voiceOne \global \sopChorus
       }
       \new Voice = "basses" {
         \voiceTwo \global \stemUp \bassChorus
