@@ -141,7 +141,7 @@ loiPhienKhucBa = \lyricmode {
 % Dàn trang
 \score {
   \new ChoirStaff <<
-    \new Staff = chorus  \with {
+    \new Staff = chorus \with {
         \consists "Merge_rests_engraver"
       }
       <<
