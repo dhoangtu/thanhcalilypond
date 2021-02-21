@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  title = "Con Bước Lên Bàn Thờ"
+  title = "Tiến Dâng"
   composer = "Kim Long"
   tagline = ##f
 }
@@ -31,84 +31,80 @@ inNghieng = { \override LyricText.font-shape = #'italic }
 
 % Nhạc điệp khúc
 nhacDiepKhucSop = \relative c'' {
-  c4 d8 |
-  c (bf) g |
-  f4. |
-  c8 a' bf |
   a4 g8 |
-  a4 bf8 |
-  c4. |
-  c4 d8 |
-  c (bf) g |
-  a4. |
-  a8 bf a |
-  g4 f8 |
-  g a g |
-  f4. \bar "|."
+  f4 d8 |
+  c4 c8 |
+  a'4 a8 |
+  a gs a |
+  c _(bf) a |
+  g4. |
+  a4 g8 |
+  f4 d8 |
+  c4 c8 |
+  g'4 g8 |
+  g fs g |
+  bf _(a) g |
+  f4 \bar "|."
 }
 
-nhacDiepKhucBass = \relative c'' {
-  a4 bf8 |
-  a (g) e |
-  f4. |
-  c8 f g |
-  f4 e8 |
+nhacDiepKhucBass = \relative c' {
+  \skip 4.
+  \skip 4.
+  \skip 4.
   f4 f8 |
-  e4. |
-  a4 bf8 |
-  a (g) c, |
-  f4. |
-  f8 g f |
-  e4 d8 |
-  c c bf |
-  a4.
+  f e f |
+  a ^(g) f |
+  c4. |
+  \skip 4.
+  \skip 4.
+  \skip 4.
+  b!4 b8 |
+  c d e |
+  g ^(f) e
 }
 
 % Nhạc phiên khúc
-nhacPhienKhuc = \relative c' {
+nhacPhienKhuc = \relative c'' {
   \set Score.currentBarNumber = #15
-  f8 (e) d |
-  c4 f8 |
-  g f e |
-  f4 a8 |
-  bf a g |
-  a4 c8 |
-  d,4 f8 |
-  g4. |
-  f8 (e) d |
-  c4 f8 |
-  g f e |
-  f4 g8 |
-  bf a g |
-  a4 d,8 |
-  g8 (a) g |
-  f4. \bar "||"
+  \partial 8 c8 |
+  c4 a8 |
+  a4 f8 |
+  e4. |
+  f8 g a |
+  d,4 d8 |
+  d4. |
+  d8 e g |
+  c,4 c8 |
+  c4 c8 |
+  e g f |
+  bf8. a16 gs8 |
+  a4. \bar "||"
 }
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
   \set stanza = #"ĐK:"
-  Con bước lên bàn thờ,
-  cùng dân Chúa đây hợp dâng thánh lễ.
-  Đây lễ chiên chiều xưa:
-  Con Chúa uy linh đã trao hiến thân mình.
+  Tiến dâng trên bàn thờ rượu nho thơm hương
+  cùng bánh miến trắng tinh.
+  Chúa khoan nhân vô bờ,
+  đoàn con xin đoan nguyện yêu mến hết tình.
 }
 
 % Lời phiên khúc
 loiPhienKhucMot = \lyricmode {
   \set stanza = #"1."
-  Muôn tâm hồn liên kết trong tình thân,
-  dâng tiến Cha toàn năng lễ vật hy sinh.
-  Xin Cha lành cho lễ dâng toàn thiêu,
-  mưa xuống muôn hồng ân nhuần thấm tâm hồn.
+  Tiếng hát thơm hương nguyện cầu,
+  tỏa bay khắp trời diệu huyền.
+  Đoàn con kính thờ trọn niềm,
+  nguyện dâng Chúa lời chúc ca thành tâm.
 }
 
 loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
-  Con nguyện cầu xin Chúa thương trần gian,
-  cho khắp nơi bình an Giáo hội rộng lan.
-  Cho muôn người thôi oán thương hận than,
-  cho khói binh mờ tan, hạnh phúc tuông tràn.
+  Kính tiến lên ngai Cha hiền,
+  này đây xác hồn mọn hèn.
+  Còn nơi thế trần lụy phiền,
+  nguyện xin Chúa giải thoát ban bình yên.
 }
 
 % Dàn trang
