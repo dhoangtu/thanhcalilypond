@@ -4,6 +4,8 @@
 
 \header {
   title = "Rảy Nước Thánh"
+  composer = " "
+  arranger = " "
   tagline = ##f
 }
 
@@ -14,7 +16,7 @@ global = {
 
 \paper {
   #(set-paper-size "a4")
-  top-margin = 15\mm
+  top-margin = 20\mm
   bottom-margin = 15\mm
   left-margin = 20\mm
   right-margin = 20\mm

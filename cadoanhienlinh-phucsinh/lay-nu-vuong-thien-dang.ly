@@ -48,7 +48,6 @@ nhacSoloMot = \relative c' {
 nhacDiepKhucSop = \relative c' {
   \override Lyrics.LyricSpace.minimum-distance = #2.5
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  2
   \partial 4. d8 g b |
   d2 ^\ff cs8 (d) e d |
   b4 g r8 g a b |
