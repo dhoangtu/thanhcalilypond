@@ -31,6 +31,7 @@ inNghieng = { \override LyricText.font-shape = #'italic }
 
 % Nhạc điệp khúc
 nhacDiepKhucSop = \relative c' {
+  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \override Lyrics.LyricSpace.minimum-distance = #2.5
   \partial 4 d8 _(e) |
   g4. e8 |
@@ -59,6 +60,7 @@ nhacPhienKhuc = \relative c'' {
   \set Score.timing = ##f
   \hide Stem
   \override Lyrics.LyricSpace.minimum-distance = #2.5
+  \override Score.NonMusicalPaperColumn.padding = #2.5
   g4 a \bar "|"
   b\breve a4 \bar "|"
   b\breve \bar "|"
@@ -76,8 +78,8 @@ nhacPhienKhuc = \relative c'' {
 
 % Lời điệp khúc
 loiDiepKhucSop = \lyricmode {
-  Lạy Chúa xin sai Thánh Linh
-  Để Ngài đổi mới, đổi mới mặt địa cầu.
+  Lạy Chúa xin sai(i) Thánh Linh
+  Để Ngài đổi mới, đổi mới(i) mặt địa cầu.
 }
 
 loiDiepKhucBass = \lyricmode {

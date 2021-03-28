@@ -31,13 +31,24 @@ inNghieng = { \override LyricText.font-shape = #'italic }
 
 % Nhạc điệp khúc
 nhacDiepKhuc = \relative c' {
+  \override Lyrics.LyricSpace.minimum-distance = #1.7
   \partial 4 d4 |
   g2 |
   f8 g ef c |
   d2 |
-  a'8 bf f d |
-  bf'4 a8 a |
-  g2 \bar "||"
+  <<
+  {
+    a'8 bf f d |
+    bf'4 a8 a |
+    g2
+  }
+  {
+    f8 g d bf |
+    g'4 f8 f |
+    d2
+  }
+  >>
+  \bar "||"
 }
 
 % Nhạc phiên khúc
@@ -104,6 +115,7 @@ nhacPhienKhucBa = \relative c'' {
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
+  \override Lyrics.LyricText.font-series = #'bold
   Lạy Chúa, xin tái tạo lòng con
   xin tái tạo lòng con nên trong sạch.
 }
@@ -121,6 +133,7 @@ loiPhienKhucMot = \lyricmode {
 
 loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
+  \override Lyrics.LyricText.font-shape = #'italic
   Lạy Chúa xin tái tạo lòng con nên trong sạch.
   Đổi mới tinh thần cho bền vững trung kiên.
   Đừng nỡ đuổi con xa cách Thánh Nhan,
