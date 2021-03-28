@@ -29,87 +29,100 @@ global = {
 
 inNghieng = { \override LyricText.font-shape = #'italic }
 
-% https://lilypond.org/doc/v2.19/Documentation/notation/working-with-ancient-music_002d_002dscenarios-and-solutions.en.html
 % Nhạc điệp khúc
-nhacDiepKhucSop = \relative c'' {
-  \partial 4 g8 g |
-  g8. a16 g8 b, |
-  d4 a'8 a |
-  a8. b16 c8 a |
-  b4 g8 g |
-  e'4 d |
-  a8 b c4 |
-  fs, a |
+nhacDiepKhucSop = \relative c' {
+  \override Lyrics.LyricSpace.minimum-distance = #2.5
+  \partial 4 d8 _(e) |
+  g4. e8 |
+  e8. _(d16 c8) e |
+  d2 _( |
+  d8) g g a |
+  d4. g,16 _(a) |
+  d8 _(b16 a) g8 a |
   g2 ( |
-  g4) \bar "|."
+  g4) \bar "||"
 }
 
 nhacDiepKhucBass = \relative c'' {
+  \override Lyrics.LyricSpace.minimum-distance = #2.5
   \skip 4
   \skip 1.
-  \skip 2
-  c4 b |
-  fs8 g e4 |
-  d c |
+  \skip 4. g8 |
+  fs e d ^(c) |
+  b e d c |
   b2 ( |
   b4)
 }
 
 % Nhạc phiên khúc
-nhacPhienKhuc = \relative c' {
-  \set Score.currentBarNumber = #10
-  \partial 4 d8 d |
-  ef8. d16 c8 ef |
-  d4 g8 a |
-  b b b16 (a) g8 |
-  a4 b8 b |
-  c8. b16 a8 c |
-  b4 a8 b |
-  d, g fs a |
-  g2 ( |
-  g4) \bar "||"
+nhacPhienKhuc = \relative c'' {
+  \set Score.timing = ##f
+  \hide Stem
+  \override Lyrics.LyricSpace.minimum-distance = #2.5
+  g4 a \bar "|"
+  b\breve a4 \bar "|"
+  b\breve \bar "|"
+  b\breve \bar "|"
+  c\breve a4 a4 \bar "|"
+  d\breve \bar "|"
+  g,4 \bar "|"
+  b\breve \bar "|"
+  g\breve \bar "|"
+  e\breve \bar "|"
+  g\breve \bar "|"
+  d\breve g4 \bar "|"
+  a\breve \bar "||"
 }
 
 % Lời điệp khúc
-loiDiepKhuc = \lyricmode {
+loiDiepKhucSop = \lyricmode {
   Lạy Chúa xin sai Thánh Linh
-  Để Ngài đổi mới đổi mới mặt địa cầu.
+  Để Ngài đổi mới, đổi mới mặt địa cầu.
+}
+
+loiDiepKhucBass = \lyricmode {
+  %_ _ _ _ _ _ _ _
+  Để Ngài đổi mới, đổi mới mặt địa cầu.
 }
 
 % Lời phiên khúc
 loiPhienKhucMot = \lyricmode {
   \set stanza = #"1."
-  Hồn tôi "ơi! Hãy chúc" tụng Chúa,
-  hỡi Chúa, Thiên Chúa của con
-  Ngài thật cao cả.
-  Ngài mặc áo oai phong lẫm liệt,
-  Và Ngài khoác long bào ánh sáng.
+  \override LyricText.self-alignment-X = #LEFT
+  Hồn tôi "ơi! Hãy chúc" tụng "Chúa,
+  hỡi" "Chúa, Thiên Chúa của" con
+  "Ngài thật" cao cả.
+  "Ngài mặc" "áo oai" "phong lẫm" "liệt,
+  và Ngài" "khoác long" bào ánh sáng.
 }
 
 loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
-  Ngài đặt trái đất trên nền vững,
-  không khí chuyceenr lay,
-  ngàn đời ngàn kiếp.
-  Ngài dùng vực thẳm như áo che địa cầu,
-  Và nước đã tụ lại trên đỉnh núi.
+  \override LyricText.self-alignment-X = #LEFT
+  "Ngài đặt" trái "đất trên" nền "vững,
+  không" "khí chuyển" lay,
+  "ngàn đời" ngàn kiếp.
+  "Ngài dùng vực" "thẳm như áo" "che địa" "cầu,
+  Và" "nước đã tụ" lại "trên đỉnh" núi.
 }
 
 loiPhienKhucBa = \lyricmode {
   \set stanza = #"3."
-  Ngài làm vọt lên những dòng suối,
-  chúng róc rách tìm lỗi giữa những khe núi,
-  gần dòng suối chim trời làm tổ.
-  Núp dưới lá, chúng cất giọng líu lo.
+  \override LyricText.self-alignment-X = #LEFT
+  "Ngài làm" vọt "lên những" dòng "suối,
+  chúng róc" "rách tìm" lối "giữa những" khe núi,
+  "gần dòng" "suối chim" "trời làm" "tổ.
+  Núp dưới" "lá, chúng cất" giọng líu lo.
 }
 
 loiPhienKhucBon = \lyricmode {
   \set stanza = #"4."
-  Sự việc cúa Chúa, ôi lạy Chúa,
-  thật là nhiều dường bao, 
-  tất thảy Ngài làm đều khôn ngoan.
-  Địa cầu đầy dẫy sang giàu của Ngài.
-  Này hồn tôi hãy chúc tụng Đức Chúa.
+  \override LyricText.self-alignment-X = #LEFT
+  "Sự việc" cúa "Chúa, ôi" lạy "Chúa,
+  thật là" "nhiều dường" "bao, 
+  tất" "thảy Ngài làm" đều "khôn ngoan."
+  "Địa cầu đầy" "dẫy sang" "giàu của" "Ngài.
+  Này hồn" "tôi hãy chúc" tụng Đức Chúa.
 }
 
 
@@ -124,11 +137,13 @@ loiPhienKhucBon = \lyricmode {
         \voiceTwo \global \stemDown \nhacDiepKhucBass
       }
     >>
-    \new Lyrics = basses
-    \context Lyrics = basses \lyricsto sopranos \loiDiepKhuc
+    \new Lyrics = sopranos
+    \context Lyrics = sopranos \lyricsto sopranos \loiDiepKhucSop
+    \context Lyrics = basses \with \inNghieng \lyricsto basses \loiDiepKhucBass
   >>
 }
 
+% \include "gregorian.ly"
 \score {
   \new ChoirStaff <<
     \new Staff = verses <<
@@ -137,7 +152,9 @@ loiPhienKhucBon = \lyricmode {
         \global \stemNeutral \nhacPhienKhuc
       }
     >>
-    \new Lyrics \lyricsto verse \loiPhienKhucMot
+    \new Lyrics \lyricsto verse
+      %\override LyricText.self-alignment-X = #CENTER
+      \loiPhienKhucMot
     \new Lyrics \with \inNghieng \lyricsto verse \loiPhienKhucHai
     \new Lyrics \lyricsto verse \loiPhienKhucBa
     \new Lyrics \with \inNghieng \lyricsto verse \loiPhienKhucBon
