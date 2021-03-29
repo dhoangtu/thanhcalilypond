@@ -101,7 +101,7 @@ loiDiepKhuc = \lyricmode {
       }
       <<
       \new Voice = "sopranos" {
-        \voiceOne \global \stemNeutral \nhacDiepKhuc
+        \global \stemNeutral \nhacDiepKhuc
       }
     >>
     \new Lyrics = basses
