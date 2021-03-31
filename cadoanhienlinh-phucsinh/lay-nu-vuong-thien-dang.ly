@@ -7,7 +7,7 @@
   subtitle = "(Kinh Regina Coeli)"
   subsubtitle = " "
   arranger = " "
-  poet = "Nhạc: Labat (Cantique de la Jeunenesse, Paris, 1912)"
+  poet = "Nhạc: Labat (Cantique de la Jeunesse, Paris, 1912)"
   composer = "Lời Việt: Khổng Vĩnh Thành"
   tagline = ##f
 }
