@@ -32,7 +32,7 @@ global = {
 % Nhạc điệp khúc
 nhacDiepKhuc = \relative c'' {
   %\set Score.timing = ##f
-  \override Lyrics.LyricSpace.minimum-distance = #2.5
+  \override Lyrics.LyricSpace.minimum-distance = #3.0
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \autoBeamOff
   g8 a _(c) c \breathe b c d c c b a b (c) a4 \bar "|"
