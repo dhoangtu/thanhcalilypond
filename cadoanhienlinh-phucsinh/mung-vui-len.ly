@@ -85,7 +85,46 @@ nhacDiepKhuc = \relative c'' {
   a8 c c c c c c b (c) d c (b) a (b) b4 \breathe
   a8 b b4 \breathe
   b8 a g g g (a) b a (b) a4 \breathe \bar "||"
+  a8 (c d c b) a (b) b4 \breathe
+  a8 c (b) a a (b) b4 \breathe
+  c8 b b a g g \breathe
+  a b a (b) a4 \breathe \bar "||"
+  a8 (c d c b) a a (b) b4 \breathe
+  a8 b c (b) a (g) g (a) b a (b) a4 \breathe \bar "|"
+  a8 c c b (c) d c b (a) a (b) b4 \breathe
+  b8 b a (b) c4 \breathe
+  b8 a (g) g (a) b a (b) a4 \breathe
+  c8 b (c) d c (b) a (b) b b4 \breathe
+  a8 c (b) a a (b) b4 \breathe
+  b8 a (g) g (a) b a (b) a a4 \breathe
+  c8 (b) a a b4 \breathe
+  a8 b c b b a (g) g (a) b a (b) a4 \breathe \bar "|"
+  a8 c4 \breathe
+  b8 c (b) a a (b) b b4 c8 b (c) d (c b) a (b) b4 \breathe
   
+  c8 (b) a (b) b b4 \breathe
+  a8 c b a a (b) b4 b8 a (g) g (a) b a (b) a a4 \breathe \bar "|"
+  a8 (c d) c (b) a (b) b4 \breathe
+  a8 c c c (b) a (b) b4 \breathe
+  b8 a b c b a (g) g (a) b a (b) a4 \breathe
+  d8 (c b) a (g) a (b) b b4 a8 c b c d c c4 \breathe
+  a8 c c c c (b) a (b) b4 \breathe
+  a8 c c c c c b c d c c (b) a (b) b4 \breathe
+  b8 b a (b) c b b a (g) g (a) b a (g) a4 \bar "||"
+  a8 c c c c b c d c4 \breathe
+  c c (b) a a (b) b4 \breathe
+  b8 a (g) g (a) b a (b) a a4 \breathe
+  a8 b c d c c4a8 c b b (a) a (b) b4 \breathe
+  b8 b b c b b b a (g) g (a) b a (b) a4 \breathe
+  d8 (c b) a (g) a (b) b b4 \breathe
+  b8 a b c (b) a (g) g (a) b a (b) a4 \breathe
+  a8 c c c c c (b) a a (b) b4 \breathe \bar "|"
+  d8 (c b) a (g) a (b) b4 \breathe
+  b8 b b4 \breathe
+  b8 b a b c b (a) g a b a (b) a a4 \breathe
+  a8 a c c b (a) a (b) b4 \breathe
+  b8 a (g) g a b a (b) a4 \bar "||"
+  g8 g4 (a) \bar "||"
 }
 
 % Lời điệp khúc
