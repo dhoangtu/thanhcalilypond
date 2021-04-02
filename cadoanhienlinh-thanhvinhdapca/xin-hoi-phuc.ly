@@ -1,0 +1,169 @@
+% Cài đặt chung
+\version "2.20.0"
+\include "english.ly"
+
+\header {
+  title = "Xin Hồi Phục"
+  composer = "TV. 79"
+  arranger = " "
+  tagline = ##f
+}
+
+global = {
+  \key d \major
+  \time 2/4
+}
+
+smallNote = #(define-music-function
+  (parser location note)
+  (ly:music?)
+  #{
+    \tweak font-size #-3
+    #note
+  #}
+)
+
+\paper {
+  #(set-paper-size "a4")
+  top-margin = 20\mm
+  bottom-margin = 15\mm
+  left-margin = 20\mm
+  right-margin = 20\mm
+  indent = #0
+  #(define fonts
+	 (make-pango-font-tree "Liberation Serif"
+	 		       "Liberation Serif"
+			       "Liberation Serif"
+			       (/ 20 20)))
+}
+
+% Nhạc điệp khúc
+nhacDiepKhuc = \relative c' {
+  \override Lyrics.LyricSpace.minimum-distance = #4.0
+  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  r4
+  <<
+    {
+      d4 |
+      a'2 |
+      g8 e e fs |
+      d4 d8 fs 
+      e d b4 |
+      b8 d a e' |
+      d2 ( |
+      d4) r
+    }
+    {
+      \override NoteHead.font-size = #-2
+      a'4 |
+      d2 |
+      b8 g g a |
+      fs4 fs8 a |
+      g fs e4 |
+      e8 g e g |
+      fs2 ( |
+      fs4) r
+    }
+  >>
+  \bar "|."
+}
+
+% Nhạc phiên khúc
+nhacPhienKhucMot = \relative c'' {
+  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  
+}
+
+nhacPhienKhucHai = \relative c'' {
+  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  
+}
+
+nhacPhienKhucBa = \relative c' {
+  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  
+}
+
+% Lời điệp khúc
+loiDiepKhuc = \lyricmode {
+  \override Lyrics.LyricText.font-series = #'bold
+  Lạy Chúa, xin hồi phục dân Ngài,
+  nguyện Thánh Nhan chiếu rọi, để cứu độ chúng con.
+}
+
+% Lời phiên khúc
+loiPhienKhucMot = \lyricmode {
+  \set stanza = #"1."
+  Hỡi mục tử nhà Is -- ra -- el, xin hãy lắng nghe
+  Đấng ngự trên các thần hộ giá.
+  Dám xin Ngài giải sáng hiển linh.
+  Dũng lực quyền uy, xin khơi dậy đi nào.
+  Đến cùng chúng con va thương cứu độ.
+}
+
+loiPhienKhucHai = \lyricmode {
+  \set stanza = #"2."
+  Lạy Chúa tể càn khôn, xin đoái lại.
+  Từ cõi trời, Ngài ngó xuống mà xem.
+  Xin trở về thăm nom vườn nho cũ.
+  Bảo vệ cây tay hữu Chúa đã trồng.
+  Cây non ấy, Ngài từng cho sức mạnh.
+}
+
+loiPhienKhucBa = \lyricmode {
+  \set stanza = #"3."
+  Xin Chúa đặt tay trên Đấng ngồi bên hữu,
+  là con người Chúa đã từng cho mạnh sức.
+  Chúng con nguyện chẳng xa Chúa nữa đâu.
+  Cúi xin Ngài ban cho được sống,
+  để chúng con xưng tụng danh Ngài.
+}
+
+
+% Dàn trang
+\score {
+  \new ChoirStaff <<
+    \new Staff = chorus <<
+      \new Voice = "sopranos" {
+        \global \nhacDiepKhuc
+      }
+    >>
+    \new Lyrics \lyricsto sopranos \loiDiepKhuc
+  >>
+}
+
+\score {
+  \new ChoirStaff <<
+    \new Staff = verses <<
+      \override Staff.TimeSignature.transparent = ##t
+      \new Voice = "verse" {
+        \global \stemNeutral \nhacPhienKhucMot
+      }
+    >>
+    \new Lyrics \lyricsto verse \loiPhienKhucMot
+  >>
+}
+
+\score {
+  \new ChoirStaff <<
+    \new Staff = verses <<
+      \override Staff.TimeSignature.transparent = ##t
+      \new Voice = "verse" {
+        \global \stemNeutral \nhacPhienKhucHai
+      }
+    >>
+    \new Lyrics \lyricsto verse \loiPhienKhucHai
+  >>
+}
+
+\score {
+  \new ChoirStaff <<
+    \new Staff = verses <<
+      \override Staff.TimeSignature.transparent = ##t
+      \new Voice = "verse" {
+        \global \stemNeutral \nhacPhienKhucBa
+      }
+    >>
+    \new Lyrics \lyricsto verse \loiPhienKhucBa
+  >>
+}
