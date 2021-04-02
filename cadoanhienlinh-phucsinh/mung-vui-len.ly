@@ -11,7 +11,6 @@
 
 global = {
   \key c \major
-  \time 2/4
 }
 
 \paper {
@@ -31,99 +30,103 @@ global = {
 
 % Nhạc điệp khúc
 nhacDiepKhuc = \relative c'' {
-  %\set Score.timing = ##f
+  %\cadenzaOn
+  \set Score.barAlways = ##t
+  \set Score.defaultBarType = ""
+   
   \override Lyrics.LyricSpace.minimum-distance = #3.0
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \autoBeamOff
   g8 a _(c) c \breathe b c d c c b a b (c) a4 \bar "|"
   g8 a _(c) c4 \breathe c8 c b a b (c) a4 \bar "|"
   d8 c b a g f e g (a) a4 \breathe
-  d8 (a) a c a g f f (a) g8 (f e) e4 \bar "||"
-  g8 a _(c) c4 \breathe b8 c d c c \breathe c c b a b (c) a4 \breathe
-  g8 a _(c) c c c b a b (c) a4 \breathe
+  d,8 (a') a c a g f f (a) g8 (f e) e4 \bar "||"
+  g8 a _(c) c4 \breathe b8 c d c c \breathe
+  c c b a b (c) a4 \breathe \bar "|"
+  g8 a _(c) c c c b a b (c) a4 \breathe \bar "|"
   d8 c b a (g) f (e) g (a) a4 \breathe
-  d8 (a) a c a g f g (a) g (f e) e4 \breathe
-  g8 a (c) c4 \breathe c8 b c d c c4 \breathe
+  d,8 (a') a c a g f g (a) g (f e) e4 \breathe
+  g8 a _(c) c4 \breathe c8 b c d c c4 \breathe
   c c c b a b (c) a4 \breathe
   d8 c b a g f e g (a) a4 \breathe
-  d8 (a) a c a g f g (a) g (f e) e4 \breathe \bar "|"
-  g8 a (c) c4 \breathe c8 c c b c d c c4 \bar "|"
+  d,8 (a') a c a g f g (a) g (f e) e4 \breathe \bar "|"
+  g8 a _(c) c4 \breathe c8 c c b c d c c4 \bar "|"
   c8 c c c b a b (c) a4 \breathe
   d8 c c b a b (c) a a4 \breathe
   g8 a a g f g (a) g (f e) e4 \breathe \bar "|"
-  g8 a (c) c c4 \breathe
+  g8 a _(c) c c4 \breathe
   c8 b c d c c4 \breathe
   c8 c c b a b c a4 \breathe
   d8 c c c b a b (c) a4 \breathe
   g8 a a a g f g a g (f e) e4 \breathe \bar "||" \break
-  a8 _(b) f e a g a2 \breathe \break
-  e8 g f (g) a4 \breathe \break
-  c8 b (c) a g a4  \breathe \break
-  a8 g g a e a4 \breathe \break
-  c8 b (c) d e a, b c b a4 \breathe \break
-  e8 e g (a) a4 \breathe \break
+  a8 _(b) f e a g a2 \bar "|" \break
+  e8 g f (g) a4 \bar "|" \break
+  c8 b (c) a g a4 \bar "|" \break
+  a8 g g a e a4 \bar "|" \break
+  c8 b (c) d e a, b c b a4 \bar "|" \break
+  e8 e g (a) a4 \bar "|" \break
   
   a8 c c4 \breathe
   a8 c c c c c b c d c4 \breathe
-  c8 b b _(a) a _(b) b4 \breathe
-  a8 b b b b b b a (g) g (a) b a _(b) a4 \breathe
+  c8 b b _(a) a _(b) b4 \breathe \bar "|"
+  a8 b b b b b b a (g) g (a) b a _(b) a4 \breathe \bar "|"
   a8 c c c b b (a) a (b) b b4 \breathe
   c8 c b b (a) a4 (b) \breathe
-  a8 b b b c b a (g) g (a) b a (b) a a4 \breathe \bar "||"
-  c8 (b) a g a (c) a b4 \breathe
+  a8 b b b c b a (g) g (a) b a _(b) a a4 \breathe \bar "|"
+  c8 (b) a g a _(c) a b4 \breathe
   a8 c (b) a a (b) b b4 \breathe
-  b b a b c (b) a (g) g a b a (b) a4 \breathe \bar "||"
-  a8 (c d c b) a (b) b4 a8 c c c c4 \breathe
+  b b a b c (b) a (g) g a b a (b) a4 \breathe \bar "|"
+  a8 (c d c b) a _(b) b4 a8 c c c c4 \breathe
   b8 c d c c c \breathe
   c b b a (b) b4 \breathe
-  b8 a b c b (a) g g (a) b a (b) a4 \breathe \bar "||"
-  c8 b (a g) a (c a) b4 \breathe
+  b8 a b c b (a) g g (a) b a (b) a4 \breathe \bar "|"
+  c8 b _(a g) a (c a) b4 \breathe
   a8 c c (b) a a _(b) b4 \breathe
-  b8 b c (b) a (g) g (a) b a (b) a4 \breathe
+  b8 b c (b) a (g) g (a) b a _(b) a4 \breathe \bar "|"
   c8 (b) a b \breathe
   a8 c c c c b c d c c c b (a) a (b) b4 \breathe
   a8 c c c c c c b (c) d c (b) a (b) b4 \breathe
   a8 b b4 \breathe
-  b8 a g g g (a) b a (b) a4 \breathe \bar "||"
-  a8 (c d c b) a (b) b4 \breathe
-  a8 c (b) a a (b) b4 \breathe
+  b8 a g g g (a) b a _(b) a4 \breathe \bar "|"
+  a8 (c d c b) a _(b) b4 \breathe
+  a8 c (b) a a _(b) b4 \breathe
   c8 b b a g g \breathe
-  a b a (b) a4 \breathe \bar "||"
+  a b a _(b) a4 \breathe \bar "|"
   a8 (c d c b) a a (b) b4 \breathe
   a8 b c (b) a (g) g (a) b a (b) a4 \breathe \bar "|"
   a8 c c b (c) d c b (a) a (b) b4 \breathe
-  b8 b a (b) c4 \breathe
+  b8 b a _(b) c4 \breathe
   b8 a (g) g (a) b a (b) a4 \breathe
-  c8 b (c) d c (b) a (b) b b4 \breathe
-  a8 c (b) a a (b) b4 \breathe
-  b8 a (g) g (a) b a (b) a a4 \breathe
+  c8 b (c) d c (b) a _(b) b b4 \breathe
+  a8 c (b) a a _(b) b4 \breathe
+  b8 a (g) g (a) b a _(b) a a4 \breathe \bar "|"
   c8 (b) a a b4 \breathe
   a8 b c b b a (g) g (a) b a (b) a4 \breathe \bar "|"
   a8 c4 \breathe
   b8 c (b) a a (b) b b4 c8 b (c) d (c b) a (b) b4 \breathe
   
   c8 (b) a (b) b b4 \breathe
-  a8 c b a a (b) b4 b8 a (g) g (a) b a (b) a a4 \breathe \bar "|"
-  a8 (c d) c (b) a (b) b4 \breathe
+  a8 c b a a (b) b4 b8 a (g) g (a) b a _(b) a a4 \breathe \bar "|"
+  a8 (c d) c (b) a (b) b4 \breathe \bar "|"
   a8 c c c (b) a (b) b4 \breathe
-  b8 a b c b a (g) g (a) b a (b) a4 \breathe
-  d8 (c b) a (g) a (b) b b4 a8 c b c d c c4 \breathe
+  b8 a b c b a (g) g (a) b a (b) a4 \breathe \bar "|"
+  d8 (c b) a (g) a _(b) b b4 a8 c b c d c c4 \breathe
   a8 c c c c (b) a (b) b4 \breathe
   a8 c c c c c b c d c c (b) a (b) b4 \breathe
   b8 b a (b) c b b a (g) g (a) b a (g) a4 \bar "||"
-  a8 c c c c b c d c4 \breathe
-  c c (b) a a (b) b4 \breathe
+  a8 c c c c b c d c4 \breathe \bar "|"
+  c c (b) a a (b) b4 \breathe \bar "|"
   b8 a (g) g (a) b a (b) a a4 \breathe
-  a8 b c d c c4a8 c b b (a) a (b) b4 \breathe
-  b8 b b c b b b a (g) g (a) b a (b) a4 \breathe
-  d8 (c b) a (g) a (b) b b4 \breathe
-  b8 a b c (b) a (g) g (a) b a (b) a4 \breathe
-  a8 c c c c c (b) a a (b) b4 \breathe \bar "|"
-  d8 (c b) a (g) a (b) b4 \breathe
-  b8 b b4 \breathe
-  b8 b a b c b (a) g a b a (b) a a4 \breathe
-  a8 a c c b (a) a (b) b4 \breathe
-  b8 a (g) g a b a (b) a4 \bar "||"
+  a8 b c d c c4a8 c b b (a) a _(b) b4 \breathe \bar "|"
+  b8 b b c b b b a (g) g (a) b a _(b) a4 \breathe
+  d8 (c b) a (g) a _(b) b b4 \breathe
+  b8 a b c (b) a (g) g (a) b a _(b) a4 \breathe \bar "|"
+  a8 c c c c c (b) a a _(b) b4 \breathe \bar "|"
+  d8 (c b) a (g) a _(b) b4 \breathe
+  b8 b b4 \breathe \bar "|"
+  b8 b a b c b (a) g a b a _(b) a a4 \breathe \bar "|"
+  a8 a c c b (a) a _(b) b4 \bar "|"
+  b8 a (g) g a b a _(b) a4 \bar "||"
   g8 g4 (a) \bar "||"
 }
 
@@ -142,9 +145,9 @@ loiDiepKhuc = \lyricmode {
   Họp nhau đây, tôi xin anh chị em rất thân yêu, đã hân hoan tham gia nguồn sáng này,
   hết tâm kêu xin cùng Chúa uy linh tha thiết khấn xin lòng Chúa nhân từ.
   Người thương yêu tôi, tôi dầu không có công chi, thương cho tôi nhập hàng tư tế Người,
-  khấng xin ban cho tôi đầy ánh quang, để tôi hân hoan ca ngợi cây nến huy hoàng)
+  khấng xin ban cho tôi đầy ánh quang, để tôi hân hoan ca ngợi cây nến huy hoàng.
   "X. Chúa" ở cùng anh chị em.
-  "T.Và" ở cùng cha(thầy).
+  "T. Và" ở cùng "cha (thầy)."
   "X. Hãy" nâng tâm hồn lên.
   "T. Chúng" tôi đang hướng về Chúa.
   "X. Hãy" tạ ơn Chúa là Thiên Chúa chúng ta.
