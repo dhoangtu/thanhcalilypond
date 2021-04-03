@@ -1,6 +1,7 @@
 % Cài đặt chung
 \version "2.20.0"
 \include "english.ly"
+\include "gregorian.ly"
 
 \header {
   title = "Mừng Vui Lên"
@@ -16,7 +17,7 @@ global = {
 \paper {
   #(set-paper-size "a4")
   top-margin = 15\mm
-  bottom-margin = 15\mm
+  bottom-margin = 20\mm
   left-margin = 20\mm
   right-margin = 20\mm
   indent = #0
@@ -30,103 +31,100 @@ global = {
 
 % Nhạc điệp khúc
 nhacDiepKhuc = \relative c'' {
-  %\cadenzaOn
   \set Score.barAlways = ##t
   \set Score.defaultBarType = ""
-   
   \override Lyrics.LyricSpace.minimum-distance = #3.0
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \autoBeamOff
-  g8 a ^([c]) c \breathe b c d c c b a b ([c]) a4 \bar "|"
-  g8 a ^([c]) c4 \breathe c8 c b a b ([c]) a4 \bar "|"
-  d8 c b a g f e g ([a]) a4 \breathe
-  d,8 ([a']) a c a g f f ([a]) g8 ([f e]) e4 \bar "||"
-  g8 a ^([c]) c4 \breathe b8 c d c c \breathe
-  c c b a b ([c]) a4 \breathe \bar "|"
-  g8 a _([c]) c c c b a b ([c]) a4 \breathe \bar "|"
-  d8 c b a ([g]) f ([e]) g ([a]) a4 \breathe
-  d,8 ([a']) a c a g f g ([a]) g ([f e]) e4 \breathe
-  g8 a _([c]) c4 \breathe c8 b c d c c4 \breathe
-  c c c b a b (c) a4 \breathe
-  d8 c b a g f e g ([a]) a4 \breathe
-  d,8 ([a']) a c a g f g ([a]) g ([f e]) e4 \breathe \bar "|"
-  g8 a ^([c]) c4 \breathe c8 c c b c d c c4 \bar "|"
-  c8 c c c b a b ([c]) a4 \breathe
-  d8 c c b a b ([c]) a a4 \breathe
-  g8 a a g f g ([a]) g ([f e]) e4 \breathe \bar "|"
-  g8 a _([c]) c c4 \breathe
-  c8 b c d c c4 \breathe
-  c8 c c b a b c a4 \breathe
-  d8 c c c b a b ([c]) a4 \breathe
-  g8 a a a g f g a g ([f e]) e4 \breathe \bar "||" \break
-  a8 _([b]) f e a g a2 \bar "|" \break
-  e8 g f ([g]) a4 \bar "|" \break
-  c8 b ([c]) a g a4 \bar "|" \break
-  a8 g g a e a4 \bar "|" \break
-  c8 b ([c]) d e a, b c b a4 \bar "|" \break
-  e8 e g ([a]) a4 \bar "|" \break
+  g8 a ([c]) c \divisioMinima b c d c c b a b ([c]) a4 \divisioMaior
+  g8 a ([c]) c4 \divisioMinima c8 c b a b ([c]) a4 \divisioMaior
+  d8 c b a g f e g ([a]) a4 \divisioMinima
+  d,8 ([a']) a c a g f f ([a]) g8 ([f e]) e4 \finalis
+  g8 a ([c]) c4 \divisioMinima b8 c d c c \divisioMinima
+  c c b a b ([c]) a4 \divisioMinima
+  g8 a ([c]) c c c b a b ([c]) a4 \divisioMaior
+  d8 c b a ([g]) f ([e]) g ([a]) a4 \divisioMinima
+  d,8 ([a']) a c a g f g ([a]) g ([f e]) e4 \finalis
+  g8 a ([c]) c4 \divisioMinima c8 b c d c c4 \divisioMinima
+  c c c b a b (c) a4 \divisioMinima
+  d8 c b a g f e g ([a]) a4 \divisioMaior
+  d,8 ([a']) a c a g f g ([a]) g ([f e]) e4 \finalis
+  g8 a ([c]) c4 \divisioMinima c8 c c b c d c c4 \divisioMaior
+  c8 c c c b a b ([c]) a4 \divisioMinima
+  d8 c c b a b ([c]) a a4 \divisioMinima
+  g8 a a g f g ([a]) g ([f e]) e4 \finalis
+  g8 a ([c]) c c4 \divisioMaior
+  c8 b c d c c4 \divisioMaior
+  c8 c c b a b c a4 \divisioMinima
+  d8 c c c b a b ([c]) a4 \divisioMaior
+  g8 a a a g f g a g ([f e]) e4 \finalis \break
+  a8 _([b]) f e a g a2 \finalis \break
+  e8 g f ([g]) a4 \finalis \break
+  c8 b ([c]) a g a4 \finalis \break
+  a8 g g a e a4 \finalis \break
+  c8 b ([c]) d e a, b c b a4 \finalis \break
+  e8 e g ([a]) a4 \finalis \break
   
-  a8 c c4 \breathe
-  a8 c c c c c b c d c4 \breathe
-  c8 b b _([a]) a _([b]) b4 \breathe \bar "|"
-  a8 b b b b b b a ([g]) g ([a]) b a _([b]) a4 \breathe \bar "|"
-  a8 c c c b b ([a]) a ([b]) b b4 \breathe
-  c8 c b b ([a]) a4 (b) \breathe
-  a8 b b b c b a ([g]) g ([a]) b a _([b]) a a4 \breathe \bar "|"
-  c8 ([b]) a g a ^([c]) a b4 \breathe
-  a8 c ([b]) a a ([b]) b b4 \breathe
-  b b a b c (b) a (g) g a b a (b) a4 \breathe \bar "|"
-  a8 ([c d c b]) a _([b]) b4 a8 c c c c4 \breathe
-  b8 c d c c c \breathe
-  c b b a ([b]) b4 \breathe
-  b8 a b c b ([a]) g g ([a]) b a ([b]) a4 \breathe \bar "|"
-  c8 b _([a g]) a ([c a]) b4 \breathe
-  a8 c c ([b]) a a _([b]) b4 \breathe
-  b8 b c ([b]) a ([g]) g ([a]) b a _([b]) a4 \breathe \bar "|"
-  c8 ([b]) a b \breathe
-  a8 c c c c b c d c c c b ([a]) a ([b]) b4 \breathe
-  a8 c c c c c c b ([c]) d c ([b]) a ([b]) b4 \breathe
-  a8 b b4 \breathe
-  b8 a g g g ([a]) b a _([b]) a4 \breathe \bar "|"
-  a8 ([c d c b]) a _([b]) b4 \breathe
-  a8 c ([b]) a a _([b]) b4 \breathe
-  c8 b b a g g \breathe
-  a b a _([b]) a4 \breathe \bar "|"
+  a8 c c4 \divisioMaior
+  a8 c c c c c b c d c4 \divisioMaior
+  c8 b b ([a]) a ([b]) b4 \divisioMaxima
+  a8 b b b b b b a ([g]) g ([a]) b a ([b]) a4 \divisioMinima
+  a8 c c c b b ([a]) a ([b]) b b4 \divisioMinima
+  c8 c b b ([a]) a4 (b) \divisioMaior
+  a8 b b b c b a ([g]) g ([a]) b a ([b]) a a4 \finalis
+  c8 ([b]) a g a ([c]) a b4 \divisioMaior
+  a8 c ([b]) a a ([b]) b b4 \divisioMinima
+  b b a b c (b) a (g) g a b a (b) a4 \finalis
+  a8 ([c d c b]) a ([b]) b4 a8 c c c c4 \divisioMaior
+  b8 c d c c c \divisioMinima
+  c b b a ([b]) b4 \divisioMaior
+  b8 a b c b ([a]) g g ([a]) b a ([b]) a4 \finalis
+  c8 b ([a g]) a ([c a]) b4 \divisioMaior
+  a8 c c ([b]) a a ([b]) b4 \divisioMinima
+  b8 b c ([b]) a ([g]) g ([a]) b a ([b]) a4 \finalis
+  c8 ([b]) a b \divisioMaior
+  a8 c c c c b c d c c c b ([a]) a ([b]) b4 \divisioMinima
+  a8 c c c c c c b ([c]) d c ([b]) a ([b]) b4 \divisioMaior
+  a8 b b4 \divisioMaior
+  b8 a g g g ([a]) b a ([b]) a4 \finalis
+  a8 ([c d c b]) a ([b]) b4 \divisioMaior
+  a8 c ([b]) a a ([b]) b4 \divisioMinima
+  c8 b b a g g \divisioMinima
+  a b a ([b]) a4 \finalis
   a8 ([c d c b]) a a ([b]) b4 \breathe
-  a8 b c ([b]) a ([g]) g ([a]) b a ([b]) a4 \breathe \bar "|"
-  a8 c c b (4[c]) d c b ([a]) a ([b]) b4 \breathe
-  b8 b a _([b]) c4 \breathe
-  b8 a ([g]) g ([a]) b a ([b]) a4 \breathe
-  c8 b ([c]) d c ([b]) a _([b]) b b4 \breathe
-  a8 c ([b]) a a _([b]) b4 \breathe
-  b8 a ([g]) g ([a]) b a _([b]) a a4 \breathe \bar "|"
-  c8 ([b]) a a b4 \breathe
-  a8 b c b b a ([g]) g ([a]) b a ([b]) a4 \breathe \bar "|"
-  a8 c4 \breathe
-  b8 c ([b]) a a ([b]) b b4 c8 b ([c]) d ([c b]) a ([b]) b4 \breathe
-  
-  c8 ([b]) a ([b]) b b4 \breathe
-  a8 c b a a ([b]) b4 b8 a ([g]) g ([a]) b a _([b]) a a4 \breathe \bar "|"
-  a8 ([c d]) c ([b]) a ([b]) b4 \breathe \bar "|"
-  a8 c c c ([b]) a ([b]) b4 \breathe
-  b8 a b c b a ([g]) g ([a]) b a ([b]) a4 \breathe \bar "|"
-  d8 ([c b]) a ([g]) a _([b]) b b4 a8 c b c d c c4 \breathe
-  a8 c c c c ([b]) a ([b]) b4 \breathe
-  a8 c c c c c b c d c c ([b]) a ([b]) b4 \breathe
-  b8 b a ([b]) c b b a ([g]) g ([a]) b a ([g]) a4 \bar "||"
-  a8 c c c c b c d c4 \breathe \bar "|"
-  c c ([b]) a a ([b]) b4 \breathe \bar "|"
-  b8 a ([g]) g ([a]) b a ([b]) a a4 \breathe
-  a8 b c d c c4a8 c b b ([a]) a _([b]) b4 \breathe \bar "|"
-  b8 b b c b b b a ([g]) g ([a]) b a _([b]) a4 \breathe
-  d8 ([c b]) a ([g]) a _([b]) b b4 \breathe
-  b8 a b c ([b]) a ([g]) g ([a]) b a _([b]) a4 \breathe \bar "|"
-  a8 c c c c c ([b]) a a _([b]) b4 \breathe \bar "|"
-  d8 ([c b]) a ([g]) a _([b]) b4 \breathe
-  b8 b b4 \breathe \bar "|"
-  b8 b a b c b ([a]) g a b a _([b]) a a4 \breathe \bar "|"
-  a8 a c c b ([a]) a _([b]) b4 \bar "|"
-  b8 a ([g]) g a b a _([b]) a4 \bar "||"
+  a8 b c ([b]) a ([g]) g ([a]) b a ([b]) a4 \divisioMaxima
+  a8 c c b ([c]) d c b ([a]) a ([b]) b4 \divisioMaior
+  b8 b a ([b]) c4 \divisioMinima
+  b8 a ([g]) g ([a]) b a ([b]) a4 \divisioMaxima
+  c8 b ([c]) d c ([b]) a ([b]) b b4 \divisioMinima
+  a8 c ([b]) a a ([b]) b4 \divisioMaior
+  b8 a ([g]) g ([a]) b a ([b]) a a4 \divisioMaxima
+  c8 ([b]) a a b4 \divisioMinima
+  a8 b c b b a ([g]) g ([a]) b a ([b]) a4 \divisioMaxima
+  a8 c4 \divisioMinima
+  b8 c ([b]) a a ([b]) b b4 c8 b ([c]) d ([c b]) a ([b]) b4 \divisioMinima
+  c8 ([b]) a ([b]) b b4 \divisioMinima
+  a8 c b a a ([b]) b4 b8 a ([g]) g ([a]) b a ([b]) a a4 \divisioMaxima
+  a8 ([c d]) c ([b]) a ([b]) b4 \divisioMaxima
+  a8 c c c ([b]) a ([b]) b4 \divisioMaior
+  b8 a b c b a ([g]) g ([a]) b a ([b]) a4 \finalis
+  d8 ([c b]) a ([g]) a ([b]) b b4 a8 c b c d c c4 \divisioMinima
+  a8 c c c c ([b]) a ([b]) b4 \divisioMinima
+  a8 c c c c c b c d c c ([b]) a ([b]) b4 \divisioMinima
+  b8 b a ([b]) c b b a ([g]) g ([a]) b a ([g]) a4 \finalis
+  a8 c c c c b c d c4 \divisioMaior
+  c c ([b]) a a ([b]) b4 \divisioMaior
+  b8 a ([g]) g ([a]) b a ([b]) a a4 \divisioMaxima
+  a8 b c d c c4a8 c b b ([a]) a ([b]) b4 \divisioMaior
+  b8 b b c b b b a ([g]) g ([a]) b a ([b]) a4
+  d8 ([c b]) a ([g]) a ([b]) b b4 \divisioMaior
+  b8 a b c ([b]) a ([g]) g ([a]) b a ([b]) a4 \divisioMaxima
+  a8 c c c c c ([b]) a a ([b]) b4 \divisioMaior
+  d8 ([c b]) a ([g]) a ([b]) b4 \divisioMinima
+  b8 b b4 \divisioMaior
+  b8 b a b c b ([a]) g a b a ([b]) a a4 \divisioMaxima
+  a8 a c c b ([a]) a ([b]) b4 \divisioMaior
+  b8 a ([g]) g a b a ([b]) a4 \finalis
   g8 g4 ([a]) \bar "||"
 }
 
@@ -170,7 +168,7 @@ loiDiepKhuc = \lyricmode {
   và đổ máu quý giá để tẩy sạch án tổ tông xưa.
   Chính đây là lễ Vượt Qua, mà Chiên thật được sát tế
   nơi cửa nhà dân Chúa đã được ghi dấu máu chiên.
-  Này(i) là Đêm mà cha ông chúng tôi, là con cái Is -- ra -- el thoát ly Ai Cập xưa
+  "Này(i)" là Đêm mà cha ông chúng tôi, là con cái Is -- ra -- el thoát ly Ai Cập xưa
   Chúa đã cho tiến qua Biển Đỏ vẫn khô chân.
   Chính đây là Đêm, nhờ ánh sáng cột lửa thiêng, xua tan bóng đen tội lỗi nhân gian.
   Đây là Đêm, mà hôm nay ai tin cậy nơi Chúa Ki -- tô khắp trên trần gian
@@ -207,6 +205,12 @@ loiDiepKhuc = \lyricmode {
         \global \stemNeutral \nhacDiepKhuc
       }
     >>
-    \new Lyrics \lyricsto sopranos \loiDiepKhuc
+    \new Lyrics \with {
+      \override VerticalAxisGroup.
+        nonstaff-relatedstaff-spacing.padding = #2
+      \override VerticalAxisGroup.
+        nonstaff-unrelatedstaff-spacing.padding = #2
+    }
+    \lyricsto sopranos \loiDiepKhuc
   >>
 }
