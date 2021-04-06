@@ -38,43 +38,45 @@ smallNote = #(define-music-function
 }
 
 % Nhạc điệp khúc
-nhacDiepKhuc = \relative c' {
+nhacDiepKhucSop= \relative c' {
   \override Lyrics.LyricSpace.minimum-distance = #4.0
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  r4
-  <<
-    {
-      d4 |
-      a'2 |
-      g8 e e fs |
-      d4 d8 fs 
-      e d b4 |
-      b8 d a e' |
-      d2 ( |
-      d4) r
-    }
-    {
-      \override NoteHead.font-size = #-2
-      a'4 |
-      d2 |
-      b8 g g a |
-      fs4 fs8 a |
-      g fs e4 |
-      e8 g e g |
-      fs2 ( |
-      fs4) r
-    }
-  >>
-  \bar "|."
+  r4 d4 |
+  a'2 |
+  g8 e e fs |
+  d4 d8 fs 
+  e d b4 |
+  b8 d a e' |
+  d2 ( |
+  d4) r \bar "|."
+}
+
+nhacDiepKhucBass= \relative c' {
+  \override Lyrics.LyricSpace.minimum-distance = #4.0
+  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  \override NoteHead.font-size = #-2
+  r4 a'4 |
+  d2 |
+  b8 g g a |
+  fs4 fs8 a |
+  g fs e4 |
+  e8 g e g |
+  fs2 ( |
+  fs4) r
 }
 
 % Nhạc phiên khúc
-nhacPhienKhucMot = \relative c'' {
+nhacPhienKhucMot = \relative c' {
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  
+  e8 g a g b a a \breathe
+  a g b a4 (a8) \breathe
+  a g a a d, e fs4 (fs) \breathe
+  a8 g e g b g a4 a16 fs d8 e4 \breathe
+  e8 cs b cs a4 \breathe
+  b8 a fs' e4 e8 g a d,4 (d) \bar "||"
 }
 
-nhacPhienKhucHai = \relative c'' {
+nhacPhienKhucHai = \relative c' {
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
   
 }
@@ -98,7 +100,7 @@ loiPhienKhucMot = \lyricmode {
   Đấng ngự trên các thần hộ giá.
   Dám xin Ngài giải sáng hiển linh.
   Dũng lực quyền uy, xin khơi dậy đi nào.
-  Đến cùng chúng con va thương cứu độ.
+  Đến cùng chúng con và thương cứu độ.
 }
 
 loiPhienKhucHai = \lyricmode {
@@ -123,12 +125,20 @@ loiPhienKhucBa = \lyricmode {
 % Dàn trang
 \score {
   \new ChoirStaff <<
-    \new Staff = chorus <<
+    \new Staff = chorus \with {
+        \consists "Merge_rests_engraver"
+      }
+      <<
+      \override Staff.TimeSignature.transparent = ##t
       \new Voice = "sopranos" {
-        \global \nhacDiepKhuc
+        \voiceOne \global \stemDown \nhacDiepKhucSop
+      }
+      \new Voice = "basses" {
+        \voiceTwo \global \stemUp \nhacDiepKhucBass
       }
     >>
-    \new Lyrics \lyricsto sopranos \loiDiepKhuc
+    \new Lyrics = basses
+    \context Lyrics = basses \lyricsto sopranos \loiDiepKhuc
   >>
 }
 

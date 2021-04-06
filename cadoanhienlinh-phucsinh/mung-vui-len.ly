@@ -5,7 +5,7 @@
 
 \header {
   title = "Mừng Vui Lên"
-  subtitle = "(Exultet)"
+  subtitle = "(Exsultet)"
   composer = " "
   tagline = ##f
 }
