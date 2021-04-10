@@ -84,7 +84,6 @@ loiDiepKhucSop = \lyricmode {
 }
 
 loiDiepKhucBass = \lyricmode {
-  %_ _ _ _ _ _ _ _
   Để Ngài đổi mới, đổi mới mặt địa cầu.
 }
 
@@ -146,7 +145,6 @@ loiPhienKhucBon = \lyricmode {
   >>
 }
 
-% \include "gregorian.ly"
 \score {
   \new ChoirStaff <<
     \new Staff = verses <<
