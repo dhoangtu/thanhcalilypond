@@ -67,6 +67,8 @@ nhacDiepKhucBass= \relative c' {
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c' {
+  \set Score.barAlways = ##t
+  \set Score.defaultBarType = ""
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
   e8 g a g b a a \breathe
   a g b a4 (a8) \breathe
@@ -77,13 +79,26 @@ nhacPhienKhucMot = \relative c' {
 }
 
 nhacPhienKhucHai = \relative c' {
+  \set Score.barAlways = ##t
+  \set Score.defaultBarType = ""
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  
+  e8 g a g a4 \breathe
+  g8 a d,4 (d8) \breathe
+  b d a4 a8 d fs d e4 (e8) \breathe
+  a g g a a d, e fs4 \breathe
+  a8 g a (a16) a8 b b16 b e,4 \breathe
+  e8 e a4 \breathe
+  cs,8 a e' fs d4 (d) \bar "||"
 }
 
 nhacPhienKhucBa = \relative c' {
+  \set Score.barAlways = ##t
+  \set Score.defaultBarType = ""
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  
+  g'8 a g a a b e, g a4 \breathe
+  g8 a g4 a8 a d, e e fs4 a8 g e g a cs b a4 (a8) \breathe
+  cs b a (a16) cs8 cs a e'4 \breathe
+  d16 fs e4 e8 d8 \fermata e \fermata d4 (d) \bar "||"
 }
 
 % Lời điệp khúc
@@ -147,7 +162,7 @@ loiPhienKhucBa = \lyricmode {
     \new Staff = verses <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
-        \global \stemNeutral \nhacPhienKhucMot
+        \key d \major \stemNeutral \nhacPhienKhucMot
       }
     >>
     \new Lyrics \lyricsto verse \loiPhienKhucMot
@@ -159,7 +174,7 @@ loiPhienKhucBa = \lyricmode {
     \new Staff = verses <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
-        \global \stemNeutral \nhacPhienKhucHai
+        \key d \major \stemNeutral \nhacPhienKhucHai
       }
     >>
     \new Lyrics \lyricsto verse \loiPhienKhucHai
@@ -171,7 +186,7 @@ loiPhienKhucBa = \lyricmode {
     \new Staff = verses <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
-        \global \stemNeutral \nhacPhienKhucBa
+        \key d \major \stemNeutral \nhacPhienKhucBa
       }
     >>
     \new Lyrics \lyricsto verse \loiPhienKhucBa
