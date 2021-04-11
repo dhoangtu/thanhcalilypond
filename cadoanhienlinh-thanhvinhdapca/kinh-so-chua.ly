@@ -3,14 +3,14 @@
 \include "english.ly"
 
 \header {
-  title = "Hãy Kể Cho Muôn Dân"
-  composer = "TV. 95"
+  title = "Kính Sợ Chúa"
+  composer = "TV. 127"
   arranger = " "
   tagline = ##f
 }
 
 global = {
-  \key g \major
+  \key c \major
   \time 2/4
 }
 
@@ -32,94 +32,97 @@ global = {
 nhacDiepKhucSop= \relative c'' {
   \override Lyrics.LyricSpace.minimum-distance = #4.0
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  \partial 8 d8 |
-  g,4 a8 b |
-  c4. c8 |
-  e,4 fs8 g |
-  a4 d |
-  d8 a a b |
-  g2 ( |
-  g4) r \bar "|."
+  \autoBeamOff
+  \partial 8 c8 |
+  g4. f8 |
+  d4 e8 e |
+  c4 _(d) |
+  g2 |
+  r8 a8 b a |
+  g4 a8 g |
+  d'4 d8 (e) |
+  c2 \bar "|."
 }
 
-nhacDiepKhucBass= \relative c'' {
+nhacDiepKhucBass= \relative c' {
   \override Lyrics.LyricSpace.minimum-distance = #4.0
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \override NoteHead.font-size = #-2
-  \partial 8 d8 |
-  b4 c8 d |
-  e4. e8 |
-  a,4 b8 c |
-  d4 d |
-  d8 c c d |
-  b2 ( |
-  b4) r
+  \autoBeamOff
+  \skip 8
+  \skip 2
+  \skip 2
+  \skip 2
+  \skip 2
+  r8 f g f |
+  e4 f8 e |
+  g4 g8 (f) |
+  e2
 }
 
 % Nhạc phiên khúc
-nhacPhienKhucMot = \relative c' {
+nhacPhienKhucMot = \relative c'' {
   \set Score.barAlways = ##t
   \set Score.defaultBarType = ""
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  \set Staff.keyAlterations = #`(((1 . 3) . ,NATURAL))
-  e8 d c g'4 f8 f a c4 \breathe
-  d8 d b g g4 f8 d e d c4 \breathe
-  e8 g g g a g a b4 \breathe
-  b8 g d' b a a4 g8 g4 \bar "||"
+  a8 c c a a c a c4 \breathe
+  c8 d d c e c g4 \breathe
+  gf8 gf gf f f4 f8 c f \acciaccatura c8 g'4
+  e8 e e d b' b d, \fermata g4 (g) \bar "||"
 }
 
-nhacPhienKhucHai = \relative c' {
+nhacPhienKhucHai = \relative c'' {
   \set Score.barAlways = ##t
   \set Score.defaultBarType = ""
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  \set Staff.keyAlterations = #`(((1 . 3) . ,NATURAL))
-  e8 d g4 a8 a g e4 a8 g b4 a8 b d e, g4 \breathe
-  f8 e d a' a b a g4
-  a8 g b b4 b8 g g g g \acciaccatura d' c4 \bar "||"
+  a8 c a c a c g4 \breathe
+  c8 e, f g c, d e4
+  d8 d fs \fermata a b a g4
+  g8 e e c' c d \acciaccatura c8 e4 (e) \bar "||"
 }
 
-nhacPhienKhucBa = \relative c' {
+nhacPhienKhucBa = \relative c'' {
   \set Score.barAlways = ##t
   \set Score.defaultBarType = ""
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  \set Staff.keyAlterations = #`(((1 . 3) . ,NATURAL))
-  e8 d a'4 a8 d, d g e4 \breathe
-  a8 g g a a g b d c4 \breathe
-  c8 c c a g4 \breathe
-  a8 f g a e4 a8 g b b b g b d e c4 (c) \bar "||"
+  c8 c a c a4 c8 e, f g a a e d4 \breathe
+  d8 g b, c d4
+  b'8 a a d, fs g4 \breathe
+  e8 g a e e4
+  e8 e c' b16 b b b8 \breathe
+  e d16 d d d4 g, c (c) \bar "||"
 }
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
   \override Lyrics.LyricText.font-series = #'bold
-  Hãy kể cho muôn dân,
-  hãy kể cho muôn dân biết những việc lạ Chúa làm.
+  Phúc thay những người biết kính sợ Chúa.
+  Ăn ở theo đường, theo đường lối của Người.
 }
 
 % Lời phiên khúc
 loiPhienKhucMot = \lyricmode {
   \set stanza = #"1."
-  Hát lên mừng Chúa, một bài ca mới.
-  Hãy hát lên mừng Người hỡi toàn thể địa cầu.
-  Kể cho muôn dân biết, Người vinh hiển,
-  cho mọi nước nghe việc lạ Người làm.
+  Hạnh phúc thay bạn nào kính sợ Chúa,
+  ăn ở theo đường lối của Người.
+  Công khó tay bạn làm bạn được an hưởng.
+  Đời bạn quả là lắm phúc nhiều may.
 }
 
 loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
-  Hãy dâng Chúa, hỡi các dân tộc,
-  hãy dâng Chúa mọi vinh hiển quyền năng.
-  Hãy dâng lời ca khen xứng danh Người.
-  Lễ vật mang lên, bước vào tiền đình Nhà Chúa.
+  Hiền thê bạn trong cửa trong nhà,
+  khác nào cây nho đầy hoa trái.
+  Và bầy con xúm xít lại bàn
+  như những chồi ô -- liu mơn mởn.
 }
 
 loiPhienKhucBa = \lyricmode {
   \set stanza = #"3."
-  Bàn thờ Chúa, Đấng rạng ngời Thánh thiện.
-  Khắp hoàn cầu hãy run sợ trước Thánh nhan.
-  Hãy nói giữa chư dân:
-  Chúa là Vua hiển trị,
-  cai trị muôn dân theo đường công minh chính trực.
+  Đó chính là phúc lộc Chúa dành cho kẻ biết kính sợ Người.
+  Xin Chúa từ Si -- on xuống cho muôn vàn ơn phước.
+  Để trong suốt cuộc đời bạn được thấy Giê -- ru -- sa -- lem
+  thấy Giê -- ru -- sa -- lem phồn vinh.
 }
 
 
@@ -131,10 +134,10 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = "sopranos" {
-        \voiceOne \global \stemDown \nhacDiepKhucSop
+        \voiceOne \global \stemUp \nhacDiepKhucSop
       }
       \new Voice = "basses" {
-        \voiceTwo \global \stemUp \nhacDiepKhucBass
+        \voiceTwo \global \stemDown \nhacDiepKhucBass
       }
     >>
     \new Lyrics = basses
@@ -147,7 +150,7 @@ loiPhienKhucBa = \lyricmode {
     \new Staff = verses <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
-        \stemNeutral \nhacPhienKhucMot
+        \key c \major \stemNeutral \nhacPhienKhucMot
       }
     >>
     \new Lyrics \lyricsto verse \loiPhienKhucMot
@@ -159,7 +162,7 @@ loiPhienKhucBa = \lyricmode {
     \new Staff = verses <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
-        \stemNeutral \nhacPhienKhucHai
+        \key c \major \stemNeutral \nhacPhienKhucHai
       }
     >>
     \new Lyrics \lyricsto verse \loiPhienKhucHai
@@ -171,7 +174,7 @@ loiPhienKhucBa = \lyricmode {
     \new Staff = verses <<
       \override Staff.TimeSignature.transparent = ##t
       \new Voice = "verse" {
-        \stemNeutral \nhacPhienKhucBa
+        \key c \major \stemNeutral \nhacPhienKhucBa
       }
     >>
     \new Lyrics \lyricsto verse \loiPhienKhucBa
