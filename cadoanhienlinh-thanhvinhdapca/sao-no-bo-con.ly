@@ -81,7 +81,7 @@ nhacPhienKhucHai = \relative c' {
   d4 \tuplet 3/2 { a'8 bf g } |
   a4 r8 g16 f |
   e2 |
-  bf'8 g d' c (\grace {d16 c}) |
+  bf'8 g d' \afterGrace c {d16 [c]} |
   f,2 ( |
   f4) r \bar "||"
 }
