@@ -51,6 +51,7 @@ nhacDiepKhucSop = \relative c'' {
 nhacDiepKhucBass = \relative c' {
   \override Lyrics.LyricSpace.minimum-distance = #4.0
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  \override NoteHead.font-size = #-2
   \skip 2
   b2 |
   d4 a |
