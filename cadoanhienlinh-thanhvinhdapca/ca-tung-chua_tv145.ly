@@ -36,18 +36,20 @@ nhacDiepKhucSop = \relative c'' {
   c4 \breathe c,8 d |
   e4. g8 |
   a4 g |
-  c2 \bar "|."
+  c2 ( |
+  c4) r \bar "|."
 }
 
 nhacDiepKhucBass = \relative c' {
   \override Lyrics.LyricSpace.minimum-distance = #1.7
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \override NoteHead.font-size = #-2
-  \skip 4.
-  \skip 4 a8 b |
+  \partial 4. f8 d f |
+  g4 a,8 b |
   c4. e8 |
   f4 d |
-  e2
+  e2 ( |
+  e4) r
 }
 
 % Nhạc phiên khúc
