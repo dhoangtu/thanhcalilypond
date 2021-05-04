@@ -56,13 +56,17 @@ nhacPhienKhucMot = \relative c'' {
   c8 c c c a4 g8 b d ([f]) e ([d]) c d c4 \bar "||"
 }
 
+
 nhacPhienKhucHai = \relative c'' {
   \set Score.barAlways = ##t
   \set Score.defaultBarType = ""
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  #(define afterGraceFraction (cons 1 4))
   c8 a g g16 ([a]) g8 e g g4 \breathe
   e8 e g e d c d d4 \breathe
-  a8 b b \afterGrace d8 (g) f e d c4 \bar "||"
+  a8 b b
+  \afterGrace d8 (\tweak font-size #-4 g)
+  f e d c4 \bar "||"
 }
 
 nhacPhienKhucBa = \relative c'' {
