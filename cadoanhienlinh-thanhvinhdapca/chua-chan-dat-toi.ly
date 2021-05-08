@@ -71,7 +71,7 @@ nhacPhienKhucMot = \relative c' {
   a2 |
   g8 d a' fs |
   fs4 e8 e |
-  a4 cs, (\grace d8) |
+  a4 \afterGrace cs, (\tweak font-size #-4 d8) |
   d2 ( |
   d4) r \bar "||"
 }
