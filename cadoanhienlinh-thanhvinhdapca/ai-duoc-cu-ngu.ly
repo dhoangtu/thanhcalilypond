@@ -91,7 +91,6 @@ loiPhienKhucBa = \lyricmode {
   Phàm ai làm điều ấy không hề nao núng chuyển lay bao giờ.
 }
 
-
 % Dàn trang
 \score {
   \new ChoirStaff <<
@@ -133,7 +132,7 @@ loiPhienKhucBa = \lyricmode {
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
-  } 
+  }
 }
 
 \score {
@@ -155,7 +154,7 @@ loiPhienKhucBa = \lyricmode {
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
-  } 
+  }
 }
 
 \score {
@@ -177,5 +176,5 @@ loiPhienKhucBa = \lyricmode {
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
-  } 
+  }
 }

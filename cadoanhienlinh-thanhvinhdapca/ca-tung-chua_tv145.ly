@@ -37,7 +37,6 @@ nhacDiepKhucSop = \relative c'' {
 }
 
 nhacDiepKhucBass = \relative c' {
-  
   \partial 4. f8 d f |
   g4 a,8 b |
   c4. e8 |
@@ -125,7 +124,6 @@ loiPhienKhucBa = \lyricmode {
   Người hiển trị ngàn đời.
 }
 
-
 % Dàn trang
 \score {
   \new ChoirStaff <<
@@ -170,7 +168,7 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  } 
+  }
 }
 
 \score {
@@ -190,7 +188,7 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  } 
+  }
 }
 
 \score {
@@ -210,5 +208,5 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  } 
+  }
 }

@@ -119,7 +119,6 @@ loiPhienKhucBa = \lyricmode {
   Tưởng nhứo Thánh Danh mà dâng lời cảm tạ.
 }
 
-
 % Dàn trang
 \score {
   \new ChoirStaff <<

@@ -10,7 +10,6 @@
   tagline = ##f
 }
 
-
 \paper {
   #(set-paper-size "a4")
   top-margin = 15\mm
@@ -29,8 +28,6 @@
 
 % Nhạc điệp khúc
 nhacDiepKhucSop= \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   g4 a |
   b2 |
   b8 a4 b8 |
@@ -46,9 +43,6 @@ nhacDiepKhucSop= \relative c'' {
 }
 
 nhacDiepKhucBass= \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  \override NoteHead.font-size = #-2
   e4 d |
   g2 |
   g8 fs4 e8 |
@@ -65,9 +59,6 @@ nhacDiepKhucBass= \relative c' {
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c'' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   g8 a _(b) b4 b8 b a b g \breathe
   e e e e g g a (g) b, d4 \breathe
   c8 c e4 g8 a g e fs d4 \breathe
@@ -75,9 +66,6 @@ nhacPhienKhucMot = \relative c'' {
 }
 
 nhacPhienKhucHai = \relative c'' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   g8 a _(b) b4 b8 a b a g4 \breathe
   e8 g e4 e8 g4 a8 g e b d4 \breathe
   d8 e d b' b a g a4 a8 e e g d'4 \fermata
@@ -85,9 +73,6 @@ nhacPhienKhucHai = \relative c'' {
 }
 
 nhacPhienKhucBa = \relative c'' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   g8 g a b b a b b a (g) g4 \breathe
   e8 g a a g a g b, d4 \breathe
   e4 e d e4 d8 d g a b4 \breathe
@@ -96,7 +81,6 @@ nhacPhienKhucBa = \relative c'' {
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
   Ân nghĩa Chúa, ca ngợi không ngừng.
   Ân nghĩa Ngài con ca tụng luôn.
   Ân nghĩa Ngài bền vững muôn ngàn đời.
@@ -140,6 +124,7 @@ loiPhienKhucBa = \lyricmode {
         \voiceOne \key g \major \time 2/4 \nhacDiepKhucSop
       }
       \new Voice = beBas {
+        \override NoteHead.font-size = #-2
         \voiceTwo \key g \major \time 2/4 \nhacDiepKhucBass
       }
     >>
@@ -148,7 +133,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
   }
 }
@@ -172,7 +157,7 @@ loiPhienKhucBa = \lyricmode {
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
-  } 
+  }
 }
 
 \score {
@@ -194,7 +179,7 @@ loiPhienKhucBa = \lyricmode {
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
-  } 
+  }
 }
 
 \score {
@@ -216,5 +201,5 @@ loiPhienKhucBa = \lyricmode {
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
-  } 
+  }
 }
