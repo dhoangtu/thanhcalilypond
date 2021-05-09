@@ -3,8 +3,10 @@
 \include "english.ly"
 
 \header {
-  title = "Ca Tiếp Liên"
-  composer = "Lễ Chúa Thánh Thần Hiện Xuống"
+  title = \markup { \fontsize #3 "Ca Tiếp Liên" }
+  poet = "Lễ Chúa Thánh Thần Hiện Xuống"
+  composer = "Lm. Trần Thanh Cao"
+  
   tagline = ##f
 }
 
@@ -15,17 +17,18 @@ global = {
 
 \paper {
   #(set-paper-size "a4")
-  top-margin = 20\mm
+  top-margin = 15\mm
   bottom-margin = 15\mm
   left-margin = 20\mm
   right-margin = 20\mm
   indent = #0
   #(define fonts
-	 (make-pango-font-tree "Liberation Serif"
-	 		       "Liberation Serif"
-			       "Liberation Serif"
-			       (/ 20 20)))
-  print-page-number = #f
+    (make-pango-font-tree
+      "Liberation Serif"
+      "Liberation Serif"
+      "Liberation Serif"
+      (/ 20 20)))
+  page-count = #1
 }
 
 % Nhạc điệp khúc
