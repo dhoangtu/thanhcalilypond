@@ -28,8 +28,6 @@
 
 % Nhạc điệp khúc
 nhacDiepKhuc = \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #1.7
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   f8 d bf' a |
   g4. d8 |
   d2 |
@@ -41,7 +39,6 @@ nhacDiepKhuc = \relative c' {
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c'' {
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4. c8 a c16 (d) |
   c4 f,8 g |
   a4. bf8 |
@@ -58,7 +55,6 @@ nhacPhienKhucMot = \relative c'' {
 }
 
 nhacPhienKhucHai = \relative c'' {
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4. d8 c c |
   c f, g f |
   a2 |
@@ -76,7 +72,6 @@ nhacPhienKhucHai = \relative c'' {
 }
 
 nhacPhienKhucBa = \relative c'' {
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4 c8 a |
   d c c f, |
   f4. a8 |
@@ -94,7 +89,6 @@ nhacPhienKhucBa = \relative c'' {
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
   Ân tình Chúa thiên thu vạn đại.
   Dành cho kẻ nào hết dạ kính tôn.
 }
@@ -142,7 +136,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #3.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
   }
 }
