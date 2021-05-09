@@ -10,7 +10,6 @@
   tagline = ##f
 }
 
-
 \paper {
   #(set-paper-size "a4")
   top-margin = 15\mm
@@ -29,8 +28,6 @@
 
 % Nhạc điệp khúc
 nhacDiepKhucSop = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #1.7
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4. c8 b d |
   c4 \breathe c,8 d |
   e4. g8 |
@@ -40,9 +37,7 @@ nhacDiepKhucSop = \relative c'' {
 }
 
 nhacDiepKhucBass = \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #1.7
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  \override NoteHead.font-size = #-2
+  
   \partial 4. f8 d f |
   g4 a,8 b |
   c4. e8 |
@@ -53,8 +48,6 @@ nhacDiepKhucBass = \relative c' {
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #2.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   c8 c e, f |
   g4 f8 d |
   c2 |
@@ -68,8 +61,6 @@ nhacPhienKhucMot = \relative c'' {
 }
 
 nhacPhienKhucHai = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #2.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   c8 b c a |
   g4 f8 d |
   c2 |
@@ -85,8 +76,6 @@ nhacPhienKhucHai = \relative c'' {
 }
 
 nhacPhienKhucBa = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #2.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4 g8 c, |
   c2 |
   a'8 g e f |
@@ -107,7 +96,6 @@ nhacPhienKhucBa = \relative c'' {
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
   Ca tụng Chúa đi, hồn tôi hỡi.
   Hãy ca tụng Chúa.
 }
@@ -150,12 +138,14 @@ loiPhienKhucBa = \lyricmode {
         \voiceOne \key c \major \time 2/4 \nhacDiepKhucSop
       }
       \new Voice = beBas {
+        \override NoteHead.font-size = #-2
         \voiceTwo \key c \major \time 2/4 \nhacDiepKhucBass
       }
     >>
     \new Lyrics \lyricsto beSop \loiDiepKhuc
   >>
   \layout {
+    ragged-last = ##f
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
