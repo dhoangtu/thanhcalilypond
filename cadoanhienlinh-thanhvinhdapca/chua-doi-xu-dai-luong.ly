@@ -3,36 +3,32 @@
 \include "english.ly"
 
 \header {
-  title = "Chúa Đối Xử Đại Lượng"
-  composer = "TV. 125"
+  title = \markup { \fontsize #3 "Chúa Đối Xử Đại Lượng" }
+  poet = "TV. 125"
+  composer = "Lm. Trần Thanh Cao"
+  arranger = " "
   tagline = ##f
 }
 
-global = {
-  \key g \major
-  \time 2/4
-}
-
-inNghieng = { \override LyricText.font-shape = #'italic }
-
 \paper {
   #(set-paper-size "a4")
-  top-margin = 20\mm
+  top-margin = 15\mm
   bottom-margin = 15\mm
   left-margin = 20\mm
   right-margin = 20\mm
-  indent = #0
   #(define fonts
-	 (make-pango-font-tree "Liberation Serif"
-	 		       "Liberation Serif"
-			       "Liberation Serif"
-			       (/ 20 20)))
+    (make-pango-font-tree
+      "Liberation Serif"
+      "Liberation Serif"
+      "Liberation Serif"
+      (/ 20 20)))
+  page-count = #1
+  indent = #0
+  system-system-spacing.basic-distance = #17
 }
 
 % Nhạc điệp khúc
-nhacDiepKhucBass = \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+nhacDiepKhucBas = \relative c' {
   \partial 8 d8 |
   e fs a b |
   c4 g8 a |
@@ -45,8 +41,6 @@ nhacDiepKhucBass = \relative c' {
 }
 
 nhacDiepKhucSop = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 8 d8 |
   d d fs, e |
   e4 c'8 c |
@@ -60,7 +54,6 @@ nhacDiepKhucSop = \relative c'' {
 
 % Nhạc phiên khúc
 nhacPhienKhuc = \relative c'' {
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4. b8 d d |
   e, fs fs e |
   d4. d8 |
@@ -75,13 +68,11 @@ nhacPhienKhuc = \relative c'' {
 
 % Lời điệp khúc
 loiDiepKhucSop = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
   Chúa đã đối xử đại lượng với chúng con,
   nên chúng con mừng rỡ hân hoan hân hoan.
 }
 
-loiDiepKhucBass = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
+loiDiepKhucBas = \lyricmode {
   Chúa đã đối xử đại lượng với chúng con,
   với chúng con, với chúng con,
   với chúng con mừng rỡ hân hoan.
@@ -97,6 +88,7 @@ loiPhienKhucMot = \lyricmode {
 }
 
 loiPhienKhucHai = \lyricmode {
+  \override Lyrics.LyricText.font-shape = #'italic
   \set stanza = #"2."
   Hôm ấy khắp bàn dân nghe luận đàm,
   ôi việc tay Chúa lớn lao.
@@ -115,34 +107,53 @@ loiPhienKhucBa = \lyricmode {
 % Dàn trang
 \score {
   \new ChoirStaff <<
-    \new Staff <<
-      \new Voice = "Bass" {
-        \clef treble \global \nhacDiepKhucBass
+    \new Staff \with {
+        \consists "Merge_rests_engraver"
+        \magnifyStaff #(magstep +1)
       }
-      \new Lyrics \lyricsto Bass \loiDiepKhucBass
+      <<
+      \new Voice = beSop {
+        \voiceOne \key g \major \time 2/4 \nhacDiepKhucSop
+      }
+      \new Lyrics \lyricsto beSop \loiDiepKhucSop
     >>
-    \new Staff <<
-      \new Voice = "Soprano" {
-        \clef treble \global \nhacDiepKhucSop
+    \new Staff \with {
+        \consists "Merge_rests_engraver"
+        \magnifyStaff #(magstep +1)
       }
-      \new Lyrics \lyricsto Soprano \loiDiepKhucSop
+      <<
+      \new Voice = beBas {
+        \voiceTwo \key g \major \time 2/4 \nhacDiepKhucBas
+      }
+      \new Lyrics \lyricsto beBas \loiDiepKhucBas
     >>
   >>
+  \layout {
+    \override Lyrics.LyricText.font-series = #'bold
+    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  }
 }
 
 \score {
   \new ChoirStaff <<
-    \new Staff = chorus \with {
-        \consists "Merge_rests_engraver"
+    \new Staff = phienKhuc \with {
+        \magnifyStaff #(magstep +1)
       }
       <<
-        \override Staff.TimeSignature.transparent = ##t
-        \new Voice = "sopranos" {
-          \global \nhacPhienKhuc
-        }
+      \new Voice = beSop {
+        \key g \major \time 2/4 \nhacPhienKhuc
+      }
     >>
-    \new Lyrics \lyricsto sopranos \loiPhienKhucMot
-    \new Lyrics \with \inNghieng \lyricsto sopranos \loiPhienKhucHai
-    \new Lyrics \lyricsto sopranos \loiPhienKhucBa
+    \new Lyrics \lyricsto beSop \loiPhienKhucMot
+    \new Lyrics \lyricsto beSop \loiPhienKhucHai
+    \new Lyrics \lyricsto beSop \loiPhienKhucBa
   >>
+  \layout {
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  } 
 }
