@@ -3,63 +3,54 @@
 \include "english.ly"
 
 \header {
-  title = "Chúa Đã Dựng Nên Con"
-  composer = "TV. 138"
+  title = \markup { \fontsize #3 "Chúa Đã Dựng Nên Con" }
+  poet = "TV. 138"
+  composer = "Lm. Trần Thanh Cao"
   arranger = " "
   tagline = ##f
 }
 
-global = {
-  \key f \major
-  \time 2/2
-}
-
 \paper {
   #(set-paper-size "a4")
-  top-margin = 20\mm
+  top-margin = 15\mm
   bottom-margin = 15\mm
   left-margin = 20\mm
   right-margin = 20\mm
   indent = #0
   #(define fonts
-	 (make-pango-font-tree "Liberation Serif"
-	 		       "Liberation Serif"
-			       "Liberation Serif"
-			       (/ 20 20)))
+    (make-pango-font-tree
+      "Liberation Serif"
+      "Liberation Serif"
+      "Liberation Serif"
+      (/ 20 20)))
+  page-count = #1
 }
 
 % Nhạc điệp khúc
 nhacDiepKhucSop = \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 2 f4 g |
   c4. c8 bf4 c |
   c4. c8 f,4 g |
-  a c2 bf8 (g) |
+  a c2 bf8 _(g) |
   f4. f8 d4 f |
-  f g2 e8 (d) |
+  f g2 e8 _(d) |
   c4. g'8 g e4 g8 |
   f1 \bar "|."
 }
 
-nhacDiepKhucBass = \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+nhacDiepKhucBas = \relative c' {
   \partial 2 f4 g |
   a4. a8 g4 a |
   a4. a8 d,4 c |
-  f a2 g8 (e) |
+  f a2 g8 ^(e) |
   f4. f8 d4 f |
-  d d2 c8 (bf) |
+  d d2 c8 ^(bf) |
   f4. c'8 c4 bf |
   a1
 }
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   f8 (g) c4 bf8 bf c (d) c4
   bf8 bf c d4 d8 c g a c g f4 \breathe
   f8 d d d4 c8 f a f g4 \breathe
@@ -70,9 +61,6 @@ nhacPhienKhucMot = \relative c' {
 }
 
 nhacPhienKhucHai = \relative c' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   f8 g c4 c8 c bf c g4 \breathe
   d8 f d c g' f a g4 \breathe
   f8 f f c' bf c c d c bf4 \breathe
@@ -82,9 +70,6 @@ nhacPhienKhucHai = \relative c' {
 
 
 nhacPhienKhucBa = \relative c'' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   c8 bf c bf c bf c g4 \breathe
   bf8 bf f f f4 gf \fermata g \fermata
   bf f4 \breathe
@@ -94,15 +79,13 @@ nhacPhienKhucBa = \relative c'' {
 
 % Lời điệp khúc
 loiDiepKhucSop = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
   Cảm tạ Chúa đã dựng nên con,
   đã dựng nên con cách lạ lùng,
   đã dựng nên con cách lạ lùng.
   Con dâng lời cảm tạ.
 }
 
-loiDiepKhucBass = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
+loiDiepKhucBas = \lyricmode {
   Cảm tạ Chúa đã dựng nên con,
   đã dựng nên con cách lạ lùng,
   đã dựng nên con cách lạ lùng.
@@ -139,53 +122,97 @@ loiPhienKhucBa = \lyricmode {
 % Dàn trang
 \score {
   \new ChoirStaff <<
-    \new Staff <<
-      \new Voice = "Bass" {
-        \clef treble \global \nhacDiepKhucSop
+    \new Staff \with {
+        \consists "Merge_rests_engraver"
+        \magnifyStaff #(magstep +1)
       }
-      \new Lyrics \lyricsto Bass \loiDiepKhucSop
+      <<
+      \new Voice = beSop {
+        \voiceOne \key f \major \time 2/2 \nhacDiepKhucSop
+      }
+      \new Lyrics \lyricsto beSop \loiDiepKhucSop
     >>
-    \new Staff <<
-      \new Voice = "Soprano" {
-        \clef treble \global \nhacDiepKhucBass
+    \new Staff \with {
+        \consists "Merge_rests_engraver"
+        \magnifyStaff #(magstep +1)
       }
-      \new Lyrics \lyricsto Soprano \loiDiepKhucBass
+      <<
+      \new Voice = beBas {
+        \voiceTwo \key f \major \time 2/2 \nhacDiepKhucBas
+      }
+      \new Lyrics \lyricsto beBas \loiDiepKhucBas
     >>
   >>
+  \layout {
+    \override Lyrics.LyricText.font-series = #'bold
+    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  }
 }
 
 \score {
   \new ChoirStaff <<
-    \new Staff = verses <<
-      \override Staff.TimeSignature.transparent = ##t
-      \new Voice = "verse" {
-        \key f \major \stemNeutral \nhacPhienKhucMot
+    \new Staff = phienKhuc \with {
+        \magnifyStaff #(magstep +1)
+      }
+      <<
+      \new Voice = beSop {
+        \key f \major \time 2/2 \nhacPhienKhucMot
       }
     >>
-    \new Lyrics \lyricsto verse \loiPhienKhucMot
+    \new Lyrics \lyricsto beSop \loiPhienKhucMot
   >>
+  \layout {
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \set Score.barAlways = ##t
+    \set Score.defaultBarType = ""
+  } 
 }
 
 \score {
   \new ChoirStaff <<
-    \new Staff = verses <<
-      \override Staff.TimeSignature.transparent = ##t
-      \new Voice = "verse" {
-        \key f \major \stemNeutral \nhacPhienKhucHai
+    \new Staff = phienKhuc \with {
+        \magnifyStaff #(magstep +1)
+      }
+      <<
+      \new Voice = beSop {
+        \key f \major \time 2/2 \nhacPhienKhucHai
       }
     >>
-    \new Lyrics \lyricsto verse \loiPhienKhucHai
+    \new Lyrics \lyricsto beSop \loiPhienKhucHai
   >>
+  \layout {
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \set Score.barAlways = ##t
+    \set Score.defaultBarType = ""
+  } 
 }
 
 \score {
   \new ChoirStaff <<
-    \new Staff = verses <<
-      \override Staff.TimeSignature.transparent = ##t
-      \new Voice = "verse" {
-        \key f \major \stemNeutral \nhacPhienKhucBa
+    \new Staff = phienKhuc \with {
+        \magnifyStaff #(magstep +1)
+      }
+      <<
+      \new Voice = beSop {
+        \key f \major \time 2/2 \nhacPhienKhucBa
       }
     >>
-    \new Lyrics \lyricsto verse \loiPhienKhucBa
+    \new Lyrics \lyricsto beSop \loiPhienKhucBa
   >>
+  \layout {
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \set Score.barAlways = ##t
+    \set Score.defaultBarType = ""
+  } 
 }
