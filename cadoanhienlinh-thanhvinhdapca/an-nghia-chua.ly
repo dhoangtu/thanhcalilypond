@@ -10,10 +10,6 @@
   tagline = ##f
 }
 
-global = {
-  \key g \major
-  \time 2/4
-}
 
 \paper {
   #(set-paper-size "a4")
