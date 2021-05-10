@@ -29,8 +29,6 @@
 
 % Nhạc điệp khúc
 nhacDiepKhuc = \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #1.7
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 2 e4 \tuplet 3/2 { g8 a g } |
   c2 r4 a8 e' |
   d4. d8 d b4 g8 |
@@ -41,8 +39,6 @@ nhacDiepKhuc = \relative c' {
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #2.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4. g8 a c |
   c4 c8 b a b g4 |
   r d8 e d f g f |
@@ -53,8 +49,6 @@ nhacPhienKhucMot = \relative c'' {
 }
 
 nhacPhienKhucHai = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #2.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 2. c8 a f a c e, |
   g2 r4 f8 f |
   d4 f8 e c4 e |
@@ -66,8 +60,6 @@ nhacPhienKhucHai = \relative c'' {
 }
 
 nhacPhienKhucBa = \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #2.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4 d8 e |
   c4 g'8 f g4 d8 e |
   c2. e8 c |
@@ -79,7 +71,6 @@ nhacPhienKhucBa = \relative c' {
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
   Nào ta ca ngợi Chúa,
   Người đỡ nâng, cất nhắc kẻ cơ hàn.
   Người nâng đỡ, cất nhắc kẻ nghèo hèn.
