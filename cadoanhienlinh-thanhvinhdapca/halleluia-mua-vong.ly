@@ -3,34 +3,31 @@
 \include "english.ly"
 
 \header {
-  title = "Halleluia Mùa Vọng"
-  composer = " "
+  title = \markup { \fontsize #3 "Halleluia Mùa Vọng" }
+  poet = " "
+  composer = "Lm. Trần Thanh Cao"
+  arranger = " "
   tagline = ##f
-}
-
-global = {
-  \key f \major
-  \time 2/4
 }
 
 \paper {
   #(set-paper-size "a4")
-  top-margin = 20\mm
+  top-margin = 15\mm
   bottom-margin = 15\mm
   left-margin = 20\mm
   right-margin = 20\mm
   indent = #0
   #(define fonts
-	 (make-pango-font-tree "Liberation Serif"
-	 		       "Liberation Serif"
-			       "Liberation Serif"
-			       (/ 20 20)))
+    (make-pango-font-tree
+      "Liberation Serif"
+      "Liberation Serif"
+      "Liberation Serif"
+      (/ 20 20)))
+  page-count = #1
 }
 
 % Nhạc điệp khúc
-sopChorus = \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+nhacDiepKhuc = \relative c' {
   \partial 4 \tuplet 3/2 { f8 f f } |
   a4 \tuplet 3/2 { a8 a c } |
   d2 |
@@ -47,7 +44,7 @@ sopChorus = \relative c' {
 }
 
 % Lời điệp khúc
-choruslyricA = \lyricmode {
+loiDiepKhuc = \lyricmode {
   Hal -- le -- lu -- ia.
   Hal -- le -- lu -- ia.
   Hãy dâng lời cảm mến.
@@ -60,11 +57,21 @@ choruslyricA = \lyricmode {
 % Bố trí
 \score {
   \new ChoirStaff <<
-    \new Staff = chorus <<
-      \new Voice = "sopranos" {
-        \global \stemNeutral \sopChorus
+    \new Staff = diepKhuc \with {
+        \consists "Merge_rests_engraver"
+        \magnifyStaff #(magstep +1)
+      }
+      <<
+      \new Voice = beSop {
+        \key f \major \time 2/4 \stemNeutral \nhacDiepKhuc
       }
     >>
-    \new Lyrics \lyricsto sopranos \choruslyricA
+    \new Lyrics \lyricsto beSop \loiDiepKhuc
   >>
+  \layout {
+    \override Lyrics.LyricText.font-series = #'bold
+    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricSpace.minimum-distance = #4.0
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  }
 }
