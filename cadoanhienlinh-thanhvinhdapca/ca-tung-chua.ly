@@ -28,8 +28,6 @@
 
 % Nhạc điệp khúc
 nhacDiepKhuc= \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4 g4 |
   g r8 a |
   g4 e |
@@ -44,9 +42,6 @@ nhacDiepKhuc= \relative c'' {
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c'' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   g8 a c a g4 e8 g a e g a g4
   e8 g g e d16 ([e]) d4
   e8 e d c a4
@@ -56,9 +51,6 @@ nhacPhienKhucMot = \relative c'' {
 
 
 nhacPhienKhucHai = \relative c'' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   #(define afterGraceFraction (cons 1 4))
   c8 a g g16 ([a]) g8 e g g4 \breathe
   e8 e g e d c d d4 \breathe
@@ -68,9 +60,6 @@ nhacPhienKhucHai = \relative c'' {
 }
 
 nhacPhienKhucBa = \relative c'' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   g8 g a16 ([c]) a8 g e4
   g8 e d8. e16 c8 d d \breathe
   e8 d c a4 d8 e g e d16 ([e]) c8 d e d4
@@ -79,7 +68,6 @@ nhacPhienKhucBa = \relative c'' {
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
   Chư dân, hãy ca tụng Chúa.
   Thân lạy Chúa,
   hết thảy chư dân, hãy ca tụng Ngài.
@@ -109,7 +97,6 @@ loiPhienKhucBa = \lyricmode {
   Xin Thiên Chúa ban phúc lành cho chúng tôi.
   Và cho khắp cùng bờ cõi trái đất kính sợ Ngài.
 }
-
 
 % Dàn trang
 \score {
@@ -150,6 +137,8 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \set Score.barAlways = ##t
+    \set Score.defaultBarType = ""
   } 
 }
 
@@ -170,6 +159,8 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \set Score.barAlways = ##t
+    \set Score.defaultBarType = ""
   } 
 }
 
@@ -190,5 +181,7 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \set Score.barAlways = ##t
+    \set Score.defaultBarType = ""
   } 
 }
