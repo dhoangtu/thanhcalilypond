@@ -3,36 +3,32 @@
 \include "english.ly"
 
 \header {
-  title = "Halleluia Mùa Giáng Sinh"
-  composer = " "
+  title = \markup { \fontsize #3 "Halleluia Mùa Giáng Sinh" }
+  poet = " "
+  composer = "Lm. Trần Thanh Cao"
   arranger = " "
   tagline = ##f
 }
 
-global = {
-  \key a \major
-  \time 2/4
-}
-
 \paper {
   #(set-paper-size "a4")
-  top-margin = 20\mm
+  top-margin = 15\mm
   bottom-margin = 15\mm
   left-margin = 20\mm
   right-margin = 20\mm
   indent = #0
   #(define fonts
-	 (make-pango-font-tree "Liberation Serif"
-	 		       "Liberation Serif"
-			       "Liberation Serif"
-			       (/ 20 20)))
-  print-page-number = #f
+    (make-pango-font-tree
+      "Liberation Serif"
+      "Liberation Serif"
+      "Liberation Serif"
+      (/ 20 20)))
+  page-count = #1
+  system-system-spacing.basic-distance = #17
 }
 
 % Nhạc điệp khúc
 nhacDiepKhucSop= \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4 e8. e16 |
   e4 \breathe e8. a16 |
   gs4 (fs) |
@@ -62,9 +58,7 @@ nhacDiepKhucSop= \relative c' {
   a4) r \bar "|."
 }
 
-nhacDiepKhucBass= \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+nhacDiepKhucBas = \relative c' {
   cs8. cs16 |
   cs4 cs8. e16 |
   e2 |
@@ -96,7 +90,6 @@ nhacDiepKhucBass= \relative c' {
 
 % Lời điệp khúc
 loiDiepKhucSop = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
   Hal -- le -- lu Ha -- le -- lu -- ia.
   Hal -- le -- lu Ha -- le -- lu -- ia.
   Này đây, ta báo cho anh em tin xiết bao vui mừng.
@@ -105,8 +98,7 @@ loiDiepKhucSop = \lyricmode {
   Hal -- le -- lu Ha -- le -- lu -- ia.
 }
 
-loiDiepKhucBass = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
+loiDiepKhucBas = \lyricmode {
   Hal -- le -- lu Ha -- le -- lu -- ia.
   Hal -- le -- lu Ha -- le -- lu -- ia.
   Này ta báo cho anh em một tin xiết bao vui mừng, vui mừng.
@@ -119,17 +111,31 @@ loiDiepKhucBass = \lyricmode {
 % Dàn trang
 \score {
   \new ChoirStaff <<
-    \new Staff <<
-      \new Voice = "Soprano" {
-        \clef treble \global \nhacDiepKhucSop
+    \new Staff \with {
+        \consists "Merge_rests_engraver"
+        \magnifyStaff #(magstep +1)
       }
-      \new Lyrics \lyricsto Soprano \loiDiepKhucSop
+      <<
+      \new Voice = beSop {
+        \voiceOne \key a \major \time 2/4 \nhacDiepKhucSop
+      }
+      \new Lyrics \lyricsto beSop \loiDiepKhucSop
     >>
-    \new Staff <<
-      \new Voice = "Bass" {
-        \clef treble \global \nhacDiepKhucBass
+    \new Staff \with {
+        \consists "Merge_rests_engraver"
+        \magnifyStaff #(magstep +1)
       }
-      \new Lyrics \lyricsto Bass \loiDiepKhucBass
+      <<
+      \new Voice = beBas {
+        \voiceTwo \key a \major \time 2/4 \nhacDiepKhucBas
+      }
+      \new Lyrics \lyricsto beBas \loiDiepKhucBas
     >>
   >>
+  \layout {
+    \override Lyrics.LyricText.font-series = #'bold
+    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  }
 }
