@@ -10,7 +10,6 @@
   tagline = ##f
 }
 
-
 \paper {
   #(set-paper-size "a4")
   top-margin = 15\mm
@@ -29,8 +28,6 @@
 
 % Nhạc điệp khúc
 nhacDiepKhuc = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #1.7
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4 g8 g |
   a e g a |
   c,4 c8 d |
@@ -46,8 +43,6 @@ nhacDiepKhuc = \relative c'' {
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #2.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4 g8 f |
   d a' b a |
   g4 d8 f |
@@ -62,8 +57,6 @@ nhacPhienKhucMot = \relative c'' {
 }
 
 nhacPhienKhucHai = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #2.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4 c8 c |
   g f d f |
   g2 |
@@ -81,8 +74,6 @@ nhacPhienKhucHai = \relative c'' {
 }
 
 nhacPhienKhucBa = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #2.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4 g8 a |
   g c c e, |
   g4 f8 a |
@@ -99,7 +90,6 @@ nhacPhienKhucBa = \relative c'' {
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
   Tôi nâng Chén Hồng Ân cứu độ mà xưng tụng danh Chúa.
   Tôi nâng Chén Hồng Ân  cứu độ mà xưng tụng danh Người.
 }
@@ -145,7 +135,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
   }
 }
@@ -165,7 +155,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
   } 
 }
@@ -185,7 +175,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
   } 
 }
@@ -205,7 +195,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
   } 
 }
