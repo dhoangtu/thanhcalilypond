@@ -118,7 +118,6 @@ loiPhienKhucBa = \lyricmode {
   Được thêu dệt tài tình trong lòng đất thẳm sâu.
 }
 
-
 % Dàn trang
 \score {
   \new ChoirStaff <<
