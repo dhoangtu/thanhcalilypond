@@ -136,8 +136,9 @@ loiPhienKhucBa = \lyricmode {
         \voiceOne \key g \major \time 2/4 \nhacDiepKhucSop
       }
       \new Voice = beBas {
-        \voiceTwo \key g \major \time 2/4 \nhacDiepKhucBass
         \override NoteHead.font-size = #-2
+        \voiceTwo \key g \major \time 2/4 \nhacDiepKhucBass
+        
       }
     >>
     \new Lyrics \lyricsto beSop \loiDiepKhuc
