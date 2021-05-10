@@ -28,8 +28,6 @@
 
 % Nhạc điệp khúc
 nhacDiepKhucSop= \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   fs8 g a a |
   a4. a16 a |
   fs8 a d,4 |
@@ -44,9 +42,6 @@ nhacDiepKhucSop= \relative c' {
 }
 
 nhacDiepKhucBass= \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  \override NoteHead.font-size = #-2
   d8 e fs fs |
   fs4. fs16 fs |
   d8 fs b,4 |
@@ -62,7 +57,6 @@ nhacDiepKhucBass= \relative c' {
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c' {
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4 d8 b' |
   a fs a b |
   cs4 cs8 cs |
@@ -76,7 +70,6 @@ nhacPhienKhucMot = \relative c' {
 }
 
 nhacPhienKhucHai = \relative c' {
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \partial 4 d8 fs |
   a a e4 |
   e8 g a b |
@@ -95,7 +88,6 @@ nhacPhienKhucHai = \relative c' {
 }
 
 nhacPhienKhucBa = \relative c'' {
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   d8 cs b g |
   g4 \breathe g8 e |
   cs'4 b8 a16 a |
@@ -107,7 +99,6 @@ nhacPhienKhucBa = \relative c'' {
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
   Bờ sông Ba -- by -- lon,
   ta ra ngồi nức nở mà tưởng nhớ Si -- on.
   Bờ sông Ba -- by -- lon,
@@ -161,7 +152,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
   }
 }
@@ -181,7 +172,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     
   } 
@@ -202,7 +193,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     
   } 
@@ -223,7 +214,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
    
   } 

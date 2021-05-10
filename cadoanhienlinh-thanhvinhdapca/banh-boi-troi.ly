@@ -28,8 +28,6 @@
 
 % Nhạc điệp khúc
 nhacDiepKhucSop = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   b2 gs4 |
   gs cs, e |
   fs2 cs4 |
@@ -41,9 +39,6 @@ nhacDiepKhucSop = \relative c'' {
 }
 
 nhacDiepKhucBass = \relative c'' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  \override NoteHead.font-size = #-2
   gs2 e4 |
   e a, cs |
   ds2 a4 |
@@ -56,9 +51,6 @@ nhacDiepKhucBass = \relative c'' {
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   fs8 b a b fs a b4 \breathe
   e,8 gs gs a fs ds b4 \breathe
   cs8 b b e gs e fs fs4 \breathe
@@ -66,9 +58,6 @@ nhacPhienKhucMot = \relative c' {
 }
 
 nhacPhienKhucHai = \relative c'' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   b8 fs fs a a fs a \acciaccatura a8 b4 \breathe
   e,8 e fs e gs fs fs4 \breathe
   fs8 ds ds cs b e fs gs4 \breathe
@@ -76,9 +65,6 @@ nhacPhienKhucHai = \relative c'' {
 }
 
 nhacPhienKhucBa = \relative c'' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   a8 fs a fs a b b gs e4 \breathe
   cs8 e b b fs' e gs fs4 \breathe
   b8 a a fs fs a b4 \breathe
@@ -87,7 +73,6 @@ nhacPhienKhucBa = \relative c'' {
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
   Chúa cho dân được ăn bánh bởi trời,
   cho dân được ăn bánh trường sinh.
 }
@@ -138,7 +123,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #3.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
   }
 }
