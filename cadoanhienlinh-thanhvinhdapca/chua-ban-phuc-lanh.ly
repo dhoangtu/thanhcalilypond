@@ -28,8 +28,6 @@
 
 % Nhạc điệp khúc
 nhacDiepKhuc= \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   cs2 e4 |
   a2 a4 |
   gs4 b8 (cs) b (a) |
@@ -41,9 +39,6 @@ nhacDiepKhuc= \relative c' {
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   cs8 e fs a4 \breathe
   b8 a fs a b4 \breathe
   fs8 a b cs4 \breathe
@@ -54,9 +49,6 @@ nhacPhienKhucMot = \relative c' {
 }
 
 nhacPhienKhucHai = \relative c'' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   a8 a fs a4 \breathe
   fs8 a fs a b4 \breathe
   a8 gs fs fs4 cs8 gs' fs e4 \breathe
@@ -65,9 +57,6 @@ nhacPhienKhucHai = \relative c'' {
 }
 
 nhacPhienKhucBa = \relative c'' {
-  \set Score.barAlways = ##t
-  \set Score.defaultBarType = ""
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   a8 a fs fs4 \breathe
   e8 cs'^^ cs^^ a^^ a4^^
   fs8 a b gs4 a8 a cs, d e4 \breathe
@@ -107,7 +96,6 @@ loiPhienKhucBa = \lyricmode {
   Chúa sẽ làm Vua thống trị muôn đời.
 }
 
-
 % Dàn trang
 \score {
   \new ChoirStaff <<
@@ -125,7 +113,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
   }
 }
