@@ -6,13 +6,8 @@
   title = \markup { \fontsize #3 "Ca Tiếp Liên" }
   poet = "Lễ Chúa Thánh Thần Hiện Xuống"
   composer = "Lm. Trần Thanh Cao"
-  
+  arranger = " "
   tagline = ##f
-}
-
-global = {
-  \key d \major
-  \time 2/4
 }
 
 \paper {
@@ -32,8 +27,7 @@ global = {
 }
 
 % Nhạc điệp khúc
-sopChorus = \relative c'' {
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+nhacDiepKhucSop = \relative c'' {
   a4 fs |
   \acciaccatura a8 b4 a |
   fs2 |
@@ -161,7 +155,7 @@ sopChorus = \relative c'' {
 }
 
 % Lời điệp khúc
-choruslyricA = \lyricmode {
+loiDiepKhucSop = \lyricmode {
   "1. Muôn" lạy Chúa Thánh Thần. Xin ngự đến trần gian.
   Từ trời cao gửi xuống, nguồn ánh sáng tỏa lan.
   "2. Lạy" Cha kẻ cơ hàn,
@@ -206,11 +200,17 @@ choruslyricA = \lyricmode {
 % Bố trí
 \score {
   \new ChoirStaff <<
-    \new Staff = chorus <<
-      \new Voice = "sopranos" {
-        \global \stemNeutral \sopChorus
+    \new Staff <<
+      \new Voice = beSop {
+        \key d \major \time 2/4 \stemNeutral \nhacDiepKhucSop
       }
     >>
-    \new Lyrics \lyricsto sopranos \choruslyricA
+    \new Lyrics \lyricsto beSop \loiDiepKhucSop
   >>
+  \layout {
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricText.font-size = #+2
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  } 
 }
