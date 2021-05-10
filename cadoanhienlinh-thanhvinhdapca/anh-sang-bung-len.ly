@@ -27,7 +27,7 @@
 }
 
 % Nhạc điệp khúc
-nhacDiepKhucSop= \relative c'' {
+nhacDiepKhucSop = \relative c'' {
   a8 a b a |
   fs g a d, |
   e4. g8 |
@@ -39,7 +39,7 @@ nhacDiepKhucSop= \relative c'' {
   d4) r \bar "|."
 }
 
-nhacDiepKhucBass= \relative c' {
+nhacDiepKhucBas = \relative c' {
   \override NoteHead.font-size = #-2
   fs8 fs g fs |
   d d cs b |
@@ -131,7 +131,7 @@ loiPhienKhucBa = \lyricmode {
         \voiceOne \key d \major \time 2/4 \nhacDiepKhucSop
       }
       \new Voice = beBas {
-        \voiceTwo \key d \major \time 2/4 \nhacDiepKhucBass
+        \voiceTwo \key d \major \time 2/4 \nhacDiepKhucBas
       }
     >>
     \new Lyrics \lyricsto beSop \loiDiepKhuc
