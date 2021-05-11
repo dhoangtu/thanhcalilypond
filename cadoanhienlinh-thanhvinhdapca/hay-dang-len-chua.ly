@@ -111,6 +111,7 @@ loiPhienKhucBa = \lyricmode {
         \voiceOne \key c \major \time 4/4 \nhacDiepKhucSop
       }
       \new Voice = beBas {
+        \override NoteHead.font-size = #-2
         \voiceTwo \key c \major \time 4/4 \nhacDiepKhucBas
       }
     >>
