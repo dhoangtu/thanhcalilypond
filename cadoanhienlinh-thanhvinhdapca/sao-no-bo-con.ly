@@ -163,7 +163,7 @@ loiPhienKhucBa = \lyricmode {
     \new Lyrics \lyricsto beSop \loiPhienKhucMot
   >>
   \layout {
-    \override Staff.TimeSignature.transparent = ##t
+    %\override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -183,7 +183,7 @@ loiPhienKhucBa = \lyricmode {
     \new Lyrics \lyricsto beSop \loiPhienKhucHai
   >>
   \layout {
-    \override Staff.TimeSignature.transparent = ##t
+    %\override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -203,7 +203,7 @@ loiPhienKhucBa = \lyricmode {
     \new Lyrics \lyricsto beSop \loiPhienKhucBa
   >>
   \layout {
-    \override Staff.TimeSignature.transparent = ##t
+    %\override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
