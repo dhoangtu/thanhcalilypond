@@ -3,36 +3,33 @@
 \include "english.ly"
 
 \header {
-  title = "Chúa Hiển Linh"
-  composer = "TV. 71"
+  title = \markup { \fontsize #3 "Chúa Hiển Linh" }
+  poet = "TV. 71"
+  composer = "Lm. Trần Thanh Cao"
+  arranger = " "
   tagline = ##f
-}
-
-global = {
-  \key f \major
-  \time 2/4
 }
 
 inNghieng = { \override LyricText.font-shape = #'italic }
 
 \paper {
   #(set-paper-size "a4")
-  top-margin = 20\mm
+  top-margin = 15\mm
   bottom-margin = 15\mm
   left-margin = 20\mm
   right-margin = 20\mm
   indent = #0
   #(define fonts
-	 (make-pango-font-tree "Liberation Serif"
-	 		       "Liberation Serif"
-			       "Liberation Serif"
-			       (/ 20 20)))
+    (make-pango-font-tree
+      "Liberation Serif"
+      "Liberation Serif"
+      "Liberation Serif"
+      (/ 20 20)))
+  page-count = #1
 }
 
 % Nhạc điệp khúc
-nhacDiepKhucSop = \relative c' {
-  \override Lyrics.LyricSpace.minimum-distance = #4.0
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+nhacDiepKhuc = \relative c' {
   \partial 4 c4 |
   a' f8 g |
   c,4 d8 c |
@@ -47,7 +44,6 @@ nhacDiepKhucSop = \relative c' {
 
 % Nhạc phiên khúc
 nhacPhienKhucSop = \relative c' {
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \stemDown
   \partial 4. f4 e8 |
   a4. a16 a |
@@ -66,7 +62,6 @@ nhacPhienKhucSop = \relative c' {
 }
 
 nhacPhienKhucBass = \relative c'' {
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \override NoteHead.font-size = #-2
   \stemUp
   c4 a8 |
@@ -80,7 +75,6 @@ nhacPhienKhucBass = \relative c'' {
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
   Lạy Chúa mọi dân tộc trên địa cầu đều thờ lạy Chúa,
   mọi dân tộc trên địa cầu đều thờ lạy Chúa,
   Chúa chúng ta.
@@ -114,35 +108,47 @@ loiPhienKhucBa = \lyricmode {
 % Dàn trang
 \score {
   \new ChoirStaff <<
-    \new Staff = chorus \with {
+    \new Staff = diepKhuc \with {
         \consists "Merge_rests_engraver"
+        \magnifyStaff #(magstep +1)
       }
       <<
-      \new Voice = "sopranos" {
-        \global \nhacDiepKhucSop
+      \new Voice = beSop {
+        \key f \major \time 2/4 \stemNeutral \nhacDiepKhuc
       }
     >>
-    \new Lyrics = basses
-    \context Lyrics = basses \lyricsto sopranos \loiDiepKhuc
+    \new Lyrics \lyricsto beSop \loiDiepKhuc
   >>
+  \layout {
+    \override Lyrics.LyricText.font-series = #'bold
+    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricSpace.minimum-distance = #1.0
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  }
 }
 
 \score {
   \new ChoirStaff <<
-    \new Staff = chorus \with {
+    \new Staff = diepKhuc \with {
         \consists "Merge_rests_engraver"
+        \magnifyStaff #(magstep +1)
       }
       <<
-        \override Staff.TimeSignature.transparent = ##t
-        \new Voice = "sopranos" {
-          \global \nhacPhienKhucSop
-        }
-        \new Voice = "basses" {
-          \voiceTwo \global \nhacPhienKhucBass
-        }
+      \new Voice = beSop {
+        \voiceOne \key f \major \time 2/4 \nhacPhienKhucSop
+      }
+      \new Voice = beBas {
+        \voiceTwo \key f \major \time 2/4 \nhacPhienKhucBass
+      }
     >>
-    \new Lyrics \lyricsto sopranos \loiPhienKhucMot
-    \new Lyrics \with \inNghieng \lyricsto sopranos \loiPhienKhucHai
-    \new Lyrics \lyricsto sopranos \loiPhienKhucBa
+    \new Lyrics \lyricsto beSop \loiPhienKhucMot
+    \new Lyrics \with \inNghieng \lyricsto beSop \loiPhienKhucHai
+    \new Lyrics \lyricsto beSop \loiPhienKhucBa
   >>
+  \layout {
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricSpace.minimum-distance = #1.0
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  }
 }
