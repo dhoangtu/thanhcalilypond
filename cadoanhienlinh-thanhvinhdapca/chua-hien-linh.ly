@@ -10,8 +10,6 @@
   tagline = ##f
 }
 
-inNghieng = { \override LyricText.font-shape = #'italic }
-
 \paper {
   #(set-paper-size "a4")
   top-margin = 15\mm
