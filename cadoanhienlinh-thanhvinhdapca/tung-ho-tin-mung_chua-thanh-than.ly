@@ -3,34 +3,31 @@
 \include "english.ly"
 
 \header {
-  title = "Tung Hô Tin Mừng"
-  composer = "Lễ Chúa Thánh Thần Hiện Xuống"
+  title = \markup { \fontsize #3 "Tung Hô Tin Mừng" }
+  poet = "Lễ Chúa Thánh Thần Hiện Xuống"
+  composer = "Lm. Trần Thanh Cao"
+  arranger = " "
   tagline = ##f
-}
-
-global = {
-  \key d \major
-  \time 2/4
 }
 
 \paper {
   #(set-paper-size "a4")
-  top-margin = 20\mm
+  top-margin = 15\mm
   bottom-margin = 15\mm
   left-margin = 20\mm
   right-margin = 20\mm
   indent = #0
   #(define fonts
-	 (make-pango-font-tree "Liberation Serif"
-	 		       "Liberation Serif"
-			       "Liberation Serif"
-			       (/ 20 20)))
-  print-page-number = #f
+    (make-pango-font-tree
+      "Liberation Serif"
+      "Liberation Serif"
+      "Liberation Serif"
+      (/ 20 20)))
+  page-count = #1
 }
 
 % Nhạc điệp khúc
-sopChorus = \relative c' {
-  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+nhacDiepKhuc = \relative c' {
   \partial 4 \tuplet 3/2 { d8 fs a } |
   b4 \tuplet 3/2 { b8 a fs } |
   a4 \tuplet 3/2 { fs8 e d } |
@@ -51,7 +48,7 @@ sopChorus = \relative c' {
 }
 
 % Lời điệp khúc
-choruslyricA = \lyricmode {
+loiDiepKhuc = \lyricmode {
   Ha -- lê -- lu -- ia. Ha -- lê -- lu -- ia.
   Ha -- lê -- lu -- ia. Ha -- lê -- lu -- ia.
   Lạy Chúa Thánh Thần, xin ngự đến
@@ -63,11 +60,21 @@ choruslyricA = \lyricmode {
 % Bố trí
 \score {
   \new ChoirStaff <<
-    \new Staff = chorus <<
-      \new Voice = "sopranos" {
-        \global \stemNeutral \sopChorus
+    \new Staff = diepKhuc \with {
+        \consists "Merge_rests_engraver"
+        \magnifyStaff #(magstep +1)
+      }
+      <<
+      \new Voice = beSop {
+        \key d \major \time 2/4 \stemNeutral \nhacDiepKhuc
       }
     >>
-    \new Lyrics \lyricsto sopranos \choruslyricA
+    \new Lyrics \lyricsto beSop \loiDiepKhuc
   >>
+  \layout {
+    \override Lyrics.LyricText.font-series = #'bold
+    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  }
 }
