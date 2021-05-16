@@ -10,11 +10,6 @@
   tagline = ##f
 }
 
-global = {
-  \key c \major
-  \time 3/8
-}
-
 \paper {
   #(set-paper-size "a4")
   top-margin = 15\mm
@@ -140,7 +135,7 @@ loiPhienKhucBa = \lyricmode {
     ragged-last = ##f
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #1.0
+    \override Lyrics.LyricSpace.minimum-distance = #3.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
   }
 }
@@ -182,7 +177,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #1.0
+    \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
