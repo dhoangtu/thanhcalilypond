@@ -28,6 +28,7 @@
 
 % Nhạc phiên khúc
 nhacPhienKhuc = \relative c' {
+  \tempo "Boston"
   \repeat volta 2
   {
     \partial 4 cs8 d |
