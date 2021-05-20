@@ -31,9 +31,9 @@ nhacPhienKhuc = \relative c' {
   \partial 4 
   d8 a' |
   a g bf a |
-  g4. f8   _\markup { \bold \italic (Nam) } |
+  g4. f8 |
   a g f e |
-  d4 d8 a' |
+  d4 d8 _\markup { \bold \italic (Nam) } a' |
   a g bf a |
   g4. f8 |
   a g f e |

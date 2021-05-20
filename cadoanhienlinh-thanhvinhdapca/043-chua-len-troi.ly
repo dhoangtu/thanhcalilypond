@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  title = "Chúa Lên Trời"
+  title = \markup { \fontsize #3 "Chúa Lên Trời" }
   composer = "TV. 46"
   arranger = " "
   tagline = ##f
