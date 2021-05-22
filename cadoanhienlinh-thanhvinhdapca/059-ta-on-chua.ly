@@ -32,8 +32,11 @@ nhacDiepKhuc = \relative c' {
   g2 f4 a |
   g4. e8 e4 g |
   c2 \breathe a4 d |
-  c4. <b g>8 <b g>4 <d b> |
-  <c g>2 r4 \bar "|."
+  c4.
+  <b \tweak font-size #-2 g>8
+  <b \tweak font-size #-2 g>4
+  <d \tweak font-size #-2 b> |
+  <c \tweak font-size #-2 g>2 r4 \bar "|."
 }
 
 % Nhạc phiên khúc

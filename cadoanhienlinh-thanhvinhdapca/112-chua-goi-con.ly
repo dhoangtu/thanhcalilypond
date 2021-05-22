@@ -104,7 +104,7 @@ nhacPhienKhucSop = \relative c' {
   a a a4 ( |
   a8) bf a bf |
   c a4. ( |
-  a8) <a \tweak font-size #-3 d>8 d e |
+  a8) <a \tweak font-size #-2 d>8 d e |
   f4. e8 |
   cs4 \tuplet 3/2 { d8 (e) d } |
   d2 ( |

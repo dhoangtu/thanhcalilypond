@@ -48,7 +48,7 @@ nhacPhienKhuc = \relative c' {
   d4. c8 |
   b a4 b8 |
   e,4. e8 |
-  c' d4 <c d>8 |
+  c' d4 <c \tweak font-size #-2 d>8 |
   c4. a8 |
   fs e4 fs8 |
   d4. d8 |
@@ -89,7 +89,7 @@ loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
   Lòng Chúa rất bao la,
   như sao giăng khắp trời.
-  Chở che hết những ai vững tâm đi theo Ngài.
+  Chở che hết (những) ai vững tâm đi theo Ngài.
   Tình thương rất mênh mông,
   như mây bay trên ngàn.
   Phủ che những thương đau,
