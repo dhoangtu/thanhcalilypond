@@ -23,7 +23,7 @@
       "Liberation Serif"
       "Liberation Serif"
       (/ 20 20)))
-  %page-count = #1
+  page-count = #1
 }
 
 % Nhạc điệp khúc
@@ -142,7 +142,7 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \voiceOne \key c \major \time 2/4 \nhacDiepKhucSop
+        \key c \major \time 2/4 \autoBeamOff \nhacDiepKhucSop
       }
       \new Lyrics \lyricsto beSop \loiDiepKhucSop
     >>
@@ -152,14 +152,14 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beBas {
-        \voiceTwo \key c \major \time 2/4 \nhacDiepKhucBas
+        \key c \major \time 2/4 \autoBeamOff \nhacDiepKhucBas
       }
       \new Lyrics \lyricsto beBas \loiDiepKhucBas
     >>
   >>
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
-    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricText.font-size = #+2
     \override Lyrics.LyricSpace.minimum-distance = #0.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
   }
@@ -179,7 +179,7 @@ loiPhienKhucBa = \lyricmode {
   >>
   \layout {
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricText.font-size = #+2
     \override Lyrics.LyricSpace.minimum-distance = #0.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \set Score.barAlways = ##t
@@ -201,7 +201,7 @@ loiPhienKhucBa = \lyricmode {
   >>
   \layout {
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricText.font-size = #+2
     \override Lyrics.LyricSpace.minimum-distance = #0.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \set Score.barAlways = ##t
@@ -224,7 +224,7 @@ loiPhienKhucBa = \lyricmode {
   >>
   \layout {
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricText.font-size = #+3
+    \override Lyrics.LyricText.font-size = #+2
     \override Lyrics.LyricSpace.minimum-distance = #0.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
   } 

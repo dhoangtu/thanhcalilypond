@@ -51,8 +51,7 @@ nhacDiepKhucAlto = \relative c' {
   d4 d8 d |
   e4 d8 e |
   fs8 
-  fs _\markup { (một bài ca mới) }
-  fs g |
+  fs fs g |
   a4 d, |
   g8 fs e d |
   cs cs d4 |
@@ -99,7 +98,7 @@ nhacPhienKhuc = \relative c' {
 loiDiepKhucSop = \lyricmode {
   Hãy hát lên ca mừng
   Hãy hát lên ca mừng,
-  mừng Thiên Chúa bài ca mới
+  mừng Thiên Chúa bài ca "mới (một bài ca mới)"
   Ngài đã tác sinh muôn vật muôn loài
   và quyền phép công minh
   (chiếu soi mọi người) khắp mọi nơi.

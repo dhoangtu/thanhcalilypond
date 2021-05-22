@@ -107,7 +107,7 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \voiceOne \key d \major \time 2/4 \nhacDiepKhuc
+        \key d \major \time 2/4 \nhacDiepKhuc
       }
     >>
     \new Lyrics \lyricsto beSop \loiDiepKhuc

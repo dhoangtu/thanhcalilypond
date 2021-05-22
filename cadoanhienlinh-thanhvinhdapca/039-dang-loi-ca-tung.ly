@@ -71,7 +71,8 @@ nhacPhienKhucHai = \relative c' {
   r4 a8 c |
   c4 \tuplet 3/2 { d8 d e } |
   c4 b8 g |
-  g4 \tuplet 3/2 { b8 \fermata g \fermata b \fermata } |
+  g4
+  \autoBeamOff \tuplet 3/2 { b8 \fermata g \fermata b \fermata } |
   a2 ( |
   a4) r \bar "||"
 }

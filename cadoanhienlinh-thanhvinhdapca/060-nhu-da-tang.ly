@@ -35,7 +35,7 @@ nhacDiepKhuc = \relative c' {
   g d4 d8 |
   c4. e8 |
   g f4 g8 |
-  f2 ( |
+  f2 _( |
   f4) r \bar "|."
 }
 
@@ -133,7 +133,7 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \voiceOne \key f \major \time 2/4 \nhacDiepKhuc
+        \key f \major \time 2/4 \nhacDiepKhuc
       }
     >>
     \new Lyrics \lyricsto beSop \loiDiepKhuc
