@@ -128,7 +128,7 @@ loiDiepKhucBas = \lyricmode {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
-    \override Score.NonMusicalPaperColumn.page-break-permission = ##f
+    %\override Score.NonMusicalPaperColumn.page-break-permission = ##f
   }
 }
 
@@ -158,7 +158,7 @@ loiDiepKhucBas = \lyricmode {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
-    \override Score.NonMusicalPaperColumn.page-break-permission = ##f
+    %\override Score.NonMusicalPaperColumn.page-break-permission = ##f
   }
 }
 
@@ -179,6 +179,6 @@ loiDiepKhucBas = \lyricmode {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
-    \override Score.NonMusicalPaperColumn.page-break-permission = ##f
+    %\override Score.NonMusicalPaperColumn.page-break-permission = ##f
   } 
 }

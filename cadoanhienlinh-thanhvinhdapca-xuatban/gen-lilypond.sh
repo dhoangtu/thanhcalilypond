@@ -4,7 +4,7 @@ set -x
 
 FOLDERS="/home/dhtu/Desktop/CATH/thanhcalilypond/cadoanhienlinh-thanhvinhdapca"
 lilypondcmd="/home/dhtu/bin/lilypond"
-:
+
 GEN=./pdf-generated
 rm -rf ${GEN}
 mkdir ${GEN}
@@ -53,17 +53,14 @@ done
 # add page numbers
 pdflatex song-odd-even.tex
 
-exit 0
-
 # combine all pdf files in name order
-PREFACEVN=./covers/preface-vn.pdf
-PREFACEEN=./covers/preface-en.pdf
-REFVN=./covers/ref-vn.pdf
-REFEN=./covers/ref-en.pdf
-TABLE=./covers/contents.pdf
-BLANK=./blank-a5.pdf
+FRONTCOVER=./bia-truoc.pdf
+REARCOVER=./bia-sau.pdf
+BLANK=./blank-a4.pdf
 
-~/Desktop/software/cpdf  ${PREFACEVN} ${PREFACEEN} song-odd-even.pdf ${TABLE} ${BLANK} -o song-book.pdf
+/home/dhtu/Desktop/CATH/Software/cpdf-binaries-master/Linux-Intel-64bit/cpdf  ${FRONTCOVER} ${BLANK} song-odd-even.pdf ${BLANK} ${REARCOVER} -o song-book.pdf
+
+exit 0
 
 # adjiust even-odd page
 pdfjam --twoside --paper a5paper --offset '0.5cm 0cm' song-book.pdf --outfile book-adjusted.pdf

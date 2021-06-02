@@ -88,6 +88,7 @@ loiPhienKhucMot = \lyricmode {
 }
 
 loiPhienKhucHai = \lyricmode {
+  \override Lyrics.LyricText.font-shape = #'italic
   \set stanza = #"2."
   Vương triều sẽ luôn đua nở thắm hoa công minh.
   Thiên thu mãi an ninh thịnh trị.
@@ -140,7 +141,7 @@ loiPhienKhucBa = \lyricmode {
       }
     >>
     \new Lyrics \lyricsto beSop \loiPhienKhucMot
-    \new Lyrics \with \inNghieng \lyricsto beSop \loiPhienKhucHai
+    \new Lyrics \lyricsto beSop \loiPhienKhucHai
     \new Lyrics \lyricsto beSop \loiPhienKhucBa
   >>
   \layout {
