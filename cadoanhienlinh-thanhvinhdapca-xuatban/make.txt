@@ -1,3 +1,20 @@
+/home/dhtu/bin/lilypond --output=bia-sau-me-van-yeu-thuong -dno-point-and-click -fpng -dresolution=1024 -dpixmap-format=pngalpha bia-sau-me-van-yeu-thuong.ly
+
+
+/home/dhtu/bin/lilypond --output=bia-sau-me-van-yeu-thuong -dno-point-and-click --pdf bia-sau-me-van-yeu-thuong.ly
+
+
+#!/bin/bash
+
+for i in `ls *.pdf`; do convert "$i" -density 90x90 -crop 1024x768+0+0\! +repage -transparent white "$i".png;
+
+rm *.ly~
+done
+
+
+
+
+
 ---CRITERIA
 1. copyright: ". For non-commercial use"
     copyright text size
