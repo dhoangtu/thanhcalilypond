@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.26)  5 JUN 2021 17:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.26)  5 JUN 2021 17:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3960,7 +3960,7 @@ Here is how much of TeX's memory you used:
  43i,18n,52p,377b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmss12.pfb>
-Output written on song-odd-even.pdf (120 pages, 12015499 bytes).
+Output written on song-odd-even.pdf (120 pages, 12015551 bytes).
 PDF statistics:
  3181 PDF objects out of 3580 (max. 8388607)
  1746 compressed objects within 18 object streams

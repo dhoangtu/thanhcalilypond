@@ -56,7 +56,7 @@ nhacDiepKhucBas = \relative c' {
 nhacPhienKhucMot = \relative c'' {
   a8 c c a a c a c4 \breathe
   c8 d d c e c g4 \breathe
-  gf8 gf gf f f4 f8 c f \acciaccatura c8 g'4
+  af8 af af f f4 f8 c f \acciaccatura c8 g'4
   e8 e e d b' b d, \fermata g4 (g) \bar "||"
 }
 
