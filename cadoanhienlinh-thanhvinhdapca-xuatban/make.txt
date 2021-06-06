@@ -1,6 +1,24 @@
+Find and replace
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)\r    \override Score.SpacingSpanner.uniform-stretching = ##t
+
+
+- sua loi not nhac
+- table of content
+
+
+
+
+/home/dhtu/bin/lilypond  --output=/home/dhtu/Desktop/CATH/thanhcalilypond/cadoanhienlinh-thanhvinhdapca/107-theo-anh-sao.pdf -dno-point-and-click --pdf /home/dhtu/Desktop/CATH/thanhcalilypond/cadoanhienlinh-thanhvinhdapca/107-theo-anh-sao.ly
+
+/home/dhtu/bin/lilypond  --output=/home/dhtu/Desktop/CATH/thanhcalilypond/cadoanhienlinh-thanhvinhdapca/017-chua-hien-linh.pdf -dno-point-and-click --pdf /home/dhtu/Desktop/CATH/thanhcalilypond/cadoanhienlinh-thanhvinhdapca/017-chua-hien-linh.ly
+
+/home/dhtu/Desktop/CATH/Software/cpdf-binaries-master/Linux-Intel-64bit/cpdf ./bia-truoc.pdf ./blank-a4.pdf song-odd-even.pdf ./blank-a4.pdf ./bia-sau.pdf -o song-book.pdf
+
+
 /home/dhtu/bin/lilypond --output=bia-sau-me-van-yeu-thuong -dno-point-and-click -fpng -dresolution=1024 -dpixmap-format=pngalpha bia-sau-me-van-yeu-thuong.ly
 
-
+s
 /home/dhtu/bin/lilypond --output=bia-sau-me-van-yeu-thuong -dno-point-and-click --pdf bia-sau-me-van-yeu-thuong.ly
 
 
