@@ -57,3 +57,5 @@ pdftk loiphilo.pdf blank-a4.pdf song-odd-even.pdf blank-a4.pdf cat output song-b
 pdfjam --twoside --paper a4paper --offset '0.5cm 0cm' song-book.pdf --outfile song-book-adjusted.pdf
 
 pdftk  bia-truoc-04.pdf blank-a4.pdf song-book-adjusted.pdf bia-sau-1-04.pdf cat output thanhvinhdapca.pdf
+
+rm -rf songs.pdf song-book.pdf song-book-adjusted.pdf
