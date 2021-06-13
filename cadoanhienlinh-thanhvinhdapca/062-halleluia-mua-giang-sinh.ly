@@ -117,7 +117,7 @@ loiDiepKhucBas = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \voiceOne \key a \major \time 2/4 \nhacDiepKhucSop
+        \key a \major \time 2/4 \nhacDiepKhucSop
       }
       \new Lyrics \lyricsto beSop \loiDiepKhucSop
     >>
@@ -127,7 +127,7 @@ loiDiepKhucBas = \lyricmode {
       }
       <<
       \new Voice = beBas {
-        \voiceTwo \key a \major \time 2/4 \nhacDiepKhucBas
+        \key a \major \time 2/4 \nhacDiepKhucBas
       }
       \new Lyrics \lyricsto beBas \loiDiepKhucBas
     >>
@@ -136,6 +136,7 @@ loiDiepKhucBas = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
