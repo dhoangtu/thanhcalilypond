@@ -43,11 +43,11 @@ nhacDiepKhucSop = \relative c' {
 nhacDiepKhucBas = \relative c' {
   \partial 4 \tuplet 3/2 { d8 e fs } |
   g4 \tuplet 3/2 { g8 g g } |
-  c,4 \tuplet 3/2 { c8 d c } |
+  cs,4 \tuplet 3/2 { cs8 d cs } |
   d2 |
   r4 \tuplet 3/2 { d8 e fs } |
   g4 \tuplet 3/2 { g8 g g } |
-  c,4 d8 c |
+  cs,4 d8 cs |
   d4. a8 |
   b2 ( |
   b4) r
@@ -60,10 +60,12 @@ nhacPhienKhucMot = \relative c' {
   e4 fs8 e |
   d4 \tuplet 3/2 { fs8 g b } |
   a2 |
-  r4 \tuplet 3/2 { g8 c d } |
-  e4 \tuplet 3/2 { 8 a, c } |
+  r4 \tuplet 3/2 { g8 cs d } |
+  e4 \tuplet 3/2 { cs8 a cs } |
   a4 fs8 g |
+  \autoBeamOff
   a8 ^^ d ^^ d ^^ g, ^^ |
+  \autoBeamOn
   g2 ( |
   g4) r \bar "||"
 }
@@ -74,8 +76,8 @@ nhacPhienKhucHai = \relative c' {
   e4 fs8 e |
   d4 \tuplet 3/2 { a'8 b a } |
   g2 |
-  r4 \tuplet 3/2 { g8 c d } |
-  e4 \tuplet 3/2 { c8 a c } |
+  r4 \tuplet 3/2 { g8 cs d } |
+  e4 \tuplet 3/2 { cs8 a cs } |
   a4 g8 e' |
   d4 \tuplet 3/2 { d8 d fs, } |
   g2 ( |
@@ -85,9 +87,9 @@ nhacPhienKhucHai = \relative c' {
 nhacPhienKhucBa = \relative c'' {
   \partial 4 d8 b |
   d4 \tuplet 3/2 { b8 b d } |
-  e4 c8 a |
-  c4 \tuplet 3/2 { d8 d c } |
-  b4 \tuplet 3/2 { c8 c a } |
+  e4 cs8 a |
+  cs4 \tuplet 3/2 { d8 d cs } |
+  b4 \tuplet 3/2 { cs8 cs a } |
   a4 \tuplet 3/2 { a8 fs a } |
   d,4 fs8 e |
   d4 \tuplet 3/2 { a'8 fs g } |
@@ -151,7 +153,8 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -171,7 +174,8 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -191,7 +195,8 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -211,6 +216,7 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
