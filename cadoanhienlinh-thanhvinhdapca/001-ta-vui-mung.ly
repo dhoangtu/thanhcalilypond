@@ -4,7 +4,7 @@
 
 \header {
   title = \markup { \fontsize #3 "Ta Vui Mừng" }
-  poet = "TV. 121"
+  poet = "Tv. 121"
   composer = "Lm. Trần Thanh Cao"
   arranger = " "
   tagline = ##f
@@ -40,12 +40,12 @@ nhacDiepKhuc = \relative c'' {
       c4 r
     }
     {
-      c,8. e16 |
-      c8 e f4 |
-      f8 e g4 |
-      c8 b g f |
-      e2 _( |
-      e4) r
+      \tweak font-size -2 c,8. \tweak font-size -2 e16 |
+      \tweak font-size -2 c8 \tweak font-size -2 e \tweak font-size -2 f4 |
+      \tweak font-size -2 f8 \tweak font-size -2 e \tweak font-size -2 g4 |
+      \tweak font-size -2 c8 \tweak font-size -2 b \tweak font-size -2 g \tweak font-size -2 f |
+      \tweak font-size -2 e2 _( |
+      \tweak font-size -2 e4) r
     }
   >>
   \bar "|."
@@ -55,7 +55,7 @@ nhacDiepKhuc = \relative c'' {
 nhacPhienKhucMot = \relative c'' {
   \partial 4 c8 g |
   g2 |
-  g8 g e d (\grace e8) |
+  g8 g e \afterGrace d (e8) |
   d2 |
   r8 e c e |
   f4 d8 f |
@@ -85,7 +85,7 @@ nhacPhienKhucHai = \relative c'' {
   d2 |
   r8 d b d |
   g,4. c8 |
-  e4 d (\grace c8) |
+  e4 \afterGrace d (c8) |
   c2 ( |
   c4) r4 \bar "||"
 }
@@ -150,7 +150,8 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #4.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -170,7 +171,8 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -190,7 +192,8 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -210,6 +213,7 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
