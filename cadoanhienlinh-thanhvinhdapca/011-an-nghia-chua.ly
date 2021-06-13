@@ -34,8 +34,8 @@ nhacDiepKhucSop= \relative c'' {
   g2 |
   g4 fs |
   e2 |
-  g8 g4 b8 |
-  d,2 |
+  g8 g4 b,8 |
+  d2 |
   e4 g |
   d4. d8 |
   d'4 a8 fs |
@@ -49,7 +49,7 @@ nhacDiepKhucBass= \relative c' {
   d2 |
   e4 c |
   b2 |
-  b8 b4 g8 |
+  d8 d4 g,8 |
   b2 |
   c4 e |
   a,4. a8 |
@@ -75,7 +75,7 @@ nhacPhienKhucHai = \relative c'' {
 nhacPhienKhucBa = \relative c'' {
   g8 g a b b a b b a (g) g4 \breathe
   e8 g a a g a g b, d4 \breathe
-  e4 e d e4 d8 d g a b4 \breathe
+  e8 e d e4 d8 d g a b4 \breathe
   d,8 d d' d fs, a g g4 \bar "||"
 }
 
@@ -98,14 +98,14 @@ loiPhienKhucMot = \lyricmode {
 loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
   Hạnh phúc thay dân nào biết ca ngợi.
-  Họ tiến hành, Lạy Chúa bới nghe danh Ngài luôn.
+  Họ tiến hành, Lạy Chúa bởi nghe danh Ngài luôn.
   Họ suốt ngày, hớn hở reo mừng vui.
   Ấy vì Ngài công chính mà họ được hiên ngang.
 }
 
 loiPhienKhucBa = \lyricmode {
   \set stanza = #"3."
-  Hùng cường hiển hách sức của dâng chính là Ngài.
+  Hùng cường hiển hách sức của dân chính là Ngài.
   Làm uy vũ chúng con trổi cao rạng rỡ.
   Đấng bảo vệ dân là người của Thiên Chúa,
   thuộc quyền Đức Thánh của Is -- ra -- el.
@@ -134,7 +134,8 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -154,7 +155,8 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
   }
@@ -176,7 +178,8 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
   }
@@ -198,7 +201,8 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
   }

@@ -69,6 +69,13 @@ nhacPhienKhucBass = \relative c'' {
   d8 c bf g |
   \slashedGrace { g8 ( } a2) ^( |
   a8)
+  \skip 4.
+  \skip 2
+  \skip 2
+  \skip 2
+  \skip 2
+  \skip 2
+  \skip 4 r4
 }
 
 % Lời điệp khúc
@@ -122,7 +129,8 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -148,6 +156,7 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
