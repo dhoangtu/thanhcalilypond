@@ -28,7 +28,7 @@
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c'' {
-  \afterGrace c4 { (c8 bf) } f g4 c8 (d) bf4 g8 c bf4 \breathe
+  \afterGrace c4 _({c8 bf)} f g4 c8 (d) bf4 g8 c bf4 \breathe
   g8 g bf f f g g f g f16 (g) bf4 \breathe
   g8 c a c \breathe
   g bf bf bf g bf f4 (g) \bar "||"
@@ -61,7 +61,8 @@ loiPhienKhucMot = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
   } 

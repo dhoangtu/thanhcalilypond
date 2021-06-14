@@ -38,7 +38,7 @@ nhacDiepKhuc = \relative c' {
   d4. b8 d4 d |
   e4. d8 g4 a |
   c4. b8 fs4 a |
-  g1 \bar "|."
+  g2 r4 \bar "|."
 }
 
 % Nhạc phiên khúc
@@ -86,6 +86,7 @@ loiPhienKhucMot = \lyricmode {
 }
 
 loiPhienKhucHai = \lyricmode {
+  \override Lyrics.LyricText.font-shape = #'italic
   \set stanza = #"2."
   Lòng Chúa rất bao la,
   như sao giăng khắp trời.
@@ -127,7 +128,8 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -146,9 +148,10 @@ loiPhienKhucBa = \lyricmode {
     \new Lyrics \lyricsto beSop \loiPhienKhucBa
   >>
   \layout {
-    \override Staff.TimeSignature.transparent = ##t
+    %\override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   } 
 }

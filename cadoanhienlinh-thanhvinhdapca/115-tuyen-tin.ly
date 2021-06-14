@@ -53,9 +53,10 @@ nhacDiepKhucSop= \relative c'' {
       c4) r
     }
     {
-      e4 e |
-      e2 _( |
-      e4) r
+      \tweak font-size #-2 e4
+      \tweak font-size #-2 e |
+      \tweak font-size #-2 e2 _( |
+      \tweak font-size #-2 e4) r
     }
   >>
   \bar "||"
@@ -108,7 +109,8 @@ loiDiepKhuc = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #8.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   } 
 }
 
@@ -133,6 +135,7 @@ loiDiepKhuc = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.8
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }

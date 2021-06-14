@@ -52,7 +52,7 @@ loiPhienKhucMot = \lyricmode {
   Hal -- le -- lu -- ia Hal -- le -- lu -- ia Hal -- le -- lu -- ia.
   Hal -- le -- lu -- ia Hal -- le -- lu -- ia Hal -- le -- lu -- ia.
   Xin cho con biết lắng nghe lời Chúa.
-  Cho con ghi nhớ suốt trong cuộc đời.
+  Cho con ghi nhớ giữ trong cuộc đời.
   Để hồn con vẫn sống trong niềm vui.
   Để trần gian tỏa ngời trong yêu thương.
   Hal -- le -- lu -- ia.
@@ -75,6 +75,7 @@ loiPhienKhucMot = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   } 
 }

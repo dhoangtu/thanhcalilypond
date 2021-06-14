@@ -29,7 +29,7 @@
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c' {
-  \partial 4. d8 b d |
+  r8 d8 b d |
   g4 g8 fs g fs g a |
   b2 r8 g c b |
   a4 a8 b a g fs e |
@@ -41,8 +41,8 @@ nhacPhienKhucMot = \relative c' {
 }
 
 nhacPhienKhucHai = \relative c' {
-  \partial 4. d8 b d |
-  g4 g8 fs g fs g a |
+  r8 d8 b d |
+  g4 g8 g g fs g a |
   b2 r8 g c b |
   a4 a8 b a g fs e |
   d2 r8 d b d |
@@ -108,7 +108,7 @@ loiDiepKhucBas = \lyricmode {
   theo sao theo sao.
   Cùng cộng đoàn
   lời nguyện cầu ca ngợi tôn vinh
-  tôn vinh Thiên Chúa đoái thương nhân trần.
+  phụng thờ Thiên Chúa đoái thương nhân trần.
 }
 
 % Dàn trang
@@ -127,7 +127,8 @@ loiDiepKhucBas = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     %\override Score.NonMusicalPaperColumn.page-break-permission = ##f
   }
 }
@@ -157,7 +158,8 @@ loiDiepKhucBas = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     %\override Score.NonMusicalPaperColumn.page-break-permission = ##f
   }
 }
@@ -178,7 +180,8 @@ loiDiepKhucBas = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     %\override Score.NonMusicalPaperColumn.page-break-permission = ##f
   } 
 }

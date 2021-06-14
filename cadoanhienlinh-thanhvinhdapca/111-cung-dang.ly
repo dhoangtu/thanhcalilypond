@@ -70,8 +70,8 @@ nhacDiepKhucAlto = \relative c'' {
 nhacDiepKhucBas = \relative c' {
   \partial 8 a8 |
   bf4 d8 cs |
-  d4 f,8 f |
-  d g g g |
+  d4 a8 a |
+  d, g g g |
   a4. a8 |
   bf4 a8 a |
   d,4 g8 g |
@@ -137,7 +137,8 @@ loiDiepKhucBas = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   } 
 }
 
@@ -174,6 +175,7 @@ loiDiepKhucBas = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #1.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }

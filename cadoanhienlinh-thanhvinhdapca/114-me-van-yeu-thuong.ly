@@ -6,6 +6,7 @@
   title = \markup { \fontsize #3 "Mẹ Vẫn Yêu Thương" }
   poet = " "
   composer = "Nhạc và lời: Lm. Trần Thanh Cao"
+  arranger = " "
   tagline = ##f
 }
 
@@ -46,7 +47,7 @@ nhacPhienKhuc = \relative c' {
   \alternative {
     {
       b4 b gs8 e |
-      a2.
+      a2
     }
     {
       b4. b8 gs e |
@@ -76,7 +77,7 @@ nhacDiepKhucSop = \relative c'' {
   a4. gs8 fs gs |
   \acciaccatura cs,8 e2 a4 
   a2. ( |
-  a2) \bar "|."
+  a2) r4 \bar "|."
 }
 
 nhacDiepKhucBas = \relative c'' {
@@ -99,7 +100,7 @@ nhacDiepKhucBas = \relative c'' {
   cs4. b8 a b |
   a2 cs4 |
   cs2. ( |
-  cs2)
+  cs2) r4
 }
 
 % Lời phiên khúc
@@ -150,7 +151,8 @@ loiDiepKhuc = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -175,6 +177,7 @@ loiDiepKhuc = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
