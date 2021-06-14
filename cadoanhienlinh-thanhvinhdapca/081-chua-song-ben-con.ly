@@ -56,7 +56,7 @@ nhacPhienKhucMot = \relative c'' {
   a2 g8 e |
   c4 g' e |
   f2. ( |
-  f2) r4 \bar "||"
+  f4) \bar "||"
 }
 
 nhacPhienKhucHai = \relative c' {
@@ -76,7 +76,7 @@ nhacPhienKhucHai = \relative c' {
   d2 e4 |
   c2 g'8 (a) |
   f2. ( |
-  f4) r2 \bar "||"
+  f2) r4 \bar "||"
 }
 
 nhacPhienKhucBa = \relative c'' {
@@ -96,7 +96,7 @@ nhacPhienKhucBa = \relative c'' {
   e2 g8 (a) |
   d,2 c4 |
   f2. ( |
-  f4) r2 \bar "||"
+  f2) r4 \bar "||"
 }
 
 % Lời điệp khúc
@@ -149,7 +149,8 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -169,7 +170,8 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   } 
 }
 
@@ -189,7 +191,8 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   } 
 }
 
@@ -209,6 +212,7 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   } 
 }

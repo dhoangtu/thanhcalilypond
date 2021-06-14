@@ -38,7 +38,7 @@ nhacDiepKhucSop = \relative c'' {
 
 nhacDiepKhucBass = \relative c' {
   \partial 4. f8 d f |
-  g4 a,8 b |
+  g4 a,8 g |
   c4. e8 |
   f4 d |
   e2 ( |
@@ -104,7 +104,7 @@ loiPhienKhucMot = \lyricmode {
   \set stanza = #"1."
   Chúa giữ lòng trung tín mãi muôn đời.
   Xử công minh cho người bị áp bức.
-  Ban lương thực, ban lương thực cho kẻ đói ăn.
+  Ban lương thực, ban lương thực cho kẻ đói nghèo.
 }
 
 loiPhienKhucHai = \lyricmode {
@@ -120,7 +120,7 @@ loiPhienKhucBa = \lyricmode {
   Chúa phù trì, kẻ lưu lạc tha phương.
   Người nâng đỡ cô nhi và quả phụ.
   Nhưng phá vỡ mưu đồ ác nhân.
-  Chúa vẫn giữ vương quyền muôn thuở.
+  Chúa vẫn giữ vương quyền muôn muôn thuở.
   Người hiển trị ngàn đời.
 }
 
@@ -147,7 +147,8 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -166,8 +167,9 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #1.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #1.0
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -186,8 +188,9 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #1.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #1.0
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -206,7 +209,8 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #1.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #1.0
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }

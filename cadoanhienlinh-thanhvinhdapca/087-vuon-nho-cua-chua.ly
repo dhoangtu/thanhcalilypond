@@ -55,7 +55,7 @@ nhacPhienKhucMot = \relative c' {
   d8 bf (c) d4 \breathe
   g8 a bf a g d ef f ef d d c4 (c8)
   ef c d ef bf bf d c4
-  c8 g' a g fs g a b!4 b8 d c c4 c8 e! d bf4
+  c8 g' a g fs g a b!4 bf8 d c c4 c8 e! d bf4
   g8 g g (a) d4 \breathe
   d,8 d g f g a g g4 \bar "||"
 }
@@ -104,7 +104,7 @@ loiPhienKhucHai = \lyricmode {
 
 loiPhienKhucBa = \lyricmode {
   \set stanza = #"3."
-  Xin ra tay ban trợ ngưởi ở bên tay hữu Chúa,
+  Xin ra tay ban trợ người ở bên tay hữu Chúa,
   con người mà Chúa đã chọn làm dũng khí.
   Chúng tôi sẽ không còn rời xa Chúa nữa.
   Chúa cho chúng tôi được sống
@@ -133,7 +133,8 @@ loiPhienKhucBa = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -153,7 +154,8 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
   } 
@@ -175,7 +177,8 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
   } 
@@ -197,7 +200,8 @@ loiPhienKhucBa = \lyricmode {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
   } 
