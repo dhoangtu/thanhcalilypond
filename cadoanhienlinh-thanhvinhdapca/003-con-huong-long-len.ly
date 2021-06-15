@@ -52,7 +52,7 @@ nhacPhienKhucMot = \relative c' {
   d,8 e fs4 e8 cs e cs a4 (a) \breathe
   e'8 cs e g g4 a8 g16 (e) g8 (a) a4
   g8 g b g a4 (a) d,8 e fs a gs a4
-  gs8 \fermata e \fermata d4 (d) \bar "||"
+  g8 \fermata e \fermata d4 (d) \bar "||"
 }
 
 nhacPhienKhucHai = \relative c' {

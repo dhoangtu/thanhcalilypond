@@ -89,7 +89,7 @@ loiPhienKhucMot = \lyricmode {
   lạy Thượng Đế con thờ.
   Chúa muôn trùng cao cả.
   Lạy Chúa, công trình Ngài quả thiện hảo dường bao,
-  sự nghiệp Cúa tràn đầy mặt đất, tràn đầy mặt đất.
+  sự nghiệp Chúa tràn đầy mặt đất, tràn đầy mặt đất.
 }
 
 loiPhienKhucHai = \lyricmode {

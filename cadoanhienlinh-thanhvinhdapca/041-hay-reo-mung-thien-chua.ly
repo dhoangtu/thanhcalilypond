@@ -99,7 +99,7 @@ loiPhienKhucBa = \lyricmode {
   Làm cho biển khơi hóa ra đất liền,
   và dân Người đi bộ qua sông.
   Việc Ngài làm đó khiến ta hoan hỉ.
-  Chúa dùng lực hằng hiển trị muôn đời.
+  Chúa dũng lực hằng hiển trị muôn đời.
 }
 
 

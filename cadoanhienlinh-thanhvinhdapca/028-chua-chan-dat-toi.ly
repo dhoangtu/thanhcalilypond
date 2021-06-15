@@ -177,16 +177,16 @@ loiPhienKhucBon = \lyricmode {
         \magnifyStaff #(magstep +1)
       }
       <<
-      \new Voice = beBas {
-        \key d \major \time 2/4 \stemNeutral \nhacDiepKhucBas
-      }
-      \new Lyrics \lyricsto beBas \loiDiepKhucBas
-    >>
-    \new Staff <<
       \new Voice = beSop {
         \key d \major \time 2/4 \stemNeutral \nhacDiepKhucSop
       }
       \new Lyrics \lyricsto beSop \loiDiepKhucSop
+    >>
+    \new Staff <<
+      \new Voice = beBas {
+        \key d \major \time 2/4 \stemNeutral \nhacDiepKhucBas
+      }
+      \new Lyrics \lyricsto beBas \loiDiepKhucBas
     >>
   >>
   \layout {

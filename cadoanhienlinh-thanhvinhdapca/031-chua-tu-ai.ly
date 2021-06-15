@@ -44,7 +44,8 @@ nhacPhienKhucMot = \relative c' {
   \partial 4 c8 d |
   ef4. g8 g g |
   c,2 af'4 |
-  g8 r \afterGrace c2 (\tweak font-size #-4 d16) |
+  g8 r \afterGrace c2 ({\stemDown \tweak font-size #-3 d16 \tweak font-size #-3 c)} |
+  \stemNeutral
   b!8 b a! b c4 |
   af8 g f af g4 |
   r8 f16 ef f8 f g ef |

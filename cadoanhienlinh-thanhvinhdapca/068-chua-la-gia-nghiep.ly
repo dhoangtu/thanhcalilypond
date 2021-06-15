@@ -90,7 +90,7 @@ loiDiepKhucSop = \lyricmode {
 }
 
 loiDiepKhucBas = \lyricmode {
-  (là phần phúc đã giành cho con.)
+  (là phần phúc đã dành cho con.)
 }
 
 % Lời phiên khúc
