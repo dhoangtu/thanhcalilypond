@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  title = \markup { \fontsize #3 "Dòng Sông" }
+  title = \markup { \fontsize #3 "Dòng Sông" }
   poet = "Tv. 45"
   composer = "Lm. Trần Thanh Cao"
   arranger = " "
@@ -28,106 +28,98 @@
 
 % Nhạc điệp khúc
 nhacDiepKhucSop = \relative c' {
-  \partial 4 c4 |
-  a' \tuplet 3/2 { a8 g a } |
-  bf4 e,8 f |
-  g4. c8 |
-  a4 \breathe \tuplet 3/2 { bf8 a bf } |
-  c4 c,8 d |
-  g4. g8 |
-  f2 \bar "|."
-}
-
-nhacDiepKhucBas = \relative c' {
-  \skip 4
-  f4 \tuplet 3/2 { f8 e f } |
-  g4 c,8 d |
-  e4. f8 |
-  e4 \tuplet 3/2 { g8 f g } |
-  a4 c,8 d |
-  c4. bf8 |
-  a2
+  c4 e g |
+  a2 e4 |
+  d2. |
+  g4 a g |
+  b2 g4 |
+  g2 c4 |
+  c2.( |
+  c4) r2 \bar "|."
 }
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c'' {
-  c8 c a bf |
-  c4 c8 a |
-  f2 |
-  d8 f f f | \break
-  c4 f8 g |
-  a2 |
-  r4 bf8 bf |
-  g bf c d |
-  bf2 \bar "||"
+  g8 a e g g c,16( d) |
+  e2 d8 a' |
+  fs2 fs4 |
+  g2. |
+  g8 e g e e f16( e) |
+  d2. |
+  a'8 a a b16 a d8 a |
+  b2. |
+  r8 c d c d c |
+  e2 c4 |
+  c2. \bar "||"
 }
 
 nhacPhienKhucHai = \relative c' {
-  \partial 4 c'8 bf |
-  c c a f |
-  f4 \breathe f8 d |
-  f f g d |
-  c4 r8 g' |
-  g g bf4 |
-  g8 bf d bf |
-  c2 |
-  r8 g g a |
-  d, c g' a |
-  f2 \bar "||"
+  c4 e g |
+  a2 e4 |
+  d2. |
+  g4 a g |
+  b2 g4 |
+  g2 c4 |
+  c2 a4 |
+  a2 f4 |
+  c'2 a4 |
+  g2 f8 f |
+  e2 c4 |
+  d2 d4 |
+  \acciaccatura d8 g2 a8 a |
+  c2 a8 a |
+  c2 c4 |
+  d2. \bar "||"
 }
 
-nhacPhienKhucBa = \relative c' {
-  \partial 4 c'8 g |
-  g2 |
-  c8 bf g bf |
-  c2 |
-  r4 bf8 c |
-  d2 |
-  bf8 bf g a |
-  f2 |
-  e8 g g4 |
-  e8 c g' bf |
-  a2 |
-  bf8 bf bf4 |
-  bf8 g bf bf |
-  c2 |
-  r4 a8 a |
-  c2 |
-  r8 bf g a |
-  d c bf g |
-  f2 ( |
-  f4) r4 \bar "||"
+nhacPhienKhucBa = \relative c'' {
+  a4 g a |
+  c2 e,4 |
+  g2. |
+  f4 d f |
+  a2 f4 |
+  d2 g4 |
+  e2. |
+  a2 g4 |
+  a g a |
+  g2 g8( a) |
+  b2. |
+  b4 a b |
+  a2 g4 |
+  d'2 e4 |
+  c2. \bar "||"
 }
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
-  Lạy Chúa, xin Ngài ngự đến mà giải thoát chung con.
-  Xin Ngài ngự đến mà giải thoát chúng con.
+  Dòng sông chia nhánh đổ về.
+  Thành đô đền thánh tràn trề hân hoan.
 }
 
 % Lời phiên khúc
 loiPhienKhucMot = \lyricmode {
   \set stanza = #"1."
-  Chúa giữ lòng trung tín mãi muôn đời.
-  Xử công minh cho người bị áp bức.
-  Ban lương thực cho kẻ đói ăn.
+  Thiên Chúa là nơi ta ẩn náu, là sức mạnh của ta.
+  Nên dầu cho địa cầu chuyển động,
+  hay non cao có sập xuống đại dương,
+  thì ta cũng không sợ hãi bồn chồn.
 }
 
 loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
-  Chúa giải phóng những ai tù tội.
-  Chúa mở mắt cho kẻ mù lòa.
-  Kẻ bị dìm xuống, Người cho đứng thẳng lên.
-  Ai công chính được Người yêu mến luôn.
+  Dòng sông chia nhánh đổ về,
+  thành đô đền thánh tràn trề hân hoan.
+  Vui thay nhà Chúa chí tôn.
+  Có Chúa ngự, thành không lay chuyển.
+  Vừa rạng đông, Người đã thương giải cứu.
 }
 
 loiPhienKhucBa = \lyricmode {
   \set stanza = #"3."
-  Chúa phù trì kẻ lưu lạc tha phương.
-  Người nâng đỡ cô nhi và quả phụ.
-  Nhưng phá vỡ mưu đồ bọn ác nhân.
-  Chúa nắm giữ vương quyền muôn muôn thuở.
-  Si -- on hỡi Chúa Trời ngươi hiển trị muôn ngàn đời.
+  Chúng ta có Chúa càn khôn,
+  Chúa nhà Gia -- cóp lũy đồn chở che.
+  Đến mà xem việc Chúa làm hiển hách,
+  bao kỳ công Người thực thi dưới trần.
 }
 
 
@@ -140,11 +132,7 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \voiceOne \key f \major \time 2/4 \nhacDiepKhucSop
-      }
-      \new Voice = beBas {
-        \override NoteHead.font-size = #-2
-        \voiceTwo \key f \major \time 2/4 \nhacDiepKhucBas
+        \key c \major \time 3/4 \nhacDiepKhucSop
       }
     >>
     \new Lyrics \lyricsto beSop \loiDiepKhuc
@@ -152,7 +140,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #1.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
@@ -165,7 +153,7 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \key f \major \time 2/4 \nhacPhienKhucMot
+        \key c \major \time 3/4 \nhacPhienKhucMot
       }
     >>
     \new Lyrics \lyricsto beSop \loiPhienKhucMot
@@ -173,7 +161,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #1.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
@@ -186,7 +174,7 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \key f \major \time 2/4 \nhacPhienKhucHai
+        \key c \major \time 3/4 \nhacPhienKhucHai
       }
     >>
     \new Lyrics \lyricsto beSop \loiPhienKhucHai
@@ -194,7 +182,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #1.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
@@ -207,7 +195,7 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \key f \major \time 2/4 \nhacPhienKhucBa
+        \key c \major \time 3/4 \nhacPhienKhucBa
       }
     >>
     \new Lyrics \lyricsto beSop \loiPhienKhucBa
@@ -215,7 +203,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #1.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
