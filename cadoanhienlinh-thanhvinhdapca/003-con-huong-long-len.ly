@@ -37,7 +37,6 @@ nhacDiepKhucSop= \relative c' {
 }
 
 nhacDiepKhucBas = \relative c' {
-  \override NoteHead.font-size = #-2
   \skip 4
   fs4 fs8 g |
   e fs fs4 |
@@ -48,24 +47,30 @@ nhacDiepKhucBas = \relative c' {
 
 % Nhạc phiên khúc
 nhacPhienKhucMot = \relative c' {
-  e8 a4 a8 g a a g (e) g (a) a4
-  d,8 e fs4 e8 cs e cs a4 (a) \breathe
-  e'8 cs e g g4 a8 g16 (e) g8 (a) a4
+  \cadenzaOn % dàn trang thủ công
+  e8 a4 a8 g a a g (e) g (a) a4 d,8 e fs4 e8 \bar "" \break
+  cs e cs a4 (a) \breathe
+  e'8 cs e g g4 a8 g16 (e) g8 (a) a4 \bar "" \break
   g8 g b g a4 (a) d,8 e fs a gs a4
-  g8 \fermata e \fermata d4 (d) \bar "||"
+  g!8 \fermata e \fermata d4 (d) \bar "||"
 }
 
 nhacPhienKhucHai = \relative c' {
-  e8 a4 e8 g fs e d4 (d8) b cs e a,4
+  \cadenzaOn % dàn trang thủ công
+  e8 a4 e8 g fs e d4 (d8) b cs e a,4 \bar "" \break
   e'8 g e e e e fs4 (fs) \breathe
-  g8 e g b a gs a4 \breathe
+  g8 e g \bar "" \break
+  b a gs a4 \breathe
   g8 e g fs e \fermata e d4 (d) \bar "||"
 }
 
 nhacPhienKhucBa = \relative c' {
+  \cadenzaOn % dàn trang thủ công
   g'8 a a g e a \acciaccatura g (a4) \breathe
-  fs8 g fs b, b4 a8 cs g' e fs4 (fs) \breathe
-  a8 b b a a4 g8 e cs e a,4 (a) e'8 fs g4
+  fs8 g fs b, b4 \bar "" \break
+  a8 cs g' e fs4 (fs) \breathe
+  a8 b b a a4 g8 \bar "" \break
+  e cs e a,4 (a) e'8 fs g4
   e8 b' \fermata \afterGrace a \fermata (b) d,4 (d) \bar "||"
 }
 
@@ -113,6 +118,7 @@ loiPhienKhucBa = \lyricmode {
         \voiceOne \key d \major \time 2/4 \nhacDiepKhucSop
       }
       \new Voice = beBas {
+        \override NoteHead.font-size = #-2
         \voiceTwo \key d \major \time 2/4 \nhacDiepKhucBas
       }
     >>
@@ -142,11 +148,8 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \set Score.barAlways = ##t
-    \set Score.defaultBarType = ""
   } 
 }
 
@@ -165,11 +168,8 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \set Score.barAlways = ##t
-    \set Score.defaultBarType = ""
   } 
 }
 
@@ -188,10 +188,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \set Score.barAlways = ##t
-    \set Score.defaultBarType = ""
   } 
 }
