@@ -31,7 +31,7 @@ nhacDiepKhuc = \relative c' {
   \partial 4 \tuplet 3/2 { f8 f f } |
   a4 \tuplet 3/2 { a8 a c } |
   d2 |
-  d8 c a c |
+  d8 c a c | \break
   d2 |
   a8 g f d |
   a'2 |
@@ -71,7 +71,7 @@ loiDiepKhuc = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #4.0
+    \override Lyrics.LyricSpace.minimum-distance = #2.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
