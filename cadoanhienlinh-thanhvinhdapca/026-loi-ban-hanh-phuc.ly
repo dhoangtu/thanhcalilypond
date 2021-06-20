@@ -43,11 +43,11 @@ nhacDiepKhucSop = \relative c' {
 nhacDiepKhucBas = \relative c' {
   \partial 4 \tuplet 3/2 { d8 e fs } |
   g4 \tuplet 3/2 { g8 g g } |
-  cs,4 \tuplet 3/2 { cs8 d cs } |
+  c,4 \tuplet 3/2 { c8 d c } |
   d2 |
   r4 \tuplet 3/2 { d8 e fs } |
   g4 \tuplet 3/2 { g8 g g } |
-  cs,4 d8 cs |
+  c,4 d8 c |
   d4. a8 |
   b2 ( |
   b4) r
@@ -60,8 +60,8 @@ nhacPhienKhucMot = \relative c' {
   e4 fs8 e |
   d4 \tuplet 3/2 { fs8 g b } |
   a2 |
-  r4 \tuplet 3/2 { g8 cs d } |
-  e4 \tuplet 3/2 { cs8 a cs } |
+  r4 \tuplet 3/2 { g8 c d } |
+  e4 \tuplet 3/2 { c8 a c } |
   a4 fs8 g |
   \autoBeamOff
   a8 ^^ d ^^ d ^^ g, ^^ |
@@ -76,8 +76,8 @@ nhacPhienKhucHai = \relative c' {
   e4 fs8 e |
   d4 \tuplet 3/2 { a'8 b a } |
   g2 |
-  r4 \tuplet 3/2 { g8 cs d } |
-  e4 \tuplet 3/2 { cs8 a cs } |
+  r4 \tuplet 3/2 { g8 c d } |
+  e4 \tuplet 3/2 { c8 a c } |
   a4 g8 e' |
   d4 \tuplet 3/2 { d8 d fs, } |
   g2 ( |
@@ -87,9 +87,9 @@ nhacPhienKhucHai = \relative c' {
 nhacPhienKhucBa = \relative c'' {
   \partial 4 d8 b |
   d4 \tuplet 3/2 { b8 b d } |
-  e4 cs8 a |
-  cs4 \tuplet 3/2 { d8 d cs } |
-  b4 \tuplet 3/2 { cs8 cs a } |
+  e4 c8 a |
+  c4 \tuplet 3/2 { d8 d c } |
+  b4 \tuplet 3/2 { c8 c a } |
   a4 \tuplet 3/2 { a8 fs a } |
   d,4 fs8 e |
   d4 \tuplet 3/2 { a'8 fs g } |
@@ -140,11 +140,11 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \voiceOne \key d \major \time 2/4 \nhacDiepKhucSop
+        \voiceOne \key g \major \time 2/4 \nhacDiepKhucSop
       }
       \new Voice = beBas {
         \override NoteHead.font-size = #-2
-        \voiceTwo \key d \major \time 2/4 \nhacDiepKhucBas
+        \voiceTwo \key g \major \time 2/4 \nhacDiepKhucBas
       }
     >>
     \new Lyrics \lyricsto beSop \loiDiepKhuc
@@ -152,7 +152,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #2.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
@@ -165,7 +165,7 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \key d \major \time 2/4 \nhacPhienKhucMot
+        \key g \major \time 2/4 \nhacPhienKhucMot
       }
     >>
     \new Lyrics \lyricsto beSop \loiPhienKhucMot
@@ -173,7 +173,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #2.2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
@@ -186,7 +186,7 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \key d \major \time 2/4 \nhacPhienKhucHai
+        \key g \major \time 2/4 \nhacPhienKhucHai
       }
     >>
     \new Lyrics \lyricsto beSop \loiPhienKhucHai
@@ -194,7 +194,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #2.2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
@@ -207,7 +207,7 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \key d \major \time 2/4 \nhacPhienKhucBa
+        \key g \major \time 2/4 \nhacPhienKhucBa
       }
     >>
     \new Lyrics \lyricsto beSop \loiPhienKhucBa
@@ -215,7 +215,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #2.2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
