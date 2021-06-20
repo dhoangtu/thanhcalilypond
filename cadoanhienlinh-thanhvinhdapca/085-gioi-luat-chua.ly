@@ -5,7 +5,7 @@
 \header {
   title = \markup { \fontsize #3 "Giới Luật Chúa" }
   poet = "Tv. 18"
-  composer = "Lm. Trần Thanh Cao"
+  composer = "Lm. GB Trần Thanh Cao"
   arranger = " "
   tagline = ##f
 }
