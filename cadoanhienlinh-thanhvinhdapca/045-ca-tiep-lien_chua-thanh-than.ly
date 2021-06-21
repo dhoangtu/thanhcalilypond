@@ -6,7 +6,7 @@
   title = \markup { \fontsize #3 "Ca Tiếp Liên" }
   poet = "Lễ Chúa Thánh Thần Hiện Xuống"
   composer = "Lm. GB Trần Thanh Cao"
-  arranger = " "
+  %arranger = " "
   tagline = ##f
 }
 
@@ -158,43 +158,43 @@ nhacDiepKhucSop = \relative c'' {
 loiDiepKhucSop = \lyricmode {
   "1. Muôn" lạy Chúa Thánh Thần. Xin ngự đến trần gian.
   Từ trời cao gửi xuống, nguồn ánh sáng tỏa lan.
-  "2. Lạy" Cha kẻ cơ hàn,
-  Đấng tặng ban ân điển,
-  và soi dẫn nhân tâm,
+  "2. Lạy" Cha kẻ cơ hàn.
+  Đấng tặng ban ân điển.
+  và soi dẫn nhân tâm.
   cúi xin Ngài Ngự đến.
   "3. Đấng" ủi an tuyệt diệu,
-  Thượng khách của tâm hồn,
-  Ôi ngọt ngào êm dịu,
+  Thượng khách của tâm hồn.
+  Ôi ngọt ngào êm dịu.
   Dòng suối mát chảy tuôn.
-  "4. Khi" vất vả lao công,
-  Ngài là nơi an nghỉ,
-  Gió mát đuổi cơn nồng,
+  "4. Khi" vất vả lao công.
+  Ngài là nơi an nghỉ.
+  Gió mát đuổi cơn nồng.
   Tay hiền lau giọt lệ.
-  "5. Hỡi" hào quang linh diệu,
-  Xin chiếu giải ánh hồng,
-  Vào tâm hồn tín hữu,
+  "5. Hỡi" hào quang linh diệu.
+  Xin chiếu giải ánh hồng.
+  Vào tâm hồn tín hữu.
   Cho rực rỡ trinh trong.
-  "6. Không" thần lực phù trì,
-  Kẻ phàm nhân cát bụi,
-  Thật chẳng có điều chi,
+  "6. Không" thần lực phù trì.
+  Kẻ phàm nhân cát bụi.
+  Thật chẳng có điều chi.
   Mà không là tội lỗi.
-  "7. Hết" những gì nhơ bẩn,
-  Xin rửa cho sạch trong,
-  Tưới gội nơi khô cạn,
+  "7. Hết" những gì nhơ bẩn.
+  Xin rửa cho sạch trong.
+  Tưới gội nơi khô cạn.
   Chữa lành mọi vết thương.
-  "8. Cứng" cỏi uốn cho mềm,
-  Lạnh lùng xin sưởi ấm,
-  Những đường nẻo sai lầm,
+  "8. Cứng" cỏi uốn cho mềm.
+  Lạnh lùng xin sưởi ấm.
+  Những đường nẻo sai lầm.
   Sửa sang cho ngay thẳng.
-  "9. Những" ai hằng tin tưởng,
-  Trông cậy Chúa vững vàng,
-  Dám xin Ngài rộng lượng,
+  "9. Những" ai hằng tin tưởng.
+  Trông cậy Chúa vững vàng.
+  Dám xin Ngài rộng lượng.
   Bảy ơn Thánh tặng ban.
-  "10. Nguyện" xin Chúa thưởng công,
-  Cuộc đời dày đức độ,
-  Ban niềm vui muôn thuở,
+  "10. Nguyện" xin Chúa thưởng công.
+  Cuộc đời dày đức độ.
+  Ban niềm vui muôn thuở.
   Sau giờ phút lâm chung.
-  A -- men. Hal -- lê -- lu -- ia.
+  "A -" men. "Hal -" "lê -" "lu -" ia.
 }
 
 % Bố trí
@@ -209,8 +209,10 @@ loiDiepKhucSop = \lyricmode {
   >>
   \layout {
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricText.font-size = #+2
+    \override Lyrics.LyricText.font-size = #+2.5
     \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.SpacingSpanner packed-spacing = ##t
   } 
 }
