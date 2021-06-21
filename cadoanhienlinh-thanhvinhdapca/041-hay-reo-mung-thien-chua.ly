@@ -31,7 +31,7 @@ nhacDiepKhuc= \relative c' {
   \partial 4. d8 e d |
   b4 g'8 a |
   g4 a |
-  b \breathe \tuplet 3/2 { 
+  b \breathe \tuplet 3/2 {
     <\tweak font-size -2 e c \tweak font-size -2 g>8
     <\tweak font-size -2 e c \tweak font-size -2 g>8
     <\tweak font-size -2 e c \tweak font-size -2 g>8
@@ -120,9 +120,10 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #1.0
+    \override Lyrics.LyricSpace.minimum-distance = #1.2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.SpacingSpanner packed-spacing = ##t
   }
 }
 
@@ -146,7 +147,7 @@ loiPhienKhucBa = \lyricmode {
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
-  } 
+  }
 }
 
 \score {
@@ -169,7 +170,7 @@ loiPhienKhucBa = \lyricmode {
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
-  } 
+  }
 }
 
 \score {
@@ -192,5 +193,5 @@ loiPhienKhucBa = \lyricmode {
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
-  } 
+  }
 }
