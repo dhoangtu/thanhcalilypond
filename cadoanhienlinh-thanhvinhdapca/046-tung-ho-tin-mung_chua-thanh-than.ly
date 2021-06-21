@@ -54,7 +54,7 @@ loiDiepKhuc = \lyricmode {
   Lạy Chúa Thánh Thần, xin ngự đến
   cho tâm hồn tín hữu được nhuần thấm muôn ơn.
   Và cháy lửa mến yêu, mến yêu Ngài.
-  Ha -- lê -- lu -- ia.
+  "Ha -" "lê -" "lu -" ia.
 }
 
 % Bố trí
@@ -75,6 +75,7 @@ loiDiepKhuc = \lyricmode {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
     \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
