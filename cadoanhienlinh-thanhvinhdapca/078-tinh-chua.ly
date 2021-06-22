@@ -67,7 +67,7 @@ nhacPhienKhucMot = \relative c'' {
   a'4 \breathe g8 |
   e f g |
   c,4 d8 |
-  d4. ( |
+  d4. ^( |
   d8) r d |
   a'4. |
   r8 bf g |
@@ -88,10 +88,10 @@ nhacPhienKhucHai = \relative c' {
   a4 d,8 |
   e f d |
   a'4. |
-  bf8 a g ( |
+  bf8 a g ^( |
   g) bf (bf) |
   e e d |
-  d4. ( |
+  d4. _( |
   d4) c8 |
   c bf d |
   c g a |
@@ -100,7 +100,7 @@ nhacPhienKhucHai = \relative c' {
   f4 \breathe e8 |
   g a a |
   e4 f8 |
-  d4. ( |
+  d4. ^( |
   d4) r8 \bar "||"
 }
 
@@ -111,7 +111,7 @@ nhacPhienKhucBa = \relative c' {
   a'4 \breathe e8 |
   g f e |
   g e f |
-  d4. ( |
+  d4. ^( |
   d4) g8 |
   bf g bf |
   d e d |
@@ -123,7 +123,7 @@ nhacPhienKhucBa = \relative c' {
   g4 e8 |
   f g e |
   f g e |
-  d4. ( |
+  d4. ^( |
   d4) r8 \bar "||"
 }
 
@@ -183,8 +183,9 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #1.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #1.9
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -203,8 +204,9 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #2.2
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -223,8 +225,9 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #2.5
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
 
@@ -243,7 +246,8 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
   }
 }
