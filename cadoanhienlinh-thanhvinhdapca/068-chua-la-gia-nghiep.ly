@@ -40,6 +40,7 @@ nhacDiepKhucBas = \relative c' {
   \skip 4
   \skip 1
   \skip 4
+  \stemUp
   e8 e a a cs, d
   d1 \bar "|."
 }
@@ -126,12 +127,12 @@ loiPhienKhucBa = \lyricmode {
       }
       <<
       \new Voice = beSop {
-        \voiceTwo \key d \major \time 2/2 \nhacDiepKhucSop
+        \voiceOne \key d \major \time 2/2 \nhacDiepKhucSop
       }
       \new Voice = beBas {
-        \override NoteHead.font-size = #-2
-        \override NoteColumn.ignore-collision = ##t
-        \voiceOne \key d \major \time 2/2 \nhacDiepKhucBas
+        %\override NoteHead.font-size = #-2
+        %\override NoteColumn.ignore-collision = ##t
+        \voiceTwo \key d \major \time 2/2 \nhacDiepKhucBas
       }
     >>
     \new Lyrics \lyricsto beSop \loiDiepKhucSop
@@ -140,7 +141,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #4.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
@@ -161,9 +162,10 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.SpacingSpanner packed-spacing = ##t
   }
 }
 
@@ -182,9 +184,10 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.SpacingSpanner packed-spacing = ##t
   }
 }
 
@@ -203,8 +206,9 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Score.SpacingSpanner packed-spacing = ##t
   }
 }
