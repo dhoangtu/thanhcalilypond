@@ -37,9 +37,11 @@ nhacPhienKhucMot = \relative c'' {
 
 % Lời phiên khúc
 loiPhienKhucMot = \lyricmode {
+  \override LyricText.font-series = #'bold
   Chính nhờ Người, với Người và trong Người
   mà mọi chúc tụng và vinh quang đều quy về Chúa,
   là Cha toàn năng cùng với Chúa Thánh Thần muôn đời.
+  \override LyricText.font-series = #'normal
   A -- men.
 }
 
@@ -60,7 +62,7 @@ loiPhienKhucMot = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #2.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
