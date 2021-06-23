@@ -5,7 +5,7 @@
 \header {
   title = \markup { \fontsize #3 "Ngàn Lời Ca" }
   composer = "Nhạc và Lời: Lm. GB Trần Thanh Cao"
-  arranger = " "
+  %arranger = " "
   tagline = ##f
 }
 
@@ -73,7 +73,7 @@ nhacDiepKhucBas = \relative c {
   r2 |
   r2 |
   d4. d8 |
-  a'2 ( |
+  a'2 _( |
   a4) a8 a |
   <fs \tweak font-size #-2 d>2
 }
