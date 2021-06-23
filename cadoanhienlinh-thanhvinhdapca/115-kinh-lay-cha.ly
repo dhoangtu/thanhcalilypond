@@ -44,8 +44,10 @@ nhacPhienKhucMot = \relative c'' {
 
 % Lời phiên khúc
 loiPhienKhucMot = \lyricmode {
+  \override LyricText.font-series = #'bold
   Vâng lệnh Chúa Cứu Thế và theo thể thức Người dạy
   chúng ta dám nguyện rằng:
+  \override LyricText.font-series = #'normal
   Lạy Cha chúng con ở trên trời,
   chúng con nguyện danh Cha cả sáng,
   nước Cha trị đến,
@@ -74,8 +76,9 @@ loiPhienKhucMot = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #2.5
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
     \set Score.defaultBarType = ""
   } 
