@@ -34,7 +34,7 @@ nhacDiepKhucSop = \relative c'' {
   f4 g8 (a) |
   a4 r8 a |
   a (c) d (c) |
-  a f d4 ( |
+  a f d4 ^( |
   d8) g g g |
   a2 ( |
   a8) d d bf |
@@ -44,18 +44,18 @@ nhacDiepKhucSop = \relative c'' {
   f e c d |
   a c f e |
   d4 \tuplet 3/2 { c8 f e } |
-  d2 ( |
+  d2 ^( |
   d8) \bar "|."
 }
 
 nhacDiepKhucAlto = \relative c'' {
   r2 |
-  r8 a a f16 ^(c) |
+  r8 a a f16 _(c) |
   d4 d8 d |
   d4 e8 (d) 
   c4 r8 f |
   f (a) g (e) |
-  f d a4 ( |
+  f d a4 ^( |
   a8) e' e d |
   c4. d8 |
   e2 ( |
@@ -65,7 +65,7 @@ nhacDiepKhucAlto = \relative c'' {
   d c bf d |
   a a c bf |
   a4 \tuplet 3/2 { g8 c bf } |
-  a2 ( |
+  a2 ^( |
   a8)
 }
 
@@ -86,7 +86,7 @@ nhacDiepKhucBas = \relative c' {
   a4 g |
   f8 bf a g |
   f4 \tuplet 3/2 { e8 a g } |
-  f2 ( |
+  f2 _( |
   f8)
 }
 
@@ -99,7 +99,7 @@ nhacPhienKhucSop = \relative c' {
   d8 \breathe d f g |
   a a bf a |
   a g d f |
-  e2 ( |
+  e2 ^( |
   e8) d f g |
   a a a4 ( |
   a8) bf a bf |
@@ -248,8 +248,9 @@ loiPhienKhucBaBas = \lyricmode {
   >>
   \layout {
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     \override Score.NonMusicalPaperColumn.page-break-permission = ##f
   }
 }
@@ -286,8 +287,9 @@ loiPhienKhucBaBas = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
     \override Score.NonMusicalPaperColumn.page-break-permission = ##f
   }
 }
