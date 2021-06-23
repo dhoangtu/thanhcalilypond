@@ -6,7 +6,7 @@
   title = \markup { \fontsize #3 "Vườn Nho Của Chúa" }
   poet = "Tv. 79"
   composer = "Lm. GB Trần Thanh Cao"
-  arranger = " "
+  %arranger = " "
   tagline = ##f
 }
 
@@ -64,7 +64,7 @@ nhacPhienKhucHai = \relative c' {
   d8 bf (c) d c c4
   g'8. a16 bf8 (a) g4
   d8 d ef ef f ef d4 c8 d ef c d4 bf (bf)
-  g'8 g fs (g) g a g a b! b!4 c8 a (bf)
+  g'8 g fs (g) g a g a b! b!4 c8 a (bf) \break
   \acciaccatura c8 e!4 \breathe
   g,8 g g a a d d d,4 f8 (g) a4 g \bar "||"
 }
@@ -132,7 +132,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.0
+    \override Lyrics.LyricSpace.minimum-distance = #4.0
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
@@ -153,7 +153,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
@@ -176,7 +176,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #2.2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
@@ -199,7 +199,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #0.9
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
