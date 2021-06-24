@@ -70,7 +70,7 @@ nhacPhienKhucBa = \relative c'' {
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
    Con là Thượng Tế, là Thượng Tế đến muôn đời,
-  Theo phẩm hàm Men -- ki -- sê -- đê.
+  Theo phẩm hàm "Men -" "ki -" "sê -" đê.
 }
 
 % Lời phiên khúc

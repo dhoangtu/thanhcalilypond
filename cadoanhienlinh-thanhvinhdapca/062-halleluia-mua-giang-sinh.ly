@@ -90,12 +90,12 @@ nhacDiepKhucBas = \relative c' {
 
 % Lời điệp khúc
 loiDiepKhucSop = \lyricmode {
-  Hal -- le -- lu Ha -- le -- lu -- ia.
-  Hal -- le -- lu Ha -- le -- lu -- ia.
+  "Hal -" "le -" lu "Ha -" le -- lu -- ia.
+  "Hal -" "le -" lu "Ha -" le -- lu -- ia.
   Này đây, ta báo cho anh em tin xiết bao vui mừng.
   Ngày hôm nay, Trinh Nữ đã sinh hạ Đấng Cứu Độ chúng ta.
-  Hal -- le -- lu Ha -- le -- lu -- ia.
-  Hal -- le -- lu Ha -- le -- lu -- ia.
+  "Hal -" "le -" lu "Ha -" "le -" lu -- ia.
+  "Hal -" "le -" lu "Ha -" "le -" lu -- ia.
 }
 
 loiDiepKhucBas = \lyricmode {
@@ -135,7 +135,7 @@ loiDiepKhucBas = \lyricmode {
   \layout {
     \override Lyrics.LyricText.font-series = #'bold
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #2.4
+    \override Lyrics.LyricSpace.minimum-distance = #2.3
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }

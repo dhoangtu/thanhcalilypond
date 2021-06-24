@@ -140,7 +140,7 @@ loiPhienKhucBa = \lyricmode {
   Giờ đây, Chúa giữ gìn con được vẹn toàn,
   nhận con vào hầu cận trước Tôn Nhan mãi mãi.
   Chúc tụng Chúa Trời,
-  Chúa Is -- ra -- el.
+  Chúa "Is -" "ra -" el.
   Từ muôn thuở cho đến muôn muôn đời.
 }
 
@@ -229,7 +229,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #1.9
+    \override Lyrics.LyricSpace.minimum-distance = #1.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }

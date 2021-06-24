@@ -90,7 +90,7 @@ loiPhienKhucHai = \lyricmode {
   \set stanza = #"2."
   Chúa hạ lệnh cho mây tầng cao thẳm,
   lại truyền mở rộng cảnh thiên môn.
-  Khiến Man -- na, tựa hồ mưa rơi xuống.
+  Khiến "Man -" na, tựa hồ mưa rơi xuống.
   Ấy là bánh bởi trời nuôi dưỡng họ.
 }
 
@@ -167,7 +167,7 @@ loiPhienKhucBa = \lyricmode {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricText.font-size = #+3
-    \override Lyrics.LyricSpace.minimum-distance = #3.0
+    \override Lyrics.LyricSpace.minimum-distance = #2.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.barAlways = ##t
