@@ -97,7 +97,7 @@ loiPhienKhucMot = \lyricmode {
   Muôn trăng sao Chúa đã an bài.
   Thì con người là chi,
   mà Chúa cần nhớ đến.
-  Phàm nhân là gì, mà CHúa phải bận tâm.
+  Phàm nhân là gì, mà Chúa phải bận tâm.
 }
 
 loiPhienKhucHai = \lyricmode {
