@@ -49,12 +49,12 @@ nhacDiepKhuc = \relative c' {
 
 % Lời điệp khúc
 loiDiepKhuc = \lyricmode {
-  Ha -- lê -- lu -- ia. Ha -- lê -- lu -- ia.
-  Ha -- lê -- lu -- ia. Ha -- lê -- lu -- ia.
+  Hal -- lê -- lu -- ia. Hal -- lê -- lu -- ia.
+  Hal -- lê -- lu -- ia. Hal -- lê -- lu -- ia.
   Lạy Chúa Thánh Thần, xin ngự đến
   cho tâm hồn tín hữu được nhuần thấm muôn ơn.
   Và cháy lửa mến yêu, mến yêu Ngài.
-  "Ha -" "lê -" "lu -" ia.
+  "Hal -" "lê -" "lu -" ia.
 }
 
 % Bố trí
