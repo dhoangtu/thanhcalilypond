@@ -48,10 +48,10 @@ done
 pdftk "${filelist[@]}" cat output songs.pdf
 
 # add page numbers
-pdflatex song-odd-even.tex
+pdflatex so-trang-chan-le.tex
 
 # combine all pdf files in name order
-pdftk loiphilo.pdf blank-a4.pdf song-odd-even.pdf blank-a4.pdf cat output song-book.pdf
+pdftk loiphilo.pdf blank-a4.pdf so-trang-chan-le.pdf blank-a4.pdf cat output song-book.pdf
 
 # adjust even-odd page
 pdfjam --twoside --paper a4paper --offset '0.3cm 0cm' song-book.pdf --outfile song-book-adjusted.pdf
