@@ -84,18 +84,20 @@ nhacPhienKhucBa = \relative c'' {
 % Lời phiên khúc
 loiPhienKhuc = \lyricmode {
   \override Lyrics.LyricText.font-series = #'bold
-  "X: Đây" là đây là cây Thánh Giá Chúa Ki -- tô,
+  \set stanza = \markup { \fontsize #3 \normal-text "(Xướng)" }
+  Đây là đây là cây Thánh Giá Chúa Ki -- tô,
   chính nơi này đem ơn cứu độ,
   ơn cứu độ cho trần gian.
   \override Lyrics.LyricText.font-series = #'normal
-  "Đ: Chúng" ta hãy mau mau đến tôn thờ mà thờ lạy mến yêu.
+  \set stanza = \markup { \fontsize #3 \normal-text "(Đáp)" }
+  Chúng ta hãy mau mau đến tôn thờ mà thờ lạy mến yêu.
 }
 
 % Dàn trang
 \score {
   \new ChoirStaff <<
     \new Staff = phienKhuc \with {
-        \magnifyStaff #(magstep +1)
+        \magnifyStaff #(magstep +0.5)
       }
       <<
       \new Voice = beSop {
@@ -115,7 +117,7 @@ loiPhienKhuc = \lyricmode {
 \score {
   \new ChoirStaff <<
     \new Staff = phienKhuc \with {
-        \magnifyStaff #(magstep +1)
+        \magnifyStaff #(magstep +0.5)
       }
       <<
       \new Voice = beSop {
@@ -136,7 +138,7 @@ loiPhienKhuc = \lyricmode {
 \score {
   \new ChoirStaff <<
     \new Staff = phienKhuc \with {
-        \magnifyStaff #(magstep +1)
+        \magnifyStaff #(magstep +0.5)
       }
       <<
       \new Voice = beSop {
