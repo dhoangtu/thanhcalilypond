@@ -1,5 +1,5 @@
 % Cài đặt chung
-\version "2.20.0"
+\version "2.22.1"
 \include "english.ly"
 
 \header {
@@ -47,7 +47,7 @@ loiPhienKhucMotKinhNguyen = \lyricmode {
 % Tuyen tin
 % Nhạc phiên khúc
 nhacPhienKhucMotTuyenTin = \relative c'' {
-  g4 e8 d |
+  g4 e8 c |
   c4 a' |
   g2 ( |
   g8) r r4 \bar "||"
@@ -115,7 +115,7 @@ loiDiepKhucTuyenTin = \lyricmode {
   \score {
     \new ChoirStaff <<
       \new Staff = phienKhuc \with {
-          \magnifyStaff #(magstep +1)
+          %\magnifyStaff #(magstep +1)
         }
         <<
         \new Voice = beSop {
@@ -132,7 +132,7 @@ loiDiepKhucTuyenTin = \lyricmode {
     }
     \layout {
       \override Staff.TimeSignature.transparent = ##t
-      \override Lyrics.LyricText.font-size = #+3
+      \override Lyrics.LyricText.font-size = #+2.5
       \override Lyrics.LyricSpace.minimum-distance = #2.0
       \override Score.BarNumber.break-visibility = ##(#f #f #f)
       \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -147,7 +147,7 @@ loiDiepKhucTuyenTin = \lyricmode {
   \score {
     \new ChoirStaff <<
       \new Staff = phienKhuc \with {
-          \magnifyStaff #(magstep +1)
+          %\magnifyStaff #(magstep +1)
         }
         <<
         \new Voice = beSop {
@@ -164,7 +164,7 @@ loiDiepKhucTuyenTin = \lyricmode {
     }
     \layout {
       \override Lyrics.LyricText.font-series = #'bold
-      \override Lyrics.LyricText.font-size = #+3
+      \override Lyrics.LyricText.font-size = #+2.5
       \override Lyrics.LyricSpace.minimum-distance = #8.5
       \override Score.BarNumber.break-visibility = ##(#f #f #f)
       \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -174,7 +174,7 @@ loiDiepKhucTuyenTin = \lyricmode {
     \new ChoirStaff <<
       \new Staff = diepKhuc \with {
           \consists "Merge_rests_engraver"
-          \magnifyStaff #(magstep +1)
+          %\magnifyStaff #(magstep +1)
         }
         <<
         \new Voice = beSop {
@@ -189,7 +189,7 @@ loiDiepKhucTuyenTin = \lyricmode {
     >>
     \layout {
       \override Staff.TimeSignature.transparent = ##t
-      \override Lyrics.LyricText.font-size = #+3
+      \override Lyrics.LyricText.font-size = #+2.5
       \override Lyrics.LyricSpace.minimum-distance = #2.2
       \override Score.BarNumber.break-visibility = ##(#f #f #f)
       \override Score.SpacingSpanner.uniform-stretching = ##t
